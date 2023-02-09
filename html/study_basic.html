@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스터디</title>
-    <link rel="stylesheet" href="../css/study.css">
-    <script src="../js/jquery.min.js"></script>
+    <!-- 루트 -->
+    <link href='../css/study.css' rel='stylesheet'>
+    <!-- 개인 css -->
+    <link href='../css/fullcalendar.css' rel='stylesheet'>
+    <!-- 캘린더를 위해 필요한 참조 -->
+    <link href='../packages/core/main.css' rel='stylesheet' />
+    <link href='../packages/daygrid/main.css' rel='stylesheet' />
+    <link href='../packages/timegrid/main.css' rel='stylesheet' />
+    <link href='../packages/list/main.css' rel='stylesheet' />
+    <!-- js -->
+    <script src='../packages/core/main.js'></script>
+    <script src='../packages/interaction/main.js'></script>
+    <script src='../packages/daygrid/main.js'></script>
+    <script src='../packages/timegrid/main.js'></script>
+    <script src='../packages/list/main.js'></script>
+    
+    
+    <style>
+
+        body {
+          margin: 40px 10px;
+          padding: 0;
+          font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+      
+        #calendar {
+          max-width: 900px;
+          margin: 0 auto;
+        }
+      
+      </style>
 </head>
 <body>
     <header>
@@ -14,11 +44,87 @@
     </header>
 
     <main>
+        <!-- 왼쪽 메뉴바 -->
+        <nav>
+            왼쪽 메뉴바
+        </nav>
+        <!-- 메인  -->
+        <section>
+            <!-- 캘랜더 -->
+            <article>
+                <div id='calendar_container'>
+                    <div id='calendar'></div>
+                </div>
+            </article>
+            <!-- to do list -->
+            <article>
+                to do list
+            </article>
+            <!-- 자유게시판 -->
+            <article>
+                자유게시판
+            </article>
+            <!-- 오늘의 인증 -->
+            <article>
+                오늘의인증
+            </article>
+        </section>
+        <!-- 오른쪽 메뉴바 -->
+            오른쪽 메뉴바
+        <aside>
 
+        </aside>
     </main>
 
     <footer>
 
     </footer>
+    <script>
+         
+         document.addEventListener('DOMContentLoaded', function() {
+         var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+        plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'list' ],
+        firstDay: 1,
+        titleFormat: function (date) {
+        year = date.date.year;
+        month = date.date.month + 1;
+        day = date.date.day
+
+        return year + "년 " + month + "월" ;
+        },
+        header: {
+            left: 'dayGridMonth,listMonth',
+            center: 'title',
+            right: 'prev,next,'
+        },
+        defaultDate: '2023-01-12',
+        navLinks: true, // can click day/week names to navigate views
+        businessHours: true, // display business hours
+        editable: true,
+        events: [
+            {
+            title: '정처기 필기',
+            start: '2023-01-03'
+            },
+
+            {
+            title: '정처기 접수기간',
+            start: '2023-01-10',
+            end: '2023-01-16'
+            },
+            {
+            title: '정처기 실기',
+            start: '2023-01-29'
+            },
+        ]
+        });
+
+        calendar.render();
+    });
+  
+      </script>
+   
 </body>
 </html>
