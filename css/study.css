@@ -56,8 +56,9 @@
   .left_menu {
     border: var(--border_basic);
     border-radius: var(--border_radius_3);
-    width: 130px;
-    height: 250px;
+    width: 150px;
+    height: 350px;
+    display: inline-block;
   }
 
   .left_menu a {
@@ -68,8 +69,8 @@
   main {
     display: flex;
     flex-flow: column; /*row*/
-    justify-content: center;
+    /* justify-content: center; */
     width: 1200px;
-    height : 600px;
+    height : 980px;
     border: var(--border_basic);
   }
