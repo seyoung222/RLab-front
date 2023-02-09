@@ -51,3 +51,25 @@
     margin: -1px;
     overflow: hidden;
   }
+
+  /* 개인 */
+  .left_menu {
+    border: var(--border_basic);
+    border-radius: var(--border_radius_3);
+    width: 130px;
+    height: 250px;
+  }
+
+  .left_menu a {
+    color: var(--color_grey);
+    font-family: var(--font_family_sub);
+  }
+
+  main {
+    display: flex;
+    flex-flow: column; /*row*/
+    justify-content: center;
+    width: 1200px;
+    height : 600px;
+    border: var(--border_basic);
+  }
