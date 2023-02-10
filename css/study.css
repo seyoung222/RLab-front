@@ -125,45 +125,9 @@ header #header_container {
 }
 
   /* 개인 */
-  nav {
-    /* position: fixed; */
-  }
 
-  .left_menu {
-    position: fixed;
-    border: var(--border_basic);
-    border-radius: var(--border_radius_3);
-    width: 150px;
-    height: 350px;
-    text-align: center;
-    padding-top: 30px;
-    
-  }
-
-  .left_menu a {
-    color: var(--color_grey);
-    font-family: var(--font_family_sub);
-    
-  }
+  /* main div */
   
-  .list_menu a:visited {
-    font-weight: bold;
-}
-  
-  .left_menu div {
-    padding: 10px;
-  }
-  .calendar_container {
-    border: var(--border_basic);
-    width: 650px;
-    height: 500px;
-    margin-right: 30px;
-  }
-
-  .left_menu a:active {
-    font-weight: bold;
-  }
-
   .main_container{
     display: flex;
     flex-flow: row; /*row*/
@@ -173,71 +137,44 @@ header #header_container {
     border: var(--border_basic);
     margin: 0 auto;
   }
-  aside {
-    position: relative;
-    left: 280px;
-    padding-right: 30px;
-  }
-  
-  aside .circle_now {
-    width: 40px;
-    height: 40px;
-    border-radius: var(--border_radius_1);
-    border: var(--border_basic);
-    background-color: var(--color_blue);
-    font-size: small;
-  }
 
-  aside .right_menu .circle_now .now {
-    padding: 5px;  
-  }
-  aside .circle_star{
-    width: 40px;
-    height: 40px;
-    border-radius: var(--border_radius_1);
+  /* 왼쪽 메뉴바 */
+  .left_menu {
+    /* position: fixed; */
     border: var(--border_basic);
-    background-color: var(--color_mint);
-  }
-  aside .circle_star img {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    /* 이미지 별표 안에 색 채우는법?? 이미지 칠한 노란색을 올려야함*/
+    border-radius: var(--border_radius_3);
+    width: 150px;
+    height: 350px;
+    text-align: center;
+    padding-top: 30px;
     
   }
-  aside .right_menu .circle_my_study .my {
-    padding: 5px;  
+
+  .left_menu div {
+    padding: 10px;
   }
 
-  aside .circle_my_study{
-    width: 40px;
-    height: 40px;
-    border-radius: var(--border_radius_1);
-    border: var(--border_basic);
-    background-color: var(--color_yellow);
-  }
-
-  aside .container .accessor {
-    border: 1px solid black; 
-    border-radius: var(--border_radius_4); 
-    width: 200px;
-    height: 300px;
+  .left_menu a {
+    color: var(--color_grey);
+    font-family: var(--font_family_sub);
+    
   }
   
-  .plus { 
-    color: var(--color_grey);
-    font-size: 1px;
+  .left_menu a:visited {
+    font-weight: bold;
+}
+/* 컨텐츠 */
+
+ /* 캘랜더 home_container */
+  .calendar_container {
+    border: var(--border_basic);
+    width: 650px;
+    height: 500px;
+    margin-right: 30px;
   }
 
-  .add_todo {
-    color: var(--color_grey);
-    font-size: 17px;
-  }
-
+  /* to do list */
   .to_do_list_container {
-    position: relative;
-    padding-top: 30px;
-    padding-left: 30px;
     left: 200px; 
     border: 1px solid black; 
     border-radius: var(--border_radius_3);
@@ -250,33 +187,101 @@ header #header_container {
     padding-bottom: 20px
   }
 
+  .plus { 
+    color: var(--color_grey);
+    font-size: 1px;
+  }
 
   .to_do_list_box1 input{
     padding: 30px;
   }
 
-article .free_board {
-  position: absolute;
-  padding: 30px;
-  left: 200px;
-  background-color: var(--color_yellow);
-  border: 1px solid black;
-  border-radius: var(--border_radius_3);
-  box-shadow: 2px 2px;
-  
-}
+  .add_todo {
+    color: var(--color_grey);
+    font-size: 17px;
+  }
 
-article .today_feed {
-  position: absolute;
-  top: 544px;
-  left: 785px;
-}
+  /* 자유게시판 */
+  .free_board {
+    left: 200px;
+    background-color: var(--color_yellow);
+    border: 1px solid black;
+    border-radius: var(--border_radius_3);
+    box-shadow: 2px 2px;
+    
+  }
+  .boardContainer .circle_new {
+    width: 40px;
+    height: 20px;
+    background-color: var(--color_mint);
+    border-radius: var(--border_radius_3);
+    border: var(--border_basic);
+  }
+    
 
-.boardContainer .circle_new {
-  width: 40px;
-  height: 20px;
-  background-color: var(--color_mint);
-  border-radius: var(--border_radius_3);
-  border: var(--border_basic);
-}
+  /* 오늘의 인증 */
+  .today_feed {
+    top: 544px;
+    left: 785px;
+  }
+
+  /* 오른쪽 부분*/
+
+
+  .right-container {
+    left: 280px;
+    padding-right: 30px;
+  }
   
+  .circle_now {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--border_radius_1);
+    border: var(--border_basic);
+    background-color: var(--color_blue);
+    font-size: small;
+  }
+
+  .now {
+    padding: 5px;  
+  }
+  .circle_star{
+    width: 40px;
+    height: 40px;
+    border-radius: var(--border_radius_1);
+    border: var(--border_basic);
+    background-color: var(--color_mint);
+  }
+  .circle_star img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .circle_my_study{
+    width: 40px;
+    height: 40px;
+    border-radius: var(--border_radius_1);
+    border: var(--border_basic);
+    background-color: var(--color_yellow);
+  }
+
+  .my {
+    padding: 5px;  
+  }
+
+  /* 접속 인원 */
+
+  .accessor {
+    border: 1px solid black; 
+    border-radius: var(--border_radius_4); 
+    width: 200px;
+    height: 300px;
+  }
+  
+
+
+  
+
+
+
+
