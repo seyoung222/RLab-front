@@ -164,8 +164,12 @@ header #header_container {
     font-weight: bold;
 }
 /* 컨텐츠 */
+.home_container {
+  float: left;
+  margin-left: 30px;
+}
 
- /* 캘랜더 home_container */
+ /* 캘랜더  */
   .calendar_container {
     border: var(--border_basic);
     width: 650px;
@@ -229,8 +233,7 @@ header #header_container {
 
 
   .right-container {
-    left: 280px;
-    padding-right: 30px;
+   float: left;
   }
   
   .circle_now {
