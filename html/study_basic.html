@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/study.css">
     <script src="../js/jquery.min.js"></script>
 </head>
-<body>
+<body class=".clearfix">
     <header>
 
     </header>
@@ -41,6 +41,7 @@
             <!-- 달력 -->
             <article>
                 <div class="calendar_container">
+                    달력
                     <div class="calendar_box1"></div>
                     <div class="calendar_box2"></div>
                     <div class="calendar_box3"></div>
@@ -51,7 +52,8 @@
                 <div class="to_do_list_container">
                     <!-- 제목 -->
                     <div class="to_do_list_title">
-
+                        <h3 style="display: inline-block;">TO-DO-LIST</h3>
+                        <a href="">+더보기</a>
                     </div>
                     <!-- 더보기 버튼 -->
                     <div>
@@ -73,53 +75,81 @@
             </article>
             <!-- 자유게시판 최신글 -->
             <article>
-                <!-- 제목 -->
-                <div>
-
-                </div>
-                <!-- 더보기 -->
-                <div>
-
-                </div>
-                <!-- 내용 1,2,3 -->
-                <div class="boardContainer">
-                    <div class="board_box1">
-
+                <div class="free_board">
+                    <!-- 제목 -->
+                    <div>
+                        <H4  style="display: inline-block;">자유게시판 최신글</H4>
+                        <a href="">+더보기</a> 
+                       
                     </div>
-                    <div class="board_box2">
-
+                    <!-- 더보기 -->
+                    <div>
+                    
                     </div>
-                    <div class="board_box3">
-
+                    <!-- 내용 1,2,3 -->
+                    <div class="boardContainer">
+                        <div class="board_box1">
+                            <a href="#">NEW 정처기 문제집 추천</a>
+                        </div>
+                        <div class="board_box2">
+                            <a href="#">NEW 정처기 문제집 추천</a>
+                        </div>
+                        <div class="board_box3">
+                            <a href="#">NEW 정처기 문제집 추천</a>
+                        </div>
                     </div>
                 </div>
             </article>
             <!-- 오늘의 인증 -->
             <article>
-                <!-- 제목표시 -->
-                <div></div>
-                <!-- 이름 -->
-                <div></div> 
-                <!-- 시간 -->
-                <div></div>
-                <!-- 사진 -->
-                <div></div>
-                <!-- 내용 -->
-                <div></div>
-                <!-- 좋아요 사진 -->
-                <div></div>
-                <!-- 좋아요 수 -->
-                <div></div>
+                <div class="today_feed">
+                    <!-- 제목표시 -->
+                    <div>
+                        <h5>오늘의 인증</h5>
+                    </div>
+                    <!-- 이름 -->
+                    <div></div> 
+                    <!-- 시간 -->
+                    <div></div>
+                    <!-- 사진 -->
+                    <div></div>
+                    <!-- 내용 -->
+                    <div></div>
+                    <!-- 좋아요 사진 -->
+                    <div></div>
+                    <!-- 좋아요 수 -->
+                    <div></div>
+                </div>
             </article>
         </section>
         <!-- 오른쪽 메뉴 -->
         <aside>
+            <div class="container">
             <!-- 메뉴바 3개 -->
-            <div></div>
-            <div></div>
-            <div></div>
-            <!-- 채팅방 -->
-            <div></div>
+                <div class="right_menu">
+                    <div class="circle_now">
+                        <a href="" class="now">NOW</a>
+                    </div>
+                    <div class="circle_star">
+                        <!-- 별표 이미지 안에 색상 넣는법 물어보기 -->
+                        <img class="star" src="../img/favorite_star.png"> 
+                    </div>
+                    <div class="circle_my_study">
+                        <a href="" class="my">MY</a>
+                    </div>
+                </div>
+                <br>
+                <!-- 접속상태 -->
+            
+                <div class="accessor">
+                    <div class="study_title">정보처리기사 스터디</div>
+                    <div class="">김돌탕</div>
+                    <div class="">김순연</div>
+                    <div class="">김세영</div>
+                    <div class="">김도현</div>
+                    <div class="">이정현</div>
+                 </div>
+            </div>   
         </aside>
     </main>
 
