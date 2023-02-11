@@ -70,12 +70,13 @@
     header {
         display: flex;
         justify-content: center;
+        margin-bottom: 25px;
     }
     header #header_container {
       display: flex;
       justify-content: space-between;
       width: var(--body_size);
-      padding: 10px 0;
+      padding: 10px 0 10px 10px;
       border-radius: var(--border_radius_3);
 
       box-sizing: border-box;
@@ -83,7 +84,7 @@
     }
     #header_container .header_left{
       display: flex;
-      gap: 30px;
+      gap: 80px;
     }
     #header_container .header_left .btn_home {
       display: flex;
@@ -164,8 +165,6 @@
         border: var(--border_basic);
         border-radius: var(--border_radius_4);
         box-shadow: var(--box-shadow);
-        /* width: 99.07%;
-        height: 97.5%;    */
         margin: 0 5px 5px 0;
     }
     .articles{
