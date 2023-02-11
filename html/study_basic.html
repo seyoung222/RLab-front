@@ -47,7 +47,7 @@
                     <div class="feed_board">
                         <a href="#">인증 게시판</a>
                     </div>
-                    <div class="free_board">
+                    <div class="free_board_title">
                         <a href="#">자유 게시판</a>
                     </div>
                 </div>
@@ -61,42 +61,54 @@
                         <div class="calendar_box2"></div>
                         <div class="calendar_box3"></div>
                     </div>
-                    <!-- TO-DO LIST -->
-                    <div class="to_do_list_container">
-                        <!-- 제목 -->
-                        <div class="to_do_list_title">
-                            <h3 style="display: inline-block;">TO-DO-LIST</h3>
-                            <a href="" class="plus">+더보기</a>
+                    <div class="middle_container clearfix">
+                        <!-- TO-DO LIST -->
+                        <div class="to_do_list_container">
+                            <!-- 제목 -->
+                            <div class="to_do_list_title">
+                                <h3>TO-DO-LIST</h3>
+                                <a href="#" class="plus1">+더보기</a>
+                            </div>
+        
+                            <!-- 내용 -->
+                            <div class="to_do_list_box1">
+                                <div style="text-decoration : line-through"><input type="checkbox" checked>정처기 1회독</div><br>
+                                <div><input type="checkbox"> 오답노트 정리</div><br>
+                                <div><input type="checkbox"> 1시에 회의<br></div><br>
+                                <div><input type="checkbox"> 기출 2회 풀기</div><br> 
+                            </div>
+                            <!-- 할 일 추가 -->
+                                <a href="#" class="add_todo">+ 할 일 추가</a>
+                                 <!-- 달성률 -->
+                                 <div>
+                                    <progress value="20" max="100"></progress>
+                                </div>
+                                <div>
+                                    <p class="success_percent">달성률 20%</p>
+                                </div>
+                            
+                            <div>
+                                
+                                
+                            </div>
+                            <div>
+        
+                            </div>
                         </div>
-    
-                        <!-- 내용 -->
-                        <div class="to_do_list_box1">
-                            <div><input type="checkbox">정처기 1회독</div><br>
-                            <div><input type="checkbox"> 오답노트 정리</div><br>
-                            <div><input type="checkbox"> 1시에 회의<br></div><br>
-                            <div><input type="checkbox"> 기출 2회 풀기</div><br> 
-                        </div>
-                        <!-- 할 일 추가 -->
-                            <a href="#" class="add_todo">+ 할 일 추가</a>
-                        <div>
-    
-                        </div>
-                        <!-- 달성률 -->
-                        <div>
-    
-                        </div>
+                            <div class="today_feed">
+                                <div class="feed_title">오늘의 인증</div>
+                                <i class="feed_img"></i><span class="blind">프로필사진</span><span class="member_name">닉네임</span><span class="feed_now1">현재 시간</span>
+                                <div class="contents_img">사진</div>
+                                <span class="feed_now2">날짜</span><span class="feed_contents">내용</span>
+                                <div class="feed_like">좋아요사진 10</div>
+                            </div>
                     </div>
                     <!-- 자유게시판 최신글 -->
                     <div class="free_board">
                         <!-- 제목 -->
-                        <div>
-                            <H4  style="display: inline-block;">자유게시판 최신글</H4>
-                            <a href="" class="plus">+더보기</a> 
-                        
-                        </div>
-                        <!-- 더보기 -->
-                        <div>
-                        
+                        <div class="board_title">
+                            <H4>자유게시판 최신글</H4>
+                            <a href="" class="plus2">+더보기</a>
                         </div>
                         <!-- 내용 1,2,3 -->
                         <div class="boardContainer">
@@ -104,31 +116,12 @@
                                 <a href="#"><div class="circle_new">NEW</div>정처기 문제집 추천</a>
                             </div>
                             <div class="board_box2">
-                                <a href="#"><div class="circle_new">NEW</div>NEW 정처기 문제집 추천</a>
+                                <a href="#"><div class="circle_new">NEW</div>정처기 문제집 추천</a>
                             </div>
                             <div class="board_box3">
-                                <a href="#"><div class="circle_new">NEW</div>NEW 정처기 문제집 추천</a>
+                                <a href="#"><div class="circle_new">NEW</div>정처기 문제집 추천</a>
                             </div>
                         </div>
-                    </div>
-                    <!-- 오늘의 인증 -->
-                    <div class="today_feed">
-                        <!-- 제목표시 -->
-                        <div>
-                            <h5>오늘의 인증</h5>
-                        </div>
-                        <!-- 이름 -->
-                        <div></div> 
-                        <!-- 시간 -->
-                        <div></div>
-                        <!-- 사진 -->
-                        <div></div>
-                        <!-- 내용 -->
-                        <div></div>
-                        <!-- 좋아요 사진 -->
-                        <div></div>
-                        <!-- 좋아요 수 -->
-                        <div></div>
                     </div>
                 </div>
             </section>
@@ -141,8 +134,7 @@
                             <a href="" class="now">NOW</a>
                         </div>
                         <div class="circle_star">
-                            <!-- 별표 이미지 안에 색상 넣는법 물어보기 -->
-                            <img class="star" src="../img/favorite_star.png"> 
+                            <img class="star" src="../img/star.png"> 
                         </div>
                         <div class="circle_my_study">
                             <a href="" class="my">MY</a>
@@ -153,11 +145,18 @@
                 
                     <div class="accessor">
                         <div class="study_title">정보처리기사 스터디</div>
-                        <div class="">김돌탕</div>
-                        <div class="">김순연</div>
-                        <div class="">김세영</div>
-                        <div class="">김도현</div>
-                        <div class="">이정현</div>
+                        <div class="circle_accessor">
+                            <div class="accessor_on"></div>
+                        </div>
+                        <div class="study_name">김돌탕</div>
+                        <div class="circle_accessor"></div>
+                        <div class="study_name">김순연</div>
+                        <div class="circle_accessor"></div>
+                        <div class="study_name">김세영</div>
+                        <div class="circle_accessor"></div>
+                        <div class="study_name">김도현</div>
+                        <div class="circle_accessor"></div>
+                        <div class="study_name">이정현</div>
                     </div>
                 </div>   
             </aside>
