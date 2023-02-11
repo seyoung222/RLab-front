@@ -7,6 +7,9 @@
     <title>스터디</title>
     <link rel="stylesheet" href="../css/study.css">
     <script src="../js/jquery.min.js"></script>
+    <script src="../js/study.js"></script>
+    <link href='../css/calendar_main.css' rel='stylesheet' />
+    <script src='../js/calendar_main.js'></script>
 </head>
 <body>
     <header>
@@ -56,10 +59,12 @@
                 <div class="home_container">
                     <!-- 달력 -->
                     <div class="calendar_container">
-                        달력
                         <div class="calendar_box1"></div>
                         <div class="calendar_box2"></div>
                         <div class="calendar_box3"></div>
+                        <div class="calendar_contents">
+                            <div id='calendar'></div>
+                        </div>
                     </div>
                     <div class="middle_container clearfix">
                         <!-- TO-DO LIST -->
@@ -153,10 +158,14 @@
                             <a href="" class="now">NOW</a>
                         </div>
                         <div class="circle_star">
-                            <img class="star" src="../img/star.png"> 
+                            <img class="star" src="../img/favorite_star_on.png"> 
                         </div>
-                        <div class="circle_my_study">
-                            <a href="" class="my">MY</a>
+                        <div class="my_study_container">
+                            <div class="circle_my_study">
+                                <a href="#" class="my">나의 스터디</a>
+                                <a href="#" class="my_up">MY</a>
+                                <a href="#" class="my_list"></a>
+                            </div>
                         </div>
                     </div>
                     <br>
