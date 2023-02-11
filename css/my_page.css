@@ -12,7 +12,7 @@
       --body_size: 1200px;
 
       /* border */
-      --border_basic: 3px solid #020a17;
+      --border_basic: 2px solid #020a17;
       --border_light: 1px solid #bfbfbf;
 
       /* border-radius */
@@ -32,7 +32,11 @@
       --font_size_cont_l: 14px;
       --font_size_cont_m: 12px;
       --font_size_cont_s: 8px;
+
+      /* box-shadow */
+      --box-shadow: 5px 5px 0px rgb(7, 7, 7);
     }
+
 
     /* 공통 */
     * {
@@ -42,6 +46,9 @@
       text-decoration: none;
     }
     body {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
       background-color: var(--color_beige);
     }
     .blind {
@@ -120,12 +127,102 @@
     }
 
     /* main */
+    main{
+        width: var(--body_size);
+    }
+    main #main_container{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
     /* aside(left_menu) */
-    #main_container .left_menu_container{
-      width: 169px;
-      font-size: 16px;
-      display: flex;
-      flex-flow: column;
+    #main_container aside{
+      width: 130px;
+      height: 400px;
+      padding: 35px 0 25px 23px;
       align-items: center;
-      border: var(--border_light);
+      border: 2px solid #020a17;
+      border-radius: var(--border_radius_2);
+      box-sizing: border-box;
+    }
+    aside .left_menu_container{
+        display: flex;
+        flex-flow: column;
+        gap: 16px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    /* articles */
+    article{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border: 1px solid gray;
+    }
+    .article_box{
+        border: var(--border_basic);
+        border-radius: var(--border_radius_4);
+        box-shadow: var(--box-shadow);
+        /* width: 99.07%;
+        height: 97.5%;    */
+        margin: 0 5px 5px 0;
+    }
+    .articles{
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        width: 1055px;
+        border: 2px solid red;
+    }
+
+    /*  article_top(이용시간, 캐릭터 창) */
+    .articles .article_top{
+        height: 350px;
+    }
+    .article_top .used_hours_container{
+        width: 67.5%;
+        background-color: var(--color_blue);
+    }
+    .article_top .character_container{
+        width: 30%;
+        border: var(--border_basic);
+        border-radius: var(--border_radius_4);    
+        background-color: var(--color_yellow);
+    }
+
+    /* article_second(나의 예약) */
+    .articles .article_second{
+        height: 130px;
+    }
+    .article_second .my_reservation_container{
+        width: 100%;
+        background-color: var(--color_mint);
+    }
+
+    /* article_third */
+    .articles .article_third{
+        height: 330px;
+    }
+    /* d_day_container */
+    .article_third .d_day_container{
+        width: 47.5%;
+        height: 80%;
+        background-color: var(--color_beige);
+    }
+    /* my_study_container */
+    .article_third .my_study_container{
+        width: 50%;
+        background-color: var(--color_beige);
+    }
+
+    /* article_bottom */
+    .articles .article_bottom{
+        display: flex;
+        justify-content: flex-end;
+        height: 330px;
+    }
+    /* my_scrab_container */
+    .article_bottom .my_scrab_container{
+        width: 50%;
     }

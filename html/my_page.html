@@ -29,6 +29,7 @@
         </div>
       </div>
     </header>
+
     <!-- main -->
     <main>
       <div id="main_container">
@@ -43,37 +44,50 @@
           </nav>
         </aside>
 
-        <!-- article_top(이용시간, 캐릭터 창) -->
-        <article class="article article_top">
-          <!-- used_hours_container -->
-          <div class="used_hours_container"></div>
-          <!-- character_container -->
-          <div class="character_container"></div>
-        </article>
+        <div class="articles">
+          <!-- article_top(이용시간, 캐릭터 창) -->
+          <article class="article_top">
+            <!-- used_hours_container -->
+            <div class="article_box used_hours_container"></div>
+            <!-- character_container -->
+            <div class="article_box character_container"></div>
+          </article>
 
-        <!-- article_second(나의 예약) -->
-        <article class="article article_second">
-          <!-- my_reservation_container -->
-          <div class="my_reservation_container"></div>
-        </article>
+          <!-- article_second(나의 예약) -->
+          <article class="article_second">
+            <!-- my_reservation_container -->
+            <div class="article_box my_reservation_container"></div>
+          </article>
 
-        <!-- article_third_left(D-DAY) -->
-        <article class="article article_third_left">
-          <!-- d_day_container -->
-          <div class="d_day_container"></div>
-        </article>
+          <!-- article_third(d-day,나의 스터디) -->
+          <article class="article_third">
+            <!-- d_day_container -->
+            <div class="article_box d_day_container"></div>
+            <!-- my_study_container -->
+            <div class="article_box my_study_container"></div>
+          </article>
 
-        <!-- article_third_right(나의 스터디) -->
-        <article class="article article_third_right">
-          <!-- my_study_container -->
-          <div class="my_study_container"></div>
-        </article>
-
-        <!-- article_bottom(나의 스크랩) -->
-        <article class="article article_bottom">
-          <!-- my_study_container -->
-          <div class="my_scrab_container"></div>
-        </article>
+          <!-- article_bottom(나의 스크랩) -->
+          <article class="article_bottom">
+            <!-- my_scrab_container -->
+            <div class="article_box my_scrab_container"></div>
+          </article>
+        </div>
+      </div>
+      <div
+        style="
+          display: flex;
+          height: 400px;
+          overflow: hidden;
+          position: absolute;
+          right: 0;
+        "
+      >
+        <img
+          src="../img/my page마진 복사본.png"
+          alt=""
+          style="width: 400px"
+        />
       </div>
     </main>
   </body>
