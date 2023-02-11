@@ -5,140 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Header</title>
+    <link rel="stylesheet" href="../css/my_page.css" />
   </head>
-  <style>
-    :root {
-      /* color */
-      --color_blue: #66a0e2;
-      --color_yellow: #f0ea58;
-      --color_mint: #01f3a3;
-      --color_black: #020a17;
-      --color_beige: #fcf4ed;
-      --color_light-grey: #bfbfbf;
-      --color_grey: #626262;
-
-      /* size */
-      --body_size: 1200px;
-
-      /* border */
-      --border_basic: 3px solid #020a17;
-      --border_light: 1px solid #bfbfbf;
-
-      /* border-radius */
-      --border_radius_1: 50%;
-      --border_radius_2: 30px;
-      --border_radius_3: 20px;
-      --border_radius_4: 10px;
-
-      /* font */
-      --font_family_main: -apple-system, BlinkMacSystemFont, "Malgun Gothic",
-        "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
-      --font_family_sub: -apple-system, BlinkMacSystemFont, "Malgun Gothic",
-        "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
-      --font_size_title_l: 35px;
-      --font_size_title_m: 18px;
-      --font_size_title_s: 15px;
-      --font_size_cont_l: 14px;
-      --font_size_cont_m: 12px;
-      --font_size_cont_s: 8px;
-    }
-
-    /* 공통 */
-    * {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      text-decoration: none;
-    }
-    body {
-      background-color: var(--color_beige);
-    }
-    .blind {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-    }
-    .display_none{
-			clear: both; content: ''; display: block;
-		}
-		.clearfix::after{
-			clear: both; display: block; content: '';
-		}
-    a{color: var(--color_black);}
-
-    /* header */
-    header {
-      display: flex;
-      justify-content: center;
-    }
-    header #header_container {
-      display: flex;
-      justify-content: space-between;
-      width: var(--body_size);
-      padding: 10px 0;
-      border-radius: var(--border_radius_3);
-
-      box-sizing: border-box;
-      font-weight: 800;
-    }
-    #header_container .header_left{
-      display: flex;
-      gap: 30px;
-    }
-    #header_container .header_left .btn_home {
-      display: flex;
-      width: 66px;
-      height: 50px;
-      font-size: 14px;
-      font-weight: 800;
-      line-height: 80px;
-      overflow: hidden;
-    }
-    .btn_home .icon_home {
-      width: 40px;
-      height: 51px;
-      background-size: 60px 60px;
-      background-position: -10px -5px;
-      background-image: url(../img/rlab_logo.png);
-      background-repeat: no-repeat;
-    }
-    .top_menu_container{
-      width: 230px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 15px;
-    }
-    #header_container .header_right{
-      display: flex;
-      align-items: center;
-    }
-    .mypage_container .mypage .icon_mypage{
-      display: flex;
-      width: 40px;
-      height: 40px;
-      border: 2px solid var(--color_mint);
-      border-radius: var(--border_radius_1);
-      background-size: 60px 40px;
-      background-position: -10px 0;
-      background-image: url(../img/profile_img.png);
-      background-repeat: no-repeat;
-    }
-
-    /* main */
-
-    /* aside(left_menu) */
-    #main_container .left_menu_container{
-      width: 169px;
-      font-size: 16px;
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      border: var(--border_light);
-    }
-  </style>
   <body>
     <!-- header -->
     <header>
@@ -153,64 +21,59 @@
         </div>
         <div class="header_right">
           <div class="mypage_container">
-            <a href="#" class="mypage"><i class="icon_mypage"></i><span class="blind">마이페이지</span></a>
+            <a href="#" class="mypage"
+              ><i class="icon_mypage"></i
+              ><span class="blind">마이페이지</span></a
+            >
           </div>
         </div>
       </div>
     </header>
-
     <!-- main -->
     <main>
       <div id="main_container">
         <!-- aside(left_menu) -->
         <aside>
           <nav class="left_menu_container">
-            <a href="#"  class="list_item">마이페이지 홈</a>
-            <a href="#"  class="list_item">개인정보 수정</a>
-            <a href="#"  class="list_item">나의 예약</a>
-            <a href="#"  class="list_item">나의 스터디</a>
-            <a href="#"  class="list_item">나의 스크랩</a>
+            <a href="#" class="list_item">마이페이지 홈</a>
+            <a href="#" class="list_item">개인정보 수정</a>
+            <a href="#" class="list_item">나의 예약</a>
+            <a href="#" class="list_item">나의 스터디</a>
+            <a href="#" class="list_item">나의 스크랩</a>
           </nav>
         </aside>
 
         <!-- article_top(이용시간, 캐릭터 창) -->
         <article class="article article_top">
           <!-- used_hours_container -->
-          <div class="used_hours_container">
-          </div>
+          <div class="used_hours_container"></div>
           <!-- character_container -->
-          <div class="character_container">
-          </div>
+          <div class="character_container"></div>
         </article>
 
         <!-- article_second(나의 예약) -->
         <article class="article article_second">
           <!-- my_reservation_container -->
-          <div class="my_reservation_container">
-          </div>
+          <div class="my_reservation_container"></div>
         </article>
 
         <!-- article_third_left(D-DAY) -->
         <article class="article article_third_left">
           <!-- d_day_container -->
-          <div class="d_day_container">
-          </div>
+          <div class="d_day_container"></div>
         </article>
 
-         <!-- article_third_right(나의 스터디) -->
-         <article class="article article_third_right">
+        <!-- article_third_right(나의 스터디) -->
+        <article class="article article_third_right">
           <!-- my_study_container -->
-          <div class="my_study_container">
-          </div>
+          <div class="my_study_container"></div>
         </article>
 
         <!-- article_bottom(나의 스크랩) -->
         <article class="article article_bottom">
           <!-- my_study_container -->
-          <div class="my_scrab_container">
-          </div>
+          <div class="my_scrab_container"></div>
         </article>
-
       </div>
     </main>
   </body>
