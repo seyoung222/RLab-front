@@ -159,30 +159,131 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        border: 1px solid gray;
+        /* border: 1px solid gray; */
     }
     .article_box{
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
         border: var(--border_basic);
         border-radius: var(--border_radius_4);
         box-shadow: var(--box-shadow);
         margin: 0 5px 5px 0;
+        padding: 35px;
+        gap: 18px;
+        box-sizing: border-box;
     }
     .articles{
         display: flex;
         flex-flow: column;
         gap: 10px;
         width: 1055px;
-        border: 2px solid red;
+        /* border: 2px solid red; */
     }
 
     /*  article_top(이용시간, 캐릭터 창) */
     .articles .article_top{
-        height: 350px;
+        height: 380px;
     }
-    .article_top .used_hours_container{
+    .article_top #used_hours_container{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
         width: 67.5%;
         background-color: var(--color_blue);
     }
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 7px;
+    }
+    #used_hours_container .gauge{
+        width: 600px;
+        height: 30px;
+        border: var(--border_basic);
+        border-radius: var(--border_radius_2);
+        background-color: var(--color_beige);
+        margin-top: 3px;
+        overflow: hidden;
+    }
+    .gauge_colored{
+        height: 30px;
+    }
+    .gauge_used_hours .gauge_colored{
+        width: 150px;
+        background-color: var(--color_mint);
+    }
+    .gauge_pet_exp .gauge_colored{
+        width: 200px;
+        background-color: var(--color_yellow);
+    }
+    #used_hours_container .property_title{
+        font-size: 27px;
+    }
+    #used_hours_container #point_container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px 0 30px;
+        box-sizing: border-box;
+    }
+    #point_container .my_point{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+        font-size: 60px;
+        margin-bottom: -3px;
+    }
+    #point_container .my_point .icon_point{
+        width: 80px;
+        height: 80px;
+        background-size: 80px 80px;
+        background-image: url(../img/point.png);
+        background-repeat: no-repeat;
+        opacity: 80%;
+    }
+    .my_point .point_texts .title_point{
+        position: absolute;
+        top: 0px;
+        font-size: 28px;
+        margin-left: 5px;
+        color: var(--color_grey);
+    }
+    .my_point .point_texts .num_point{
+        margin-bottom: -14px;
+    }
+    #point_container .point_btns_container{
+        height: 80px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    .point_btns_container .btn_point{
+        border: var(--border_basic);
+        border-radius: var(--border_radius_2);
+        width: 140px;
+        height: 38px;
+        font-size: 14px;
+        background-color: var(--color_beige);
+    }
+    .point_btns_container .btn_info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .point_btns_container .btn_info .icon_info{
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
+        background-image: url(../img/info.png);
+        background-repeat: no-repeat;
+        margin-right: 5px;
+    }
+
     .article_top .character_container{
         width: 30%;
         border: var(--border_basic);
@@ -201,7 +302,7 @@
 
     /* article_third */
     .articles .article_third{
-        height: 330px;
+        height: 320px;
     }
     /* d_day_container */
     .article_third .d_day_container{
@@ -219,7 +320,7 @@
     .articles .article_bottom{
         display: flex;
         justify-content: flex-end;
-        height: 330px;
+        height: 320px;
     }
     /* my_scrab_container */
     .article_bottom .my_scrab_container{
