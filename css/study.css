@@ -225,6 +225,7 @@ header #header_container {
 
   /* 자유게시판 */
   .free_board {
+    float: left;
     margin-top: 20px;
     width: 300px;
     height: 150px;
@@ -268,7 +269,7 @@ header #header_container {
   /* 오늘의 인증 */
   .today_feed {
     overflow: scroll; width: 70; height: 300px;
-    float: left;
+    float: right;
     border-radius: var(--border_radius_4);
     border: var(--border_basic);
     height: 500px;
@@ -335,7 +336,6 @@ header #header_container {
     border-radius: var(--border_radius_4); 
     width: 200px;
     height: 300px;
-    text-align: center;
   }
   .circle_accessor {
     width: 30px;
@@ -343,7 +343,8 @@ header #header_container {
     background-color: white;
     border: 1px solid black;
     border-radius: var(--border_radius_1);
-    position: relative;   
+    position: relative;
+    display: inline-block;   
   }
   .accessor_on {
     width: 8px;
@@ -356,7 +357,8 @@ header #header_container {
     border-radius: var(--border_radius_1);   
   }
   .study_name {
-   
+    display: inline-block;
+    vertical-align: 10px;   
   }
   
 
