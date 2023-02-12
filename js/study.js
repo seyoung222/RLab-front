@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
+    
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
+      
+      
     
      locale: 'ko',
 
@@ -14,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
       navLinks: true, // can click day/week names to navigate views
       editable: true,
       dayMaxEvents: true, // allow "more" link when too many events
+     
       events: [
         {
           title: '정처기 필기',
@@ -29,8 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
         title: '정처기 실기',
         start: '2023-01-29T12:00:00'
         },
+        
     ]
+    
     });
-
+    
     calendar.render();
   });
+

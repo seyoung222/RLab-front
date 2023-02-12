@@ -161,27 +161,36 @@
                             <img class="star" src="../img/favorite_star_on.png"> 
                         </div>
                         <div class="my_study_container">
-                            <div class="circle_my_study">
-                                <a href="#" class="my">MY</a>
-                                <a href="#" class="my_list_title">나의 스터디
-                                    <div class="my_list">
-                                        <a href="#">정보처리기사 스터디<span class="mini_star"></span></a>
-                                        <hr>
-                                        <a href="#">정보처리기사 스터디<span class="mini_star"></span></a>
-                                        <hr>
-                                        <a href="#">정보처리기사 스터디<span class="mini_star"></span></a>
-                                        <hr>
-                                        <a href="#">정보처리기사 스터디<span class="mini_star"></span></a>
+                            <div class="box1">
+                                <p>MY</p>
+                              </div>
+                              <div class="box2">
+                                <a href="#" class="my_list_title">나의 스터디<button id="dropdown_btn">▲</button>
+                                    <div id="dropdown_list">
+                                      <p>정보처리기사 스터디<img class="star" src="../img/favorite_star_on.png"> </p>
+                                      <hr>
+                                      <p>정보처리기사 스터디<img class="star" src="../img/favorite_star.png"> </p>
+                                      <hr>
+                                      <p>정보처리기사 스터디<img class="star" src="../img/favorite_star.png"> </p>
+                                      <hr>
+                                      <p>정보처리기사 스터디<img class="star" src="../img/favorite_star.png"> </p>
                                     </div>
                                 </a>
-                               
+                              </div>
+                    
                             </div>
+
+
+
+
+                               
+                            
                         </div>
                     </div>
                     <br>
                     <!-- 접속상태 -->
                 
-                    <div class="accessor">
+                    <!-- <div class="accessor">
                         <div class="study_title">정보처리기사 스터디</div>
                         <div class="accessor_container">
                             <div class="circle_accessor">
@@ -205,7 +214,7 @@
                             <div class="circle_accessor"></div>
                             <div class="study_name">이정현</div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>   
             </aside>
         </div>
@@ -215,5 +224,25 @@
     <footer>
 
     </footer>
+    <script>
+   
+ 
+      
+
+
+
+        let dropdownBtn = document.getElementById("dropdown-btn");
+        let dropdownList = document.getElementById("dropdown-list");
+
+        dropdownBtn.addEventListener("click", function() {
+        if (dropdownList.style.display === "none") {
+            dropdownBtn.innerHTML = "▲";
+            dropdownList.style.display = "block";
+        } else {
+            dropdownBtn.innerHTML = "▼";
+            dropdownList.style.display = "none";
+        }
+        });
+    </script>
 </body>
 </html>
