@@ -4197,17 +4197,17 @@ var FullCalendar = (function (exports) {
             nextYear: 'next year',
             year: 'year',
             today: 'today',
-            month: 'month',
+            month: '달력',
             week: 'week',
             day: 'day',
-            list: 'list',
+            list: '일정 리스트',
         },
         weekText: 'W',
         weekTextLong: 'Week',
         closeHint: 'Close',
         timeHint: 'Time',
         eventHint: 'Event',
-        allDayText: 'all-day',
+        allDayText: '하루 종일',
         moreLinkText: 'more',
         noEventsText: 'No events to display',
     };
@@ -12270,8 +12270,7 @@ var FullCalendar = (function (exports) {
     function renderInnerContent$2(innerProps) {
         return (createElement(Fragment, null,
             createElement("div", { className: "fc-daygrid-event-dot", style: { borderColor: innerProps.borderColor || innerProps.backgroundColor } }),
-            innerProps.timeText && (createElement("div", { className: "fc-event-time" }, innerProps.timeText)),
-            createElement("div", { className: "fc-event-title" }, innerProps.event.title || createElement(Fragment, null, "\u00A0"))));
+            innerProps.timeText && createElement("div", { className: "fc-event-title" }, innerProps.event.title || createElement(Fragment, null, "\u00A0"))));
     }
 
     var TableCellMoreLink = /** @class */ (function (_super) {

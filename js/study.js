@@ -3,18 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
     
-     titleFormat: function (date) {
-     year = date.date.year;
-     month = date.date.month + 1;
-     day = date.date.day
-
-     return year + "년 " + month + "월" ;
-     },
+     locale: 'ko',
 
       headerToolbar: {
         left: 'dayGridMonth,listMonth',
-        center: 'title',
-        right: 'prev,next,'
+        center: '',
+        right: 'prev,title,next'
       },
       initialDate: '2023-01-12',
       navLinks: true, // can click day/week names to navigate views
@@ -22,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
       dayMaxEvents: true, // allow "more" link when too many events
       events: [
         {
-        title: '정처기 필기',
-        start: '2023-01-03'
+          title: '정처기 필기',
+          start: '2023-01-03T12:00:00'
         },
 
         {
@@ -33,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
         title: '정처기 실기',
-        start: '2023-01-29'
+        start: '2023-01-29T12:00:00'
         },
     ]
     });

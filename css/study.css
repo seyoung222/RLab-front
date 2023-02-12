@@ -390,45 +390,47 @@ header #header_container {
     background-color: var(--color_yellow);
   }
 
-  .my {
-    float: right;
-    line-height: 2;
+  .my_study_container{
+    position: relative;
   }
-
-  .my_up {
-    text-align: center;
-    float: left;
-    width: 40px;
-    height: 40px;
-    border-radius: var(--border_radius_2);
-    border: var(--border_basic);
-    background-color: var(--color_yellow);
-  }
-
-  .my_list {
-    text-align: center;
-    float: left;
-    width: 40px;
-    height: 40px;
-    border-radius: var(--border_radius_4);
-    border: var(--border_basic);
-    background-color: var(--color_beige)
-  }
-
 
   .my_study_container div{
     display: inline-block;
   }
 
-  .my_study_list {
+  .my {
+    display: inline-block;
+    z-index: 3;
+    position: absolute;
+    right: 155px;
+    top: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--border_radius_2);
+    border: var(--border_basic);
     background-color: var(--color_yellow);
-    width: 100px;
-    height: 37px;
-    border: 1px solid black;
-    border-radius: var(--border_radius_3);
-    left: -3px;
     vertical-align: middle;
+    
   }
+  .my_list_title {
+    z-index: 2;
+    position: absolute;
+  }
+
+  .my_list {
+    z-index: 1;
+    position: absolute;
+    width: 172px;
+    border: 1px solid black;
+    background-color: var(--color_yellow);
+    border-radius: var(--border_radius_3);
+  }
+
+  .mini_star{
+    background-image: url(../img/favorite_star_on.png);
+    
+  }
+  
 
   /* 접속 인원 */
 
