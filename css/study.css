@@ -404,7 +404,7 @@ header #header_container {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
   }
   
   .box2 {
@@ -416,6 +416,10 @@ header #header_container {
     position: absolute;
     top: 0px;
     left: 0px;
+    z-index: 1;
+  }
+  .box3 {
+    position: absolute;
   }
 
   .my {
@@ -433,17 +437,7 @@ header #header_container {
     
   }
   .my_list_title {
-    z-index: 2;
     position: absolute;
-  }
-
-  .my_list {
-    z-index: 1;
-    position: absolute;
-    width: 172px;
-    border: 1px solid black;
-    background-color: var(--color_yellow);
-    border-radius: var(--border_radius_3);
   }
 
   #dropdown_btn {
@@ -459,8 +453,6 @@ header #header_container {
     font-size: 12px;
     border: 1px solid black;
     border-radius: var(--border_radius_3);
-    z-index: 1;
-  
   }
   #dropdown_list img {
     height: 20px;
