@@ -194,9 +194,10 @@ header #header_container {
     border-radius: var(--border_radius_4);
     display: flex;
     flex-direction: column;
-    width: 20%; /* 각 탭의 너비를 20%로 설정 */
+    width: 16%; /* 각 탭의 너비를 20%로 설정 */
     box-sizing: border-box;
     text-align: center; /* 탭의 텍스트를 가운데 정렬 */
+    font-size: 13px;
     
   }
 
@@ -400,6 +401,7 @@ header #header_container {
 
   .study_link_container {
     padding-top: 43px;
+    
   }
   
   .circle_now {
@@ -412,6 +414,9 @@ header #header_container {
     text-align: center;
 
     margin-bottom: 10px;
+  }
+  .now {
+    margin-top: 10px;
   }
 
   .circle_star{
@@ -440,60 +445,66 @@ header #header_container {
     position: relative;
     
   }
-
-  .my {
+  
+  .circle_my {
     width: 40px;
     height: 40px;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 25px;
     background-color: var(--color_yellow);
     top: 0;
     left: 3px;
     z-index: 3;
     text-align: center;
+    position: absolute;
+  }
+  .my {
+    margin-top: 10px;
+    
   }
   
   .my_list_title {
+    position: absolute;
     width: 155px;
     height: 40px;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 25px;
     background-color: var(--color_yellow);
     top: 0px;
-    left: 15px;
     z-index: 2;
-    text-align: center
-  }
-
-
-  .box3 {
+    text-align: center;
     position: relative;
-
-    z-index: 1;
+    display: block;
+    margin-left: 20px;
   }
 
-  /* .my { 
-    position: absolute;
-    left: 10px;
-    top: 3px;
-  } */
-  /* my */
+  .my_study {
+    margin-top: 10px;
+    padding-left: 30px;
+  }
 
   #dropdown_btn {
     background-color: transparent;
     border: none;
+    padding-left: 15px;
   }
 
-  p {
-    display: flex;
-    align-items: center;
-  }
+ 
   #dropdown_list {
     font-size: 12px;
     top: 40px;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: var(--border_radius_4);
     width: 145px;
+    margin-left: 22px;
+    margin-bottom: 14px;
+    
+  }
+
+  #dropdown_list p {
+    padding-left: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
   #dropdown_list img {
     height: 20px;
@@ -511,9 +522,12 @@ header #header_container {
     width: 170px;
     height: 300px;
     top: 320px;
+    
   }
   .study_title{
     padding-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 20px;
   }
   .circle_accessor {
     width: 30px;
@@ -522,13 +536,15 @@ header #header_container {
     border: 1px solid black;
     border-radius: var(--border_radius_1);
     position: relative;
-    display: inline-block;   
+    display: inline-block;  
+    margin-left: 20px; 
   }
   .accessor_on {
-    width: 8px;
-    height: 8px;
+    position: absolute;
     right: -1px;
     bottom: 4px;
+    width: 8px;
+    height: 8px;
     background-color: var(--color_mint);
     border: 1px solid black;
     border-radius: var(--border_radius_1);   
