@@ -182,7 +182,7 @@
         /* border: 2px solid red; */
     }
 
-    /*  article_top(이용시간, 캐릭터 창) */
+    /*  article_top(이용시간, 펫 창) */
     .articles .article_top{
         height: 380px;
     }
@@ -283,13 +283,95 @@
         background-repeat: no-repeat;
         margin-right: 5px;
     }
-
-    .article_top .character_container{
+    /* 펫 창 */
+    .article_top .pet_container{
         width: 30%;
         border: var(--border_basic);
         border-radius: var(--border_radius_4);    
         background-color: var(--color_yellow);
+        padding: 20px;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
     }
+    .pet_container .pet_window{
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 220px;
+        border: var(--border_basic);
+        border-radius: var(--border_radius_4);
+        background-color: var(--color_beige);
+    }
+    .pet_window .pet_talk{
+        width: 50px;
+    }
+    .pet_window .pet{
+        width: 100px;
+    }
+    .pet_container .pet_description{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        gap: 13px;
+        width: 100%;
+    }
+    .pet_description .pet_info_container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .pet_info_container .pet_level{
+        width: 60px;
+        height: 30px;
+        background-color: var(--color_blue);
+        border-radius: var(--border_radius_2);
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        line-height: 28px;
+        padding: 2px;
+    }
+    .this_pet .pet_name{
+        font-size: 25px;
+    }
+    .this_pet .pet_reward{
+        display: flex;
+        gap: 3px;
+        font-weight: 600;
+    }
+    .this_pet .pet_reward .icon_reward{
+        display: flex;
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-image: url(../img/shine.png);
+    }
+    .pet_description .pet_store_container{
+        width: 97%;
+        height: 50px;
+        background-color: var(--color_mint);
+        border: var(--border_basic);
+        border-radius: var(--border_radius_4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .pet_store_container .icon_store{
+        display: flex;
+        margin-right: 8px;
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-image: url(../img/pet.png);
+        opacity: 60%;
+    }
+
 
     /* article_second(나의 예약) */
     .articles .article_second{
