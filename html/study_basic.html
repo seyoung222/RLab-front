@@ -57,12 +57,31 @@
             </nav>
             <section>
                 <div class="home_container">
+                    <div class="tab_container">
+                        <div class="tabs">
+                            <div class="tab">
+                              <input type="radio" id="tab1" name="tab-control" checked>
+                              <label for="tab1">달력</label>
+                            </div>
+                            <div class="tab">
+                              <input type="radio" id="tab2" name="tab-control">
+                              <label for="tab2">일정 리스트</label>
+                            </div>
+                            <div class="tab">
+                              <input type="radio" id="tab3" name="tab-control">
+                              <label for="tab3">스탬프</label>
+                            </div>
+                          </div>
+                    </div>
                     <!-- 달력 -->
                     <div class="calendar_container">
-                        <div class="calendar_box1"></div>
-                        <div class="calendar_box2"></div>
-                        <div class="calendar_box3"></div>
-                        <div class="calendar_contents">
+                        <div class="calendar_box1">
+                            <div id='calendar'></div>
+                        </div>
+                        <div class="calendar_box2 display_none">
+                            <div id='calendar'></div>
+                        </div>
+                        <div class="calendar_box3 display_none">
                             <div id='calendar'></div>
                         </div>
                     </div>
@@ -83,22 +102,14 @@
                                 <div><input type="checkbox"> 기출 2회 풀기</div><br> 
                             </div>
                             <!-- 할 일 추가 -->
-                                <a href="#" class="add_todo">+ 할 일 추가</a>
-                                 <!-- 달성률 -->
-                                 <div>
+                            <a href="#" class="add_todo">+ 할 일 추가</a>
+                                <!-- 달성률 -->
+                                <div>
                                     <progress value="20" max="100"></progress>
                                 </div>
                                 <div>
                                     <p class="success_percent">달성률 20%</p>
                                 </div>
-                            
-                            <div>
-                                
-                                
-                            </div>
-                            <div>
-        
-                            </div>
                         </div>
                             <div class="today_feed">
                                 <div class="feed_title">오늘의 인증</div>
@@ -152,24 +163,19 @@
             <!-- 오른쪽 메뉴 -->
             <aside>
                 <div class="right-container">
-                <!-- 메뉴바 3개 -->
-                    <div class="right_menu">
+                    <!-- 메뉴바 3개 -->
+                    <div class="study_link_container">
                         <div class="circle_now">
-                            <a href="" class="now">NOW</a>
+                           NOW
                         </div>
                         <div class="circle_star">
                             <img class="star" src="../img/favorite_star_on.png"> 
                         </div>
                         <div class="my_study_container">
-                            <div class="box1">
-                                <p class="my">MY</p>
-                              </div>
-                              <div class="box2">
-                                <div class="my_list_title">
-                                    <a href="#">나의 스터디<button id="dropdown_btn">▼</button</a>
-                                </div>
+                            <div class="my">My</div>
+                            <div class="my_list_title">
+                                <a href="#">나의 스터디<button id="dropdown_btn">▼</button</a>
                             </div>
-                              <div class="box3">
                                 <div id="dropdown_list">
                                     <p>정보처리기사 스터디<img class="star" src="../img/favorite_star_on.png"> </p>
                                     <hr>
@@ -178,21 +184,11 @@
                                     <p>정보처리기사 스터디<img class="star" src="../img/favorite_star.png"> </p>
                                     <hr>
                                     <p>정보처리기사 스터디<img class="star" src="../img/favorite_star.png"> </p>
-                                  </div>
-                              </div>
-                    
-                            </div>
-
-
-
-
-                               
-                            
+                                </div>
                         </div>
                     </div>
-                    <br>
+                </div>
                     <!-- 접속상태 -->
-                
                     <div class="accessor">
                         <div class="study_title">정보처리기사 스터디</div>
                         <div class="accessor_container">
@@ -227,14 +223,6 @@
     <footer>
 
     </footer>
-    <script>
-   
- 
-      
 
-
-
-     
-    </script>
 </body>
 </html>

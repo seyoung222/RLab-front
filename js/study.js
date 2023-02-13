@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       
     
-     locale: 'ko',
+    locale: 'ko',
 
       headerToolbar: {
         left: 'dayGridMonth,listMonth',
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
       navLinks: true, // can click day/week names to navigate views
       editable: true,
       dayMaxEvents: true, // allow "more" link when too many events
-     
+    
       events: eventObj
     
     });

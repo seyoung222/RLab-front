@@ -137,7 +137,7 @@ header #header_container {
     /* justify-content: center; */
     width: 1200px;
     height : 1100px;
-    border: var(--border_basic);
+    /* border: var(--border_basic); */
     margin: 0 auto;
   }
 
@@ -164,8 +164,9 @@ header #header_container {
   }
   
   .left_menu a:visited {
-    font-weight: bold;
-}
+    font-weight: bold; 
+    /*클릭했을때 굵어지면서 검정색으로 바뀌게 나중에 수정 */
+  }
 /* 컨텐츠 */
 .home_container {
   float: left;
@@ -182,6 +183,50 @@ header #header_container {
     margin-right: 30px;
     overflow: hidden;
   }
+
+  .tabs {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .tab {
+    border: 1px solid black;
+    border-radius: var(--border_radius_4);
+    display: flex;
+    flex-direction: column;
+    width: 20%; /* 각 탭의 너비를 20%로 설정 */
+    box-sizing: border-box;
+    text-align: center; /* 탭의 텍스트를 가운데 정렬 */
+    
+  }
+
+  .tab input[type="radio"]:checked + label {
+    background-color: var(--color_blue); /* 탭을 클릭했을 때 배경색을 파란색으로 변경 */
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    padding: 10px 20px;
+    background-color: lightgray;
+    cursor: pointer;
+  }
+  
+  .tab-content {
+    padding: 20px;
+    background-color: white;
+    display: none;
+  }
+  
+  input[type="radio"]:checked + label {
+    background-color: white;
+  }
+  
+  input[type="radio"]:checked ~ .tab-content {
+    display: block;
+  }
   .middle_container {
     margin-top: 30px;
   }
@@ -195,6 +240,8 @@ header #header_container {
     height: 500px;
     box-shadow: 2px 2px;
     overflow: scroll; width: 70; height: 300px;
+    padding-left: 12px;
+    padding-top: 19px;
     
   }
   .to_do_list_title{
@@ -275,7 +322,7 @@ header #header_container {
     float: right;
     border-radius: var(--border_radius_4);
     border: var(--border_basic);
-    height: 500px;
+    height: 515px;
     width: 400px;
     box-shadow: 2px 2px;
     
@@ -332,8 +379,7 @@ header #header_container {
     height: 40px;
     border: none;
     border-radius: var(--border_radius_1);
-    background-size: 60px 38px;
-    background-position: -10px 0;
+    background-size: 40px 38px;
     background-repeat: no-repeat;
  
     
@@ -352,9 +398,8 @@ header #header_container {
   /* 오른쪽 부분*/
 
 
-  .right-container {
-   float: left;
-   width: 200px;
+  .study_link_container {
+    padding-top: 43px;
   }
   
   .circle_now {
@@ -364,18 +409,18 @@ header #header_container {
     border: var(--border_basic);
     background-color: var(--color_blue);
     font-size: small;
+    text-align: center;
+
+    margin-bottom: 10px;
   }
 
-  .now {
-    padding: 5px;  
-    line-height: 3;
-  }
   .circle_star{
     width: 40px;
     height: 40px;
     border-radius: var(--border_radius_1);
     border: var(--border_basic);
     background-color: var(--color_mint);
+    margin-bottom: 10px;
   }
   .circle_star img {
     width: 100%;
@@ -391,11 +436,12 @@ header #header_container {
   }
 
   .my_study_container{
+    margin-bottom: 10px;
     position: relative;
     
   }
 
-  .box1 {
+  .my {
     width: 40px;
     height: 40px;
     border: 1px solid black;
@@ -403,11 +449,12 @@ header #header_container {
     background-color: var(--color_yellow);
     position: absolute;
     top: 0;
-    left: 0;
+    left: 3px;
     z-index: 3;
+    text-align: center;
   }
   
-  .box2 {
+  .my_list_title {
     width: 155px;
     height: 40px;
     border: 1px solid black;
@@ -417,6 +464,7 @@ header #header_container {
     top: 0px;
     left: 15px;
     z-index: 2;
+    text-align: center
   }
 
 
@@ -426,15 +474,12 @@ header #header_container {
     z-index: 1;
   }
 
-  .my {
+  /* .my { 
     position: absolute;
     left: 10px;
     top: 3px;
-  }
-
-  .my_list_title{
-    text-align: center
-  }
+  } */
+  /* my */
 
   #dropdown_btn {
     background-color: transparent;
