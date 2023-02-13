@@ -404,22 +404,24 @@ header #header_container {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
   }
   
   .box2 {
-    width: 150px;
+    width: 155px;
     height: 40px;
     border: 1px solid black;
     border-radius: 25px;
     background-color: var(--color_yellow);
     position: absolute;
     top: 0px;
-    left: 0px;
-    z-index: 1;
+    left: 15px;
+    z-index: 2;
   }
   .box3 {
-    position: absolute;
+    position: relative;
+
+    z-index: 1;
   }
 
   .my {
@@ -436,8 +438,9 @@ header #header_container {
     vertical-align: middle;
     
   }
-  .my_list_title {
-    position: absolute;
+
+  .my_list_title{
+    text-align: center
   }
 
   #dropdown_btn {
@@ -451,8 +454,12 @@ header #header_container {
   }
   #dropdown_list {
     font-size: 12px;
+    top: 40px;
     border: 1px solid black;
-    border-radius: var(--border_radius_3);
+    border-radius: var(--border_radius_4);
+    position: absolute;
+    width: 145px;
+    left: 20px;
   }
   #dropdown_list img {
     height: 20px;
@@ -469,6 +476,8 @@ header #header_container {
     border-radius: var(--border_radius_4); 
     width: 170px;
     height: 300px;
+    position:absolute;
+    top: 320px;
   }
   .study_title{
     padding-top: 30px;
