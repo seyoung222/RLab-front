@@ -447,7 +447,6 @@ header #header_container {
     border: 1px solid black;
     border-radius: 25px;
     background-color: var(--color_yellow);
-    position: absolute;
     top: 0;
     left: 3px;
     z-index: 3;
@@ -460,7 +459,6 @@ header #header_container {
     border: 1px solid black;
     border-radius: 25px;
     background-color: var(--color_yellow);
-    position: absolute;
     top: 0px;
     left: 15px;
     z-index: 2;
@@ -495,9 +493,7 @@ header #header_container {
     top: 40px;
     border: 1px solid black;
     border-radius: var(--border_radius_4);
-    position: absolute;
     width: 145px;
-    left: 20px;
   }
   #dropdown_list img {
     height: 20px;
@@ -514,7 +510,6 @@ header #header_container {
     border-radius: var(--border_radius_4); 
     width: 170px;
     height: 300px;
-    position:absolute;
     top: 320px;
   }
   .study_title{
@@ -532,7 +527,6 @@ header #header_container {
   .accessor_on {
     width: 8px;
     height: 8px;
-    position: absolute;
     right: -1px;
     bottom: 4px;
     background-color: var(--color_mint);
