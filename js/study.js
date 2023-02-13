@@ -18,7 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
       editable: true,
       dayMaxEvents: true, // allow "more" link when too many events
      
-      events: [
+      events: eventObj
+    
+    });
+    
+    calendar.render();
+  });
+  // 나중에 데이터베이스 값을 가져오기위에 밑에 설정함
+  let eventObj = [
         {
           title: '정처기 필기',
           start: '2023-01-03T12:00:00'
@@ -35,9 +42,4 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         
     ]
-    
-    });
-    
-    calendar.render();
-  });
 

@@ -418,6 +418,8 @@ header #header_container {
     left: 15px;
     z-index: 2;
   }
+
+
   .box3 {
     position: relative;
 
@@ -425,18 +427,9 @@ header #header_container {
   }
 
   .my {
-    display: inline-block;
-    z-index: 3;
     position: absolute;
-    right: 155px;
-    top: 1px;
-    width: 40px;
-    height: 40px;
-    border-radius: var(--border_radius_2);
-    border: var(--border_basic);
-    background-color: var(--color_yellow);
-    vertical-align: middle;
-    
+    left: 10px;
+    top: 3px;
   }
 
   .my_list_title{
