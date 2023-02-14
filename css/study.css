@@ -124,6 +124,66 @@ header #header_container {
   background-repeat: no-repeat;
 }
 
+/* footer */
+footer .container{
+	width: 1200px; margin: 0 auto; padding: 50px;
+}
+.info_container{
+margin-top: 25px;
+}
+.info_container .direct_num_box{
+	float: left;
+	width: 300px;
+	height: 180px;
+}
+.direct_num_box .list_tel{
+	margin-top: 5px;
+}
+.direct_num_box .item_tel{
+	margin-left: 10px;
+}
+.direct_num_box .link_tel{
+	font-size: 18px;
+	margin-top: 3px;
+	display: inline-block;
+}
+.info_container .info_right_container{
+	float: right;
+}
+.info_container .info_box_right{
+	float: left;
+	width: 140px;
+	height: 180px;
+	margin-right: 20px;
+}
+.info_container .info_box_right .info_title{
+	margin-bottom: 5px;
+}
+.info_container .info_box_right li{
+	padding-top: 5px;
+}
+footer .corp_container{
+	margin-top: 10px;
+}
+footer .corp_container .link_corp{
+	padding-left: 7px;
+	font-size: 13px;
+}
+footer .corp_container .link_corp::before{
+	width: 1px;
+	height: 11px;
+	content: '';
+	display: inline-block;
+	margin-right: 10px;
+	background-color: grey;
+}
+footer .corp_container .link_corp:nth-child(1){
+	padding: 0;
+}
+footer .corp_container .link_corp:nth-child(1)::before{
+	display: none;
+}
+
   /* 개인 */
   h3,h4,h5 {
     display: inline-block;
@@ -464,8 +524,8 @@ header #header_container {
   
   .my_list_title {
     position: absolute;
-    width: 155px;
-    height: 40px;
+    width: 200px;
+    height: 37px;
     border: 3px solid black;
     border-radius: 25px;
     background-color: var(--color_yellow);
@@ -474,7 +534,7 @@ header #header_container {
     text-align: center;
     position: relative;
     display: block;
-    margin-left: 20px;
+    margin-left: 2px;
   }
 
   .my_study {
@@ -490,13 +550,15 @@ header #header_container {
 
  
   #dropdown_list {
+    /* position: absolute; */
     font-size: 12px;
     top: 40px;
     border: 3px solid black;
     border-radius: var(--border_radius_4);
     width: 145px;
-    margin-left: 22px;
+    margin-left: 40px;
     margin-bottom: 14px;
+    margin-top: -7px;
     
   }
 
@@ -504,6 +566,11 @@ header #header_container {
     padding-left: 2px;
     padding-top: 3px;
     padding-bottom: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
   }
   #dropdown_list img {
     height: 20px;
@@ -511,6 +578,10 @@ header #header_container {
     margin-left: 10px;
   }
 
+  #dropdown_list ul li div {
+    display: flex;
+    align-items: center;
+}
   
 
   /* 접속 인원 */
@@ -521,6 +592,7 @@ header #header_container {
     width: 170px;
     height: 300px;
     top: 320px;
+    margin-left: 25px;
     
   }
   .study_title{
