@@ -155,7 +155,7 @@
   .menu_nav{
     float: left; 
     border: 2px solid var(--color_black); width: 180px; height: 600px;
-    padding: 20px 5px 10px 20px;
+    padding: 20px 10px 10px 10px;
   }
   .menu_nav::after{}
   /* 스위치 버튼 */
@@ -184,12 +184,11 @@
     font-size: var(--font_size_title_m); font-weight: bold;
   }
   .selectd_tag { margin-top: 5px; display: grid; grid-template-columns: repeat(3,1fr); column-gap: 3px; 
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);font-size: var(--font_size_cont_m);line-height: 2;
   }
   .sel_hashTag{
     background : var(--color_mint); border-radius: var(--border_radius_2); text-decoration: none; text-align: center;
-    color: var(--color_black); font-size: var(--font_size_cont_m);  color: var(--color_black); font-weight: bold; 
-    line-height: 2;
+    color: var(--color_black);   color: var(--color_black); font-weight: bold;  
   }
 
 
