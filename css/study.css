@@ -237,7 +237,7 @@ header #header_container {
     float: left;
     border: 1px solid black; 
     border-radius: var(--border_radius_4);
-    width: 300px;
+    width: 290px;
     height: 500px;
     box-shadow: 2px 2px;
     overflow: scroll; width: 70; height: 300px;
@@ -252,7 +252,7 @@ header #header_container {
   .plus1 { 
     color: var(--color_grey);
     font-size: 1px;
-    padding-left: 130px;
+    padding-left: 120px;
   }
 
   .to_do_list_box1 input{
