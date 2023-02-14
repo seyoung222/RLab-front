@@ -412,7 +412,6 @@ header #header_container {
     background-color: var(--color_blue);
     font-size: small;
     text-align: center;
-
     margin-bottom: 10px;
   }
   .now {
