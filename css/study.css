@@ -564,7 +564,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
 
   #dropdown_list p {
     padding-left: 2px;
-    padding-top: 3px;
+    padding-top: 7px;
     padding-bottom: 3px;
     overflow: hidden;
     text-overflow: ellipsis;
