@@ -411,6 +411,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
 
   .feed_container1 {
     margin-top: 20px;
+    padding-left: 20px
     
   }
   .feed_img {
@@ -446,6 +447,8 @@ footer .corp_container .link_corp:nth-child(1)::before{
     min-height: 200px;
     background-position: center;
     margin-top: 25px;
+    width: 360px;
+    margin-left: 20px;
 
   }
 
@@ -462,6 +465,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
   }
   .feed_container3{
     padding-top: 30px;
+    padding-left: 20px;
   }
 
   .feed_container4 div{
