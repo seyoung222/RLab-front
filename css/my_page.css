@@ -86,7 +86,7 @@
       display: flex;
       gap: 80px;
     }
-    #header_container .header_left .btn_home {
+    .btn_home {
       display: flex;
       width: 66px;
       height: 50px;
@@ -94,7 +94,6 @@
       font-weight: 800;
       line-height: 80px;
       overflow: hidden;
-
     }
     .btn_home .icon_home {
       width: 40px;
@@ -374,12 +373,60 @@
 
 
     /* article_second(나의 예약) */
+    .show_plus{
+        font-size: 14px;
+        font-weight: 600;
+        opacity: 80%;
+    }
     .articles .article_second{
         height: 130px;
     }
-    .article_second .my_reservation_container{
+    .article_second .my_book_container{
+        position: relative;
+        display: flex;
+        flex-flow: column;
         width: 100%;
         background-color: var(--color_mint);
+        padding: 10px 20px 20px 20px;
+        gap: 10px;
+    }
+    .my_book_container .title_container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .my_book_container .book_window{
+        position: absolute;
+        top: 42px;
+        right: 65px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 600;
+        background-color: var(--color_beige);
+        border: var(--border_basic);
+        border-radius: var(--border_radius_4);
+        width: 80%;
+        height: 50%;
+        box-shadow: inset 5px 5px var(--color_black);
+        padding: 0 70px;
+        box-sizing: border-box;
+    }
+    .book_window .book_info{
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+    }
+    .book_window .book_info .title_small{
+        font-size: 18px;
+        opacity: 80%;
+    }
+    .book_window .icon_circle{
+        width: 10px;
+        height: 10px;
+        border-radius: var(--border_radius_1);
+        background-color: var(--color_grey);
     }
 
     /* article_third */
@@ -391,7 +438,47 @@
         width: 47.5%;
         height: 80%;
         background-color: var(--color_beige);
+        padding: 20px 30px;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: space-between;
     }
+    .d_day_container .list_dday{
+        width: 100%;
+    }
+     .d_day_container .list_dday .item_dday{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 16px;
+     }
+     .item_dday .icon_dday{
+        width: 10px;
+        height: 10px;
+        border: var(--border_basic);
+        border-radius: var(--border_radius_1);
+        background-color: var(--color_yellow);
+     }
+     .item_dday:nth-child(2) i {
+        background-color: var(--color_blue);
+     }
+     .item_dday .dday{
+        font-size: 30px;
+        font-weight: 600;
+        color: var(--color_yellow);
+        text-shadow: 2px 2px 0px var(--color_black);
+        margin-bottom: 8px;
+        margin-left: 150px;
+     }
+     .item_dday:nth-child(2) p{
+        color: var(--color_blue);
+     }
+     .d_day_container .plus_dday{
+        font-weight: 600;
+        opacity: 40%;
+     }
+
     /* my_study_container */
     .article_third .my_study_container{
         width: 50%;
@@ -407,4 +494,64 @@
     /* my_scrab_container */
     .article_bottom .my_scrab_container{
         width: 50%;
+    }
+
+    /* footer */
+    footer .container{
+        width: 1200px; margin: 0 auto; padding: 50px;
+    }
+    .info_container{
+    margin-top: 25px;
+    }
+    .info_container .direct_num_box{
+        float: left;
+        width: 300px;
+        height: 180px;
+    }
+    .direct_num_box .list_tel{
+        margin-top: 5px;
+    }
+    .direct_num_box .item_tel{
+        margin-left: 10px;
+    }
+    .direct_num_box .link_tel{
+        font-size: 18px;
+        margin-top: 3px;
+        display: inline-block;
+    }
+    .info_container .info_right_container{
+        float: right;
+    }
+    .info_container .info_box_right{
+        float: left;
+        width: 140px;
+        height: 180px;
+        margin-right: 20px;
+    }
+    .info_container .info_box_right .info_title{
+        margin-bottom: 5px;
+    }
+    .info_container .info_box_right li{
+        padding-top: 5px;
+    }
+    footer .corp_container{
+        margin-top: 10px;
+    }
+    footer .corp_container .link_corp{
+        padding-left: 7px;
+        font-size: 13px;
+    }
+    footer .corp_container .link_corp::before{
+        width: 1px;
+        height: 11px;
+        content: '';
+        display: inline-block;
+        margin-right: 10px;
+        background-color: grey;
+    }
+    footer .corp_container .link_corp:nth-child(1){
+        padding: 0;
+    }
+    footer .corp_container .link_corp:nth-child(1)::before{
+        display: none;
     }
