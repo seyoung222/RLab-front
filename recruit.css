@@ -189,6 +189,7 @@
   .sel_hashTag{
     background : var(--color_mint); border-radius: var(--border_radius_2); text-decoration: none; text-align: center;
     color: var(--color_black); font-size: var(--font_size_cont_m);  color: var(--color_black); font-weight: bold; 
+    line-height: 2;
   }
 
 
