@@ -185,7 +185,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
 }
 
   /* 개인 */
-  h3,h4,h5 {
+  .contents_title {
     display: inline-block;
   }
 
@@ -193,11 +193,9 @@ footer .corp_container .link_corp:nth-child(1)::before{
   
   .main_container{
     display: flex;
-    flex-flow: row; /*row*/
-    /* justify-content: center; */
+    flex-flow: row; 
     width: 1200px;
     height : 1100px;
-    /* border: var(--border_basic); */
     margin: 0 auto;
   }
 
@@ -213,7 +211,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
     
   }
 
-  .left_menu div {
+  .left_menu .study_home,.study_calendar,.to_do_list,.daily_mission,.feed_board,.free_board_title  {
     padding: 10px;
   }
 
@@ -243,12 +241,10 @@ footer .corp_container .link_corp:nth-child(1)::before{
     margin-right: 30px;
     overflow: hidden;
   }
-
+  /* 캘랜더 탭 */
   .tabs {
     position: relative;
     height: 39px;
-    /* display: flex;
-    flex-direction: row; */
   }
   
   .tab {
@@ -256,9 +252,9 @@ footer .corp_container .link_corp:nth-child(1)::before{
     border-radius: var(--border_radius_4);
     display: flex;
     flex-direction: column;
-    width: 16%; /* 각 탭의 너비를 20%로 설정 */
+    width: 16%; 
     box-sizing: border-box;
-    text-align: center; /* 탭의 텍스트를 가운데 정렬 */
+    text-align: center; 
     font-size: 13px;
     position: absolute;
     top: 0;
@@ -277,7 +273,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
 
 
   .tab input[type="radio"]:checked + label {
-    background-color: var(--color_blue); /* 탭을 클릭했을 때 배경색을 파란색으로 변경 */
+    background-color: var(--color_blue); 
   }
   
   input[type="radio"] {
@@ -376,10 +372,10 @@ footer .corp_container .link_corp:nth-child(1)::before{
     padding-top: 19px;
   }
 
-  .boardContainer div {
+  .boardContainer .board_box1,.board_box2,.board_box3 {
     padding-bottom: 5px;
   }
-
+  
   .circle_new {
     display: inline-block;
     width: 40px;
@@ -650,8 +646,5 @@ footer .corp_container .link_corp:nth-child(1)::before{
     vertical-align: 10px;   
   }
   
-
-
- 
 
 
