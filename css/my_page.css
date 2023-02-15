@@ -231,7 +231,12 @@
         font-size: 14px;
         font-weight: 600;
     }
-
+    /* aside(my_res_container) */
+    .my_res_container{
+        width: 250px;
+        height: 500px;
+        border: var(--border_basic);
+    }
     /* articles */
     article{
         display: flex;
@@ -611,6 +616,7 @@
         height: 4000px;
         background-color: red;
     }
+
     /* footer */
     footer{
         margin-top: 50px;
