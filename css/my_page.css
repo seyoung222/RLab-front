@@ -46,10 +46,34 @@
       text-decoration: none;
     }
     body {
+        position: relative;
+        background-color: var(--color_beige);
+        /* background-size: 100% 100%;
+        background-position: 0 100px;
+        background-image: url(../img/background.png);
+        background-repeat: no-repeat; */
+    }
+    .background_bbls{
+        position: absolute;
+        top: 200px;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        z-index: -99;
+    }
+    .bubble{
+        width: 300px;
+        height: 300px;
+        border-radius: var(--border_radius_1);
+        background-color: var(--color_mint);
+    }
+    #total_container{
+        display: none;
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-flow: column;
         align-items: center;
-      background-color: var(--color_beige);
     }
     .blind {
       position: absolute;
@@ -523,10 +547,24 @@
     .article_bottom .my_scrab_container{
         width: 50%;
     }
-
+    .my_scrab_container .feed{
+        width: 100%;
+        height: 300px;
+        overflow: auto;
+    }
+    .my_scrab_container .feed .content{
+        width: 100%;
+        height: 4000px;
+        background-color: red;
+    }
     /* footer */
+    footer{
+        margin-top: 50px;
+    }
     footer .container{
-        width: 1200px; margin: 0 auto; padding: 50px;
+        width: 1200px; 
+        margin: 0 auto; 
+        padding: 50px;
     }
     .info_container{
     margin-top: 25px;

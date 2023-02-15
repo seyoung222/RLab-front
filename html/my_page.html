@@ -8,241 +8,277 @@
     <link rel="stylesheet" href="../css/my_page.css" />
   </head>
   <body>
-    <!-- header -->
-    <header>
-      <div id="header_container">
-        <div class="header_left">
-          <a href="#" class="btn_home"><i class="icon_home"></i>LAB</a>
-          <nav class="top_menu_container">
-            <a href="#" class="list_item">예약하기</a>
-            <a href="#" class="list_item">스터디</a>
-            <a href="#" class="list_item">모집 게시판</a>
-          </nav>
-        </div>
-        <div class="header_right">
-          <div class="mypage_container">
-            <a href="#" class="mypage"
-              ><i class="icon_mypage"></i
-              ><span class="blind">마이페이지</span></a
-            >
+    <div class="background_bbls">
+      <div class="big_bbls">
+        <div class="bubble buble_blue"></div>
+        <div class="bubble buble_yellow"></div>
+        <div class="bubble buble_mint"></div>
+        <div class="bubble buble_black"></div>
+      </div>
+      <div class="small_bbls">
+        <div class="bubble buble_blue"></div>
+        <div class="bubble buble_blue"></div>
+      </div>
+    </div>
+      <div class="total_contaier">
+        <!-- header -->
+        <header>
+          <div id="header_container">
+            <div class="header_left">
+              <a href="#" class="btn_home"><i class="icon_home"></i>LAB</a>
+              <nav class="top_menu_container">
+                <a href="#" class="list_item">예약하기</a>
+                <a href="#" class="list_item">스터디</a>
+                <a href="#" class="list_item">모집 게시판</a>
+              </nav>
+            </div>
+            <div class="header_right">
+              <div class="mypage_container">
+                <a href="#" class="mypage"
+                  ><i class="icon_mypage"></i
+                  ><span class="blind">마이페이지</span></a
+                >
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- main -->
-    <main>
-      <div id="main_container">
-        <!-- aside(left_menu) -->
-        <aside>
-          <nav class="left_menu_container">
-            <a href="#" class="list_item">마이페이지 홈</a>
-            <a href="#" class="list_item">개인정보 수정</a>
-            <a href="#" class="list_item">나의 예약</a>
-            <a href="#" class="list_item">나의 스터디</a>
-            <a href="#" class="list_item">나의 스크랩</a>
-          </nav>
-        </aside>
-
-        <div class="articles">
-          <!-- article_top(이용시간, 펫 창) -->
-          <article class="article_top">
-            <!-- used_hours_container -->
-            <div class="article_box" id="used_hours_container">
-              <div id="used_hours">
-                <div class="title">
-                  <h2 class="property_title">이용시간</h2>
-                  <p class="info time_info">
-                    <strong>12시간 10분 10초</strong> / 30시간
-                  </p>
-                </div>
-                <div class="gauge gauge_used_hours">
-                  <div class="gauge_colored"></div>
-                </div>
-              </div>
-              <div id="pet_exp">
-                <div class="title">
-                  <h2 class="property_title">펫 경험치</h2>
-                  <p class="info exp_info"><strong>15exp</strong> / 40exp</p>
-                </div>
-                <div class="gauge gauge_pet_exp">
-                  <div class="gauge_colored"></div>
-                </div>
-              </div>
-              <div id="point_container">
-                <div class="my_point">
-                  <i class="icon_point"></i>
-                  <div class="point_texts">
-                    <p class="title_point">Point</p>
-                    <p class="num_point">1000P</p>
+        </header>
+        <!-- main -->
+        <main>
+          <div id="main_container">
+            <!-- aside(left_menu) -->
+            <aside>
+              <nav class="left_menu_container">
+                <a href="#" class="list_item">마이페이지 홈</a>
+                <a href="#" class="list_item">개인정보 수정</a>
+                <a href="#" class="list_item">나의 예약</a>
+                <a href="#" class="list_item">나의 스터디</a>
+                <a href="#" class="list_item">나의 스크랩</a>
+              </nav>
+            </aside>
+            <div class="articles">
+              <!-- article_top(이용시간, 펫 창) -->
+              <article class="article_top">
+                <!-- used_hours_container -->
+                <div class="article_box" id="used_hours_container">
+                  <div id="used_hours">
+                    <div class="title">
+                      <h2 class="property_title">이용시간</h2>
+                      <p class="info time_info">
+                        <strong>12시간 10분 10초</strong> / 30시간
+                      </p>
+                    </div>
+                    <div class="gauge gauge_used_hours">
+                      <div class="gauge_colored"></div>
+                    </div>
+                  </div>
+                  <div id="pet_exp">
+                    <div class="title">
+                      <h2 class="property_title">펫 경험치</h2>
+                      <p class="info exp_info"><strong>15exp</strong> / 40exp</p>
+                    </div>
+                    <div class="gauge gauge_pet_exp">
+                      <div class="gauge_colored"></div>
+                    </div>
+                  </div>
+                  <div id="point_container">
+                    <div class="my_point">
+                      <i class="icon_point"></i>
+                      <div class="point_texts">
+                        <p class="title_point">Point</p>
+                        <p class="num_point">1000P</p>
+                      </div>
+                    </div>
+                    <div class="point_btns_container">
+                      <button class="btn_point btn_info">
+                        <i class="icon_info"></i>
+                        포인트란?
+                      </button>
+                      <button class="btn_point btn_manage">포인트 관리</button>
+                    </div>
                   </div>
                 </div>
-                <div class="point_btns_container">
-                  <button class="btn_point btn_info">
-                    <i class="icon_info"></i>
-                    포인트란?
-                  </button>
-                  <button class="btn_point btn_manage">포인트 관리</button>
-                </div>
-              </div>
-            </div>
-            <!-- pet_container -->
-            <div class="article_box pet_container">
-              <div class="pet_window">
-                <img src="../img/speech_bubble.png" alt="" class="pet_talk">
-                <img src="../img/egg.png" alt="펫" class="pet">
-              </div>
-              <div class="pet_description">
-                <div class="pet_info_container">
-                  <div class="this_pet">
-                    <h2 class="pet_name">꼬마돌</h2>
-                    <div class="pet_reward">ㄴ보상 : 적립금 두 배 <i class="icon_reward"></i></div>
+                <!-- pet_container -->
+                <div class="article_box pet_container">
+                  <div class="pet_window">
+                    <img src="../img/speech_bubble.png" alt="" class="pet_talk" />
+                    <img src="../img/egg.png" alt="펫" class="pet" />
                   </div>
-                  <div class="pet_level">Lv. 20</div>
+                  <div class="pet_description">
+                    <div class="pet_info_container">
+                      <div class="this_pet">
+                        <h2 class="pet_name">꼬마돌</h2>
+                        <div class="pet_reward">
+                          ㄴ보상 : 적립금 두 배 <i class="icon_reward"></i>
+                        </div>
+                      </div>
+                      <div class="pet_level">Lv. 20</div>
+                    </div>
+                    <div class="pet_store_container">
+                      <i class="icon_store"></i> 펫 스토어
+                    </div>
+                  </div>
                 </div>
-                <div class="pet_store_container">
-                  <i class="icon_store"></i> 펫 스토어</div>
+              </article>
+              <!-- article_second(나의 예약) -->
+              <article class="article_second">
+                <!-- my_book_container -->
+                <div class="article_box my_book_container">
+                  <div class="title_container">
+                    <h2 class="property_title">나의 예약</h2>
+                    <p class="show_plus">더보기+</p>
+                  </div>
+                  <div class="book_window">
+                    <div class="book_info info_store">강남역점</div>
+                    <div class="icon_circle"></div>
+                    <div class="book_info info_store">
+                      <div class="title_small">좌석</div>
+                      45번
+                    </div>
+                    <div class="icon_circle"></div>
+                    <div class="book_info info_store">
+                      <div class="title_small">사물함</div>
+                      47번
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- article_third(d-day,나의 스터디) -->
+              <article class="article_third">
+                <!-- d_day_container -->
+                <div class="article_box d_day_container">
+                  <h2 class="property_title">D-DAY</h2>
+                  <ul class="list_dday">
+                    <li class="item_dday">
+                      <i class="icon_dday"></i> 정보처리기사 필기
+                      <p class="dday">D-10</p>
+                    </li>
+                    <li class="item_dday">
+                      <i class="icon_dday"></i>정보처리기사 실기
+                      <p class="dday">D-40</p>
+                    </li>
+                  </ul>
+                  <p class="plus_dday">+ D-day 추가하기</p>
+                </div>
+                <!-- my_study_container -->
+                <div class="article_box my_study_container">
+                  <div class="title_container">
+                    <h2 class="property_title">나의 스터디</h2>
+                    <p class="show_plus">더보기+</p>
+                  </div>
+                  <ul class="list_study">
+                    <li class="item_study">
+                      <a href="#" class="link_study"
+                        ><i class="icon_study"></i>정처기 준비하는 스터디</a
+                      >
+                    </li>
+                    <li class="item_study">
+                      <a href="#" class="link_study"
+                        ><i class="icon_study"></i>KH 스터디</a
+                      >
+                    </li>
+                    <li class="item_study">
+                      <a href="#" class="link_study"
+                        ><i class="icon_study"></i>토익 만점 스터디</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <!-- article_bottom(나의 스크랩) -->
+              <article class="article_bottom">
+                <!-- my_scrab_container -->
+                <div class="article_box my_scrab_container">
+                    </div>
+                  </div>
+                </div>
+              </article>
+        </main>
+        <!-- footer -->
+        <footer>
+          <div class="container">
+            <a href="#" class="btn_home"><i class="icon_home"></i>LAB</a>
+            <!-- 관련 정보 섹션 -->
+            <section>
+              <div class="info_container clearfix">
+                <div class="direct_num_box">
+                  <h1 class="info_title">대표번호 : 123-4567</h1>
+                  <ul class="list_tel">
+                    <li class="item_tel">
+                      <a href="" class="link_tel">강남 1566-1234</a>
+                    </li>
+                    <li class="item_tel">
+                      <a href="" class="link_tel">선릉 1566-1234</a>
+                    </li>
+                    <li class="item_tel">
+                      <a href="" class="link_tel">성수 1566-1234</a>
+                    </li>
+                    <li class="item_tel">
+                      <a href="" class="link_tel">노원 1566-1234</a>
+                    </li>
+                    <li class="item_tel">
+                      <a href="" class="link_tel">군자 1566-1234</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="info_right_container">
+                  <div class="info_box_right about_us_box">
+                    <h3 class="info_title">ABOUT US</h3>
+                    <ul>
+                      <li>
+                        <a href="#">지점 소개</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="info_box_right link_to_box">
+                    <h3 class="info_title">LINK TO</h3>
+                    <ul>
+                      <li class="item_linkto">
+                        <a href="#" class="link_linkto">예약하기</a>
+                      </li>
+                      <li class="item_linkto">
+                        <a href="#" class="link_linkto">스터디</a>
+                      </li>
+                      <li class="item_linkto">
+                        <a href="#" class="link_linkto">모집 게시판</a>
+                      </li>
+                      <li class="item_linkto">
+                        <a href="#" class="link_linkto">마이페이지</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="info_box_right my_account_box">
+                    <h3 class="info_title">MT ACCOUNT</h3>
+                    <ul>
+                      <li class="item_member">회원 정보 수정</li>
+                      <li class="item_member">예약 확인</li>
+                      <li class="item_member">포인트 조회</li>
+                    </ul>
+                  </div>
+                  <div class="info_box_right help_box">
+                    <h3 class="info_title">HELP</h3>
+                    <ul>
+                      <li class="item_help">1:1 문의</li>
+                      <li class="item_help">공지사항</li>
+                      <li class="item_help">F&Q</li>
+                      <li class="item_help">가맹점 문의</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </article>
-
-          <!-- article_second(나의 예약) -->
-          <article class="article_second">
-            <!-- my_book_container -->
-            <div class="article_box my_book_container">
-              <div class="title_container">
-                <h2 class="property_title">나의 예약</h2>
-                <p class="show_plus">더보기+</p>
+            </section>
+            <!-- 프로젝트 정보 섹션 -->
+            <section>
+              <div class="corp_container">
+                <a href="#" class="link_corp">RLAB스터디</a>
+                <a href="#" class="link_corp">사업자등록번호 : 12123-15142435</a>
+                <a href="#" class="link_corp">서울 강남 제214-01호</a>
+                <a href="#" class="link_corp">대표자 : 김세영</a>
+                <a href="#" class="link_corp">책임자 : 김세영</a>
+                <a href="#" class="link_corp">개인정보관리책임자 : 김세영</a>
               </div>
-              <div class="book_window">
-                <div class="book_info info_store">강남역점</div>
-                <div class="icon_circle"></div>
-                <div class="book_info info_store"><div class="title_small">좌석</div> 45번</div>
-                <div class="icon_circle"></div>
-                <div class="book_info info_store"><div class="title_small">사물함</div> 47번</div>
-              </div>
-            </div>
-          </article>
-
-          <!-- article_third(d-day,나의 스터디) -->
-          <article class="article_third">
-            <!-- d_day_container -->
-            <div class="article_box d_day_container">
-              <h2 class="property_title">D-DAY</h2>
-              <ul class="list_dday">
-                <li class="item_dday"><i class="icon_dday"></i> 정보처리기사 필기 <p class="dday">D-10</p></li>
-                <li class="item_dday"><i class="icon_dday"></i>정보처리기사 실기 <p class="dday">D-40</p></li>
-              </ul>
-              <p class="plus_dday">+ D-day 추가하기</p>
-            </div>
-            <!-- my_study_container -->
-            <div class="article_box my_study_container">
-              <div class="title_container">
-                <h2 class="property_title">나의 스터디</h2>
-                <p class="show_plus">더보기+</p>
-              </div>
-              <ul class="list_study">
-                <li class="item_study"><a href="#" class="link_study"><i class="icon_study"></i>정처기 준비하는 스터디</a></li>
-                <li class="item_study"><a href="#" class="link_study"><i class="icon_study"></i>KH 스터디</a></li>
-                <li class="item_study"><a href="#" class="link_study"><i class="icon_study"></i>토익 만점 스터디</a></li>
-              </ul>
-            </div>
-          </article>
-
-          <!-- article_bottom(나의 스크랩) -->
-          <article class="article_bottom">
-            <!-- my_scrab_container -->
-            <div class="article_box my_scrab_container"></div>
-          </article>
-        </div>
+            </section>
+          </div>
+        </footer>
       </div>
-    </main>
-
-  <!-- footer -->
-	<footer>
-		<div class="container">
-			<a href="#" class="btn_home"><i class="icon_home"></i>LAB</a>
-			<!-- 관련 정보 섹션 -->
-			<section>
-				<div class="info_container clearfix">
-					<div class="direct_num_box">
-						<h1 class="info_title">대표번호 : 123-4567</h1>
-						<ul class="list_tel">
-							<li class="item_tel">
-								<a href="" class="link_tel">강남 1566-1234</a>
-							</li>
-							<li class="item_tel">
-								<a href="" class="link_tel">선릉 1566-1234</a>
-							</li>
-							<li class="item_tel">
-								<a href="" class="link_tel">성수 1566-1234</a>
-							</li>
-							<li class="item_tel">
-								<a href="" class="link_tel">노원 1566-1234</a>
-							</li>
-							<li class="item_tel">
-								<a href="" class="link_tel">군자 1566-1234</a>
-							</li>
-						</ul>
-					</div>
-					<div class="info_right_container">
-						<div class="info_box_right about_us_box">
-							<h3 class="info_title">ABOUT US</h3>
-							<ul>
-								<li>
-									<a href="#">지점 소개</a>
-								</li>
-							</ul>
-						</div>
-						<div class="info_box_right link_to_box">
-							<h3 class="info_title">LINK TO</h3>
-							<ul>
-								<li class="item_linkto">
-									<a href="#" class="link_linkto">예약하기</a>
-								</li>
-								<li class="item_linkto">
-									<a href="#" class="link_linkto">스터디</a>
-								</li>
-								<li class="item_linkto">
-									<a href="#" class="link_linkto">모집 게시판</a>
-								</li>
-								<li class="item_linkto">
-									<a href="#" class="link_linkto">마이페이지</a>
-								</li>
-							</ul>
-						</div>
-						<div class="info_box_right my_account_box">
-							<h3 class="info_title">MT ACCOUNT</h3>
-							<ul>
-								<li class="item_member">회원 정보 수정</li>
-								<li class="item_member">예약 확인</li>
-								<li class="item_member">포인트 조회</li>
-							</ul>
-						</div>
-						<div class="info_box_right help_box">
-							<h3 class="info_title">HELP</h3>
-							<ul>
-								<li class="item_help">1:1 문의</li>
-								<li class="item_help">공지사항</li>
-								<li class="item_help">F&Q</li>
-								<li class="item_help">가맹점 문의</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- 프로젝트 정보 섹션 -->
-			<section>
-				<div class="corp_container">
-					<a href="#" class="link_corp">RLAB스터디</a>
-					<a href="#" class="link_corp">사업자등록번호 : 12123-15142435</a>
-					<a href="#" class="link_corp">서울 강남 제214-01호</a>
-					<a href="#" class="link_corp">대표자 : 김세영</a>
-					<a href="#" class="link_corp">책임자 : 김세영</a>
-					<a href="#" class="link_corp">개인정보관리책임자 : 김세영</a>
-				</div>
-			</section>
-		</div>
-	</footer>
   </body>
 </html>
