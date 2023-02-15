@@ -210,7 +210,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
     height: 350px;
     text-align: center;
     padding-top: 30px;
-    
+    box-sizing: border-box;
   }
 
   .left_menu div {
@@ -312,11 +312,12 @@ footer .corp_container .link_corp:nth-child(1)::before{
     float: left;
     border: 1px solid black; 
     border-radius: var(--border_radius_4);
-    width: 290px;
-    height: 500px;
+    width: 200px;
+    height: 310px;
     box-shadow: 2px 2px;
-    overflow: scroll; width: 70; height: 300px;
-    padding-left: 12px;
+    overflow: auto;
+    padding-left: 30px;
+    padding-right: 40px;
     padding-top: 19px;
     
   }
@@ -328,6 +329,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
     color: var(--color_grey);
     font-size: 1px;
     padding-left: 120px;
+    
   }
 
   .to_do_list_box1 input{
@@ -353,22 +355,27 @@ footer .corp_container .link_corp:nth-child(1)::before{
   .free_board {
     float: left;
     margin-top: 20px;
-    width: 300px;
-    height: 180px;
+    width: 200px;
+    height: 167px;
     background-color: var(--color_yellow);
     border: 1px solid black;
     border-radius: var(--border_radius_3);
     box-shadow: 2px 2px;
+    padding-left: 16px;
+    padding-right: 53px;
   }
   .board_title {
-    padding-top: 10px;
-    padding-left: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 15px;
+      margin-top: 20px;
   }
 
   .plus2 {
+    vertical-align: 10px;
     color: var(--color_grey);
     font-size: 1px;
-    padding-left: 100px;
   }
 
   .boardContainer {
@@ -394,7 +401,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
 
   /* 오늘의 인증 */
   .today_feed {
-    overflow: scroll; width: 70; height: 300px;
+    overflow: auto; width: 70; height: 300px;
     float: right;
     border-radius: var(--border_radius_4);
     border: var(--border_basic);
@@ -606,18 +613,28 @@ footer .corp_container .link_corp:nth-child(1)::before{
   /* 접속 인원 */
 
   .accessor {
-    border: 1px solid black; 
+    border: var(--border_basic); 
     border-radius: var(--border_radius_4); 
-    width: 170px;
-    height: 300px;
-    top: 320px;
+    padding: 10px;
+    width: 200px;
+    min-height: 200px;
     margin-left: 25px;
+    box-sizing: border-box;
     
   }
+
+  .accessor_container {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+  }
   .study_title{
-    padding-top: 30px;
+    padding-top: 10px;
     margin-left: 10px;
     margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
   }
   .circle_accessor {
     width: 30px;
@@ -644,10 +661,12 @@ footer .corp_container .link_corp:nth-child(1)::before{
     color: var(--color_grey);
     font-size: 1px;
     vertical-align: 10px;  
+    margin: 0;
   }
   .study_name {
     display: inline-block;
-    vertical-align: 10px;   
+    vertical-align: 10px;  
+    margin: 0; 
   }
   
 
