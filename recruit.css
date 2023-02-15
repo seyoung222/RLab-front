@@ -58,6 +58,7 @@
   .clearfix::after{
     clear: both; display: block; content: '';
   }
+  a{color:#000}
 
   /* header */
   header {
@@ -154,8 +155,9 @@
   /* 모집 부분 - menu-nav */
   .menu_nav{
     float: left; 
-    border: 2px solid var(--color_black); width: 180px; height: 600px;
-    padding: 20px 10px 10px 10px;
+    border: 2px solid var(--color_black); width: 180px; min-height: 600px;
+    padding: 20px;
+    border-radius: 20px;
   }
   .menu_nav::after{}
   /* 스위치 버튼 */
@@ -194,7 +196,7 @@
 
   /* 왼쪽 회색 줄  */
   .line{
-    width: 170px ; height: 3px; background-color: var(--color_light-grey); margin-top: 30px;
+    width: 170px ; height: 2px; background-color: var(--color_light-grey); margin-top: 30px;
   }
   /* 왼쪽 지역 */
   .sel_region{display: flex; flex-flow: column;} 
@@ -257,7 +259,7 @@
     vertical-align: middle; text-align: center; padding-top: 5%;
   }
   .study_card_container .study_content .like_img{
-    grid-column: 5/6; background-image: url('../img/like_on_red.png');
+    grid-column: 5/6; background-image: url('../img/like_on_red copy.png');
     grid-row: 1/2; background-size: contain; background-repeat: no-repeat;
   }
 
