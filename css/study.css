@@ -584,7 +584,8 @@ footer .corp_container .link_corp:nth-child(1)::before{
     
   }
 
-  #dropdown_list p {
+  .dropdown_list_contents_title {
+
     padding-left: 2px;
     padding-top: 7px;
     padding-bottom: 3px;
@@ -593,17 +594,51 @@ footer .corp_container .link_corp:nth-child(1)::before{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    width: 110px;
   }
-  #dropdown_list img {
+
+  .dropdown_list_contents_on_img {
+    background-image: url(../img/favorite_star_on.png);
     height: 20px;
     width: 20px;
     margin-left: 10px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
   }
 
-  #dropdown_list ul li div {
+  .dropdown_list_contents_off_img {
+    background-image: url(../img/favorite_star.png);
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+  }
+
+  .dropdown_list_contents_title + .dropdown_hr {
+    border-top: 1px solid black;
+  }
+
+
+  #dropdown_list .dropdown_list_ul  .dropdown_list_li .dropdown_list_contents  {
     display: flex;
     align-items: center;
 }
+
+.dropdown_list_contents {
+  position: relative; /* div 요소에 position: relative 속성 추가 */
+}
+
+.dropdown_list_contents::after {
+  content: ""; /* 가상 요소 내용 설정 */
+  position: absolute; /* 가상 요소에 position: absolute 속성 추가 */
+  bottom: 0; /* 가상 요소의 위치를 div 요소 아래로 설정 */
+  left: 0; /* 가상 요소를 div 요소 왼쪽에 위치시킴 */
+  width: 100%; /* 가상 요소 너비 설정 */
+  height: 1px; /* 가상 요소 높이 설정 */
+  background-color: black; /* 가상 요소 배경색 설정 */
+}
+
   
 
   /* 접속 인원 */
@@ -616,7 +651,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
     min-height: 200px;
     margin-left: 25px;
     box-sizing: border-box;
-    
+  
   }
 
   .accessor_container {
@@ -624,6 +659,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
     padding: 10px;
     width: 100%;
     margin: 0;
+
   }
   .study_title{
     padding-top: 10px;
