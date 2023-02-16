@@ -501,6 +501,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
     width: 400px;
     overflow: auto;
     height: 510px;
+    background-color: var(--color_beige);
   }
   .feed_title {
     padding-left: 295px;
@@ -731,6 +732,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
     margin-left: 40px;
     margin-bottom: 14px;
     margin-top: -7px;
+    background-color: var(--color_beige);
     
   }
 
@@ -798,6 +800,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
   /* 접속 인원 */
 
   .accessor {
+    background-color: var(--color_beige);
     border: var(--border_basic); 
     border-radius: var(--border_radius_4); 
     padding: 10px;
