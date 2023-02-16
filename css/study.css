@@ -307,12 +307,11 @@ footer .corp_container .link_corp:nth-child(1)::before{
     float: left;
     border: 1px solid black; 
     border-radius: var(--border_radius_4);
-    width: 252px;
+    width: 272px;
     height: 310px;
     box-shadow: 2px 2px;
     overflow: auto;
     padding-left: 16px;
-    padding-right: 16px;
     padding-top: 19px;
     
   }
@@ -351,14 +350,13 @@ footer .corp_container .link_corp:nth-child(1)::before{
   .free_board {
     float: left;
     margin-top: 20px;
-    width: 252px;
+    width: 272px;
     height: 167px;
     background-color: var(--color_yellow);
     border: 1px solid black;
     border-radius: var(--border_radius_3);
     box-shadow: 2px 2px;
     padding-left: 16px;
-    padding-right: 16px;
   }
   .board_title {
       display: flex;
