@@ -211,32 +211,29 @@
     main #main_container{
         display: flex;
         justify-content: space-between;
-        gap: 20px;
+        gap: 30px;
     }
     /* aside(left_menu) */
-    #main_container aside{
-      width: 130px;
-      height: 400px;
-      padding: 35px 0 25px 23px;
-      align-items: center;
-      border: 2px solid #020a17;
-      border-radius: var(--border_radius_2);
-      box-sizing: border-box;
-      background-color: var(--color_beige);
+    #main_container .left_menu_container{
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        height: 400px;
+        padding: 40px 0;
+        border: 2px solid #020a17;
+        border-radius: var(--border_radius_2);
+        box-sizing: border-box;
+        background-color: var(--color_beige);
     }
-    aside .left_menu_container{
+    .left_menu_container .left_menu{
         display: flex;
         flex-flow: column;
+        align-items: flex-start;
         gap: 16px;
-        font-size: 14px;
-        font-weight: 600;
+        font-size: 15px;
+        font-weight: 800;
     }
-    /* aside(my_res_container) */
-    .my_res_container{
-        width: 250px;
-        height: 500px;
-        border: var(--border_basic);
-    }
+    
     /* articles */
     article{
         display: flex;
@@ -272,7 +269,7 @@
         display: flex;
         flex-flow: column;
         justify-content: space-between;
-        width: 67.5%;
+        width: 55%;
         background-color: var(--color_blue);
     }
     .title{
@@ -367,7 +364,7 @@
     }
     /* 펫 창 */
     .article_top .pet_container{
-        width: 30%;
+        width: 25%;
         border: var(--border_basic);
         border-radius: var(--border_radius_4);    
         background-color: var(--color_yellow);
@@ -453,72 +450,25 @@
         background-image: url(../img/pet.png);
         opacity: 60%;
     }
-
-
-    /* article_second(나의 예약) */
-    .show_plus{
-        font-size: 14px;
-        font-weight: 600;
-        opacity: 80%;
-    }
-    .articles .article_second{
-        height: 130px;
-    }
-    .article_second .my_book_container{
-        position: relative;
-        display: flex;
-        flex-flow: column;
-        width: 100%;
+    /* 나의 예약 */
+    .article_top .book_container{
+        width: 17%;
+        height: 700px;
+        padding: 20px 0;
         background-color: var(--color_mint);
-        padding: 10px 20px 20px 20px;
-        gap: 10px;
-    }
-    .title_container{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .my_book_container .book_window{
-        position: absolute;
-        top: 42px;
-        right: 65px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 25px;
-        font-weight: 600;
-        background-color: var(--color_beige);
-        border: var(--border_basic);
-        border-radius: var(--border_radius_4);
-        width: 80%;
-        height: 50%;
-        box-shadow: inset 5px 5px var(--color_black);
-        padding: 0 70px;
-        box-sizing: border-box;
-    }
-    .book_window .book_info{
-        display: flex;
-        align-items: flex-end;
-        gap: 5px;
-    }
-    .book_window .book_info .title_small{
-        font-size: 18px;
-        opacity: 80%;
-    }
-    .book_window .icon_circle{
-        width: 10px;
-        height: 10px;
-        border-radius: var(--border_radius_1);
-        background-color: var(--color_grey);
     }
 
     /* article_third */
     .articles .article_third{
+        width: 81.8%;
+        display: flex;
+        justify-content: space-between;
+        gap: 0.9%;
         height: 320px;
     }
     /* d_day_container */
     .article_third .d_day_container{
-        width: 47.5%;
+        width: 50%;
         height: 80%;
         background-color: var(--color_beige);
         padding: 20px 30px;
@@ -526,14 +476,16 @@
         flex-flow: column;
         align-items: flex-start;
         justify-content: space-between;
+        
     }
     .d_day_container .list_dday{
         width: 100%;
+
     }
      .d_day_container .list_dday .item_dday{
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
         font-size: 16px;
      }
      .item_dday .icon_dday{
@@ -564,9 +516,10 @@
 
     /* my_study_container */
     .article_third .my_study_container{
-        width: 50%;
+        width: 48.5%;
         background-color: var(--color_beige);
         padding: 20px 30px 50px 30px;
+        box-sizing: border-box;
     }
     .my_study_container .title_container{
         margin-bottom: 10px;
@@ -598,13 +551,14 @@
     }
     /* article_bottom */
     .articles .article_bottom{
+        width: 81.8%;
         display: flex;
         justify-content: flex-end;
         height: 320px;
     }
     /* my_scrab_container */
     .article_bottom .my_scrab_container{
-        width: 50%;
+        width: 48.5%;
     }
     .my_scrab_container .feed{
         width: 100%;
