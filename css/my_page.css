@@ -26,12 +26,6 @@
         "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
       --font_family_sub: -apple-system, BlinkMacSystemFont, "Malgun Gothic",
         "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
-      --font_size_title_l: 35px;
-      --font_size_title_m: 18px;
-      --font_size_title_s: 15px;
-      --font_size_cont_l: 14px;
-      --font_size_cont_m: 12px;
-      --font_size_cont_s: 8px;
 
       /* box-shadow */
       --box-shadow: 5px 5px 0px rgb(7, 7, 7);
@@ -68,7 +62,10 @@
 			clear: both; display: block; content: '';
 		}
     a{color: var(--color_black);}
+    .show_plus{
+        font-size: 14px;
 
+    }
 
     /* background */
     .background_bbls{
@@ -453,9 +450,37 @@
     /* 나의 예약 */
     .article_top .book_container{
         width: 17%;
-        height: 700px;
+        height: 600px;
         padding: 20px 0;
         background-color: var(--color_mint);
+    }
+    .book_container .book_window{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+        height: 100%;
+        border: var(--border_basic);
+        border-radius: var(--border_radius_4);
+        background-color: var(--color_beige);
+        box-shadow: inset 5px 5px 0px var(--color_black);
+        padding: 50px 0;
+        box-sizing: border-box;
+    }
+    .book_window .book_info{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .book_info .small_title{
+        font-size: 13px;
+    }
+    .book_window .icon_circle{
+        width: 10px;
+        height: 10px;
+        border-radius: var(--border_radius_1);
+        background-color: var(--color_grey);
     }
 
     /* article_third */
