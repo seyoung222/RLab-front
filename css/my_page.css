@@ -375,6 +375,7 @@
         background-repeat: no-repeat;
         margin-right: 5px;
     }
+
     /* 펫 창 */
     .article_top .pet_container{
         width: 25%;
@@ -502,6 +503,56 @@
         background-color: var(--color_grey);
     }
 
+    /* article_second */
+    .articles .article_second {
+        width: 81.8%;
+        height: 70px;
+        padding: 15px;
+        box-sizing: border-box;
+        background-color: var(--color_black);
+        border-radius: var(--border_radius_4);
+    }
+    .dday_container{
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 85%;
+        align-items: center;
+        overflow: hidden;
+    }
+    .article_second .list_dday{
+        position: absolute;
+        left: 9px;
+        display: flex;
+        gap: 50px;
+        width: 1300px;
+    }
+    .list_dday .item_dday{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .item_dday:nth-child(1){
+        color: var(--color_blue);
+    }
+    .item_dday:nth-child(2){
+        color: var(--color_yellow);
+    }
+    .item_dday:nth-child(3){
+        color: var(--color_mint);
+    }
+    .plus_dday{
+        font-size: 14px;
+        margin-top: -5px;
+        color: var(--color_beige);
+    }
+    .article_second .dday_title{
+        margin-bottom: -14px;
+    }
+    
     /* article_third */
     .articles .article_third{
         width: 81.8%;
@@ -510,53 +561,7 @@
         gap: 0.9%;
         height: 320px;
     }
-    /* d_day_container */
-    .article_third .d_day_container{
-        width: 50%;
-        height: 80%;
-        background-color: var(--color_beige);
-        padding: 20px 30px;
-        display: flex;
-        flex-flow: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        
-    }
-    .d_day_container .list_dday{
-        width: 100%;
 
-    }
-     .d_day_container .list_dday .item_dday{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 16px;
-     }
-     .item_dday .icon_dday{
-        width: 10px;
-        height: 10px;
-        border: var(--border_basic);
-        border-radius: var(--border_radius_1);
-        background-color: var(--color_yellow);
-     }
-     .item_dday:nth-child(2) i {
-        background-color: var(--color_blue);
-     }
-     .item_dday .dday{
-        font-size: 30px;
-        font-weight: 600;
-        color: var(--color_yellow);
-        text-shadow: 2px 2px 0px var(--color_black);
-        margin-bottom: 8px;
-        margin-left: 150px;
-     }
-     .item_dday:nth-child(2) p{
-        color: var(--color_blue);
-     }
-     .d_day_container .plus_dday{
-        font-weight: 600;
-        opacity: 40%;
-     }
 
     /* my_study_container */
     .article_third .my_study_container{
