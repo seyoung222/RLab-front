@@ -214,7 +214,7 @@
     #main_container .left_menu_container{
         display: flex;
         justify-content: center;
-        width: 200px;
+        width: 180px;
         height: 400px;
         padding: 40px 0;
         border: 2px solid #020a17;
@@ -260,7 +260,7 @@
 
     /*  article_top(이용시간, 펫 창) */
     .articles .article_top{
-        height: 380px;
+        height: 350px;
     }
     .article_top #used_hours_container{
         display: flex;
@@ -276,8 +276,8 @@
         padding: 0 7px;
     }
     #used_hours_container .gauge{
-        width: 600px;
-        height: 30px;
+        width: 480px;
+        height: 27px;
         border: var(--border_basic);
         border-radius: var(--border_radius_2);
         background-color: var(--color_beige);
@@ -302,7 +302,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 10px 20px 0 30px;
+        padding: 10px 0 0 5px;
         box-sizing: border-box;
     }
     #point_container .my_point{
@@ -578,7 +578,7 @@
     .articles .article_bottom{
         width: 81.8%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         height: 320px;
     }
     /* my_scrab_container */
