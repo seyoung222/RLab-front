@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     locale: 'ko',
 
       headerToolbar: {
-        left: 'dayGridMonth,listMonth',
+        left: '',//dayGridMonth,listMonth
         center: '',
         right: 'prev,title,next'
       },
