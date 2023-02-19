@@ -28,6 +28,8 @@
     "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
 
   /* font-siz는 각자 알아서 넣기!!*/
+
+  --box-shadow: 5px 5px 0px rgb(7, 7, 7);
 }
 
 /* 공통 */
@@ -394,11 +396,11 @@ footer .corp_container .link_corp:nth-child(1)::before{
   /* to do list */
   .to_do_list_container {
     float: left;
-    border: 1px solid black; 
+    border: var(--border_light) solid black; 
     border-radius: var(--border_radius_4);
     width: 272px;
     height: 310px;
-    box-shadow: 2px 2px;
+    box-shadow: var(--box-shadow);
     padding-left: 16px;
     padding-top: 19px;
     overflow: hidden;
@@ -469,9 +471,9 @@ footer .corp_container .link_corp:nth-child(1)::before{
     width: 272px;
     height: 167px;
     background-color: var(--color_yellow);
-    border: 1px solid black;
+    border: var(--border_light);
     border-radius: var(--border_radius_3);
-    box-shadow: 2px 2px;
+    box-shadow: var(--box-shadow);
     padding-left: 16px;
   }
   .board_title {
@@ -520,7 +522,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
   .time_line_container {
     border-radius: var(--border_radius_4);
     border: var(--border_basic);
-    box-shadow: 2px 2px;
+    box-shadow: var(--box-shadow);
     float: right;
     height: 515px;
     width: 400px;
@@ -567,7 +569,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
     border: var(--border_basic);
     height: 515px;
     width: 400px;
-    box-shadow: 2px 2px;
+    box-shadow: var(--box-shadow);
     
   }
  
@@ -727,7 +729,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
   .circle_my {
     width: 40px;
     height: 40px;
-    border: 3px solid black;
+    border: var(--border_basic);
     border-radius: 25px;
     background-color: var(--color_yellow);
     top: -4px;
@@ -747,7 +749,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
     position: absolute;
     width: 200px;
     height: 37px;
-    border: 3px solid black;
+    border: var(--border_basic);
     border-radius: 25px;
     background-color: var(--color_yellow);
     top: 0px;
@@ -775,7 +777,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
     /* position: absolute; */
     font-size: 12px;
     top: 40px;
-    border: 3px solid black;
+    border: var(--border_basic);
     border-radius: var(--border_radius_4);
     width: 145px;
     margin-left: 40px;
@@ -824,7 +826,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
   }
 
   .dropdown_list_contents_title + .dropdown_hr {
-    border-top: 1px solid black;
+    border-top: var(--border_light);
   }
 
 
@@ -880,7 +882,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
     width: 30px;
     height: 30px;
     background-color: white;
-    border: 1px solid black;
+    border: var(--border_light);
     border-radius: var(--border_radius_1);
     position: relative;
     display: inline-block;  
@@ -893,7 +895,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
     width: 8px;
     height: 8px;
     background-color: var(--color_mint);
-    border: 1px solid black;
+    border: var(--border_light);
     border-radius: var(--border_radius_1);   
   }
 
