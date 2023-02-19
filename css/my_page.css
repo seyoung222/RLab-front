@@ -289,8 +289,8 @@
         padding: 0 7px;
     }
     #used_hours_container .gauge{
-        width: 480px;
-        height: 27px;
+        width: 450px;
+        height: 23px;
         border: var(--border_basic);
         border-radius: var(--border_radius_2);
         background-color: var(--color_beige);
@@ -309,7 +309,10 @@
         background-color: var(--color_yellow);
     }
     #used_hours_container .property_title{
-        font-size: 27px;
+        font-size: 20px;
+    }
+    .info{
+        font-size: 14px;
     }
     #used_hours_container #point_container{
         width: 100%;
