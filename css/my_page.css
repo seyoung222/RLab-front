@@ -40,13 +40,9 @@
       text-decoration: none;
     }
     body {
-        height: 1513px;
+        height: 1030px;
         position: relative;
         background-color: var(--color_beige);
-        /* background-size: 100% 100%;
-        background-position: 0 100px;
-        background-image: url(../img/background.png);
-        background-repeat: no-repeat; */
     }
     .blind {
         position: absolute;
@@ -271,7 +267,7 @@
         width: 1055px;
     }
 
-    /*  article_top(이용시간, 펫 창) */
+    /*  article_top(이용시간, 펫 창, 나의 예약) */
     .articles .article_top{
         height: 350px;
     }
@@ -467,10 +463,11 @@
         background-image: url(../img/pet.png);
         opacity: 60%;
     }
+
     /* 나의 예약 */
     .article_top .book_container{
         width: 17%;
-        height: 600px;
+        height: 753px;
         padding: 20px 0;
         background-color: var(--color_mint);
     }
@@ -503,7 +500,7 @@
         background-color: var(--color_grey);
     }
 
-    /* article_second */
+    /* article_second (d-day)*/
     .articles .article_second {
         width: 81.8%;
         height: 70px;
@@ -534,7 +531,6 @@
         font-size: 20px;
         font-weight: 700;
     }
-
     .item_dday:nth-child(1){
         color: var(--color_blue);
     }
@@ -553,7 +549,7 @@
         margin-bottom: -14px;
     }
     
-    /* article_third */
+    /* article_third (나의 스터디, 나의 스크랩) */
     .articles .article_third{
         width: 81.8%;
         display: flex;
@@ -561,14 +557,27 @@
         gap: 0.9%;
         height: 320px;
     }
-
+    .title_background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 380px;
+        height: 60px;
+    }
 
     /* my_study_container */
     .article_third .my_study_container{
+        position: relative;
         width: 48.5%;
-        background-color: var(--color_beige);
-        padding: 20px 30px 50px 30px;
-        box-sizing: border-box;
+        display: flex;
+        flex-flow: column;
+        gap: 50px;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+    .my_study_container .title_background{
+        background-color: var(--color_blue);
     }
     .my_study_container .title_container{
         margin-bottom: 10px;
@@ -580,14 +589,14 @@
         flex-flow: column;
         justify-content: space-between;
     }
-    .list_study .item_study{
+    .item_study .icon_study{
 
     }
     .item_study .link_study{
         display: flex;
         align-items: center;
-        font-size: 27px;
-        font-weight: 600;
+        font-size: 20px;
+        font-weight: 500;
     }
     .link_study .icon_study{
         display: flex;
@@ -596,30 +605,56 @@
         border: var(--border_basic);
         border-radius: var(--border_radius_1);
         background-color: var(--color_grey);
-        margin-right: 40px;
-    }
-    /* article_bottom */
-    .articles .article_bottom{
-        width: 81.8%;
-        display: flex;
-        justify-content: flex-start;
-        height: 320px;
-    }
-    /* my_scrab_container */
-    .article_bottom .my_scrab_container{
-        width: 48.5%;
-    }
-    .my_scrab_container .feed{
-        width: 100%;
-        height: 300px;
-        overflow: auto;
-    }
-    .my_scrab_container .feed .content{
-        width: 100%;
-        height: 4000px;
-        background-color: red;
+        margin-right: 30px;
     }
 
+    /* my_scrab_container */
+    .article_third .my_scrab_container{
+        position: relative;
+        width: 48.5%;
+        display: flex;
+        flex-flow: column;
+        gap: 50px;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+
+    .title_container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 10;
+        box-sizing: border-box;
+    }
+    .my_scrab_container .title_background{
+        background-color: var(--color_yellow);
+    }
+    .list_container{
+        height: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        font-size: 17px;
+    }
+    .list_container .list_item{
+        display: flex;
+        gap: 10px;
+    }
+    .list_item .icon_scrab{
+     width: 20px;   
+     height: 20px;
+     background-size: 20px 20px;
+     background-image: url(../img/favorite_tag.png);
+    }
+    .list_item .title_scrab{
+        font-weight: 600;
+    }
     /* footer */
     footer{
         margin-top: 50px;
