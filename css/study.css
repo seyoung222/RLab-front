@@ -408,18 +408,35 @@ footer .corp_container .link_corp:nth-child(1)::before{
     max-height: 190px;
     overflow-y: auto;
   }
+
+  /* 스크롤바 스타일링 */
+.to_do_list_box1::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.to_do_list_box1::-webkit-scrollbar-thumb {
+  background-color: var(--color_black);
+  border-radius: 10px;
+}
+
+.to_do_list_box1::-webkit-scrollbar-track {
+  background-color: var(--color_beige);
+  border-radius: 10px;
+}
   
   .to_do_list_title {
     padding-bottom: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* 변경 */
     align-items: center;
     font-size: 20px;
   }
   
   .plus1 { 
     color: var(--color_grey);
-    font-size: 1px;    
+    font-size: 14px;
+    margin-left: 80px;    
   }
   
   .to_do_list_contents {
@@ -459,7 +476,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
   }
   .board_title {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start; /* 변경 */
       align-items: center;
       margin-left: 15px;
       margin-top: 20px;
@@ -469,7 +486,8 @@ footer .corp_container .link_corp:nth-child(1)::before{
   .plus2 {
     vertical-align: 10px;
     color: var(--color_grey);
-    font-size: 1px;
+    font-size: 14px;
+    margin-left: 50px;    
   }
 
   .board_box {
@@ -553,6 +571,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
     background-repeat: no-repeat;
     float: left;
     margin-left: 20px;
+    margin-right: 10px;
 
   }
   .feed_img2 {
@@ -565,6 +584,8 @@ footer .corp_container .link_corp:nth-child(1)::before{
   }
   .feed_name {
     font-weight: bold;
+    line-height: 30px;
+    vertical-align: middle;
   }
 
   .feed_date {
@@ -618,6 +639,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
  
   .middle_container3 {
     float: right;
+    margin-top: 35px;
   }   
   .feed_container3{
     padding-top: 30px;
