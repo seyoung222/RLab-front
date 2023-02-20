@@ -141,9 +141,12 @@
 
     /* header */
     header {
+        position: fixed;
         display: flex;
         justify-content: center;
-        margin-bottom: 25px;
+        margin-bottom: 250px;
+        background-color: var(--color_beige);
+        z-index: 100;
     }
     header #header_container {
       display: flex;
@@ -203,6 +206,7 @@
     main{
         width: var(--body_size);
         margin: 0;
+        margin-top: 70px;
     }
     main #main_container{
         display: flex;
