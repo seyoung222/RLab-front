@@ -233,11 +233,13 @@
     }
     .list_items .list_item{
         margin-bottom: 8px;
+        white-space: nowrap;
     }
     .list_items .list_item2{
         font-size: 14px;
         font-weight: 400;
         margin-left: 10px;
+        white-space: nowrap;
     }
     
     /* articles */
@@ -513,7 +515,7 @@
         display: flex;
         align-items: center;
         position: relative;
-        width: 85%;
+        width: 84%;
         align-items: center;
         overflow: hidden;
     }
@@ -544,6 +546,7 @@
         font-size: 14px;
         margin-top: -5px;
         color: var(--color_beige);
+        white-space: nowrap;
     }
     .article_second .dday_title{
         margin-bottom: -14px;
