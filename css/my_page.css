@@ -592,9 +592,6 @@
         flex-flow: column;
         justify-content: space-between;
     }
-    .item_study .icon_study{
-
-    }
     .item_study .link_study{
         display: flex;
         align-items: center;
@@ -621,8 +618,8 @@
         justify-content: space-between;
         align-items: flex-start;
         overflow: hidden;
+        padding: 45px 25px;
     }
-
     .title_container{
         position: absolute;
         top: 0;
@@ -648,6 +645,7 @@
     .list_container .list_item{
         display: flex;
         gap: 10px;
+        white-space: nowrap;
     }
     .list_item .icon_scrab{
      width: 20px;   
@@ -656,7 +654,17 @@
      background-image: url(../img/favorite_tag.png);
     }
     .list_item .title_scrab{
+        width: 100px;
         font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .list_item .content_scrab{
+        width: 180px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     /* footer */
     footer{
