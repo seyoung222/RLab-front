@@ -156,6 +156,7 @@
   }
   .search_container .icon_search{
     width: 20px; height: 20px;
+    cursor: pointer;
   }
   .search_container .search_title , .search_tag{
     width: 90%; 
@@ -264,7 +265,7 @@
     color: var(--color_black);  
     font-weight: bold;  
     font-size: 12px;
-    padding: 5px;
+    padding: 5px 10px;
     margin-left: 4px;
   }
   .delete_tag{
@@ -381,10 +382,10 @@
   .study_card_container .page_box>*{float: left; }
   .study_card_container .page_num+.page_num{margin-left: 20px;}
   .study_card_container .page_box .selected{
-    color: var(--color_black);
+    color: var(--color_black); font-weight: bold;
   }
   .study_card_container .page_box span{
-    line-height: 30px; font-size: 25px; color: var(--color_light-grey)
+    line-height: 30px; font-size: 25px; color: white;
   }
 
   .study_card_container .page_box .btn_prev{
