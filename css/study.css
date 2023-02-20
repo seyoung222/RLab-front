@@ -550,7 +550,9 @@ footer .corp_container .link_corp:nth-child(1)::before{
     padding-left: 309px;
     background-color: var(--color_mint);
     font-weight: bold;
-    position: fixed;
+    position: sticky;
+    top: 0px;
+    margin: 0;
     padding-top: 8px;
   }
 
