@@ -271,14 +271,13 @@ main .container{
 .box_seat_detail .btn_ticket{
 	background-color: rgb(71, 71, 42);
 
-	background-color: var(--color_yellow);
 }
 .box_seat_detail .btn_ticket:hover{
 	background-color: var(--color_beige);
 }
 .box_seat_detail .btn_ticket.selected{
 	background-color: var(--color_beige);
-	background-color: var(--color_beige);
+	background-color: var(--color_yellow);
 }
 .box_seat_detail .btn-direct{
 	margin-left: 5px; background-color: rgb(34, 66, 114);
@@ -379,13 +378,13 @@ main .container{
 	background-position: -10px -10px; margin-left: 10px;
 	background-image: url(../img/page_right.png); background-size:50px 50px;
 }
-.spot_card_container .page_number{
+.spot_card_container .page_num{
 	line-height: 30px; font-size: 25px; color: rgb(63, 63, 63);
 }
-.spot_card_container .page_number.selected{
+.spot_card_container .page_num.selected{
 color: #020a17; font-weight: bold;
 }
-.spot_card_container .page_number+.page_number{margin-left: 15px;}
+.spot_card_container .page_num+.page_num{margin-left: 15px;}
 
 
 
