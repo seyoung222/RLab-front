@@ -170,7 +170,7 @@
 
   .search_container .tag_box{ 
     position: absolute; 
-    top: 78%; 
+    top: 73%; 
     left: 23%; 
     display: flex; 
     flex-wrap: wrap;
@@ -290,7 +290,7 @@
     margin-top: 20px; margin-bottom: 15px;
   }
   .sel_region a{
-    text-decoration: none; color: var(--color_light-grey); font-size: var(--font_size_cont_l);
+    text-decoration: none; color: var(--color_grey); font-size: var(--font_size_cont_l);
   }
   .sel_region .selected{ font-weight: bold; color: var(--color_black);  }
 
@@ -382,10 +382,10 @@
   .study_card_container .page_box>*{float: left; }
   .study_card_container .page_num+.page_num{margin-left: 20px;}
   .study_card_container .page_box .selected{
-    color: var(--color_black); font-weight: bold;
+    color: var(--color_black); font-weight: 500;
   }
   .study_card_container .page_box span{
-    line-height: 30px; font-size: 25px; color: white;
+    line-height: 30px; font-size: 25px; color: rgb(62, 62, 62)
   }
 
   .study_card_container .page_box .btn_prev{
