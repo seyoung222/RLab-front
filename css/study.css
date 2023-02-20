@@ -326,6 +326,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
  /* 캘랜더  */
   .calendar_container {
     border: var(--border_basic);
+    border-radius: var(--border_radius_4);
     width: 700px;
     height: 500px;
     margin-right: 30px;
@@ -397,10 +398,10 @@ footer .corp_container .link_corp:nth-child(1)::before{
   /* to do list */
   .to_do_list_container {
     float: left;
-    border: var(--border_light) solid black; 
+    border: var(--border_basic);
     border-radius: var(--border_radius_4);
     width: 272px;
-    height: 310px;
+    height: 330px;
     box-shadow: var(--box-shadow);
     padding-left: 16px;
     padding-top: 19px;
@@ -470,9 +471,9 @@ footer .corp_container .link_corp:nth-child(1)::before{
     float: left;
     margin-top: 20px;
     width: 272px;
-    height: 167px;
+    height: 177px;
     background-color: var(--color_yellow);
-    border: var(--border_light);
+    border: var(--border_basic);
     border-radius: var(--border_radius_3);
     box-shadow: var(--box-shadow);
     padding-left: 16px;
@@ -525,10 +526,9 @@ footer .corp_container .link_corp:nth-child(1)::before{
     border: var(--border_basic);
     box-shadow: var(--box-shadow);
     float: right;
-    height: 515px;
     width: 400px;
     overflow: auto;
-    height: 510px;
+    height: 550px;
     background-color: var(--color_beige);
   }
 
@@ -547,13 +547,14 @@ footer .corp_container .link_corp:nth-child(1)::before{
     border-radius: 10px;
   }
   .feed_title {
-    padding-left: 309px;
     background-color: var(--color_mint);
     font-weight: bold;
     position: sticky;
     top: 0px;
     margin: 0;
-    padding-top: 8px;
+    line-height: 36px;
+    padding-right: 10px;
+    text-align: right;
   }
 
   .board {
@@ -656,6 +657,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
     float: left;
     margin-top: 10px;
     color: var(--color_grey);
+    padding-left: 5px;
   }
  
   .middle_container3 {
@@ -740,10 +742,12 @@ footer .corp_container .link_corp:nth-child(1)::before{
     position: absolute;
   }
   .my {
+    float: left;
     font-size: 11px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     line-height: 40px;
+    margin-left: 10px;
   }
   
   .my_list_title {
@@ -762,9 +766,11 @@ footer .corp_container .link_corp:nth-child(1)::before{
   }
 
   .my_study {
+    float: right;
     margin-top: 10px;
     padding-left: 30px;
     font-weight: bold;
+    margin-right: 20px;
   }
 
   #dropdown_btn {
@@ -827,7 +833,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
   }
 
   .dropdown_list_contents_title + .dropdown_hr {
-    border-top: var(--border_light);
+    border-top: var(--border_basic);
   }
 
 
@@ -875,7 +881,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
   .study_title{
     padding-top: 10px;
     margin-left: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center;
     font-weight: bold;
   }
@@ -911,6 +917,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
     vertical-align: 10px;  
     margin: 0; 
     font-weight: bold;
+    padding-top: 16px;
   }
   
 
