@@ -58,9 +58,12 @@
 			clear: both; display: block; content: '';
 		}
     a{color: var(--color_black);}
-    .show_plus{
-        font-size: 14px;
 
+    .show_plus{
+        position: absolute;
+        right: 0;
+        font-size: 14px;
+        margin-top: 10px;
     }
 
     /* background */
@@ -666,6 +669,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
     /* footer */
     footer{
         margin-top: 50px;
