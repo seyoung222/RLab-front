@@ -61,7 +61,7 @@
 
     .show_plus{
         position: absolute;
-        right: 0;
+        right: 18px;
         font-size: 14px;
         margin-top: 10px;
     }
@@ -475,10 +475,16 @@
 
     /* 나의 예약 */
     .article_top .book_container{
+        position: relative;
         width: 17%;
         height: 753px;
-        padding: 20px 0;
+        padding: 20px 0 50px 0;
         background-color: var(--color_mint);
+    }
+    .book_container .show_plus{
+        position: absolute;
+        left: 57px;
+        bottom: 18px;
     }
     .book_container .book_window{
         display: flex;
