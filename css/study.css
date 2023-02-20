@@ -457,7 +457,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
   }
   
   progress {
-    width: 100%;
+    width: 90%;
     height: 30px;
   }
   
