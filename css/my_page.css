@@ -210,9 +210,9 @@
     #main_container .left_menu_container{
         display: flex;
         justify-content: center;
-        width: 230px;
-        height: 530px;
-        padding: 50px 30px;
+        width: 250px;
+        height: 540px;
+        padding: 40px 20px;
         border: 2px solid #020a17;
         border-radius: var(--border_radius_2);
         box-sizing: border-box;
@@ -235,7 +235,7 @@
         margin-bottom: 8px;
     }
     .list_items .list_item2{
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 400;
         margin-left: 10px;
     }
