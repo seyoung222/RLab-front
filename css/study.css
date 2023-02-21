@@ -316,9 +316,9 @@ footer .corp_container .link_corp:nth-child(1)::before{
   .left_menu_container{
     display: flex;
     justify-content: center;
-    width: 300px;
+    width: 200px;
     height: 400px;
-    padding: 40px 0;
+    padding: 40px 40px 40px 20px;
     border: 2px solid #020a17;
     border-radius: var(--border_radius_2);
     box-sizing: border-box;
@@ -327,8 +327,9 @@ footer .corp_container .link_corp:nth-child(1)::before{
 .left_menu_container .left_menu{
     display: flex;
     flex-flow: column;
+    justify-content: space-between;
     align-items: flex-start;
-    gap: 16px;
+    gap: 12px;
     font-size: 15px;
     font-weight: 800;
 }
