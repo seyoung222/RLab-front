@@ -286,6 +286,8 @@
         justify-content: space-between;
         width: 55%;
         background-color: var(--color_blue);
+        padding: 45px 35px 50px 35px;
+        box-sizing: border-box;
     }
     .title{
         display: flex;
@@ -335,22 +337,23 @@
         margin-bottom: -3px;
     }
     #point_container .my_point .icon_point{
-        width: 80px;
-        height: 80px;
-        background-size: 80px 80px;
+        width: 65px;
+        height: 65px;
+        background-size: 65px 65px;
         background-image: url(../img/point.png);
         background-repeat: no-repeat;
         opacity: 80%;
     }
     .my_point .point_texts .title_point{
         position: absolute;
-        top: 0px;
-        font-size: 28px;
+        top: 15px;
+        font-size: 21px;
         margin-left: 5px;
         color: var(--color_grey);
     }
     .my_point .point_texts .num_point{
-        margin-bottom: -14px;
+        font-size: 45px;
+        margin-bottom: -8px;
     }
     #point_container .point_btns_container{
         height: 80px;
