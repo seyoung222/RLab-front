@@ -252,31 +252,55 @@ main .container{
 	font-size: 18px; line-height: 200px; font-weight: bold; 
 	padding-left: 15px; position: absolute; 
 }
-.button_container .link_button .icon_seat{
-	background-image: url(../img/chair.png);
+.button_container .btn_seat .icon_seat{
+	background-image: url(../img/office-chair_.png); opacity: .4;
 	display: inline-block; width: 200px; height: 200px;
 	background-position: 50px; background-size: 190px 190px;
 	background-repeat: no-repeat;
 }
-.button_container .link_button .icon_cabinet{
-	background-image: url(../img/locker.png);
+.button_container .btn_cabinet .icon_cabinet{
+	background-image: url(../img/locker_.png); opacity: .4;
 	display: inline-block; width: 200px; height: 200px;
 	background-position: 50px; background-size: 190px 190px;
 	background-repeat: no-repeat;
 }
-.button_container .link_button .icon_room{
-	background-image: url(../img/meeting.png);
+.button_container .btn_room .icon_room{
+	background-image: url(../img/meeting_.png); opacity: .4;
 	display: inline-block; width: 200px; height: 200px;
 	background-position: 50px; background-size: 160px 160px;
 	background-repeat: no-repeat;
+}
+.button_container .btn_seat.selected .icon_seat,
+.button_container .btn_seat:hover .icon_seat{
+	background-image: url(../img/office-chair.png);
+	opacity: 1;
+}
+.button_container .btn_cabinet.selected .icon_cabinet,
+.button_container .btn_cabinet:hover .icon_cabinet{
+	background-image: url(../img/locker.png);
+	opacity: 1;
+}
+.button_container .btn_room.selected .icon_room,
+.button_container .btn_room:hover .icon_room{
+	background-image: url(../img/meeting.png);
+	opacity: 1;
 }
 .button_container .btn_seat{background-color: var(--color_beige);}
 .button_container .btn_cabinet{background-color: var(--color_beige);}
 .button_container .btn_room{background-color: var(--color_beige);}
 
-.button_container .btn_seat.selected{background-color: var(--color_blue);}
-.button_container .btn_cabinet.selected{background-color: var(--color_yellow);}
-.button_container .btn_room.selected{background-color: var(--color_mint);}
+.button_container .btn_seat.selected,
+.button_container .btn_seat:hover{
+	background-color: var(--color_blue);
+}
+.button_container .btn_cabinet.selected,
+.button_container .btn_cabinet:hover{
+	background-color: var(--color_yellow);
+}
+.button_container .btn_room.selected,
+.button_container .btn_room:hover{
+	background-color: var(--color_mint);
+}
 /* 필터/서치 섹션 */
 .search_container .box_seat_detail{
 	margin: 50px 0 0;
