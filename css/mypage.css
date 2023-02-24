@@ -141,6 +141,7 @@
 
     /* header */
     header {
+        width: 100%;
         position: fixed;
         display: flex;
         justify-content: center;
@@ -478,35 +479,70 @@
 
     /* 나의 예약 */
     .article_top .book_container{
-        position: relative;
-        width: 17%;
-        height: 53px;
-        padding: 20px 0 50px 0;
-        background-color: var(--color_mint);
-    }
-    .book_container .show_plus{
-        position: absolute;
-        left: 57px;
-        bottom: 18px;
-    }
-    .book_container .book_window{
         display: flex;
         flex-flow: column;
         justify-content: space-between;
         align-items: center;
-        width: 75%;
-        height: 500px;
+        position: relative;
+        width: 147px;
+        height: 650px;
+        border: none;
+        box-shadow: none;
+        padding: 0;
         border: var(--border_basic);
         border-radius: var(--border_radius_4);
-        background-color: var(--color_beige);
         box-shadow: var(--box-shadow);
-        padding: 30px 0;
+        overflow: hidden;
+    }
+    .book_container .title_container{
+        width: 100%;
+        background-color: var(--color_mint);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-bottom: 20px;
+    }
+    .book_container .show_plus{
+        bottom: 0;
+        right: 38px;
+        padding: 20px 0;
+    }
+    .book_container .book_window{
+        position: absolute;
+        top: 80px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color_mint);
         box-sizing: border-box;
     }
     .book_window .book_info{
+        width: 100px;
+        height: 100px;
+        border: var(--border_basic);
+        border-radius: var(--border_radius_1);
         display: flex;
         align-items: center;
-        gap: 3px;
+    }
+    .book_window .book_info:nth-child(1){
+        background-color: var(--color_blue);
+    }
+    .book_window .book_info:nth-child(4){
+        background-color: var(--color_mint);
+    }
+    .book_window .book_info:nth-child(3){
+        background-color: var(--color_yellow);
+    }
+    .book_info .icon_chair{
+        display: flex;
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+        background-repeat: no-repeat;
+        background-image: url(../img/chair.png);
     }
     .book_info .small_title{
         font-size: 13px;
