@@ -1,0 +1,58 @@
+:root {
+    /* color */
+    --color_blue: #66a0e2;
+    --color_yellow: #f0ea58;
+    --color_mint: #01f3a3;
+    --color_black: #020a17;
+    --color_beige: #fcf4ed;
+    --color_light-grey: #bfbfbf;
+    --color_grey: #626262;
+
+    /* size */
+    --body_size: 1200px;
+
+    /* border */
+    --border_basic: 2px solid #020a17;
+    --border_light: 1px solid #bfbfbf;
+
+    /* border-radius */
+    --border_radius_1: 50%;
+    --border_radius_2: 30px;
+    --border_radius_3: 20px;
+    --border_radius_4: 10px;
+
+    /* font */
+    --font_family_main: -apple-system, BlinkMacSystemFont, "Malgun Gothic",
+      "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+    --font_family_sub: -apple-system, BlinkMacSystemFont, "Malgun Gothic",
+      "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+
+    /* box-shadow */
+    --box-shadow: 5px 5px 0px rgb(7, 7, 7);
+  }
+
+
+  .tab-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+  }
+  
+  .tab {
+    padding: 15px;
+    border: var(--border_basic);
+    border-top-left-radius: var(--border_radius_3);
+    border-top-right-radius: var(--border_radius_3);
+    cursor: pointer;
+    background-color: var(--color_light-grey);
+    height: 20px;
+    font-weight: bold;
+  }
+  
+  .selected {
+    background-color: var(--color_yellow);
+  }
+  
+  .selected-blue {
+    background-color: var(--color_blue);
+  }
