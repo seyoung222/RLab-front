@@ -56,10 +56,16 @@
   .selected-blue {
     background-color: var(--color_blue);
   }
-
+  .checkbox {
+    float: right;
+    margin-left: 5px;
+  }
+  
   /* 모집 부분 - study-card-container */
   .study_card_container{
     width: 960px;  float: right;
+    padding: 40px;
+    border: var(--border_basic);
   }
   .row_study_card{margin-bottom: 20px;}
   .study_card_box{
@@ -81,6 +87,7 @@
     border-top-right-radius: var(--border_radius_4);
     border-top-left-radius: var(--border_radius_4);
   }
+
   
   .study_card_container .study_info{
     width: 270px; 
