@@ -58,7 +58,7 @@
   }
   .checkbox {
     position: absolute;
-    right:175px;
+    right:205px;
   }
   .checkbox_title {
     display: flex;
@@ -69,12 +69,15 @@
   }
   .my_study_container {
     margin-top: -7px; /* 위쪽 마진을 음수값으로 조정하여 보더가 붙어있는 스타일로 변경 */
-    height:820px;
+    height:850px;
     position: relative;
     border: var(--border_basic); 
     border-radius: var(--border_radius_4);
-   
+    padding-right: 30px;
+    padding-top: 42px;
   }
+
+  
  
   /* 모집 부분 - study-card-container */
   .study_card_container{
@@ -169,6 +172,7 @@
   /* 넘기기 버튼 */
   .study_card_container .page_box{
     margin-top: 40px; display: flex; justify-content: center;
+    padding-top: 30px;
   }
   .study_card_container .page_box>*{float: left; }
   .study_card_container .page_num+.page_num{margin-left: 20px;}
