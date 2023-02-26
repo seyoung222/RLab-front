@@ -43,7 +43,7 @@
 }
 body {
 	background-color: var(--color_beige);
-	height: 1397px;
+	height: 1547px;
   position: relative;
 }	
 #total_container {
@@ -431,6 +431,9 @@ color: #020a17; font-weight: bold;
 
 
 /* footer */
+footer{
+	margin-top : 150px
+}
 footer .container{
 	width: 1200px; margin: 0 auto; padding: 50px;
 }
