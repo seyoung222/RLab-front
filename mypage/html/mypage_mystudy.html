@@ -76,9 +76,9 @@
             <!-- 탭 -->
               <div class="tab-container">
                 <div class="tab selected_tab">찜한 스터디</div>
-                <div class="tab">개설한 스터디</div>
-                <div class="tab">진행중인 스터디</div>
-                <div class="tab">완료한 스터디</div>
+                <div class="tab unselected_tab tab2">개설한 스터디</div>
+                <div class="tab  unselected_tab tab3">진행중인 스터디</div>
+                <div class="tab  unselected_tab tab4">완료한 스터디</div>
               </div>
               <div class="my_study_container">
                 <label class="checkbox_title">
@@ -87,7 +87,7 @@
                 </label>
                 <div class="study_card_container">
                   
-                  <ul>
+                  <ul class="study_card_ul" id="study_card_ul">
                       <div class="row_study_card clearfix">
                           <li class="study_card_box add_shadow op">
                               <a href="">
@@ -354,5 +354,26 @@
         </div>
       </footer>
     </div>
+    <script>
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(tab => {
+            tab.classList.remove('selected_tab', 'selected_tab2', 'selected_tab3', 'selected_tab4', 'unselected_tab');
+            tab.classList.add('unselected_tab');
+          });
+          tab.classList.remove('unselected_tab');
+          if (tab.classList.contains('tab2')) {
+            tab.classList.add('selected_tab2');
+          } else if (tab.classList.contains('tab3')) {
+            tab.classList.add('selected_tab3');
+          } else if (tab.classList.contains('tab4')) {
+            tab.classList.add('selected_tab4');
+          } else {
+            tab.classList.add('selected_tab');
+          }
+        });
+      });
+      </script>
   </body>
 </html>
