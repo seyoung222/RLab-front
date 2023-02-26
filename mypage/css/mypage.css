@@ -218,8 +218,8 @@
     #main_container .left_menu_container{
         display: flex;
         justify-content: center;
-        width: 250px;
-        height: 540px;
+        width: 235px;
+        height: 480px;
         padding: 40px 20px;
         border: 2px solid #020a17;
         border-radius: var(--border_radius_2);
