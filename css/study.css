@@ -310,6 +310,11 @@ footer .corp_container .link_corp:nth-child(1)::before{
     font-size: 15px;
     font-weight: 800;
 }
+.leave {
+  position: relative;
+  bottom: -120px;
+  left: 5px;
+}
   
   .left_menu a:visited {
     font-weight: bold; 
