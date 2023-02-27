@@ -208,7 +208,8 @@
 
   /* 모집 부분 */
   .result_container{
-    height: 100%; float: left; 
+    height: 100%;
+    float: left; 
   }
   /* 모집 부분 - menu-nav */
    .result_container .menu_nav{
@@ -307,9 +308,24 @@
     margin-top: 20px; margin-bottom: 15px;
   }
   .sel_region a{
-    text-decoration: none; color: var(--color_grey); font-size: var(--font_size_cont_l);
+    text-decoration: none; 
+    color: var(--color_grey); 
+    font-size: var(--font_size_cont_l);
   }
-  .sel_region .selected{ font-weight: bold; color: var(--color_black);  }
+  .sel_region .selected{ 
+    font-weight: 
+    bold; color: var(--color_black);  }
+
+  .make_project{
+    width: 100px; 
+    line-height: 30px ;
+    position: relative;
+    bottom: -70px;
+    left: 35px;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: var(--color_light-grey)
+  }
 
 
   /* 모집 부분 - study-card-container */
@@ -391,10 +407,20 @@
     background-size: cover;
 
   }
+  .make_recruit{
+   float:  right;
+   width: 100px; 
+   line-height: 30px ;
+   border-radius: 10px;
+   background-color: var(--color_light-grey);
+   padding: 3px;
+  }
 
   /* 넘기기 버튼 */
   .study_card_container .page_box{
-    margin-top: 40px; display: flex; justify-content: center;
+    margin-top: 60px; 
+    display: flex; 
+    justify-content: center;
   }
   .study_card_container .page_box>*{float: left; }
   .study_card_container .page_num+.page_num{margin-left: 20px;}
@@ -415,7 +441,6 @@
     background-position: -10px -10px; display: inline-block;
     background-image: url(../img/page_right.png); background-size:50px 50px;
   }
-
 
 
   /* Footer */
