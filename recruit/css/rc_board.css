@@ -292,11 +292,10 @@
 
   .background_bbls{
   position: absolute;
-  height: 100%;
-  top: 535px;
+  height: 1200px;
+  top: 348px;
   display: flex;
   width: 100%;
-  height: 100%;
   z-index: -10;
   overflow: hidden;
   }
