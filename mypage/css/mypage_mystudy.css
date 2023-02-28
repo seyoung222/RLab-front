@@ -101,7 +101,7 @@
   }
   
   .op {
-    opacity: 0.5;
+    position: relative;
   }
 
 
@@ -220,6 +220,35 @@
     align-items: center; 
     justify-content: center; 
     margin-top: 20px; 
+  }
+
+  .sad_container{
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .sad_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+  }
+
+  .sad_img {
+    background-image: url(../img/sad.png);
+    background-size: cover;
+    width: 49px;
+    height: 49px;
+  }
+  .sad_img_content {
+    font-weight: bold;
+    font-size: 25px;
   }
 
   /* 넘기기 버튼 */
