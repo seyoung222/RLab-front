@@ -541,10 +541,8 @@ header #header_container {
   flex-direction: row-reverse;
   align-items: center;
   width: 200px;
-  /* border: 2px solid black */
 }
 
-/* 로그인 전 */
 .login_modal, .signup_btn{
   padding: 5px 5px;
   margin-right: 10px;

@@ -26,35 +26,32 @@
 <div id="total_container">
   <!-- header -->
     <header>
-          <!-- 로그인 모달창 -->
-  <div class="modal_container">
-    <div class="modal_area">
-      <a href="#" class="close_btn">x</a>
-      <div class="login_box">
-        <h1>로그인</h1>
-        <form action="<c:url value='/login'></c:url>" method="post">
-          <div class="form_group">
-            <!-- <label for="id"></label> -->
-            <input type="text" class="form_control" id="id" name="me_id" placeholder="아이디">
+    <!-- 로그인 모달창 -->
+      <div class="modal_container">
+        <div class="modal_area">
+          <a href="#" class="close_btn">x</a>
+          <div class="login_box">
+            <h1>로그인</h1>
+            <form action="<c:url value='/login'></c:url>" method="post">
+              <div class="form_group">
+                <!-- <label for="id"></label> -->
+                <input type="text" class="form_control" id="id" name="me_id" placeholder="아이디">
+              </div>
+              <div class="form_group">
+                <!-- <label for="pw">비번:</label> -->
+                <input type="password" class="form_control" id="pw" name="me_pw" placeholder="비밀번호">
+              </div>
+              <button class="btn_outline_success col-12">로그인</button>
+              <hr>
+              <p class="more_action">
+                <a href="#" class="more_action_item 1">아이디 찾기</a> |
+                <a href="#" class="more_action_item 2">비밀번호 찾기</a> |
+                <a href="#" class="more_action_item 3">회원가입</a>
+              </p>
+            </form>
           </div>
-          <div class="form_group">
-            <!-- <label for="pw">비번:</label> -->
-            <input type="password" class="form_control" id="pw" name="me_pw" placeholder="비밀번호">
-          </div>
-          <button class="btn_outline_success col-12">로그인</button>
-          <hr>
-          <p class="more_action">
-            <a href="#" class="more_action_item 1">아이디 찾기</a> |
-            <a href="#" class="more_action_item 2">비밀번호 찾기</a> |
-            <a href="#" class="more_action_item 3">회원가입</a>
-          </p>
-        </form>
+        </div>
       </div>
-    </div>
-  </div>
-
-
-
 
       <div id="header_container">
         <div class="header_left">
