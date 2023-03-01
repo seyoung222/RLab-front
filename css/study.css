@@ -376,11 +376,10 @@ footer .corp_container .link_corp:nth-child(1)::before{
 input[type="radio"] {
   display: none;
 }
-label {
-  padding: 10px 20px;
+.tab1,.tab2,.tab3 {
+  padding: 10px 10px;
   background-color: lightgray;
   cursor: pointer;
-  border-radius: var(--border_radius_4);
 }
 
 .tab-content {
