@@ -148,6 +148,41 @@
   .cre_study_container {
     background-color: var(--color_blue);
     height: 170px;
+    position: relative;
+  }
+
+  .cre_study_container::after {
+    content: "x";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color_light-grey);
+    color: white;
+    border-radius: var(--border_radius_1);
+    text-align: center;
+    line-height: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .gr::after {
+    content: "x";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color_grey);
+    color: white;
+    border-radius: var(--border_radius_1);
+    text-align: center;
+    line-height: 14px;
+    font-weight: bold;
+    cursor: pointer;
   }
 
   .gr{
@@ -240,7 +275,7 @@
   }
 
   .sad_container{
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgba(211, 211, 211, 0.7);
     position: absolute;
     margin: 0 auto;
     top: 0;
