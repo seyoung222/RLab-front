@@ -819,17 +819,31 @@ progress {
   border: var(--border_basic); 
   border-radius: var(--border_radius_4); 
   padding: 10px;
-  width: 200px;
+  width: 210px;
   min-height: 200px;
   box-sizing: border-box;
+  overflow: auto;
+  height: 520px;
 
+}
+
+/* 스크롤바 스타일링 */
+.accessor::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.accessor::-webkit-scrollbar-thumb {
+  background-color: var(--color_black);
+  border-radius: 10px;
 }
 
 .accessor_container {
   box-sizing: border-box;
-  padding: 5pxpx;
+  padding: 5px;
   width: 100%;
   margin: 0;
+
+  
 
 }
 .study_title{
