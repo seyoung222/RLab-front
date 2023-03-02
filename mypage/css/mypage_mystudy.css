@@ -230,12 +230,19 @@
   
   }
   .study_card_container .study_content .study_recruiting{
-   border: 2px solid var(--color_black); background-color: var(--color_yellow);
-   text-align: center; border-radius: var(--border_radius_4); color: var(--color_black);
-   font-size:14px; width: 100px; height: 30px; line-height: 28px;
+  border: 2px solid var(--color_black); background-color: var(--color_yellow);
+  text-align: center; border-radius: var(--border_radius_4); color: var(--color_black);
+  font-size:14px; width: 100px; height: 30px; line-height: 28px;
   }
   .study_recruiting2{
     border: 2px solid var(--color_black); background-color: var(--color_blue);
+    text-align: center; border-radius: var(--border_radius_4); color: var(--color_black);
+    font-size:14px; width: 130px; height: 30px; line-height: 38px;
+    padding-bottom: 8px;
+  }
+
+  .study_recruiting3{
+    border: 2px solid var(--color_black); background-color: var(--color_mint);
     text-align: center; border-radius: var(--border_radius_4); color: var(--color_black);
     font-size:14px; width: 130px; height: 30px; line-height: 38px;
     padding-bottom: 8px;
@@ -310,8 +317,68 @@
   #study_filter {
     float: right;
   }
+  .ing_study_ul {
+    margin-top: 31px;
+  }
 
- 
+  
+  .ing_study {
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+
+  .ing_study_img {
+  border: var(--border_basic);
+  border-radius: var(--border_radius_1);
+  width: 170px; height: 170px;
+  background-size: cover;
+  background-image: url(../img/study_img.jpeg);
+  margin: 0 auto; 
+  margin-top: -90px;
+  display: block; 
+  }
+
+  
+  .ing_study_title {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .ing_study_title2 {
+    font-size: 11px;
+  }
+
+  .ing_study_content {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 20px; 
+  }
+
+  .ing_study_container {
+    background-color: var(--color_mint);
+    height: 170px;
+    position: relative;
+  }
+
+  .ing_study_container::after {
+    content: "x";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color_light-grey);
+    color: white;
+    border-radius: var(--border_radius_1);
+    text-align: center;
+    line-height: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
 
   .cre_study_title {
     font-size: 17px;
