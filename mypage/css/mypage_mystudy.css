@@ -98,8 +98,8 @@
  
   /* 모집 부분 - study-card-container */
   .study_card_container{
-    width: 960px;  float: right;
     background-color: var(--color_beige);
+    width: 960px;  float: right;
   }
   
   .op {
@@ -413,4 +413,10 @@
     width: 30px; height: 30px; margin-left: 10px;
     background-position: -10px -10px; display: inline-block;
     background-image: url(../img/page_right.png); background-size:50px 50px;
+  }
+
+  #box_study_filter::after{
+    display: block;
+    content: '';
+    clear: both;
   }
