@@ -1,0 +1,58 @@
+#my_container{padding-top: 32px;}
+.study_card_container{
+  padding-left: 30px;
+
+}
+.tabel_container{
+  /* background-color: lavender; */
+  /* height: 830px; */
+}
+.select_box_area{
+  height: 29.5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  /* background-color: blue; */
+}
+.select_view option{
+  width: 200px;
+  border-radius: 5px;
+}
+.tabel_area{
+  height: 684px;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(43, 42, 42);
+  /* background-color: rgba(153, 154, 152, 0.517); */
+}
+.tabel_area .border_box{
+  width: 100%;
+}
+.board_title_list{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.border_box .board_num{
+  height: 80px;
+}
+.border_box [class^=board_list_]{
+  height: 52px;
+  border-bottom: 1px solid black;
+}
+/* 
+.border_box .board_nu{
+
+}
+.border_box .study_name{
+
+}
+.border_box .title{
+
+}
+.border_box .writer{
+
+}
+.border_box .date{
+
+} */
