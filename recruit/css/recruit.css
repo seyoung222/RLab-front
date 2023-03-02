@@ -209,7 +209,11 @@
   /* 모집 부분 */
   .result_container{
     height: 100%;
-    float: left; 
+    display: flex;
+  }
+  .flex_box{
+    display: flex;
+    flex-direction: column;
   }
   /* 모집 부분 - menu-nav */
    .result_container .menu_nav{
@@ -290,6 +294,7 @@
    all: unset;
    margin-left: 2px;
   }
+
   
   /* 왼쪽 회색 줄  */
   .line{
@@ -314,17 +319,31 @@
   }
   .sel_region .selected{ 
     font-weight: 
-    bold; color: var(--color_black);  }
-
+    bold; color: var(--color_black);  
+  }
+  /*스터디 생성하기*/
+  .make_rc_box{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 180px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 5px;
+    padding: 5px;
+    background-color: forestgreen;
+  }
   .make_project{
-    width: 100px; 
+    width: 120px; 
     line-height: 30px ;
-    position: relative;
-    bottom: -70px;
-    left: 35px;
     padding: 3px;
-    border-radius: 10px;
-    background-color: var(--color_light-grey)
+    margin-top: 10px;
+    border-radius: var(--border_radius_3);
+    background-color: var(--color_mint);
+    border: none;
+    font-size: small;
+    font-weight: bold;
   }
 
 
@@ -397,9 +416,13 @@
   
   }
   .study_card_container .study_content .study_recruiting{
-   border: 2px solid var(--color_black); background-color: var(--color_yellow);
-   text-align: center; border-radius: var(--border_radius_4); color: var(--color_black);
-   font-size:14px; width: 100px; height: 30px; line-height: 28px;
+    border: 2px solid var(--color_black);
+    background-color: var(--color_yellow);
+    text-align: center;
+    border-radius: var(--border_radius_4);
+    color: var(--color_black);
+    font-size:14px; width: 100px; 
+    height: 30px; line-height: 28px;
   }
   .study_card_container .study_content .like_img{
     width: 30px; height: 30px;
@@ -408,12 +431,15 @@
 
   }
   .make_recruit{
-   float:  right;
-   width: 100px; 
-   line-height: 30px ;
-   border-radius: 10px;
-   background-color: var(--color_light-grey);
-   padding: 3px;
+    float: right;
+    width: 120px;
+    line-height: 30px;
+    border-radius: var(--border_radius_3);
+    background-color: var(--color_yellow);
+    padding: 3px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px var(--color_grey);
   }
 
   /* 넘기기 버튼 */
