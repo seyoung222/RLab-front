@@ -77,15 +77,15 @@
           <section>
             <!-- 탭 -->
             <div class="tab-container">
-              <div class="tab selected_tab tab1">찜한 스터디</div>
+              <div class="tab unselected_tab tab1">찜한 스터디</div>
               <div class="tab unselected_tab tab2">개설한 스터디</div>
-              <div class="tab unselected_tab tab3">진행중인 스터디</div>
+              <div class="tab selected_tab tab3">진행중인 스터디</div>
             </div>
               <div class="my_study_container">
                
                 <div class="study_card_container">
                   
-                  <ul class="tab-content show">
+                  <ul class="tab-content">
                     <label class="checkbox_title">
                       모집완료된 스터디 제외
                       <input type="checkbox" class="checkbox">
@@ -440,7 +440,7 @@
                       </div>
                     </ul>
                     <!-- 진행중인 스터디 -->
-                    <ul class="tab-content ing_study_ul">
+                    <ul class="tab-content ing_study_ul show">
                       <div id="box_study_filter">
                         <select id="study_filter">
                           <option value="all">전체보기</option>
