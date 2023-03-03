@@ -93,13 +93,15 @@
     border-radius: var(--border_radius_4);
     padding-right: 30px;
     padding-top: 42px;
+    padding-left: 5px;
+    padding-bottom: 10px;
     background-color: var(--color_beige);
   }
  
   /* 모집 부분 - study-card-container */
   .study_card_container{
     background-color: var(--color_beige);
-    width: 960px;  float: right;
+    width: 960px;  
   }
   
   .op {
@@ -149,6 +151,7 @@
     background-color: var(--color_blue);
     height: 170px;
     position: relative;
+    border-radius: var(--border_radius_4);
   }
 
   .cre_study_container::after {
@@ -192,6 +195,10 @@
 
   .study_recruiting2.gr2 {
     background-color: #ccc;
+  }
+
+  .gr2 {
+    background-color: var(--color_light-grey) !important;
   }
 
   .study_tag_info{
@@ -315,7 +322,9 @@
     margin-top: 31px;
   }
   #study_filter {
-    float: right;
+    position: absolute;
+    top: 41px;
+    right: 25px;
   }
   .ing_study_ul {
     margin-top: 31px;
@@ -355,12 +364,16 @@
     justify-content: center; 
     margin-top: 20px; 
   }
+  
 
   .ing_study_container {
     background-color: var(--color_mint);
     height: 170px;
     position: relative;
+    border-radius: var(--border_radius_4);
   }
+
+  
 
   .ing_study_container::after {
     content: "x";
