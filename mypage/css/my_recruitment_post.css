@@ -1,0 +1,58 @@
+.study_card_box {
+  position: relative;
+}
+
+.button-container {
+  display: none;
+  position: absolute;
+  top: 290px;
+  right: 90px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 1;
+  
+}
+
+.study_card_box:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.study_card_box:hover .study_info {
+  opacity: 0.3;
+}
+
+.study_card_box:hover .button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit-button,
+.delete-button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.edit-button {
+  background-color: #fff;
+  color: #4285f4;
+}
+
+.delete-button {
+  background-color: #fff;
+  color: #db4437;
+}
+
+.edit-button:hover {
+  background-color: #2962ff;
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #ff453a;
+  color: #fff;
+}
