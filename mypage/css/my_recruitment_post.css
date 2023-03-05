@@ -5,12 +5,15 @@
 .button-container {
   display: none;
   position: absolute;
-  top: 290px;
-  right: 90px;
-  left: 32px;
-  z-index: 1;
-  justify-content: center; 
-  
+  top: 280px;
+  left: 55px;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-button, .delete-button {
+  margin: 0;
+  display: inline-block;
 }
 
 .study_card_box:hover {
