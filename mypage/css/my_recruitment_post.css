@@ -21,6 +21,10 @@
   opacity: 0.3;
 }
 
+.study_card_box:hover .study_img_box {
+  opacity: 0.3;
+}
+
 .study_card_box:hover .button-container {
   display: flex;
   justify-content: flex-end;
