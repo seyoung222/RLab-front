@@ -1,18 +1,12 @@
 #my_container{padding-top: 32px;}
 .study_card_container{
   padding-left: 30px;
-
-}
-.tabel_container{
-  /* background-color: lavender; */
-  /* height: 830px; */
 }
 .select_box_area{
   height: 29.5px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: row-reverse;
-  /* background-color: blue; */
 }
 .select_view option{
   width: 200px;
@@ -24,7 +18,6 @@ table { border-collapse: collapse; }
   border-bottom: 2px solid rgba(33, 33, 33, 0.393);
 }
 .board_list {
-  /* border-top: 1px solid rgba(80, 79, 79, 0.487); */
   border-bottom: 1px solid rgba(97, 97, 97, 0.634);
 }
 .board_list_1,
@@ -40,16 +33,14 @@ table { border-collapse: collapse; }
   font-size: 17px;
   color:rgb(67, 66, 66)
 }
-
-
-.tabel_area{
+[class^=table_area]{
   height: 684px;
   font-size: 15px;
   text-align: center;
   color: rgb(43, 42, 42);
-  /* background-color: rgba(153, 154, 152, 0.517); */
 }
-.tabel_area .border_box{
+.table_area_1, .table_area_2, .table_area_3{ display: none;}
+.border_box{
   width: 100%;
 }
 .board_title_list{
