@@ -660,14 +660,19 @@ progress {
 .circle_now {
   width: 40px;
   height: 40px;
-  
+  position: relative;
   border: var(--border_basic);
   background-color: var(--color_blue);
   font-size: small;
   text-align: center;
   margin-bottom: 10px;
 }
+.circle_now:hover {
+  width: 200px;
+}
 .now {
+  left: 5px;
+  position: absolute;
   font-size: 11px;
   font-weight: bold;
   text-align: center;
@@ -677,15 +682,22 @@ progress {
   text-align: center;
   width: 40px;
   height: 40px;
-  
+  position: relative;
   border: var(--border_basic);
   background-color: var(--color_mint);
   margin-bottom: 10px;
 }
+.circle_star:hover {
+  width: 200px;
+}
 .circle_star img {
-  width: 80%;
-  height: 80%;
+  position: absolute;
+  left: 5px;
+
+  width: 30px;
+  height: 30px;
   cursor: pointer;
+
   margin-top: 4px;
 }
 .circle_my{
@@ -709,6 +721,7 @@ progress {
   text-align: center;
   position: absolute;
 }
+
 .my {
   float: left;
   font-size: 11px;
@@ -717,9 +730,10 @@ progress {
   line-height: 40px;
   margin-left: 10px;
 }
+
 .my_list_title {
   position: absolute;
-  width: 200px;
+  width: 40px;
   height: 37px;
   border: var(--border_basic);
   border-radius: 25px;
@@ -731,6 +745,14 @@ progress {
   display: block;
   margin-left: 2px;
 }
+
+.my_list_title:hover {
+  width: 200px;
+}
+
+.my_list_title:hover + #dropdown_list {
+  display: block;
+}
 .my_study {
   float: right;
   margin-top: 10px;
@@ -738,6 +760,10 @@ progress {
   font-weight: bold;
   margin-right: 20px;
 }
+
+
+
+
 
 #dropdown_btn {
   background-color: transparent;
