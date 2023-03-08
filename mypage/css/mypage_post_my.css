@@ -39,7 +39,8 @@ table { border-collapse: collapse; }
   text-align: center;
   color: rgb(43, 42, 42);
 }
-.table_area_1, .table_area_2, .table_area_3{ display: none;}
+.fa-solid{margin-left: 5px; margin-right: -10px;}
+/* .table_area_3, .table_area_2{display: none;} */
 .border_box{
   width: 100%;
 }
@@ -54,19 +55,7 @@ table { border-collapse: collapse; }
   height: 52px;
   border-bottom: 1px solid black;
 }
-/* 
-.border_box .board_nu{
+.background_bbls{
+  height: 1253px;
 
 }
-.border_box .study_name{
-
-}
-.border_box .title{
-
-}
-.border_box .writer{
-
-}
-.border_box .date{
-
-} */
