@@ -670,6 +670,7 @@ progress {
   font-size: small;
   text-align: center;
   margin-bottom: 10px;
+  transition: width 0.5s ease;
 }
 .circle_now:hover {
   width: 200px;
@@ -690,6 +691,7 @@ progress {
   border: var(--border_basic);
   background-color: var(--color_mint);
   margin-bottom: 10px;
+  transition: width 0.5s ease;
 }
 .circle_star:hover {
   width: 200px;
@@ -748,6 +750,7 @@ progress {
   position: relative;
   display: block;
   margin-left: 2px;
+  transition: width 0.5s ease;
 }
 
 .my_list_title:hover {
