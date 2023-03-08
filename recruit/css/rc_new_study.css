@@ -141,6 +141,10 @@
 		text-align: center;
 		margin-bottom: 30px;
 	}
+  #rc_new_box{
+    padding: 50px;
+    
+  }
 	.ns_title_box{
 		width: 800px;
     border-radius: var(--border_radius_4);
@@ -160,10 +164,9 @@
     vertical-align: 2px;
 	}
 	.ns_banner_box{
-		margin: 10px 0 20px 0;
+    margin: 3px 0 20px 0;
 	}
 	.ns_banner_box .ns_banner{
-		padding: 6px ;
 		background-color:transparent;
 		border-radius: 4px;
 		cursor: pointer;
@@ -187,7 +190,7 @@
     vertical-align: 2px;
 	}
 	.ns_region_box{
-		margin: 10px 0 20px 0;
+    margin: 3px 0 20px 0;
 	}
 	#choose_region{
 		height: 38px;
@@ -196,7 +199,7 @@
     font-weight: bold;
 	}
 	.ns_people_box{
-		margin: 10px 0 20px 0;
+    margin: 3px 0 20px 0;
 	}
 	.ns_people_box .ns_people{
 		width: 90px;
@@ -207,13 +210,31 @@
 		border: 1px solid black;
 	}
 	.ns_finish_date_box{
-		margin: 10px 0 20px 0;
+		margin: 3px 0 20px 0;
 	}
 	.ns_finish_date_box .yes_finish , .no_finish{
 		width: 50px;
 		height: 30px;
 		border-radius: var(--border_radius_4);
+    background-color: white;
+    border: 1px solid black;
+    margin-right: 5px;
 	}
+  .ns_introduce_box{
+    margin: 3px 0 20px 0;
+  }
+  .ns_introduce_box .ns_introduce{
+    width: 800px;
+    height: 40px;
+    border: 1px solid black; 
+    background-color: transparent;
+    justify-content: center;
+    outline: none;
+    font-size: 14px;
+    vertical-align: 2px;
+    padding: 5px 15px;
+    border-radius: var(--border_radius_4);
+  }
 
   /* Footer */
   footer{
