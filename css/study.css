@@ -447,7 +447,11 @@ input[type="radio"]:checked ~ .tab-content {
 .add_todo {
   color: var(--color_grey);
   font-size: 17px;
+  background-color: transparent;
+  border: none;
+
 }
+
 progress {
   width: 90%;
   height: 30px;
