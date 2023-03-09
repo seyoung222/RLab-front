@@ -928,7 +928,7 @@ progress {
 }
 
 .time_line_container2 {
-  margin-left: 300px;
+  margin-left: 200px;
   border-radius: var(--border_radius_4);
   border: var(--border_basic);
   box-shadow: var(--box-shadow);
@@ -939,7 +939,19 @@ progress {
   background-color: #fff;
 }
 
-aside {
-  position: fixed;
-  right: 0;
+.time_line_container2::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.time_line_container2::-webkit-scrollbar-thumb {
+  background-color: var(--color_black);
+  border-radius: 10px;
+}
+
+.cb_sesction {
+  float: left;
+}
+
+.cb_aside {
+  float: right;
 }
