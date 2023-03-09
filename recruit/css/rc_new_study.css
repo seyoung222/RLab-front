@@ -222,21 +222,22 @@
 	}
 	.ns_finish_date_box{
 		margin: 3px 0 20px 0;
+    display: flex;
 	}
 	.ns_finish_date_box .yes_finish , .no_finish{
 		width: 50px;
-		height: 30px;
+		height: 23px;
 		border-radius: var(--border_radius_4);
-    background-color: white;
     border: 1px solid black;
     margin-right: 5px;
     cursor: pointer;
+    text-align: center;
+    padding: 5px;
 	}
-  .selected{
-    background-color: var(--color_blue);
-  }
+
   .datepicker{
     display: none;
+    border-radius: var(--border_radius_4);
   }
   .ns_introduce_box{
     margin: 3px 0 20px 0;
@@ -252,8 +253,21 @@
     vertical-align: 2px;
     padding: 5px 15px;
     border-radius: var(--border_radius_4);
+   
   }
-
+  .make_study_btn{
+    width: 130px;
+    height: 50px;
+    background-color: var(--color_yellow);
+    border-radius: var(--border_radius_4);
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+    font-size: large;
+    padding: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
 
   /* Footer */
   footer{
