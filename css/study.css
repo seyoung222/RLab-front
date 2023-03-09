@@ -928,14 +928,14 @@ progress {
 }
 
 .time_line_container2 {
-  margin-left: 200px;
+  margin-right:120px;
   border-radius: var(--border_radius_4);
   border: var(--border_basic);
   box-shadow: var(--box-shadow);
   float: right;
   width: 400px;
   overflow: auto;
-  height: 550px;
+  height: 600px;
   background-color: #fff;
 }
 
