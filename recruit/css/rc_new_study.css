@@ -143,11 +143,27 @@
 		text-align: center;
 		margin-bottom: 30px;
 	}
+  .temporary_storage_box{
+    display: flex;
+    justify-content: flex-end ;
+    width: 930px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .call_temporary_storage{
+    appearance: none;
+    border: 0;
+    font-weight: bold;
+    background-color: var(--color_yellow);
+    width: 150px;
+    height: 40px ;
+    border-radius: var(--border_radius_3);
+    line-height: 37px;
+    cursor: pointer;
+  }
+
   #rc_new_box{
     padding: 50px;
-    border: 1px solid;
-    border-radius: 20px;
-    background-color: rgb(250, 250, 249);
     width: 830px;
     justify-content: center;
     margin: 0 auto;
@@ -155,8 +171,14 @@
     display: flex;
     flex-direction: column;
   }
+  .top_box{
+    display: grid;
+    grid-template-columns: 150px 100px 150px;
+    column-gap: 50px;
+
+  }
 	.ns_title_box{
-		width: 800px;
+		width: 100%;
     border-radius: var(--border_radius_4);
     border: 1px solid black;
     box-sizing: border-box;
@@ -166,7 +188,7 @@
     background-color: white;
 	}
 	.ns_title_box .ns_title{
-		width: 90%; 
+		width: 100%; 
     border: none; 
     outline: none;
     justify-content: center;
@@ -182,7 +204,7 @@
 		cursor: pointer;
 	}
 	.ns_tag_box{
-		width: 800px;
+		width: 100%;
     border-radius: var(--border_radius_4);
     border: 1px solid black;
     box-sizing: border-box;
@@ -192,7 +214,7 @@
     background-color: white;
 	}
 	.ns_tag_box .ns_tag{
-		width: 90%; 
+		width: 100%; 
     border: none; 
     outline: none;
     justify-content: center;
@@ -222,9 +244,9 @@
 	}
 	.ns_finish_date_box{
 		margin: 3px 0 20px 0;
-    display: flex;
 	}
 	.ns_finish_date_box .yes_finish , .no_finish{
+    display: inline-block;
 		width: 50px;
 		height: 23px;
 		border-radius: var(--border_radius_4);
@@ -234,27 +256,32 @@
     text-align: center;
     padding: 5px;
 	}
-
+  .datepicker{
+   width: 130px;
+   margin-top: 5px;
+   padding: 5px;
+  }
+  .ns_introduce_box{ 
+    margin: 3px 0 20px 0; 
+    background-color: white; 
+    border-radius: var(--border_radius_4); 
+  } 
+  .ns_introduce_box .ns_introduce{ 
+    width: 800px; 
+    height: 40px; 
+    border: 1px solid black;  
+    justify-content: center; 
+    outline: none; 
+    font-size: 14px; 
+    vertical-align: 2px; 
+    padding: 5px 15px; 
+    border-radius: var(--border_radius_4); 
+  }
   .datepicker{
     display: none;
     border-radius: var(--border_radius_4);
   }
-  .ns_introduce_box{
-    margin: 3px 0 20px 0;
-    background-color: white;
-  }
-  .ns_introduce_box .ns_introduce{
-    width: 800px;
-    height: 40px;
-    border: 1px solid black; 
-    justify-content: center;
-    outline: none;
-    font-size: 14px;
-    vertical-align: 2px;
-    padding: 5px 15px;
-    border-radius: var(--border_radius_4);
-   
-  }
+
   .make_study_btn{
     width: 130px;
     height: 50px;
@@ -265,7 +292,6 @@
     margin: 0 auto;
     font-size: large;
     padding: 5px;
-    margin-top: 20px;
     cursor: pointer;
   }
 
