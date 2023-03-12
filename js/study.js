@@ -1,30 +1,34 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-    
+$(document).ready(function() {
+  var calendarEl = document.getElementById('calendar');
 
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      
-      
-    
+  var calendar = new FullCalendar.Calendar(calendarEl, {
     locale: 'ko',
-
-      headerToolbar: {
-        left: '',//dayGridMonth,listMonth
-        center: '',
-        right: 'prev,title,next'
-      },
-      initialDate: '2023-01-12',
-      navLinks: true, // can click day/week names to navigate views
-      editable: true,
-      dayMaxEvents: true, // allow "more" link when too many events
-    
-      events: eventObj
-    
-    });
-    
-    calendar.render();
+    headerToolbar: {
+      left: '',
+      center: '',
+      right: 'prev,title,next'
+    },
+    initialDate: '2023-01-12',
+    navLinks: true,
+    editable: true,
+    dayMaxEvents: true,
+    events: eventObj,
+    initialView: 'dayGridMonth' 
   });
-  // 나중에 데이터베이스 값을 가져오기위에 밑에 설정함
+
+
+  $('.tab1').click(function() {
+    calendar.changeView('dayGridMonth');
+  });
+
+  
+  $('.tab2').click(function() {
+    calendar.changeView('listMonth');
+  });
+
+  calendar.render();
+});
+  
   let eventObj = [
         {
           title: '정처기 필기',
