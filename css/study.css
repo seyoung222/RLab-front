@@ -1127,10 +1127,17 @@ progress {
 }
 .pro_img {
   background-image: url(../img/profile_img.png);
-  width: 40px;
-  height: 51px;
-  background-size: 58px 58px;
-  background-position: -10px -4px;
+  width: 80px; /* 요소의 너비를 60px로 지정하여 원형 모양이 유지되도록 함 */
+  height: 80px; /* 요소의 높이를 60px로 지정하여 원형 모양이 유지되도록 함 */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  border-radius: var(--border_radius_1);
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.pro_name{
+  font-weight: bold;
+  margin-left: 40px;
+  margin-top: 30px;
 }
