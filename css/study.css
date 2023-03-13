@@ -1059,3 +1059,78 @@ progress {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.daliy_mission_container {
+  border: var(--border_basic);
+  border-radius: var(--border_radius_4);
+  height: 500px;
+}
+.today_mission {
+  border: var(--border_basic);
+  border-radius: var(--border_radius_4);
+  background-color: var(--color_mint);
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  padding: 20px 20px;
+}
+
+.today_mission_title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20p 1px;
+  padding-top: 20px;
+}
+.today_mission_date {
+  font-size: 15px;
+}
+
+.today_mission_contents {
+  font-weight: bold;
+  margin-left: 350px;
+}
+
+.today_mission_button {
+ margin-left: 510px;
+ margin-top: 20px;
+ font-weight: bold;
+}
+
+.mbutton1 {
+  border: var(--border_light);
+  border-radius: var(--border_radius_2);
+  background-color: var(--color_blue);
+  padding: 5px 5px;
+}
+
+.mbutton2 {
+  border: var(--border_light);
+  border-radius: var(--border_radius_2);
+  background-color: var(--color_mint);
+  padding: 5px 5px;
+}
+
+.success_percent2, .mint{
+  margin-left: 30px;
+}
+
+.daliy_mission_pro_container {
+  display: flex;
+  justify-content: space-between;
+}
+.daliy_mission_pro {
+  margin-top: 30px;
+  border: var(--border_basic);
+  border-radius: var(--border_radius_4);
+  width: 150px;
+  height: 200px;
+  margin-right: 15px;
+}
+.pro_img {
+  background-image: url(../img/profile_img.png);
+  width: 40px;
+  height: 51px;
+  background-size: 58px 58px;
+  background-position: -10px -4px;
+  background-repeat: no-repeat;
+  border-radius: var(--border_radius_1);
+}
