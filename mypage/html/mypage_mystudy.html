@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Page</title>
+    <title>나의 스터디</title>
     <link rel="stylesheet" href="../css/mypage.css" />
     <link rel="stylesheet" href="../css/mypage_mystudy.css" />
     <script src="../js/mypage_mystudy.js"></script>
@@ -77,22 +77,25 @@
           <section>
             <!-- 탭 -->
             <div class="tab-container">
-              <div class="tab selected_tab">찜한 스터디</div>
+              <div class="tab unselected_tab tab1">찜한 스터디</div>
               <div class="tab unselected_tab tab2">개설한 스터디</div>
-              <div class="tab unselected_tab tab3">진행중인 스터디</div>
-              <div class="tab unselected_tab tab4">완료한 스터디</div>
+              <div class="tab selected_tab tab3">진행중인 스터디</div>
             </div>
               <div class="my_study_container">
-                <label class="checkbox_title">
-                  모집완료된 스터디 제외
-                  <input type="checkbox" class="checkbox">
-                </label>
+               
                 <div class="study_card_container">
                   
-                  <ul class="tab-content show">
+                  <ul class="tab-content">
+                    <label class="checkbox_title">
+                      모집완료된 스터디 제외
+                      <input type="checkbox" class="checkbox">
+                    </label>
+                    
                       <div class="row_study_card clearfix">
                           <li class="study_card_box add_shadow op">
                               <a href="">
+                              
+                              
                                   <div class="study_img_box"></div>
                                   <div class="study_info">
                                       <div class="study_tag_info">
@@ -118,6 +121,12 @@
                                       </div>
                                   </div>
                               </a>
+                              <div class="sad_container">
+                                <div class="sad_box">
+                                  <div class="sad_img"></div>
+                                  <div class="sad_img_content">모집 완료</div>
+                                </div>
+                              </div>
                           </li>
                           <li class="study_card_box add_shadow">
                               <a href="">
@@ -265,537 +274,336 @@
                         <i class="btn_next"></i>
                     </div>
                     </ul>
+                   
                     <!-- 개설한 스터디 -->
-                    <ul class="tab-content">
-                      <div class="row_study_card clearfix">
-                          <li class="study_card_box add_shadow op">
+                    <ul class="tab-content cre_study_ul">
+                      <div id="box_study_filter">
+                      <select id="study_filter">
+                        <option value="all">전체보기</option>
+                        <option value="ongoing">진행중인 스터디만</option>
+                        <option value="completed">완료한 스터디만</option>
+                      </select>
+                    </div>
+                        <div class="row_study_card clearfix">
+                            <li class="study_card_box add_shadow op">
+                                <a href="">
+                                  <div class ="cre_study_container">
+                                    <div class="study_info2">
+                                      
+                                        <div class= cre_study_img></div>
+                                        <div class = "cre_study">
+                                          <div class="cre_study_title">정처기 준비하는 스터디</div>
+                                          <div class="cre_study_title2">정처기 합격증 받는 그날까지..!</div>
+                                          </div>
+                                        <div class="cre_study_content">
+                                            <div class="study_recruiting2">
+                                                <span>스터디원 수</span>
+                                                <span>5</span>
+                                                <span>/</span>
+                                                <span>5</span>
+                                            </div>
+                                            
+                                        </div>
+                                      </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="study_card_box add_shadow">
                               <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#프로젝트</span>
-                                          <span href="#" class="study_tag">#컴퓨터</span>
-                                          <span href="#" class="study_tag">#독서토론</span>
-                                          <span href="#" class="study_tag">#운동</span>
-                                          <span href="#" class="study_tag">#경제학과</span>
+                                    
+                                <div class ="cre_study_container">
+                                  <div class="study_info2">
+                                    
+                                      <div class= cre_study_img></div>
+                                      <div class = "cre_study">
+                                        <div class="cre_study_title">정처기 준비하는 스터디</div>
+                                        <div class="cre_study_title2">정처기 합격증 받는 그날까지..!</div>
+                                        </div>
+                                      <div class="cre_study_content">
+                                          <div class="study_recruiting2">
+                                              <span>스터디원 수</span>
+                                              <span>5</span>
+                                              <span>/</span>
+                                              <span>5</span>
+                                          </div>
                                           
                                       </div>
-                                      <div class="study_recruit_content_box">
-                                          <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
+                                    </div>
+                                  </div>
+                              </a>
+                          </li>    
+                            <li class="study_card_box add_shadow">
+                              <a href="">
+                                <div class ="cre_study_container">
+                                  <div class="study_info2">
+                                    
+                                      <div class= cre_study_img></div>
+                                      <div class = "cre_study">
+                                        <div class="cre_study_title">정처기 준비하는 스터디</div>
+                                        <div class="cre_study_title2">정처기 합격증 받는 그날까지..!</div>
                                         </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span>
+                                      <div class="cre_study_content">
+                                          <div class="study_recruiting2">
+                                              <span>스터디원 수</span>
+                                              <span>5</span>
                                               <span>/</span>
                                               <span>5</span>
                                           </div>
-                                          <div class="like_img"></div>
+                                          
                                       </div>
+                                    </div>
                                   </div>
                               </a>
                           </li>
-                          <li class="study_card_box add_shadow">
+                        </div>
+                        <div class="row_study_card clearfix">
+                            <li class="study_card_box add_shadow">
                               <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#PROJECTMAN</span>
-                                          <span href="#" class="study_tag">#컴퓨터</span>
-                                          <span href="#" class="study_tag">#독서토론</span>
-                                          <span href="#" class="study_tag">#운동</span>
-                                          <span href="#" class="study_tag">#경제학과</span>
-                                      </div>
-                                      <div class="study_recruit_content_box">
-                                      <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 만나서반가워요 </span>
-                                      </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span>
+                                    
+                                <div class ="cre_study_container gr">
+                                  <div class="study_info2">
+                                    
+                                      <div class= cre_study_img></div>
+                                      <div class = "cre_study">
+                                        <div class="cre_study_title">정처기 준비하는 스터디</div>
+                                        <div class="cre_study_title2">정처기 합격증 받는 그날까지..!</div>
+                                        </div>
+                                      <div class="cre_study_content">
+                                          <div class="study_recruiting2 gr2">
+                                              <span>스터디원 수</span>
+                                              <span>5</span>
                                               <span>/</span>
                                               <span>5</span>
                                           </div>
-                                          <div class="like_img"></div>
+                                          
                                       </div>
-                                  </div>
-                              </a>
-                          </li>                           
-                          <li class="study_card_box add_shadow">
-                              <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#프로젝트</span>
-                                          <span href="#" class="study_tag">#컴퓨터</span>
-                                          <span href="#" class="study_tag">#독서토론</span>
-                                          <span href="#" class="study_tag">#운동</span>
-                                          <span href="#" class="study_tag">#경제학과</span>
-                                      </div>
-                                      <div class="study_recruit_content_box">
-                                          <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                        </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span> 
-                                              <span>/</span>
-                                              <span>10</span>
-                                          </div>
-                                          <div class="like_img"></div>
-                                      </div>
+                                    </div>
                                   </div>
                               </a>
                           </li>
+                            <li class="study_card_box add_shadow">
+                              <a href="">
+                                    
+                                <div class ="cre_study_container gr">
+                                  <div class="study_info2">
+                                    
+                                      <div class= cre_study_img></div>
+                                      <div class = "cre_study">
+                                        <div class="cre_study_title">정처기 준비하는 스터디</div>
+                                        <div class="cre_study_title2">정처기 합격증 받는 그날까지..!</div>
+                                        </div>
+                                      <div class="cre_study_content">
+                                          <div class="study_recruiting2 gr2">
+                                              <span>스터디원 수</span>
+                                              <span>5</span>
+                                              <span>/</span>
+                                              <span>5</span>
+                                          </div>
+                                          
+                                      </div>
+                                    </div>
+                                  </div>
+                              </a>
+                          </li>
+                            <li class="study_card_box add_shadow">
+                              <a href="">
+                                    
+                                <div class ="cre_study_container">
+                                  <div class="study_info2">
+                                    
+                                      <div class= cre_study_img></div>
+                                      <div class = "cre_study">
+                                        <div class="cre_study_title">정처기 준비하는 스터디</div>
+                                        <div class="cre_study_title2">정처기 합격증 받는 그날까지..!</div>
+                                        </div>
+                                      <div class="cre_study_content">
+                                          <div class="study_recruiting2">
+                                              <span>스터디원 수</span>
+                                              <span>5</span>
+                                              <span>/</span>
+                                              <span>5</span>
+                                          </div>
+                                          
+                                      </div>
+                                    </div>
+                                  </div>
+                              </a>
+                          </li>
+                            
+                        </div>
+                        <div class="page_box clearfix">
+                          <i class="btn_prev"></i>
+                          <span class="page_num selected">1</span>
+                          <span class="page_num">2</span>
+                          <span class="page_num">3</span>
+                          <i class="btn_next"></i>
                       </div>
-                      <div class="row_study_card clearfix">
-                          <li class="study_card_box add_shadow">
-                              <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#경제학과</span>
-                                          <span href="#" class="study_tag">#독서토론</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                      </div>
-                                      <div class="study_recruit_content_box">
-                                          <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                        </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span>
-                                              <span>/</span>
-                                              <span>5</span>
-                                          </div>
-                                          <div class="like_img"></div>
-                                      </div>
-                                  </div>
-                              </a>
-                          </li>
-                          <li class="study_card_box add_shadow">
-                              <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                      </div>
-                                      <div class="study_recruit_content_box">
-                                          <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                        </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span>
-                                              <span>/</span>
-                                              <span>5</span>
-                                          </div>
-                                          <div class="like_img"></div>
-                                      </div>
-                                  </div>
-                              </a>
-                          </li>                           <li class="study_card_box add_shadow">
-                              <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                      </div>
-                                      <div class="study_recruit_content_box">
-                                          <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                        </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span>
-                                              <span>/</span>
-                                              <span>5</span>
-                                          </div>
-                                          <div class="like_img"></div>
-                                      </div>
-                                  </div>
-                              </a>
-                          </li>
-                          
-                      </div>
-                      <div class="page_box clearfix">
-                        <i class="btn_prev"></i>
-                        <span class="page_num selected">1</span>
-                        <span class="page_num">2</span>
-                        <span class="page_num">3</span>
-                        <i class="btn_next"></i>
-                    </div>
+                    </ul>
                     <!-- 진행중인 스터디 -->
-                    <ul class="tab-content">
-                      <div class="row_study_card clearfix">
-                          <li class="study_card_box add_shadow op">
-                              <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#프로젝트</span>
-                                          <span href="#" class="study_tag">#컴퓨터</span>
-                                          <span href="#" class="study_tag">#독서토론</span>
-                                          <span href="#" class="study_tag">#운동</span>
-                                          <span href="#" class="study_tag">#경제학과</span>
-                                          
-                                      </div>
-                                      <div class="study_recruit_content_box">
-                                          <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                        </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span>
-                                              <span>/</span>
-                                              <span>5</span>
-                                          </div>
-                                          <div class="like_img"></div>
-                                      </div>
-                                  </div>
-                              </a>
-                          </li>
-                          <li class="study_card_box add_shadow">
-                              <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#PROJECTMAN</span>
-                                          <span href="#" class="study_tag">#컴퓨터</span>
-                                          <span href="#" class="study_tag">#독서토론</span>
-                                          <span href="#" class="study_tag">#운동</span>
-                                          <span href="#" class="study_tag">#경제학과</span>
-                                      </div>
-                                      <div class="study_recruit_content_box">
-                                      <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 만나서반가워요 </span>
-                                      </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span>
-                                              <span>/</span>
-                                              <span>5</span>
-                                          </div>
-                                          <div class="like_img"></div>
-                                      </div>
-                                  </div>
-                              </a>
-                          </li>                           
-                          <li class="study_card_box add_shadow">
-                              <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#프로젝트</span>
-                                          <span href="#" class="study_tag">#컴퓨터</span>
-                                          <span href="#" class="study_tag">#독서토론</span>
-                                          <span href="#" class="study_tag">#운동</span>
-                                          <span href="#" class="study_tag">#경제학과</span>
-                                      </div>
-                                      <div class="study_recruit_content_box">
-                                          <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                        </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span> 
-                                              <span>/</span>
-                                              <span>10</span>
-                                          </div>
-                                          <div class="like_img"></div>
-                                      </div>
-                                  </div>
-                              </a>
-                          </li>
+                    <ul class="tab-content ing_study_ul show">
+                      <div id="box_study_filter">
+                        <select id="study_filter">
+                          <option value="all">전체보기</option>
+                          <option value="ongoing">진행중인 스터디만</option>
+                          <option value="completed">완료한 스터디만</option>
+                        </select>
                       </div>
                       <div class="row_study_card clearfix">
-                          <li class="study_card_box add_shadow">
-                              <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#경제학과</span>
-                                          <span href="#" class="study_tag">#독서토론</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
+                        <li class="study_card_box add_shadow op">
+                            <a href="">
+                              <div class ="ing_study_container">
+                                <div class="study_info2">
+                                  
+                                    <div class= ing_study_img></div>
+                                    <div class = "ing_study">
+                                      <div class="ing_study_title">정처기 준비하는 스터디</div>
+                                      <div class="ing_study_title2">정처기 합격증 받는 그날까지..!</div>
                                       </div>
-                                      <div class="study_recruit_content_box">
-                                          <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
+                                    <div class="ing_study_content">
+                                        <div class="study_recruiting3">
+                                            <span>스터디원 수</span>
+                                            <span>5</span>
+                                            <span>/</span>
+                                            <span>5</span>
                                         </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span>
-                                              <span>/</span>
-                                              <span>5</span>
-                                          </div>
-                                          <div class="like_img"></div>
-                                      </div>
+                                        
+                                    </div>
                                   </div>
-                              </a>
-                          </li>
-                          <li class="study_card_box add_shadow">
-                              <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="study_card_box add_shadow op">
+                          <a href="">
+                            <div class ="ing_study_container">
+                              <div class="study_info2">
+                                
+                                  <div class= ing_study_img></div>
+                                  <div class = "ing_study">
+                                    <div class="ing_study_title">정처기 준비하는 스터디</div>
+                                    <div class="ing_study_title2">정처기 합격증 받는 그날까지..!</div>
+                                    </div>
+                                  <div class="ing_study_content">
+                                      <div class="study_recruiting3">
+                                          <span>스터디원 수</span>
+                                          <span>5</span>
+                                          <span>/</span>
+                                          <span>5</span>
                                       </div>
-                                      <div class="study_recruit_content_box">
-                                          <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                        </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span>
-                                              <span>/</span>
-                                              <span>5</span>
-                                          </div>
-                                          <div class="like_img"></div>
-                                      </div>
+                                      
                                   </div>
-                              </a>
-                          </li>                           <li class="study_card_box add_shadow">
-                              <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                      </div>
-                                      <div class="study_recruit_content_box">
-                                          <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                        </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span>
-                                              <span>/</span>
-                                              <span>5</span>
-                                          </div>
-                                          <div class="like_img"></div>
-                                      </div>
+                                </div>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="study_card_box add_shadow op">
+                        <a href="">
+                          <div class ="ing_study_container">
+                            <div class="study_info2">
+                              
+                                <div class= ing_study_img></div>
+                                <div class = "ing_study">
+                                  <div class="ing_study_title">정처기 준비하는 스터디</div>
+                                  <div class="ing_study_title2">정처기 합격증 받는 그날까지..!</div>
                                   </div>
-                              </a>
-                          </li>
-                          
-                      </div>
-                      <div class="page_box clearfix">
-                        <i class="btn_prev"></i>
-                        <span class="page_num selected">1</span>
-                        <span class="page_num">2</span>
-                        <span class="page_num">3</span>
-                        <i class="btn_next"></i>
+                                <div class="ing_study_content">
+                                    <div class="study_recruiting3">
+                                        <span>스터디원 수</span>
+                                        <span>5</span>
+                                        <span>/</span>
+                                        <span>5</span>
+                                    </div>
+                                    
+                                </div>
+                              </div>
+                            </div>
+                        </a>
+                    </li>
                     </div>
-                    <!-- 완료한 스터디 -->
-                    <ul class="tab-content">
-                      <div class="row_study_card clearfix">
-                          <li class="study_card_box add_shadow op">
-                              <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#프로젝트</span>
-                                          <span href="#" class="study_tag">#컴퓨터</span>
-                                          <span href="#" class="study_tag">#독서토론</span>
-                                          <span href="#" class="study_tag">#운동</span>
-                                          <span href="#" class="study_tag">#경제학과</span>
-                                          
+                    <div class="row_study_card clearfix">
+                        <li class="study_card_box add_shadow">
+                          <a href="">
+                                
+                            <div class ="ing_study_container gr2">
+                              <div class="study_info2">
+                                
+                                  <div class= ing_study_img></div>
+                                  <div class = "ing_study">
+                                    <div class="ing_study_title">정처기 준비하는 스터디</div>
+                                    <div class="ing_study_title2">정처기 합격증 받는 그날까지..!</div>
+                                    </div>
+                                  <div class="ing_study_content">
+                                      <div class="study_recruiting2 gr2">
+                                          <span>스터디원 수</span>
+                                          <span>5</span>
+                                          <span>/</span>
+                                          <span>5</span>
                                       </div>
-                                      <div class="study_recruit_content_box">
-                                          <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                        </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span>
-                                              <span>/</span>
-                                              <span>5</span>
-                                          </div>
-                                          <div class="like_img"></div>
-                                      </div>
+                                      
                                   </div>
-                              </a>
-                          </li>
-                          <li class="study_card_box add_shadow">
-                              <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#PROJECTMAN</span>
-                                          <span href="#" class="study_tag">#컴퓨터</span>
-                                          <span href="#" class="study_tag">#독서토론</span>
-                                          <span href="#" class="study_tag">#운동</span>
-                                          <span href="#" class="study_tag">#경제학과</span>
+                                </div>
+                              </div>
+                          </a>
+                      </li>
+                        <li class="study_card_box add_shadow">
+                          <a href="">
+                                
+                            <div class ="ing_study_container gr2">
+                              <div class="study_info2">
+                                
+                                  <div class= ing_study_img></div>
+                                  <div class = "ing_study">
+                                    <div class="ing_study_title">정처기 준비하는 스터디</div>
+                                    <div class="ing_study_title2">정처기 합격증 받는 그날까지..!</div>
+                                    </div>
+                                  <div class="ing_study_content">
+                                      <div class="study_recruiting2 gr2">
+                                          <span>스터디원 수</span>
+                                          <span>5</span>
+                                          <span>/</span>
+                                          <span>5</span>
                                       </div>
-                                      <div class="study_recruit_content_box">
-                                      <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 만나서반가워요 </span>
-                                      </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span>
-                                              <span>/</span>
-                                              <span>5</span>
-                                          </div>
-                                          <div class="like_img"></div>
-                                      </div>
+                                      
                                   </div>
-                              </a>
-                          </li>                           
-                          <li class="study_card_box add_shadow">
-                              <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#프로젝트</span>
-                                          <span href="#" class="study_tag">#컴퓨터</span>
-                                          <span href="#" class="study_tag">#독서토론</span>
-                                          <span href="#" class="study_tag">#운동</span>
-                                          <span href="#" class="study_tag">#경제학과</span>
-                                      </div>
-                                      <div class="study_recruit_content_box">
-                                          <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                        </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span> 
-                                              <span>/</span>
-                                              <span>10</span>
-                                          </div>
-                                          <div class="like_img"></div>
-                                      </div>
+                                </div>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="study_card_box add_shadow op">
+                        <a href="">
+                          <div class ="ing_study_container">
+                            <div class="study_info2">
+                              
+                                <div class= ing_study_img></div>
+                                <div class = "ing_study">
+                                  <div class="ing_study_title">정처기 준비하는 스터디</div>
+                                  <div class="ing_study_title2">정처기 합격증 받는 그날까지..!</div>
                                   </div>
-                              </a>
-                          </li>
-                      </div>
-                      <div class="row_study_card clearfix">
-                          <li class="study_card_box add_shadow">
-                              <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#경제학과</span>
-                                          <span href="#" class="study_tag">#독서토론</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                      </div>
-                                      <div class="study_recruit_content_box">
-                                          <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                        </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span>
-                                              <span>/</span>
-                                              <span>5</span>
-                                          </div>
-                                          <div class="like_img"></div>
-                                      </div>
-                                  </div>
-                              </a>
-                          </li>
-                          <li class="study_card_box add_shadow">
-                              <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                      </div>
-                                      <div class="study_recruit_content_box">
-                                          <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                        </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span>
-                                              <span>/</span>
-                                              <span>5</span>
-                                          </div>
-                                          <div class="like_img"></div>
-                                      </div>
-                                  </div>
-                              </a>
-                          </li>                           <li class="study_card_box add_shadow">
-                              <a href="">
-                                  <div class="study_img_box"></div>
-                                  <div class="study_info">
-                                      <div class="study_tag_info">
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                          <span href="#" class="study_tag">#자격증</span>
-                                      </div>
-                                      <div class="study_recruit_content_box">
-                                          <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                        </div>
-                                      <div class="study_content">
-                                          <div class="study_recruiting">
-                                              <span>모집중</span>
-                                              <span>1</span>
-                                              <span>/</span>
-                                              <span>5</span>
-                                          </div>
-                                          <div class="like_img"></div>
-                                      </div>
-                                  </div>
-                              </a>
-                          </li>
-                          
-                      </div>
-                      <div class="page_box clearfix">
-                        <i class="btn_prev"></i>
-                        <span class="page_num selected">1</span>
-                        <span class="page_num">2</span>
-                        <span class="page_num">3</span>
-                        <i class="btn_next"></i>
+                                <div class="ing_study_content">
+                                    <div class="study_recruiting3">
+                                        <span>스터디원 수</span>
+                                        <span>5</span>
+                                        <span>/</span>
+                                        <span>5</span>
+                                    </div>
+                                    
+                                </div>
+                              </div>
+                            </div>
+                        </a>
+                    </li>
+                      </li>
+                        
                     </div>
-                  </div>  
+                    <div class="page_box clearfix">
+                      <i class="btn_prev"></i>
+                      <span class="page_num selected">1</span>
+                      <span class="page_num">2</span>
+                      <span class="page_num">3</span>
+                      <i class="btn_next"></i>
+                  </div>
+                    </ul>
                   </section> 
-                  
+
           </div>
       </main>
       <!-- footer -->
@@ -888,33 +696,37 @@
     <script>
       
 
-      
-      // 버튼[i] 누르면
-      // 모든 버튼에 붙은 selected_tab 클래스명 제거
-      // 버튼[i]에 selected_tab 클래스명 추가
-      // 모든 div 에 붙은 show 클래스명 제거
-      //- div에 show 클래스명 추가
-      /*
-          $('.tab-content').removeClass('show');
-          $('.tab-content').eq(i).addClass('show');
-      */
-
-  for (let i = 0; i < $('.tab').length; i++){
-      $('.tab').click(function() {
-        $('.tab').removeClass('selected_tab').addClass('unselected_tab');
-        $(this).removeClass('unselected_tab');
-        if ($(this).hasClass('tab2')) {
-        $(this).addClass('selected_tab2');
-        } else if ($(this).hasClass('tab3')) {
-        $(this).addClass('selected_tab3');
-        } else if ($(this).hasClass('tab4')) {
-        $(this).addClass('selected_tab4');
-        } else {
+      $(document).ready(function() {
+    // 탭 클릭 이벤트
+    $('.tab').click(function(){
+        // 선택한 탭을 활성화하고 나머지 탭 비활성화
+        $('.tab').removeClass('selected_tab');
         $(this).addClass('selected_tab');
-        }
-        });
-      };
-      
+
+        // 선택한 탭에 해당하는 컨텐츠를 보이게 하고 나머지 컨텐츠 숨기기
+        var tabId = $(this).index() + 1;
+        $('.tab-content').removeClass('show');
+        $('ul.tab-content:nth-of-type(' + tabId + ')').addClass('show');
+    });
+    });
+
+    // 각 탭에 색상 클래스 추가하기
+    if (tabId === 1) {
+      $('.tab').removeClass('selected_tab selected_tab2 selected_tab3 selected_tab4');
+      $('.tab').addClass('selected_tab');
+    } else if (tabId === 2) {
+        $('.tab').removeClass('unselected_tab');
+        $('.tab').addClass('selected_tab2');
+      $('.tab').removeClass('selected_tab selected_tab2 selected_tab3 selected_tab4');
+    } else if (tabId === 3) {
+      $('.tab').removeClass('selected_tab selected_tab2 selected_tab3 selected_tab4');
+      $('.tab').removeClass('unselected_tab');
+      $('.tab').addClass('selected_tab3');
+    } else if (tabId === 4) {
+      $('.tab').removeClass('selected_tab selected_tab2 selected_tab3 selected_tab4');
+      $('.tab').removeClass('unselected_tab');
+      $('.tab').addClass('selected_tab4');
+    } 
       </script>
      
   </body>
