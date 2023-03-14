@@ -1099,14 +1099,14 @@ progress {
   border: var(--border_light);
   border-radius: var(--border_radius_2);
   background-color: var(--color_blue);
-  padding: 5px 5px;
+  padding: 8px 8px;
 }
 
 .mbutton2 {
   border: var(--border_light);
   border-radius: var(--border_radius_2);
   background-color: var(--color_mint);
-  padding: 5px 5px;
+  padding: 8px 8px;
 }
 
 .success_percent2, .mint{
