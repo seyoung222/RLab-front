@@ -1062,7 +1062,6 @@ progress {
 .daliy_mission_container {
   border: var(--border_basic);
   border-radius: var(--border_radius_4);
-  height: 500px;
 }
 .today_mission {
   border: var(--border_basic);
@@ -1115,13 +1114,15 @@ progress {
 
 .daliy_mission_pro_container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+
 }
 .daliy_mission_pro {
   margin-top: 30px;
   border: var(--border_basic);
   border-radius: var(--border_radius_4);
-  width: 150px;
+  width: 14%;
   height: 200px;
   margin-right: 15px;
   margin-left: 15px;
