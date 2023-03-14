@@ -155,11 +155,11 @@
     border: 0;
     font-weight: bold;
     background-color: var(--color_yellow);
-    width: 150px;
+    width: 175px;
     height: 40px ;
     border-radius: var(--border_radius_3);
-    line-height: 37px;
     cursor: pointer;
+    padding: 10px;
   }
 
   #rc_new_box{
@@ -222,25 +222,27 @@
     vertical-align: 2px;
 	}
 	.ns_region_box{
-    margin: 3px 0 20px 0;
+    margin-top: 3px;
 	}
 	#choose_region{
-		height: 38px;
+		height: 36px;
     border-radius: var(--border_radius_4);
     padding: 8px;
     font-weight: bold;
+    margin: 10px 0 20px 0;
 	}
 	.ns_people_box{
-    margin: 3px 0 20px 0;
+    margin-top: 3px;
 	}
 	.ns_people_box .ns_people{
 		width: 90px;
-    height: 32px;
+    height: 34px;
 		font-size: 15px;
 		text-align: center ;
 		border-radius: var(--border_radius_4);
 		border: 1px solid black;
     background-color: white;
+    margin: 10px 0 20px 0;
 	}
 	.ns_finish_date_box{
 		margin: 3px 0 20px 0;
@@ -251,10 +253,10 @@
 		height: 23px;
 		border-radius: var(--border_radius_4);
     border: 1px solid black;
-    margin-right: 5px;
     cursor: pointer;
     text-align: center;
     padding: 5px;
+    margin: 10px 5px 0 0;
 	}
   .datepicker{
    width: 130px;
@@ -281,18 +283,42 @@
     display: none;
     border-radius: var(--border_radius_4);
   }
+  #rc_new_study_main_container .btn_box{
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    margin: 0 auto;
 
-  .make_study_btn{
+  }
+  #rc_new_study_main_container .ts_study_btn{
     width: 130px;
-    height: 50px;
+    height: 45px;
     background-color: var(--color_yellow);
-    border-radius: var(--border_radius_4);
+    border-radius: var(--border_radius_3);
     border: 1px solid black;
     display: block;
     margin: 0 auto;
-    font-size: large;
+    font-size: 18px;
     padding: 5px;
     cursor: pointer;
+    box-shadow: 2px 2px 5px var(--color_light-grey);
+    justify-content: center;
+    margin: 5px;
+  }
+  .make_study_btn{
+    width: 130px;
+    height: 45px;
+    background-color: var(--color_blue);
+    border-radius: var(--border_radius_3);
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px var(--color_light-grey);
+    justify-content: center;
+    margin: 5px;
   }
 
   /* Footer */
@@ -363,63 +389,63 @@
   /* background */
 
   .background_bbls{
-  position: absolute;
-  height: 1200px;
-  top: 348px;
-  display: flex;
-  width: 100%;
-  z-index: -10;
-  overflow: hidden;
+    position: absolute;
+    height: 1200px;
+    top: 348px;
+    display: flex;
+    width: 100%;
+    z-index: -10;
+    overflow: hidden;
   }
   .background_bbls .bubble{
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border-radius: var(--border_radius_1);
-  background-color: var(--color_blue);
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: var(--border_radius_1);
+    background-color: var(--color_blue);
   }
   .big_bbls .bubble:nth-child(1){
-  top: 927px;
-  left: -385px;
-  background-color: var(--color_blue);
-  width: 1600px;
-  height: 1600px;
+    top: 927px;
+    left: -385px;
+    background-color: var(--color_blue);
+    width: 1600px;
+    height: 1600px;
   }
   .big_bbls .bubble:nth-child(2){
-  top: 673px;
-  left: 988px;
-  background-color: var(--color_mint);
-  width: 1080px;
-  height: 1080px;
-  z-index: -20;
+    top: 673px;
+    left: 988px;
+    background-color: var(--color_mint);
+    width: 1080px;
+    height: 1080px;
+    z-index: -20;
   }
   .big_bbls .bubble:nth-child(3){
-  top: 1075px;
-  left: 863px;
-  background-color: var(--color_yellow);
-  width: 1290px;
-  height: 1290px;
+    top: 1075px;
+    left: 863px;
+    background-color: var(--color_yellow);
+    width: 1290px;
+    height: 1290px;
   }
   .big_bbls .bubble:nth-child(4){
-  top: 966px;
-  left: 804px;
-  background-color: var(--color_black);
-  width: 300px;
-  height: 300px;
-  z-index: -30;
-  opacity: 30%;
+    top: 966px;
+    left: 804px;
+    background-color: var(--color_black);
+    width: 300px;
+    height: 300px;
+    z-index: -30;
+    opacity: 30%;
   }
   .small_bbls .bubble:nth-child(1){
-  top: 124px;
-  left: -114px;
-  background-color: var(--color_mint);
-  width: 400px;
-  height: 400px;
+    top: 296px;
+    left: -114px;
+    background-color: var(--color_mint);
+    width: 400px;
+    height: 400px;
   }
   .small_bbls .bubble:nth-child(2){
-  top: 77px;
-  left: 1616px;
-  background-color: var(--color_yellow);
-  width: 250px;
-  height: 250px;
+    top: 77px;
+    left: 1616px;
+    background-color: var(--color_yellow);
+    width: 250px;
+    height: 250px;
   }
