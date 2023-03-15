@@ -83,7 +83,9 @@
   color: #fff;
 }
 
-
+.list_item{
+  height:60px;
+}
 
 #my_container{padding-top: 32px;}
 .study_card_container{
@@ -139,10 +141,24 @@ table { border-collapse: collapse; }
   height: 80px;
 }
 .border_box [class^=board_list_]{
-  height: 52px;
+  height: 61px;
   border-bottom: 1px solid black;
 }
 .background_bbls{
   height: 1253px;
-
 }
+.icon_scrab_box{
+  height: 50px;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.icon_scrab{
+  width: 32px;   
+  height: 50px;
+  background-size: 30px 50px;
+  background-image: url(../img/favorite_tag.png);
+  
+}
+.bd_list_item{padding-left: 5px;}
