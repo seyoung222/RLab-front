@@ -1076,7 +1076,7 @@ progress {
 
 .today_mission_title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   margin: 20p 1px;
   padding-top: 20px;
 }
@@ -1117,6 +1117,7 @@ progress {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+  position: relative;
 
 }
 .daliy_mission_pro {
@@ -1124,9 +1125,10 @@ progress {
   border: var(--border_basic);
   border-radius: var(--border_radius_4);
   width: 19%;
-  height: 200px;
+  height: 170px;
   margin-right: 15px;
   margin-left: 15px;
+  margin-bottom: 15px;
 }
 .pro_img {
   background-image: url(../img/profile_img.png);
@@ -1141,17 +1143,16 @@ progress {
   position: relative; 
 }
 
-.check::before {
-  content: "";
+.pro-img-check {
   background-image: url('../img/check_stamp.png'); 
   background-size: cover;
   background-position: center;
   width: 80px;
   height: 80px;
   position: absolute; 
-  top: 320px;
-  left: 643px;  
-  z-index: 1; 
+  top: 62px;
+  left: 49px;
+  z-index: 1;
 }
 .pro_name{
   font-weight: bold;
