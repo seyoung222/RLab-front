@@ -60,12 +60,55 @@
 				<div class="form_container">
 					<form action="#">
 						<h1>개인정보 수정</h1>
-						<div class="pw_container">
-							<label for="pw">비밀번호 입력</label>
-							<div class="input_container">
-								<input type="password" id="pw" placeholder="비밀번호 입력">
+						<div class="input_container">
+							<label for="nick_name">닉네임 수정</label>
+							<div class="input_box">
+								<input type="text" id="nick_name" placeholder="새 닉네임 입력">
+								<input type="submit" class="check_btn" value="중복확인">
+							</div>
+						</div>
+
+						<div class="input_container">
+							<label for="pw">기존 비밀번호</label>
+							<div class="input_box">
+								<input type="password" id="pw" placeholder="기존 비밀번호 입력">
 								<input type="submit" class="check_btn" value="확인">
 							</div>
+						</div>
+
+						<div class="input_container">
+							<label for="pw_new">새 비밀번호</label>
+							<div class="input_box">
+								<input type="password" id="pw_new" placeholder="새 비밀번호 입력">
+								<input type="submit" class="check_btn" value="확인">
+							</div>
+						</div>
+
+						<div class="input_container">
+							<label for="pw_new_check">새 비밀번호 확인</label>
+							<div class="input_box">
+								<input type="password" id="pw_new_check" placeholder="새 비밀번호 입력">
+								<input type="submit" class="check_btn" value="확인">
+							</div>
+						</div>
+
+						<div class="input_container">
+							<label for="phone">휴대폰 번호</label>
+							<div class="input_box">
+								<input type="tel" id="phone" placeholder="-없이 숫자로만 입력">
+								<input type="submit" class="check_btn" value="인증하기">
+							</div>
+						</div>
+
+						<div class="input_container">
+							<label for="email">이메일</label>
+							<div class="input_box">
+								<input type="email" id="email" placeholder="000000@naver.com">
+								<input type="submit" class="check_btn" value="인증하기">
+							</div>
+						</div>
+						<div class="submit_container">
+							<input type="submit" value="수정하기">
 						</div>
 					</form>
 
