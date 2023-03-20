@@ -202,10 +202,10 @@ a{color: var(--color_black);}
 			padding-left: 100px;
 		}
 		.form_container form{
-			width: 500px;
+			width: 530px;
 			display: flex;
 			flex-flow: column;
-			gap: 40px;
+			gap: 65px;
 		}
 		form .input_container{
 			display: flex;
@@ -227,13 +227,25 @@ a{color: var(--color_black);}
 			border: none;
 			background-color: var(--color_mint);
 			border-radius: var(--border_radius_2);
-			box-shadow: var(--box-shadow-light);
+
 		}
 		form .submit_container{
 			display: flex;
 			justify-content: flex-end;
 		}
-
+		.submit_container .submit_btn{
+			display: flex;
+			justify-content: center;
+			width: 120px;
+			height: 40px;
+			border: none;
+			background-color: var(--color_blue);
+			border-radius: var(--border_radius_2);
+			font-size: 15px;
+			font-weight: 700;
+			box-sizing: border-box;
+			box-shadow: var(--box-shadow-light);
+		}
 		 /* footer */
 			footer{
 			margin-top: 150px;
