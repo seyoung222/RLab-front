@@ -218,9 +218,9 @@
     #main_container .left_menu_container{
         display: flex;
         justify-content: center;
-        width: 225px;
-        height: 480px;
-        padding: 40px 20px;
+        width: 200px;
+        height: 430px;
+        padding: 60px 20px;
         border: 2px solid #020a17;
         border-radius: var(--border_radius_2);
         box-sizing: border-box;
@@ -230,8 +230,8 @@
         display: flex;
         flex-flow: column;
         align-items: flex-start;
-        gap: 25px;
-        font-size: 15px;
+        gap: 50px;
+        font-size: 16px;
         font-weight: 800;
     }
     .left_menu .list_items{
