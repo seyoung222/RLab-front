@@ -30,6 +30,51 @@
     /* box-shadow */
     --box-shadow: 5px 5px 0px rgb(7, 7, 7);
   }
+   /* main */
+   main{
+    width: var(--body_size);
+    margin: 0;
+    margin-top: 100px;
+  }
+  main #main_container{
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+  }
+  /* aside(left_menu) */
+  #main_container .left_menu_container{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 430px;
+    padding: 60px 20px;
+    border: 2px solid #020a17;
+    border-radius: var(--border_radius_2);
+    box-sizing: border-box;
+    background-color: var(--color_beige);
+}
+.left_menu_container .left_menu{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 50px;
+    font-size: 16px;
+    font-weight: 800;
+}
+.left_menu .list_items{
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+}
+.list_items .list_item{
+    margin-bottom: 8px;
+    white-space: nowrap;
+}
+.list_item:hover{
+    color: var(--color_blue);
+}
+
+
   .tab-content {
     display: none;
   }
@@ -130,9 +175,6 @@
     border-top-left-radius: var(--border_radius_4);
     
   }
-
-
-
   
   .study_card_container .study_info{
     width: 270px; 
