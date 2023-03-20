@@ -7,6 +7,8 @@
 	--color_beige: #fcf4ed;
 	--color_light-grey: #bfbfbf;
 	--color_grey: #626262;
+	--mint_hover: #0ae29a;
+	--blue_hover: #4e89cc;
 
 	/* size */
 	--body_size: 1200px;
@@ -224,7 +226,10 @@ a{color: var(--color_black);}
 			border: none;
 			background-color: var(--color_mint);
 			border-radius: var(--border_radius_2);
-
+			cursor: pointer;
+		}
+		.check_btn:hover{
+			background-color: var(--mint_hover);
 		}
 		form .submit_container{
 			display: flex;

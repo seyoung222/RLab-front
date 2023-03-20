@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>작성글 관리</title>
+    <link rel="stylesheet" href="../css/mypage.css" />
+    <link rel="stylesheet" href="../css/mypost.css" />
+    <link rel="stylesheet" href="../css/mystudy.css" />
+    <script src="../js/mypage_mystudy.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/0639c8d8d2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- background -->
+    <div class="background_bbls">
+      <div class="big_bbls">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+      <div class="small_bbls">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+    </div>
+    <div id="total_container">
+      <!-- header -->
+      <header>
+        <div id="header_container">
+          <div class="header_left">
+            <a href="#" class="btn_home"><i class="icon_home"></i>LAB</a>
+            <nav class="top_menu_container">
+              <a href="#" class="list_item">예약하기</a>
+              <a href="#" class="list_item">스터디</a>
+              <a href="#" class="list_item">모집 게시판</a>
+            </nav>
+          </div>
+          <div class="header_right">
+            <div class="mypage_container">
+              <a href="#" class="mypage"
+                ><i class="icon_mypage"></i
+                ><span class="blind">마이페이지</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- main -->
+      <main>
+        <div id="main_container">
+          <!-- aside(left_menu) -->
+          <aside class="left_menu_container">
+            <nav class="left_menu">
+              <a href="./mypage.html" class="list_item">마이페이지 홈</a>
+              <a href="./edit_info.html" class="list_item">개인정보 수정</a>
+              <a href="#" class="list_item">예약 관리</a>
+              <a href="./mystudy.html" class="list_item">스터디 관리</a>
+              <a href="./mypost.html" class="list_item">작성글 관리</a>
+            </nav>
+          </aside>
+
+          <section>
+            <!-- 탭 -->
+            <div class="tab-container">
+              <div class="tab selected_tab tab1"><a href="#table_1" class="active">나의 게시글</a></div>
+              <div class="tab unselected_tab tab2"><a href="#table_2">나의 모집글</a></div>
+              <div class="tab unselected_tab tab3"><a href="#table_3">나의 스크랩</a></div>
+            </div>
+              <div class="my_study_container" id="my_container">
+                <div class="study_card_container">
+
+            <!-- table  -->
+                  <div class="table_container">
+                    <div class="select_box_area">
+                      <select name="select_view">
+                        <option value="전체보기">전체보기</option>
+                        <option value="최신 순">최신 순</option>
+                        <option value="작성일 순">작성일 순</option>
+                      </select>
+                    </div>
+
+                    <div class="tab_content">
+                      <!-- 나의 게시글 -->
+                      <div class="table_area_1" id="tabs_1">
+                      <!-- <div class="tab-content_tabel_area 1"> -->
+                        <table class="border_box">
+                          <tr class="board_title_list">
+                            <td class="title_list_item">번호</td>
+                            <td class="title_list_item">스터디명</td>
+                            <td class="title_list_item">제목</td>
+                            <td class="title_list_item">작성자</td>
+                            <td class="title_list_item">작성일</td>
+                          </tr>
+                          
+                          <tr class="board_list_1">
+                            <td>24</td>
+                            <td>프론트엔트 공부해요</td>
+                            <td class="post_title">리액트 처음부터 함께 배워요</td>
+                            <td>프론트 마스터</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_2">
+                            <td>23</td>
+                            <td>스프링 박살내기</td>
+                            <td class="post_title">스프링을 이용한 게시판 만들기</td>
+                            <td>김스프</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_3">
+                            <td>22</td>
+                            <td>코딩 테스트</td>
+                            <td class="post_title">백엔드 취업을 위한 코딩테스트</td>
+                            <td>코딩왕</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_4">
+                            <td>21</td>
+                            <td>반응형 페이지 만들기</td>
+                            <td class="post_title">html, css, js를 이용한 반응형 웹 만들기</td>
+                            <td>김돌탕</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_5">
+                            <td>20</td>
+                            <td>java study</td>
+                            <td class="post_title">남궁성: 자바의 정석 책으로 함께 자바 공부해요</td>
+                            <td>김돌탕</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_6">
+                            <td>19</td>
+                            <td>정처기 준비하는 스터디</td>
+                            <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                            <td>김돌탕</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_7">
+                            <td>18</td>
+                            <td>정처기 준비하는 스터디</td>
+                            <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                            <td>김돌탕</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_8">
+                            <td>17</td>
+                            <td>정처기 준비하는 스터디</td>
+                            <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                            <td>김돌탕</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_9">
+                            <td>16</td>
+                            <td>정처기 준비하는 스터디</td>
+                            <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                            <td>김돌탕</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_10">
+                            <td>15</td>
+                            <td>정처기 준비하는 스터디</td>
+                            <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                            <td>김돌탕</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_11">
+                            <td>14</td>
+                            <td>정처기 준비하는 스터디</td>
+                            <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                            <td>김돌탕</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!-- 나의 모집글 -->
+                      <div class="table_area_2" id="tabs_2"></div>
+                      <!-- 나의 스크랩 -->
+                      <div class="table_area_3" id="tabs_3">
+                        <table class="border_box">
+                          <tr class="board_title_list">
+                            <td class="title_list_item"></td>
+                            <td class="title_list_item">번호</td>
+                            <td class="title_list_item">스터디명</td>
+                            <td class="title_list_item">제목</td>
+                            <td class="title_list_item">작성자</td>
+                            <td class="title_list_item">작성일</td>
+                          </tr>
+                          <tr class="board_list_1">
+                            <td><i class="fa-solid fa-bookmark  fa-lg"></i></td>
+                            <td>24</td>
+                            <td>프론트엔트 공부해요</td>
+                            <td class="post_title">리액트 처음부터 함께 배워요</td>
+                            <td>드림코더</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_2">
+                            <td><i class="fa-solid fa-bookmark  fa-lg"></i></td>
+                            <td>23</td>
+                            <td>스프링 박살내기</td>
+                            <td class="post_title">스프링을 이용한 게시판 만들기</td>
+                            <td>매미킴</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_3">
+                            <td><i class="fa-solid fa-bookmark  fa-lg"></i></td>
+                            <td>22</td>
+                            <td>코딩 테스트</td>
+                            <td class="post_title">백엔드 취업을 위한 코딩테스트</td>
+                            <td>보드키</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_4">
+                            <td><i class="fa-solid fa-bookmark  fa-lg"></i></td>
+                            <td>21</td>
+                            <td>반응형 페이지 만들기</td>
+                            <td class="post_title">html, css, js를 이용한 반응형 웹 만들기</td>
+                            <td>스키야키</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_5">
+                            <td><i class="fa-solid fa-bookmark  fa-lg"></i></td>
+                            <td>20</td>
+                            <td>java study</td>
+                            <td class="post_title">남궁성: 자바의 정석 책으로 함께 자바 공부해요</td>
+                            <td>다나카</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_6">
+                            <td><i class="fa-solid fa-bookmark  fa-lg"></i></td>
+                            <td>19</td>
+                            <td>정처기 준비하는 스터디</td>
+                            <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                            <td>김돌탕</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_7">
+                            <td><i class="fa-solid fa-bookmark  fa-lg"></i></td>
+                            <td>18</td>
+                            <td>정처기 준비하는 스터디</td>
+                            <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                            <td>김돌탕</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_8">
+                            <td><i class="fa-solid fa-bookmark  fa-lg"></i></td>
+                            <td>17</td>
+                            <td>정처기 준비하는 스터디</td>
+                            <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                            <td>김돌탕</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_9">
+                            <td><i class="fa-solid fa-bookmark  fa-lg"></i></td>
+                            <td>16</td>
+                            <td>정처기 준비하는 스터디</td>
+                            <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                            <td>김돌탕</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_10">
+                            <td><i class="fa-solid fa-bookmark  fa-lg"></i></td>
+                            <td>15</td>
+                            <td>정처기 준비하는 스터디</td>
+                            <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                            <td>김돌탕</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                          <tr class="board_list_11">
+                            <td><i class="fa-solid fa-bookmark  fa-lg"></i></td>
+                            <td>14</td>
+                            <td>정처기 준비하는 스터디</td>
+                            <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                            <td>김돌탕</td>
+                            <td>2023.02.28</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+
+                    <!-- 페이지 이동 -->
+                    <div class="page_area">
+                      </div>
+                        <div class="page_box clearfix">
+                          <i class="btn_prev"></i>
+                          <span class="page_num selected">1</span>
+                          <span class="page_num">2</span>
+                          <span class="page_num">3</span>
+                          <i class="btn_next"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+          </section> 
+        </div>
+      </main>
+      <!-- footer -->
+      <footer>
+        <div class="container">
+          <a href="#" class="btn_home"><i class="icon_home"></i>LAB</a>
+          <!-- 관련 정보 섹션 -->
+          <section>
+            <div class="info_container clearfix">
+              <div class="direct_num_box">
+                <h1 class="info_title">대표번호 : 123-4567</h1>
+                <ul class="list_tel">
+                  <li class="item_tel">
+                    <a href="" class="link_tel">강남 1566-1234</a>
+                  </li>
+                  <li class="item_tel">
+                    <a href="" class="link_tel">선릉 1566-1234</a>
+                  </li>
+                  <li class="item_tel">
+                    <a href="" class="link_tel">성수 1566-1234</a>
+                  </li>
+                  <li class="item_tel">
+                    <a href="" class="link_tel">노원 1566-1234</a>
+                  </li>
+                  <li class="item_tel">
+                    <a href="" class="link_tel">군자 1566-1234</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="info_right_container">
+                <div class="info_box_right about_us_box">
+                  <h3 class="info_title">ABOUT US</h3>
+                  <ul>
+                    <li>
+                      <a href="#">지점 소개</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="info_box_right link_to_box">
+                  <h3 class="info_title">LINK TO</h3>
+                  <ul>
+                    <li class="item_linkto">
+                      <a href="#" class="link_linkto">예약하기</a>
+                    </li>
+                    <li class="item_linkto">
+                      <a href="#" class="link_linkto">스터디</a>
+                    </li>
+                    <li class="item_linkto">
+                      <a href="#" class="link_linkto">모집 게시판</a>
+                    </li>
+                    <li class="item_linkto">
+                      <a href="#" class="link_linkto">마이페이지</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="info_box_right my_account_box">
+                  <h3 class="info_title">MT ACCOUNT</h3>
+                  <ul>
+                    <li class="item_member">회원 정보 수정</li>
+                    <li class="item_member">예약 확인</li>
+                    <li class="item_member">포인트 조회</li>
+                  </ul>
+                </div>
+                <div class="info_box_right help_box">
+                  <h3 class="info_title">HELP</h3>
+                  <ul>
+                    <li class="item_help">1:1 문의</li>
+                    <li class="item_help">공지사항</li>
+                    <li class="item_help">F&Q</li>
+                    <li class="item_help">가맹점 문의</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- 프로젝트 정보 섹션 -->
+          <section>
+            <div class="corp_container">
+              <a href="#" class="link_corp">RLAB스터디</a>
+              <a href="#" class="link_corp">사업자등록번호 : 12123-15142435</a>
+              <a href="#" class="link_corp">서울 강남 제214-01호</a>
+              <a href="#" class="link_corp">대표자 : 김세영</a>
+              <a href="#" class="link_corp">책임자 : 김세영</a>
+              <a href="#" class="link_corp">개인정보관리책임자 : 김세영</a>
+            </div>
+          </section>
+        </div>
+      </footer>
+    </div>
+    <script>
+      
+    </script>
+
+  
+
+  </body>
+</html>

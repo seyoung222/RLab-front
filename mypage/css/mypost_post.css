@@ -1,0 +1,164 @@
+.study_card_box {
+  position: relative;
+}
+
+.button-container {
+  display: none;
+  position: absolute;
+  top: 280px;
+  left: 55px;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-button, .delete-button {
+  margin: 0;
+  display: inline-block;
+}
+
+.study_card_box:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.study_card_box:hover .study_info {
+  opacity: 0.3;
+}
+
+.study_card_box:hover .study_img_box {
+  opacity: 0.3;
+}
+
+.study_card_box:hover .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.edit-button{
+  display: inline-block; 
+  margin-right: 10px; 
+  padding: 10px 26px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  border: 1px solid black;
+  border-color: #4285f4;
+  box-sizing: border-box; 
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.delete-button {
+  display: inline-block; 
+  margin-left: auto;
+  padding: 10px 26px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  border: 1px solid black;
+  border-color: #db4437;
+  box-sizing: border-box; 
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.edit-button {
+  background-color: #fff;
+  color: #4285f4;
+}
+
+.delete-button {
+  background-color: #fff;
+  color: #db4437;
+}
+
+.edit-button:hover {
+  background-color: #2962ff;
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #ff453a;
+  color: #fff;
+}
+
+.list_item{
+  height:60px;
+}
+
+#my_container{padding-top: 32px;}
+.study_card_container{
+  padding-left: 30px;
+}
+.select_box_area{
+  height: 29.5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.select_view option{
+  width: 200px;
+  border-radius: 5px;
+}
+table { border-collapse: collapse; }
+.board_title_list{
+  border-top: 2px solid rgba(33, 33, 33, 0.393);
+  border-bottom: 2px solid rgba(33, 33, 33, 0.393);
+}
+.board_list {
+  border-bottom: 1px solid rgba(97, 97, 97, 0.634);
+}
+.board_list_1,
+.board_list_3,
+.board_list_5,
+.board_list_7,
+.board_list_9,
+.board_list_11{
+  background-color: rgba(128, 128, 128, 0.072);
+}
+.post_title{
+  font-weight:bold;
+  font-size: 17px;
+  color:rgb(67, 66, 66)
+}
+[class^=table_area]{
+  height: 684px;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(43, 42, 42);
+}
+.fa-solid{margin-left: 5px; margin-right: -10px;}
+/* .table_area_3, .table_area_2{display: none;} */
+.border_box{
+  width: 100%;
+}
+.board_title_list{
+  font-size: 20px;
+  font-weight: bold;
+}
+.border_box .title_list_item{
+  height: 80px;
+}
+.border_box [class^=board_list_]{
+  height: 61px;
+  border-bottom: 1px solid black;
+}
+.background_bbls{
+  height: 1253px;
+}
+.icon_scrab_box{
+  height: 50px;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.icon_scrab{
+  width: 32px;   
+  height: 50px;
+  background-size: 30px 50px;
+  background-image: url(../img/favorite_tag.png);
+  
+}
+.bd_list_item{padding-left: 5px;}
