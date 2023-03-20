@@ -288,7 +288,45 @@ main .container{
 	width: 1200px;
 	margin: 0 auto;
 }
-.procedure_box{
-	width: 100%;
+.procedure_container{
+	width: 800px;
+	margin: 0 auto;
 	background-color: #626262;
+}
+.procedure_container .procedure_title{
+	font-size: 25px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+.procedure_container .item_procedure{
+	float: left;
+	border: 1px solid #000;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	border-radius: 50%;
+	position: relative;
+}
+.item_procedure .numbering{
+	position: absolute;
+	right: 0; left: 0; top: 23px;
+	text-decoration: underline;
+	font-size: 14px;
+	line-height: normal;
+}
+.item_procedure .item_text{
+	line-height: 120px;
+	text-align: center;
+}
+.procedure_container .item_procedure+.item_procedure{
+	margin-left: 20px;
+}
+.procedure_container .item_procedure+.item_procedure::before{
+	content: '';
+	display: inline-block;
+	background-image: url(../img/page_right.png);
+	background-size: 30px 30px;
+	width: 30px;
+	height: 30px;
 }
