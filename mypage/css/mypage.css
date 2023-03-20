@@ -243,12 +243,15 @@
         margin-bottom: 8px;
         white-space: nowrap;
     }
-    .list_items .list_item2{
+    .list_item:hover{
+        color: var(--color_blue);
+    }
+    /* .list_items .list_item2{
         font-size: 14px;
         font-weight: 400;
         margin-left: 10px;
         white-space: nowrap;
-    }
+    } */
     
     /* articles */
     article{
