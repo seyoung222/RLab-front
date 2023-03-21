@@ -164,25 +164,8 @@
   .study_card_box{
     margin-left: 15px;
   }
-  .study_img_box {
-    width: 296px; 
-    height: 151px; 
-    background-size: cover; 
-    background-image: url('../img/recruit_thumb.png');
-    border-top-right-radius: var(--border_radius_4);
-    border-top-left-radius: var(--border_radius_4);
-    
-  }
+ 
   
-  .study_card_container .study_info{
-    width: 270px; 
-    height: 152px;  
-    padding: 13px;
-    background-color: white;
-    border-bottom-right-radius: var(--border_radius_4) ;
-    border-bottom-left-radius :var(--border_radius_4) ;
-  }
-
   .study_info2 {
     padding-top: 110px;
   }
@@ -260,46 +243,13 @@
 
 
 
-  .study_tag_info{
-    display: flex;
-    column-gap: 5px;
-    row-gap: 5px;
-    flex-wrap: wrap;
-    margin-bottom: 9px;
-    overflow: hidden;
-    box-sizing: border-box;
-  }
-  .study_card_container .study_tag{
-    border-radius: var(--border_radius_2); 
-    text-decoration: none; 
-    background-color: var(--color_blue);
-    color: var(--color_black); 
-    text-align :center;
-    font-size: 13px;
-    padding: 5px 10px;
-  }
-  .study_card_container .study_tag_info :nth-child(2n){
-    background-color: var(--color_mint);
-  }
-  .study_card_container .study_recruit_content_box{
-    height: 40px;
-    margin-bottom: 10px;
-    display: flex; align-items: center;
-  }
-  .study_card_container .study_recruit_content{
-    font-size: 18px; 
-    color: var(--color_black);
 
-  }
+  
   .study_card_container .study_content{
     display: flex; justify-content: space-between;
   
   }
-  .study_card_container .study_content .study_recruiting{
-  border: 2px solid var(--color_black); background-color: var(--color_yellow);
-  text-align: center; border-radius: var(--border_radius_4); color: var(--color_black);
-  font-size:14px; width: 100px; height: 30px; line-height: 28px;
-  }
+
   .study_recruiting2{
     border: 2px solid var(--color_black); background-color: var(--color_blue);
     text-align: center; border-radius: var(--border_radius_4); color: var(--color_black);
@@ -307,19 +257,6 @@
     padding-bottom: 8px;
   }
 
-  .study_recruiting3{
-    border: 2px solid var(--color_black); background-color: var(--color_mint);
-    text-align: center; border-radius: var(--border_radius_4); color: var(--color_black);
-    font-size:14px; width: 130px; height: 30px; line-height: 38px;
-    padding-bottom: 8px;
-  }
-
-  .study_card_container .study_content .like_img{
-    width: 30px; height: 30px;
-    background-image: url(../img/like_on_red\ copy.png);
-    background-size: cover;
-
-  }
   #tab2 {
     background-color: var(--color_blue);
   }
@@ -347,36 +284,6 @@
     margin-top: 20px; 
   }
 
-  .sad_container{
-    background-color: rgba(211, 211, 211, 0.7);
-    position: absolute;
-    margin: 0 auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  .sad_box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -35px;
-    margin-left: -35px;
-  }
-
-  .sad_img {
-    background-image: url(../img/sad.png);
-    background-size: cover;
-    width: 49px;
-    height: 49px;
-  }
-  .sad_img_content {
-    font-weight: bold;
-    margin-left: -30px;
-    font-size: 25px;
-  }
-
   .cre_study_ul {
     margin-top: 31px;
   }
@@ -385,72 +292,7 @@
     top: 41px;
     right: 25px;
   }
-  .ing_study_ul {
-    margin-top: 31px;
-  }
-
   
-  .ing_study {
-    text-align: center; 
-    margin-bottom: 20px; 
-  }
-
-  .ing_study_img {
-  border: var(--border_basic);
-  border-radius: var(--border_radius_1);
-  width: 170px; height: 170px;
-  background-size: cover;
-  background-image: url(../img/study_img.jpeg);
-  margin: 0 auto; 
-  margin-top: -90px;
-  display: block; 
-  }
-
-  
-  .ing_study_title {
-    font-size: 17px;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-
-  .ing_study_title2 {
-    font-size: 11px;
-  }
-
-  .ing_study_content {
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    margin-top: 20px; 
-  }
-  
-
-  .ing_study_container {
-    background-color: var(--color_mint);
-    height: 170px;
-    position: relative;
-    border-radius: var(--border_radius_4);
-  }
-
-  
-
-  .ing_study_container::after {
-    content: "x";
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-color: var(--color_light-grey);
-    color: white;
-    border-radius: var(--border_radius_1);
-    text-align: center;
-    line-height: 14px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
 
   .cre_study_title {
     font-size: 17px;
