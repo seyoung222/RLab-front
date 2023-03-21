@@ -43,7 +43,7 @@
 }
 body {
 	background-color: var(--color_beige);
-	height: 1547px;
+	height: 600px;
   position: relative;
 }	
 #total_container {
@@ -221,24 +221,30 @@ main{
 }
 .boxes_container{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	gap: 30px;
 }
 .boxes_container .box{
+	width: 560px;
 	display: flex;
 	flex-flow: column;
 	gap: 30px;
 	border: 2px solid #020a17;
 	border-radius: var(--border_radius_3);
+	padding: 40px 50px;
+	box-sizing: border-box;
+	background-color: var(--color_beige);
 }
 .boxes_container .ticket_box{
-	padding: 30px;
-	box-sizing: border-box;
+
 }
 .box .area{
 	display: flex;
 	flex-flow: column;
 	gap: 20px;
 }
+
+/* 이용권 종류 박스 */
 .area .tickets{
 	display: flex;
 	flex-flow: column;
@@ -271,6 +277,97 @@ main{
 	padding: 10px;
 	box-sizing: border-box;
 	text-align: center;
+}
+
+/* 선택한 이용권 박스 */
+.selected_area, .point_area{
+	padding-bottom: 30px;
+	box-sizing: border-box;
+}
+.selected_title{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 17px;
+	font-weight: 600;
+}
+.selected_title .dot{
+	width: 10px;
+	height: 10px;
+	border-radius: var(--border_radius_1);
+	background-color: var(--color_yellow);
+}
+.selected_tickets{
+	display: flex;
+	flex-flow: column;
+	gap: 35px;
+	padding-bottom: 30px;
+	box-sizing: border-box;
+	border-bottom: 2px solid #020a17;
+}
+.selected_tickets .selected_ticket{
+	display: flex;
+	flex-flow: column;
+	gap: 10px;
+}
+.selected_content{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 20px;
+	gap: 50px;
+}
+.selected_content .ticket_price{
+	font-size: 26px;
+	font-weight: 700;
+	color: var(--color_grey);
+}
+#final_price{
+	color: var(--color_mint);
+}
+.point_container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+	padding-bottom: 30px;
+	box-sizing: border-box;
+	border-bottom: 2px solid #020a17;
+}
+.point_container .point_title{
+	font-size: 17px;
+	font-weight: 600;
+}
+.point_container #my_point{
+	font-size: 30px;
+	font-weight: 700;
+}
+.point_container .use_point{
+	margin-left: 20px;
+}
+.total_container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 5px;
+	font-size: 17px;
+}
+.total_container p{
+
+}
+.total_price{
+	font-size: 30px;
+	font-weight: 600;
+}
+
+#pay_btn{
+	font-size: 20px;
+	padding: 25px;
+	box-sizing: border-box;
+	font-weight: 600;
+	border: none;
+	box-shadow: 2px 5px 6px #62626275;
+	background-color: var(--color_yellow);
+	border-radius: var(--border_radius_4);
 }
 
 /* footer */
@@ -337,17 +434,31 @@ footer .corp_container .link_corp:nth-child(1)::before{
 }
 
 /* main */
-main .container{
+main .main_container{
+	display: flex;
+	flex-flow: column;
+	gap: 35px;
 	width: 1200px;
 	margin: 0 auto;
 }
+
+/* 이용권 구매 단계 안내 */
 .procedure_container{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	gap: 30px;
 	width: 800px;
 	margin: 0 auto;
-	background-color: #626262;
+}
+.selected{
+	background-color: var(--color_yellow);
+}
+.detail_procedure{
+	display: flex;
+	gap: 20px;
 }
 .procedure_container .procedure_title{
-	font-size: 25px;
 	text-align: center;
 	height: 40px;
 	line-height: 40px;
