@@ -15,6 +15,7 @@
   height: 329px; 
   border: 2px solid var(--color_black); 
   float: right; 
+  overflow: hidden;
   box-shadow: 5px 5px 0px rgb(7, 7, 7);
   border-radius: var(--border_radius_4);
 }

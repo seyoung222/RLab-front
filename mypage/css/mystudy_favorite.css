@@ -1,7 +1,12 @@
+.tab-content{
+  flex-flow: column;
+}
+
+
 /* 모집 부분 - study-card-container */
   .study_card_container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   
   .op {
@@ -9,17 +14,20 @@
   }
 
 
-  .row_study_card{margin-bottom: 20px;}
+  .row_study_card{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
   .study_card_box{
     width: 250px; 
     height: 329px; 
     border: 2px solid var(--color_black); 
     float: right; 
+    overflow: hidden;
     box-shadow: 5px 5px 0px rgb(7, 7, 7);
     border-radius: var(--border_radius_4);
-  }
-  .study_card_box{
-    margin-left: 15px;
   }
   .study_img_box {
     width: 296px; 
@@ -27,8 +35,7 @@
     background-size: cover; 
     background-image: url('../img/recruit_thumb.png');
     border-top-right-radius: var(--border_radius_4);
-    border-top-left-radius: var(--border_radius_4);
-    
+    border-top-left-radius: var(--border_radius_4);    
   }
   
   .study_card_container .study_info{
