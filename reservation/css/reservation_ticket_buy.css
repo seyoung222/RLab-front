@@ -219,6 +219,59 @@ main{
 		margin: 0;
 		margin-top: 100px;
 }
+.boxes_container{
+	display: flex;
+	justify-content: space-between;
+}
+.boxes_container .box{
+	display: flex;
+	flex-flow: column;
+	gap: 30px;
+	border: 2px solid #020a17;
+	border-radius: var(--border_radius_3);
+}
+.boxes_container .ticket_box{
+	padding: 30px;
+	box-sizing: border-box;
+}
+.box .area{
+	display: flex;
+	flex-flow: column;
+	gap: 20px;
+}
+.area .tickets{
+	display: flex;
+	flex-flow: column;
+	gap: 40px;
+}
+.tickets .ticket{
+	display: flex;
+	flex-flow: column;
+	gap: 10px;
+}
+.ticket .ticket_title{
+	width: 120px;
+	font-weight: 600;
+	font-size: 15px;
+	border-radius: var(--border_radius_2);
+	background-color: var(--color_yellow);
+	padding: 8px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.times{
+	display: flex;
+	justify-content: flex-start;
+	gap: 6px;
+}
+.times .ticket_time{
+	font-size: 12px;
+	border: 1px solid #020a17;
+	border-radius: 6px;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
 
 /* footer */
 footer{
