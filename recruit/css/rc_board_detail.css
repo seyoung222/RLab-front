@@ -277,6 +277,10 @@
       background-color: var(--color_yellow);
       cursor: pointer;
     }
+
+    /*댓글*/
+    
+
     .main_bottom_box{
       margin-top: 40px;
     }
@@ -320,17 +324,25 @@
         cursor: pointer;
         font-weight: bold;
     }
+<<<<<<< Updated upstream
     .reply_main_box{
       display: flex;
       flex-wrap: wrap;
     }
     .reply_top_box{
+=======
+    .cm_main_box{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .cm_top_box{
+>>>>>>> Stashed changes
       display: flex;
       flex-wrap: wrap;
       width: 690px;
       border: 1px solid var(--color_light-grey);
       height: auto;
-      padding: 5px;
+      padding: 10px;
       margin-top: 15px;
       border-radius: var(--border_radius_4);
       justify-content: space-between;
@@ -340,7 +352,7 @@
       flex-wrap: wrap;
       align-items: center;
     }
-    .reply_top_box .img_mypage{
+    .cm_top_box .img_mypage{
       display: flex;
       width: 40px;
       height: 40px;
@@ -354,8 +366,10 @@
     .write_date{
       font-size: 13px;
     }
-    .btn_box{
+    .comment_btn_box .cm_plus_btn, 
+    .comment_btn_box .cm_delete_btn {
       background-color: transparent;
+<<<<<<< Updated upstream
       border: none;      
     }
     .already_comment{
@@ -370,6 +384,22 @@
     }
     .re_reply_top_box{
       display: flex;
+=======
+      border: none;
+      color: var(--color_grey);
+      width: 80px;
+      
+    }
+    .reply_icon{
+      width: 20px;
+      height: 20px;
+      align-items: center;
+    }
+    .already_comment{
+      width: 100%;
+      height: 30px;
+      padding: 5px 5px 5px 30px;
+>>>>>>> Stashed changes
       flex-wrap: wrap;
       width: 690px;
       border: 1px solid var(--color_light-grey);
@@ -420,7 +450,86 @@
       margin: 5px 30px;
       word-wrap: break-word; 
     }
-  
+
+    /*대댓글*/
+    .re_reply_main_box{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .re_reply_top_box {
+      display: flex;
+      flex-wrap: wrap;
+      width: 690px;
+      border: 1px solid var(--color_light-grey);
+      height: auto;
+      padding: 10px 10px 10px 30px;
+      margin-top: 15px;
+      border-radius: var(--border_radius_4);      
+    }
+    .re_writer {
+      display: flex;
+    }
+    .re_mypage{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    
+    .re_reply_top_box .img_mypage{
+      display: flex;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-size: 61px 40px;
+      background-position: -9px 0;
+      background-image: url(../img/profile_img.png);
+      background-repeat: no-repeat;
+      flex-wrap: wrap;
+    }
+    .re_reply_icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      justify-content: flex-start;
+    }
+    
+
+    .re_nick_name {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    
+    .re_write_date {
+      font-size: 13px;
+      color: var(--color_light-grey)
+    }
+    
+    .reply_btn_box {
+      display: flex;
+      align-items: center;
+      margin: 5px;
+      justify-content: flex-end;
+
+    }
+    .reply_btn_box .re_edit_btn, 
+    .reply_btn_box .re_delete_btn {
+      background-color: transparent;
+      border: none;
+      margin-left: 10px;
+      font-size: 13px;
+      color: #999;
+      cursor: pointer;
+      justify-content: flex-end;
+    }
+    
+    .re_reply_comment {
+      width: 100%;
+      margin-top: 10px;
+      padding: 5px 5px 5px 30px;
+    }
+
+
     /* Footer */
     footer{
     margin-top: 150px;

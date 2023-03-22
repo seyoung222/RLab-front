@@ -71,7 +71,7 @@
 		    flex-flow: column;
 		    align-items: center;
   }
-/* header  수정 23-02-20*/
+/* header*/
     header {
         width: 100%;
         position: fixed;
@@ -169,7 +169,6 @@
     padding: 20px; 
     box-sizing: border-box; 
     box-shadow: 5px 5px 0px rgb(7, 7, 7);
-
   }
   .search_container .icon_search{
     width: 20px; height: 20px;
