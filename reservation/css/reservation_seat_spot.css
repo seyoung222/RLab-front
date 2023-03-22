@@ -152,73 +152,283 @@ a{color: #000;}
 /* header */
 header {
 	/* 2023-02-21 width 100% 속성 추가*/ 
-	width: 100%;
-	position: fixed;
-	display: flex;
-	justify-content: center;
-	margin-bottom: 250px;
-	background-color: var(--color_beige);
-	z-index: 100;
-}
-header #header_container {
-	display: flex;
-	justify-content: space-between;
-	width: var(--body_size);
-	padding: 10px 0 10px 10px;
-	border-radius: var(--border_radius_3);
+		width: 100%;
+		position: fixed;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 250px;
+		background-color: var(--color_beige);
+		z-index: 100;
+	}
+	header #header_container {
+		display: flex;
+		justify-content: space-between;
+		width: var(--body_size);
+		padding: 10px 0 10px 10px;
+		border-radius: var(--border_radius_3);
 
+		box-sizing: border-box;
+		font-weight: 800;
+	}
+	#header_container .header_left{
+		display: flex;
+		gap: 80px;
+	}
+	.btn_home {
+		display: flex;
+		width: 66px;
+		height: 50px;
+		font-size: 14px;
+		font-weight: 800;
+		line-height: 80px;
+		overflow: hidden;
+	}
+	.btn_home .icon_home {
+		width: 40px;
+		height: 51px;
+		background-size: 58px 58px;
+		background-position: -9px -4px;
+		background-image: url(../img/rlab_logo.png);
+		background-repeat: no-repeat;
+	}
+	.top_menu_container{
+		width: 230px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 15px;
+	}
+	#header_container .header_right{
+		display: flex;
+		align-items: center;
+	}
+	.mypage_container .mypage .icon_mypage{
+		display: flex;
+		width: 40px;
+		height: 40px;
+		border: 2px solid var(--color_mint);
+		border-radius: 50%;
+		background-size: 61px 40px;
+		background-position: -9px 0;
+		background-image: url(../img/profile_img.png);
+		background-repeat: no-repeat;
+	}
+
+	/* main 에 margin-top 속성 추가하세요!!*/
+	main{
+			width: var(--body_size);
+			margin: 0;
+			margin-top: 70px;
+	}
+
+
+main .container{
+	width: 1200px; margin: 0 auto;
+}
+/* 버튼 섹션 */
+.button_container{
+	width: 1160px; height: 204px;
+	padding: 20px;
+}
+.button_container .list_button{
+	width: 718px; 
+	height: 204px; 
+	margin: 0 auto;
+}
+.button_container .item_button{float: left;}
+.button_container .item_button+.item_button{margin-left: 50px;}
+.button_container .link_button{
+	width: 200px; height: 200px; border: var(--border_basic);
+	border-radius: 50%; display: inline-block; position: relative;
 	box-sizing: border-box;
-	font-weight: 800;
 }
-#header_container .header_left{
-	display: flex;
-	gap: 80px;
+.button_container .link_button .icon_box{
+	width: 194px; height: 194px;
+	border-radius: 50%; display: inline-block; overflow: hidden;
+	position: absolute; box-sizing: border-box;
+	top: 0; left: 0; right: 0; bottom: 0;
 }
-.btn_home {
-	display: flex;
-	width: 66px;
-	height: 50px;
-	font-size: 14px;
-	font-weight: 800;
-	line-height: 80px;
-	overflow: hidden;
+.button_container .link_button .icon_box .button_text{
+	font-size: 18px; line-height: 200px; font-weight: bold; 
+	padding-left: 15px; position: absolute; 
 }
-.btn_home .icon_home {
-	width: 40px;
-	height: 51px;
-	background-size: 58px 58px;
-	background-position: -9px -4px;
-	background-image: url(../img/rlab_logo.png);
+.button_container .btn_seat .icon_seat{
+	background-image: url(../img/office-chair_.png); opacity: .4;
+	display: inline-block; width: 200px; height: 200px;
+	background-position: 50px; background-size: 190px 190px;
 	background-repeat: no-repeat;
 }
-.top_menu_container{
-	width: 230px;
+.button_container .btn_cabinet .icon_cabinet{
+	background-image: url(../img/locker_.png); opacity: .4;
+	display: inline-block; width: 200px; height: 200px;
+	background-position: 50px; background-size: 190px 190px;
+	background-repeat: no-repeat;
+}
+.button_container .btn_room .icon_room{
+	background-image: url(../img/meeting_.png); opacity: .4;
+	display: inline-block; width: 200px; height: 200px;
+	background-position: 50px; background-size: 160px 160px;
+	background-repeat: no-repeat;
+}
+.button_container .btn_seat.selected .icon_seat,
+.button_container .btn_seat:hover .icon_seat{
+	background-image: url(../img/office-chair.png);
+	opacity: 1;
+}
+.button_container .btn_cabinet.selected .icon_cabinet,
+.button_container .btn_cabinet:hover .icon_cabinet{
+	background-image: url(../img/locker.png);
+	opacity: 1;
+}
+.button_container .btn_room.selected .icon_room,
+.button_container .btn_room:hover .icon_room{
+	background-image: url(../img/meeting.png);
+	opacity: 1;
+}
+.button_container .btn_seat{background-color: var(--color_beige);}
+.button_container .btn_cabinet{background-color: var(--color_beige);}
+.button_container .btn_room{background-color: var(--color_beige);}
+
+.button_container .btn_seat.selected,
+.button_container .btn_seat:hover{
+	background-color: var(--color_blue);
+}
+.button_container .btn_cabinet.selected,
+.button_container .btn_cabinet:hover{
+	background-color: var(--color_yellow);
+}
+.button_container .btn_room.selected,
+.button_container .btn_room:hover{
+	background-color: var(--color_mint);
+}
+/* 필터/서치 섹션 */
+.search_container .box_seat_detail{
+	margin: 50px 0 0;
+}
+.box_seat_detail .btn_ticket, .box_seat_detail .btn-direct{
+	border: 2px solid black; border-radius: 50px; padding: 15px 25px;
+	font-weight: 700;
+}
+.box_seat_detail .btn_ticket{
+	background-color: var(--color_light-grey);
+
+}
+.box_seat_detail .btn_ticket:hover{
+	background-color: var(--color_yellow);
+}
+.box_seat_detail .btn_ticket.selected{
+	background-color: var(--color_yellow);
+}
+.box_seat_detail .btn-direct{
+	margin-left: 5px; 
+	background-color: var(--color_light-grey); 
+}
+.box_seat_detail .btn-direct:hover{
+	margin-left: 5px; background-color: var(--color_blue);
+}
+.box_seat_detail .btn-direct.selected{
+	margin-left: 5px; 
+	background-color: var(--color_blue);
+}
+.search_container .filter_area{ margin-top: 35px; vertical-align: top;}
+.search_container .choose_region{
+	width: 220px; height: 25px; border: 2px solid black; border-radius: 8px;
+	background-color: var(--color_beige); line-height: 25px; padding: 10px 15px;
+	font-size: 14px; font-weight: 700; display: inline-block;
+	position: relative;
+}
+.search_container .choose_region .icon_dropbox{
+
+}
+.filter_area .search_box{
+	width: 250px; height: 25px; border: 2px solid black; border-radius: 8px;
+	background-color: var(--color_beige); line-height: 25px; padding: 10px 15px;
+	font-size: 14px; font-weight: 700; display: inline-block; outline: 0;
+}
+
+/* 이용권 선택 섹션 */
+.ticket_list_box{
+	background-color: grey; 
+	margin-top: 30px;
+}
+.seat_container .list_container{
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+}
+.seat_container .item_container{
+	width: 100%;
+	padding: 50px; 
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 20px;
+	box-shadow: 2px 2px;
+
+}
+.seat_container .item_container+.item_container{
+	margin-left: 30px;
+}
+.seat_container .list_ticket{
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+.seat_container .item_ticket{
 	font-size: 15px;
 }
-#header_container .header_right{
-	display: flex;
-	align-items: center;
+
+
+
+
+
+
+
+
+
+/* 지점 카드 섹션 */
+.spot_card_container{
+	margin-top: 60px;
 }
-.mypage_container .mypage .icon_mypage{
-	display: flex;
-	width: 40px;
-	height: 40px;
-	border: 2px solid var(--color_mint);
-	border-radius: 50%;
-	background-size: 61px 40px;
-	background-position: -9px 0;
-	background-image: url(../img/profile_img.png);
-	background-repeat: no-repeat;
+.spot_card_container .item_card{
+	width: 380px;  background-color: #fff; float: left;
+	border: var(--border_basic); border-radius: 10px; display: inline-block;
+	box-sizing: border-box; overflow: hidden;
 }
-/* main 에 margin-top 속성 추가하세요!!*/
-main{
-		width: var(--body_size);
-		margin: 0;
-		margin-top: 100px;
+.spot_card_container .item_card+.item_card{margin-left: 20px;}
+.spot_card_container .img-box{
+	width: 400px; height: 250px; 
+	background-image: url(../img/study_thumb.jpeg);
 }
+.spot_card_container .info_area{padding: 20px;}
+.spot_card_container h2{margin-bottom: 10px;}
+.spot_card_container .spot_address,
+.spot_card_container .info_running_time{
+	color: #464646; font-size: var(--font_size_cont_l);
+	font-weight: bold;
+}
+.spot_card_container .row_card{margin-top: 20px;}
+.spot_card_container .page_box{
+	margin-top: 30px; display: flex; justify-content: center;
+}
+.spot_card_container .page_box>*{float: left;}
+.spot_card_container .page_box .btn_prev{
+	width: 30px; height: 30px; display: inline-block;
+	background-position: -10px -10px; margin-right: 10px;
+	background-image: url(../img/page_left.png);  background-size:50px 50px;
+}
+.spot_card_container .page_box .btn_next{
+	width: 30px; height: 30px; display: inline-block;
+	background-position: -10px -10px; margin-left: 10px;
+	background-image: url(../img/page_right.png); background-size:50px 50px;
+}
+.spot_card_container .page_num{
+	line-height: 30px; font-size: 25px; color: rgb(63, 63, 63);
+}
+.spot_card_container .page_num.selected{
+color: #020a17; font-weight: bold;
+}
+.spot_card_container .page_num+.page_num{margin-left: 15px;}
+
+
+
+
 
 /* footer */
 footer{
@@ -280,53 +490,5 @@ footer .corp_container .link_corp:nth-child(1){
 	padding: 0;
 }
 footer .corp_container .link_corp:nth-child(1)::before{
-	display: flex;
-}
-
-/* main */
-main .container{
-	width: 1200px;
-	margin: 0 auto;
-}
-.inner_container{
-	margin: 100px auto;
-	padding: 0px 200px;
-}
-main .info_box{
-	width: 100%;
-	height: 80px;
-	line-height: 40px;
-	text-align: center;
-	color: #020a17;
-}
-.button_container .ticket_box, .button_container .reservation_box{
-	width: 374px;
-	height: 400px;
-	background-color: #bfbfbf;
-	float: left;
-	border-radius: 20px;
-	text-align: center; 
-	/* line-height: 300px; */
-	border: var(--border_basic);
-	border-radius: var(--border_radius_2);
-	padding: 120px 20px;
-	box-sizing: border-box;
-}
-.button_container .ticket_box{
-	background-color: var(--color_yellow);
-}
-.button_container .reservation_box{
-	margin-left: 40px;
-	background-color: var(--color_blue);
-}
-.button_container .around_text{
-	display: inline-block;
-	font-size: 18px;
-	font-weight: 600;
-	border: 1px solid #000;
-	padding: 10px 20px;
-	border-radius: 30px;
-}
-.button_container .info_area{
-	margin-top: 50px;
+	display: none;
 }
