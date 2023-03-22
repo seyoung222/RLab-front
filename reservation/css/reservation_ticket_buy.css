@@ -231,7 +231,7 @@ main{
 	gap: 55px;
 	border: 2px solid #020a17;
 	border-radius: var(--border_radius_3);
-	padding: 40px 50px;
+	padding: 45px 40px;
 	box-sizing: border-box;
 	background-color: var(--color_beige);
 }
@@ -242,6 +242,42 @@ main{
 }
 
 /* 이용권 종류 박스 */
+.title{
+	display: flex;
+	justify-content: flex-start;
+	gap: 10px;
+	align-items: center;
+}
+.title .icon_seat{
+	width: 45px;
+	height: 45px;
+	background-size: 45px 45px;
+	background-image: url(../img/office-chair_.png);
+	background-repeat: no-repeat;
+}
+.title .icon_info{
+	width: 20px;
+	height: 20px;
+	background-size: 20px 20px;
+	background-image: url(../img/info.png);
+	background-repeat: no-repeat;
+	opacity: 60%;
+}
+.title .icon_locker{
+	width: 45px;
+	height: 45px;
+	background-size: 45px 45px;
+	background-image: url(../img/locker_.png);
+	background-repeat: no-repeat;
+}
+.title .icon_point{
+	width: 45px;
+	height: 45px;
+	background-size: 45px 45px;
+	background-image: url(../img/point.png);
+	background-repeat: no-repeat;
+	margin-right: 5px;
+}
 .area .tickets{
 	display: flex;
 	flex-flow: column;

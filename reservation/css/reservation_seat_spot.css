@@ -280,7 +280,7 @@ footer .corp_container .link_corp:nth-child(1){
 	padding: 0;
 }
 footer .corp_container .link_corp:nth-child(1)::before{
-	display: none;
+	display: flex;
 }
 
 /* main */
