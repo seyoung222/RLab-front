@@ -284,6 +284,81 @@ main{
 	width: 30px;
 	height: 30px;
 } */
+
+/* main_container */
+.main_container{
+	display: flex;
+	justify-content: space-between;
+}
+.main_container .main_content{
+	width: 560px;
+	display: flex;
+	flex-flow: column;
+	gap: 55px;
+	border: 2px solid #020a17;
+	border-radius: var(--border_radius_3);
+	padding: 45px 40px;
+	box-sizing: border-box;
+	background-color: var(--color_beige);
+}
+/* 좌석 선택 */
+.main_container .seat_container{
+
+}
+/* 타이틀 영역 */
+.title_area{
+	display: flex;
+	justify-content: flex-start;
+	gap: 10px;
+	align-items: center;
+}
+.title_area .icon_seat{
+	width: 45px;
+	height: 45px;
+	background-size: 45px 45px;
+	background-image: url(../img/office-chair_.png);
+	background-repeat: no-repeat;
+}
+.title_area .icon_info{
+	width: 20px;
+	height: 20px;
+	background-size: 20px 20px;
+	background-image: url(../img/info.png);
+	background-repeat: no-repeat;
+	opacity: 60%;
+}
+/* 좌석 선택 영역 */
+.seat_area{
+	width: 100%;
+	border: 1px solid #020a17;
+	border-radius: var(--border_radius_4);
+}
+.seat_area table{
+	width: 100%;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	border-collapse: collapse;
+	box-sizing: border-box;
+}
+tr{
+	display: flex;
+	justify-content: space-between;
+	gap: 3px;
+	margin-bottom: 3px;
+}
+td{
+	width: 42px;
+	height: 42px;
+	border: 1px solid #020a17;
+	border-radius: 4px;
+	text-align: center;
+}
+/* 선택한 좌석번호 영역 */
+
+/* 이용권 선택 */
+
+
 /* footer */
 footer{
 	margin-top : 150px
