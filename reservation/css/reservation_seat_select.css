@@ -301,10 +301,6 @@ main{
 	box-sizing: border-box;
 	background-color: var(--color_beige);
 }
-/* 좌석 선택 */
-.main_container .seat_container{
-
-}
 /* 타이틀 영역 */
 .title_area{
 	display: flex;
@@ -329,9 +325,14 @@ main{
 }
 /* 좌석 선택 영역 */
 .seat_area{
+	display: flex;
+	flex-flow: column;
+}
+.seat_area .seat_table{
 	width: 100%;
 	border: 1px solid #020a17;
 	border-radius: var(--border_radius_4);
+	background-color: #fff;
 }
 .seat_area table{
 	width: 100%;
@@ -341,20 +342,51 @@ main{
 	border-collapse: collapse;
 	box-sizing: border-box;
 }
+.seat_area .seat_info{
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+}
 tr{
 	display: flex;
 	justify-content: space-between;
 	gap: 3px;
 	margin-bottom: 3px;
 }
+tr:nth-child(10){
+	margin-bottom: 0;
+}
+.seat{
+	background-color: #66a0e24b
+}
+.seat_unavailable{
+	background-color: var(--color_light-grey);
+}
+.seat_selected{
+	background-color: var(--color_blue);
+}
 td{
+	color: #41414142;
 	width: 42px;
 	height: 42px;
-	border: 1px solid #020a17;
+	border: 1px solid #636363;
 	border-radius: 4px;
 	text-align: center;
+	line-height: 42px;
 }
 /* 선택한 좌석번호 영역 */
+.seat_num_area{
+
+}
+.seat_num_area .seat_num_box{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.seat_num_box #seat_num{
+	font-size: 30px;
+	color: var(--color_blue);
+}
 
 /* 이용권 선택 */
 
