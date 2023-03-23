@@ -43,7 +43,7 @@
 }
 body {
 	background-color: var(--color_beige);
-	height: 1547px;
+	height: 970px;
   position: relative;
 }	
 #total_container {
@@ -59,9 +59,6 @@ body {
 	height: 2px;
 	margin: -2px;
 	overflow: hidden;
-}
-.display_none{
-	display: none;
 }
 .clearfix::after{
 	clear: both; display: block; content: '';
@@ -86,6 +83,9 @@ a{color: #000;}
 }
 .add_shadow {box-shadow: 5px 5px 0px rgb(7, 7, 7);}
 
+.display_none{
+	display: none !important;
+}
 /* background */
 .background_bbls{
 	position: absolute;
@@ -230,7 +230,7 @@ main{
 	margin: 0 auto;
 }
 .selected{
-	background-color: var(--color_yellow);
+	background-color: var(--color_blue);
 }
 .detail_procedure{
 	display: flex;
@@ -359,16 +359,24 @@ tr:nth-child(10){
 	margin-bottom: 0;
 }
 .seat{
-	background-color: #66a0e24b
+	background-color: #66a0e24b;
+	cursor: pointer;
+}
+.seat:hover{
+	background-color: var(--color_blue);
+}
+.seat:visited{
+	background-color: var(--color_blue);
 }
 .seat_unavailable{
 	background-color: var(--color_light-grey);
 }
 .seat_selected{
 	background-color: var(--color_blue);
+	cursor: pointer;
 }
 td{
-	color: #41414142;
+	color: #4141419c;
 	width: 42px;
 	height: 42px;
 	border: 1px solid #636363;
@@ -420,7 +428,8 @@ td{
 	background-color: var(--color_blue);
 }
 
-/* 이용권 선택 */
+/* 이용권 선택 박스 */
+/* 이용권 고르기 영역*/
 .ticket_area{
 	display: flex;
 	gap: 10px;
@@ -434,9 +443,42 @@ select{
 .time_select{
 	width: 70px;
 }
+/* 선택한 이용권, 시간 영역 */
+.selected_area{
+	display: flex;
+	flex-flow: column;
+	gap: 20px;
+}
+.selected_area .selected_ticket{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	border: 1px solid #020a17;
+	padding: 20px;
+	box-sizing: border-box;
+	white-space: nowrap;
+}
+.selected_title{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 17px;
+	font-weight: 600;
+}
+.selected_title .dot{
+	width: 10px;
+	height: 10px;
+	border-radius: var(--border_radius_1);
+	background-color: var(--color_yellow);
+}
 
-#book_btn{
-	width: 100%;
+/* 이용권 구매, 예약하기 버튼 영역 */
+.btn_area{
+	display: flex;
+	justify-content: space-between;
+}
+.b_btn{
+	width: 48%;
 	font-size: 20px;
 	padding: 25px;
 	box-sizing: border-box;
@@ -445,8 +487,20 @@ select{
 	box-shadow: 2px 5px 6px #62626275;
 	background-color: var(--color_yellow);
 	border-radius: var(--border_radius_4);
+	cursor: pointer;
 }
-
+#buy_btn{
+	background-color: var(--color_yellow);
+}
+#buy_btn:hover{
+	background-color: #dbd756;
+}
+#book_btn{
+	background-color: var(--color_blue);
+}
+#book_btn:hover{
+	background-color: #4c84c4;
+}
 /* footer */
 footer{
 	margin-top : 150px
