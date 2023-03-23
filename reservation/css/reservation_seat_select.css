@@ -324,6 +324,7 @@ main{
 	opacity: 60%;
 	cursor: pointer;
 }
+
 /* 좌석 선택 영역 */
 .seat_area{
 	display: flex;
@@ -420,7 +421,31 @@ td{
 }
 
 /* 이용권 선택 */
+.ticket_area{
+	display: flex;
+	gap: 10px;
+}
+select{
+	height: 35px;
+}
+#ticket_select{
+	width: 160px;
+}
+.time_select{
+	width: 70px;
+}
 
+#book_btn{
+	width: 100%;
+	font-size: 20px;
+	padding: 25px;
+	box-sizing: border-box;
+	font-weight: 600;
+	border: none;
+	box-shadow: 2px 5px 6px #62626275;
+	background-color: var(--color_yellow);
+	border-radius: var(--border_radius_4);
+}
 
 /* footer */
 footer{
