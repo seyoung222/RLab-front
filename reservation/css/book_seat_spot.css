@@ -456,7 +456,11 @@ input::-webkit-search-results-decoration{
 	color: #464646; font-size: var(--font_size_cont_l);
 	font-weight: bold;
 }
-.spot_card_container .row_card{margin-top: 20px;}
+.spot_card_container .row_card{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
 .spot_card_container .page_box{
 	margin-top: 30px; display: flex; justify-content: center;
 }
@@ -474,7 +478,7 @@ input::-webkit-search-results-decoration{
 .spot_card_container .page_num{
 	line-height: 30px; font-size: 25px; color: rgb(63, 63, 63);
 }
-.spot_card_container .page_num.selected{
+.spot_card_container .page_num.selected_num{
 color: #020a17; font-weight: bold;
 }
 .spot_card_container .page_num+.page_num{margin-left: 15px;}
