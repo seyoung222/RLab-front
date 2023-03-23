@@ -43,13 +43,16 @@
 	
 		<!-- body -->
 		<main>
+			<div class="procedure_container">
+				<h1 class="procedure_title">바로예약</h1>
+			</div>
 			<div class="container">
 				<!-- 버튼 섹션 -->
 				<section>
 					<div class="button_container">
 						<ul class="list_button clearfix">
 							<li class="item_button">
-								<a href="#" class="link_button btn_seat add_shadow ">
+								<a href="./book_seat_spot.html" class="link_button btn_seat add_shadow selected">
 									<div class="icon_box">
 										<span class="button_text">좌석</span>
 										<i class="icon_seat"></i>
@@ -57,7 +60,7 @@
 								</a>
 							</li>
 							<li class="item_button">
-								<a href="#" class="link_button btn_cabinet add_shadow selected">
+								<a href="#" class="link_button btn_cabinet add_shadow">
 									<div class="icon_box">
 										<span class="button_text">사물함</span>
 										<i class="icon_cabinet"></i>
@@ -75,204 +78,6 @@
 						</ul>
 					</div>
 				</section>
-				<div class="seat_container">
-					<!-- 필터 섹션 -->
-					<section>
-						<div class="search_container">
-							<div class="box_seat_detail clearfix">
-								<a href="#" class="btn_ticket selected">이용권</a>
-								<a href="#" class="btn-direct">바로 예약</a>
-							</div>
-							<div class="filter_area">
-								<div class="choose_region">지역<i class="icon_dropbox"></i></div>
-								<input type="text" class="search_box" placeholder="지역, 지점명으로 검색">
-							</div>
-						</div>
-					</section>
-					<div class="ticket_container display_none">
-						<!-- 이용권 선택 및 섹션 -->
-						<section>
-							<div class="ticket_list_box">
-								<hr>
-								<ul class="list_container">
-									<li class="item_container">
-										<ul class="list_ticket">당일 이용권
-											<li class="item_ticket">2시간 이용권</li>
-											<li class="item_ticket">3시간 이용권</li>
-											<li class="item_ticket">6시간 이용권</li>
-										</ul>
-									</li>
-									<li class="item_container">
-										<ul class="list_ticket">시간패키지
-											<li class="item_ticket">2시간 이용권</li>
-											<li class="item_ticket">3시간 이용권</li>
-											<li class="item_ticket">6시간 이용권</li>
-										</ul>
-									</li>
-									<li class="item_container">
-										<ul class="list_ticket">기간이용권
-											<li class="item_ticket">2시간 이용권</li>
-											<li class="item_ticket">3시간 이용권</li>
-											<li class="item_ticket">6시간 이용권</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-						</section>
-						<!-- 결제 안내창 -->
-						<section></section>
-					</div>
-					<!-- 지점 카드 -->
-					<section>
-						<div class="spot_card_container">
-							<ul class="list_card">
-								<div class="row_card clearfix">
-									<li class="item_card add_shadow">
-										<a href="#">
-											<div class="img-box"></div>
-											<div class="info_area">
-												<h2>[서울] 강남역점</h2>
-												<span class="spot_address">서울특별시 강남구 테헤란로 10길 9,5층</span>
-												<div class="info_running_time">
-													<span>운영시간</span>
-													<span class="hour">24시간</span>
-													<span class="holiday">연중무휴</span>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li class="item_card add_shadow">
-										<a href="#">
-											<div class="img-box"></div>
-											<div class="info_area">
-												<h2>[서울] 강남역점</h2>
-												<span class="spot_address">서울특별시 강남구 테헤란로 10길 9,5층</span>
-												<div class="info_running_time">
-													<span>운영시간</span>
-													<span class="hour">24시간</span>
-													<span class="holiday">연중무휴</span>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li class="item_card add_shadow">
-										<a href="#">
-											<div class="img-box"></div>
-											<div class="info_area">
-												<h2>[서울] 강남역점</h2>
-												<span class="spot_address">서울특별시 강남구 테헤란로 10길 9,5층</span>
-												<div class="info_running_time">
-													<span>운영시간</span>
-													<span class="hour">24시간</span>
-													<span class="holiday">연중무휴</span>
-												</div>
-											</div>
-										</a>
-									</li>
-								</div>
-								<div class="row_card clearfix">
-									<li class="item_card add_shadow">
-										<a href="#">
-											<div class="img-box"></div>
-											<div class="info_area">
-												<h2>[서울] 강남역점</h2>
-												<span class="spot_address">서울특별시 강남구 테헤란로 10길 9,5층</span>
-												<div class="info_running_time">
-													<span>운영시간</span>
-													<span class="hour">24시간</span>
-													<span class="holiday">연중무휴</span>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li class="item_card add_shadow">
-										<a href="#">
-											<div class="img-box"></div>
-											<div class="info_area">
-												<h2>[서울] 강남역점</h2>
-												<span class="spot_address">서울특별시 강남구 테헤란로 10길 9,5층</span>
-												<div class="info_running_time">
-													<span>운영시간</span>
-													<span class="hour">24시간</span>
-													<span class="holiday">연중무휴</span>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li class="item_card add_shadow">
-										<a href="#">
-											<div class="img-box"></div>
-											<div class="info_area">
-												<h2>[서울] 강남역점</h2>
-												<span class="spot_address">서울특별시 강남구 테헤란로 10길 9,5층</span>
-												<div class="info_running_time">
-													<span>운영시간</span>
-													<span class="hour">24시간</span>
-													<span class="holiday">연중무휴</span>
-												</div>
-											</div>
-										</a>
-									</li>
-								</div>
-								<div class="row_card clearfix">
-									<li class="item_card add_shadow">
-										<a href="#">
-											<div class="img-box"></div>
-											<div class="info_area">
-												<h2>[서울] 강남역점</h2>
-												<span class="spot_address">서울특별시 강남구 테헤란로 10길 9,5층</span>
-												<div class="info_running_time">
-													<span>운영시간</span>
-													<span class="hour">24시간</span>
-													<span class="holiday">연중무휴</span>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li class="item_card add_shadow">
-										<a href="#">
-											<div class="img-box"></div>
-											<div class="info_area">
-												<h2>[서울] 강남역점</h2>
-												<span class="spot_address">서울특별시 강남구 테헤란로 10길 9,5층</span>
-												<div class="info_running_time">
-													<span>운영시간</span>
-													<span class="hour">24시간</span>
-													<span class="holiday">연중무휴</span>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li class="item_card add_shadow">
-										<a href="#">
-											<div class="img-box"></div>
-											<div class="info_area">
-												<h2>[서울] 강남역점</h2>
-												<span class="spot_address">서울특별시 강남구 테헤란로 10길 9,5층</span>
-												<div class="info_running_time">
-													<span>운영시간</span>
-													<span class="hour">24시간</span>
-													<span class="holiday">연중무휴</span>
-												</div>
-											</div>
-										</a>
-									</li>
-								</div>
-							</ul>
-							<div class="page_box clearfix">
-								<i class="btn_prev"></i>
-								<span class="page_num selected">1</span>
-								<span class="page_num">2</span>
-								<span class="page_num">3</span>
-								<span class="page_num">4</span>
-								<span class="page_num">5</span>
-								<i class="btn_next"></i>
-							</div>
-						</div>
-					</section>
-				</div>
-				<div class="cabinet_container display_none">사물함 예약</div>
-				<div class="room_container display_none">프로젝트룸 예약</div>
 			</div>
 		</main>
 	

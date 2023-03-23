@@ -44,48 +44,55 @@
 		<!-- body -->
 		<main>
 			<div class="container">
-				<!-- 버튼 섹션 -->
-				<section>
-					<div class="button_container">
-						<ul class="list_button clearfix">
-							<li class="item_button">
-								<a href="#" class="link_button btn_seat add_shadow ">
-									<div class="icon_box">
-										<span class="button_text">좌석</span>
-										<i class="icon_seat"></i>
-									</div>
-								</a>
-							</li>
-							<li class="item_button">
-								<a href="#" class="link_button btn_cabinet add_shadow selected">
-									<div class="icon_box">
-										<span class="button_text">사물함</span>
-										<i class="icon_cabinet"></i>
-									</div>
-								</a>
-							</li>
-							<li class="item_button">
-								<a href="#" class="link_button btn_room add_shadow ">
-									<div class="icon_box">
-										<span class="button_text">프로젝트룸</span>
-										<i class="icon_room"></i>
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</section>
+				<!-- 주문과정/절차 -->
+				<div class="procedure_container clearfix">
+					<h1 class="procedure_title">바로예약 [좌석]</h1>
+					<ul class="detail_procedure">
+						<li class="item_procedure  selected">
+							<div class="numbering">01</div>
+							<span class="item_text">지점 선택</span>
+						</li>
+						<i class="icon_next"></i>
+						<li class="item_procedure">
+							<div class="numbering">02</div>
+							<span class="item_text">좌석,이용권 선택</span>
+						</li>
+						<i class="icon_next"></i>
+						<li class="item_procedure">
+							<div class="numbering">03</div>
+							<span class="item_text">예약완료</span>
+						</li>
+					</ul>					
+				</div>
 				<div class="seat_container">
 					<!-- 필터 섹션 -->
 					<section>
 						<div class="search_container">
-							<div class="box_seat_detail clearfix">
-								<a href="#" class="btn_ticket selected">이용권</a>
-								<a href="#" class="btn-direct">바로 예약</a>
-							</div>
 							<div class="filter_area">
-								<div class="choose_region">지역<i class="icon_dropbox"></i></div>
-								<input type="text" class="search_box" placeholder="지역, 지점명으로 검색">
+								<select class="choose_region">
+									<option value="select_region" selected>지역 선택</option>
+									<option value="seoul">서울특별시</option>
+									<option value="incheon">인천광역시</option>
+									<option value="daegu">대구광역시</option>
+									<option value="daejeon">대전광역시</option>
+									<option value="busan">부산광역시</option>
+									<option value="gwangju">광주광역시</option>
+									<option value="ulsan">울산광역시</option>
+									<option value="gyeonggi">경기도</option>
+									<option value="gangwon">강원도</option>
+									<option value="gyeongbuk">경상북도</option>
+									<option value="gyeongnam">경상남도</option>
+									<option value="jeonbuk">전라북도</option>
+									<option value="jeonnam">전라남도</option>
+									<option value="chungbuk">충청북도</option>
+									<option value="chungnam">충청남도</option>
+									<option value="jeju">제주특별자치도</option>
+									<option value="sejong">세종특별자치시</option>
+								</select>
+								<div class="search_box">
+									<input type="search" class="search" placeholder="지역, 지점명으로 검색">
+									<button class="btn_search"><i class="icon_search"></i></button>
+								</div>
 							</div>
 						</div>
 					</section>
