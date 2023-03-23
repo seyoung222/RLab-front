@@ -73,7 +73,7 @@
 						<div class="title_area">
 							<i class="icon_seat"></i>
 							<h2>좌석 선택</h2>
-							<i class="icon_info"></i>
+							<i class="icon_info info_seat"></i>
 						</div>
 						<!-- 좌석 선택 영역 -->
 						<div class="seat_area">
@@ -223,7 +223,22 @@
 					</div>
 					<!-- 이용권 선택 박스 -->
 					<div class="ticket_container main_content">
-
+							<!-- 타이틀 영역-->
+							<div class="title_area">
+								<h2>이용권 선택</h2>
+								<i class="icon_info info_ticket"></i>
+							</div>
+							<!-- 이용권 고르기 영역 -->
+							<select id="ticket_select">
+								<option value="onetime_2">1회 이용권(2시간)</option>
+								<option value="onetime_3">1회 이용권(3시간)</option>
+								<option value="onetime_6">1회 이용권(6시간)</option>
+								<option value="period_2">기간 이용권(2주)</option>
+								<option value="period_4">기간 이용권(4주)</option>
+								<option value="timepkg_30">시간 패키지(30시간)</option>
+								<option value="timepkg_50">시간 패키지(50시간)</option>
+								<option value="timepkg_100">시간 패키지(100시간)</option>
+							</select>
 					</div>
 				</div>
 			</div>
