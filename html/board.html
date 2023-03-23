@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자유게시판</title>
+    <link rel="stylesheet" href="board.css">
+</head>
+
+<body>
+    <!-- background -->
+    <div class="background_bbls">
+        <div class="big_bbls">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <div class="small_bbls">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+    </div>
+    <div class="total_container">
+        <header>
+            <div id="header_container">
+                <div class="header_left">
+                    <a href="#" class="btn_home"><i class="icon_home"></i>LAB</a>
+                    <nav class="top_menu_container">
+                        <a href="#" class="list_item">예약하기</a>
+                        <a href="#" class="list_item">스터디</a>
+                        <a href="#" class="list_item">모집 게시판</a>
+                    </nav>
+                </div>
+                <div class="header_right">
+                    <div class="mypage_container">
+                        <a href="#" class="mypage"><i class="icon_mypage"></i><span class="blind">마이페이지</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="main_container">
+                <!-- 왼쪽 메뉴바 -->
+                <div class="left_menu_container">
+                    <nav class="left_menu">
+                        <a href="study_basic.html" class="list_item">스터디홈</a>
+                        <a href="#" class="list_item">스터디 달력</a>
+                        <a href="to_do_list.html" class="list_item">투두 리스트</a>
+                        <a href="Daily Mission.html" class="list_item">데일리 미션</a>
+                        <a href="certification_board.html" class="list_item">인증 게시판</a>
+                        <a href="#" class="list_item">자유 게시판</a>
+                        <a href="#" class="list_item">스터디 관리</a>
+                        <a href="#" class="leave">탈퇴하기</a>
+                    </nav>
+                </div>
+
+                <section>
+                    <div class="home_container">
+                        <h2>자유게시판</h2>
+                        <div class="inner_board_box" >
+                            <h1 class="board_title">정처기 필기 과목별로 정리했습니다!</h1>
+                            <div class="writer_and_scrap">
+                                <div class="writer_main">
+                                    <div class="writer_box">
+                                        <a href="#" class="writer"> 
+                                        <img class="icon_writer" src="../img/profile_img.png">
+                                        <span class="writer_name">김돌탕</span></a>
+                                    </div> 
+                                    <span class="write_date">2023.02.27</span>
+                                    <div class="view_box">
+                                        <img class="icon_view" src="../img/view_lightgray.png" alt="">
+                                        <span class="view">60</span>
+                                    </div>
+                                </div>
+                                <div class="sc_and_mo_main">
+                                    <div class="scrap_box">
+                                        <img class="icon_scrap" src="../img/favorite_tag_white.png">
+                                    </div>
+                                    <div class="more_box">
+                                        <img class="icon_more" src="../img/dot_menu.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="board_content">
+                                <span>안녕하세요</span>
+                            </div>
+                            <div class="scrap_and_comment">
+                                <div class="scrap_bottom">
+                                    <img class="icon_scrap" src="../img/favorite_tag_white.png">
+                                    <span>스크랩</span>
+                                    <span class="scrap_num">12</span>
+                                </div>
+                                <div class="comment_bottom">
+                                    <img class="icon_scrap" src="../img/speech_bubble.png">
+                                    <span>댓글</span>
+                                </div>
+                            </div>
+                            <div class="main_bottom_box">
+                                <div class="comment_box">
+                                    <div class="add_comment_box">
+                                        <div class="cm_input_box">
+                                            <input type="text" class="cm_write" placeholder="궁금한 점을 댓글로 작성해보세요!">
+                                        </div>
+                                        <button class="cm_upload_btn">등록</button>
+                                    </div>
+                                    <div class="cm_main_box">
+                                        <div class="cm_top_box">
+                                            <div class="cm_writer">
+                                                <a href="#" class="cm_mypage"> 
+                                                    <i class="img_mypage"></i> 
+                                                    <span class="nick_name">도라미</span>
+                                                    <span class="write_date">2023.02.28</span>
+                                                </a> 
+                                            </div>
+                                            <div class="comment_btn_box">
+                                                <button class="cm_plus_btn"> <img src="../img/reply.png" class="reply_icon">답글달기</button>
+                                                <button class="cm_delete_btn">X삭제하기</button>
+                                            </div>
+                                            <div class="already_comment">안녕하세요!언제까지 모집하시나요?제가이번주에는 일이있어서 당장 참여는 불가능해요.</div>
+                                        </div>
+                                    </div>
+                                    <div class="re_reply_main_box">
+                                        <div class="re_reply_top_box">
+                                            <img src="../img/reply.png" class="re_reply_icon">
+                                            <div class="re_writer">
+                                                <a href="#" class="re_mypage"> 
+                                                    <i class="img_mypage"></i> 
+                                                    <span class="re_nick_name">김돌탕</span>
+                                                    <span class="re_write_date">2023.02.28</span>
+                                                </a> 
+                                            </div>
+                                            <div class="reply_btn_box">
+                                                <button class="re_edit_btn">수정하기</button>
+                                                <button class="re_delete_btn">X삭제하기</button>
+                                            </div>
+                                            <div class="re_reply_comment">안녕하세요!언제까지 모집하시나요?제가이번주에는 일이있어서 당장 참여는 불가능해요.</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                             </div> 
+                        </div>
+                     </div>
+                </section>
+                <!-- 오른쪽 메뉴 -->
+                <aside>
+                    <div class="right-container">
+                        <!-- 메뉴바 3개 -->
+                        <div class="study_link_container">
+                            <div class="circle_now cc">
+                                <div class="now">NOW</div>
+                            </div>
+                            <div class="circle_star cc">
+                                <img class="star" src="../img/favorite_star_on.png">
+                            </div>
+                            <div class="my_study_container">
+                                <div class="my_list_title">
+
+                                    <div class="my">MY</div>
+
+                                    <!-- <div class="my_study" >나의 스터디<button id="dropdown_btn">▼</button></div> -->
+                                </div>
+                                <div id="dropdown_list" style="display: none;">
+                                    <ul class="dropdown_list_ul">
+                                        <li class="dropdown_list_li">
+                                            <div class="dropdown_list_contents">
+                                                <p class="dropdown_list_contents_title">정보처리기사 스터디</p>
+                                                <div class="dropdown_list_contents_on_img"></div>
+                                                <div class="dropdown_hr"></div>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown_list_li">
+                                            <div class="dropdown_list_contents">
+                                                <p class="dropdown_list_contents_title">정보처리기사 스터디</p>
+                                                <div class="dropdown_list_contents_off_img"></div>
+                                                <div class="dropdown_hr"></div>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown_list_li">
+                                            <div class="dropdown_list_contents">
+                                                <p class="dropdown_list_contents_title">정보처리기사 스터디</p>
+                                                <div class="dropdown_list_contents_off_img"></div>
+                                                <div class="dropdown_hr"></div>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown_list_li">
+                                            <div class="dropdown_list_contents">
+                                                <p class="dropdown_list_contents_title">정보처리기사 스터디</p>
+                                                <div class="dropdown_list_contents_off_img"></div>
+                                                <div class="dropdown_hr"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 접속상태 -->
+                    <div class="accessor">
+                        <div class="study_title">정보처리기사 스터디</div>
+                        <div class="accessor_container">
+                            <div class="circle_accessor">
+                                <div class="accessor_on"></div>
+                            </div>
+                            <div class="study_name">김돌탕</div><span class="your">YOU</span>
+                        </div>
+                        <div class="accessor_container">
+                            <div class="circle_accessor"></div>
+                            <div class="study_name">김순연</div>
+                        </div>
+                        <div class="accessor_container">
+                            <div class="circle_accessor"></div>
+                            <div class="study_name">김세영</div>
+                        </div>
+                        <div class="accessor_container">
+                            <div class="circle_accessor"></div>
+                            <div class="study_name">김도현</div>
+                        </div>
+                        <div class="accessor_container">
+                            <div class="circle_accessor"></div>
+                            <div class="study_name">이정현</div>
+                        </div>
+                        <div class="accessor_container">
+                            <div class="circle_accessor"></div>
+                            <div class="study_name">가나다</div>
+                        </div>
+                        <div class="accessor_container">
+                            <div class="circle_accessor"></div>
+                            <div class="study_name">라마바</div>
+                        </div>
+                        <div class="accessor_container">
+                            <div class="circle_accessor"></div>
+                            <div class="study_name">사아나</div>
+                        </div>
+                        <div class="accessor_container">
+                            <div class="circle_accessor"></div>
+                            <div class="study_name">s아나</div>
+                        </div>
+                        <div class="accessor_container">
+                            <div class="circle_accessor"></div>
+                            <div class="study_name">s아나</div>
+                        </div>
+                        <div class="accessor_container">
+                            <div class="circle_accessor"></div>
+                            <div class="study_name">s아나</div>
+                        </div>
+
+                    </div>
+            </div>
+            </aside>
+    </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <a href="#" class="btn_home"><i class="icon_home"></i>LAB</a>
+            <!-- 관련 정보 섹션 -->
+            <section>
+                <div class="info_container clearfix">
+                    <div class="direct_num_box">
+                        <h1 class="info_title">대표번호 : 123-4567</h1>
+                        <ul class="list_tel">
+                            <li class="item_tel">
+                                <a href="" class="link_tel">강남 1566-1234</a>
+                            </li>
+                            <li class="item_tel">
+                                <a href="" class="link_tel">선릉 1566-1234</a>
+                            </li>
+                            <li class="item_tel">
+                                <a href="" class="link_tel">성수 1566-1234</a>
+                            </li>
+                            <li class="item_tel">
+                                <a href="" class="link_tel">노원 1566-1234</a>
+                            </li>
+                            <li class="item_tel">
+                                <a href="" class="link_tel">군자 1566-1234</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info_right_container">
+                        <div class="info_box_right about_us_box">
+                            <h3 class="info_title">ABOUT US</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">지점 소개</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info_box_right link_to_box">
+                            <h3 class="info_title">LINK TO</h3>
+                            <ul>
+                                <li class="item_linkto">
+                                    <a href="#" class="link_linkto">예약하기</a>
+                                </li>
+                                <li class="item_linkto">
+                                    <a href="#" class="link_linkto">스터디</a>
+                                </li>
+                                <li class="item_linkto">
+                                    <a href="#" class="link_linkto">모집 게시판</a>
+                                </li>
+                                <li class="item_linkto">
+                                    <a href="#" class="link_linkto">마이페이지</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info_box_right my_account_box">
+                            <h3 class="info_title">MT ACCOUNT</h3>
+                            <ul>
+                                <li class="item_member">회원 정보 수정</li>
+                                <li class="item_member">예약 확인</li>
+                                <li class="item_member">포인트 조회</li>
+                            </ul>
+                        </div>
+                        <div class="info_box_right help_box">
+                            <h3 class="info_title">HELP</h3>
+                            <ul>
+                                <li class="item_help">1:1 문의</li>
+                                <li class="item_help">공지사항</li>
+                                <li class="item_help">F&Q</li>
+                                <li class="item_help">가맹점 문의</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 프로젝트 정보 섹션 -->
+            <section>
+                <div class="corp_container">
+                    <a href="#" class="link_corp">RLAB스터디</a>
+                    <a href="#" class="link_corp">사업자등록번호 : 12123-15142435</a>
+                    <a href="#" class="link_corp">서울 강남 제214-01호</a>
+                    <a href="#" class="link_corp">대표자 : 김세영</a>
+                    <a href="#" class="link_corp">책임자 : 김세영</a>
+                    <a href="#" class="link_corp">개인정보관리책임자 : 김세영</a>
+                </div>
+            </section>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
