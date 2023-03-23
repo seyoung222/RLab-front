@@ -385,7 +385,37 @@ td{
 }
 .seat_num_box #seat_num{
 	font-size: 30px;
+	font-weight: 600;
 	color: var(--color_blue);
+}
+
+.seat_info {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 10px;
+}
+.seat_info_box{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.seat_info_box .info{
+	width: 30px;
+	height: 30px;
+	border: 1px solid #636363;
+	border-radius: 4px;
+}
+.seat_info_box p{
+	font-size: 12px;
+}
+.info_unavailable{
+	background-color: var(--color_light-grey);
+}
+.info_available{
+	background-color: #66a0e24b
+}
+.info_selected{
+	background-color: var(--color_blue);
 }
 
 /* 이용권 선택 */
