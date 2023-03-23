@@ -284,6 +284,11 @@ main .container{
 }
 
 /* 필터/서치 섹션 */
+.search_container {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
 .search_container .box_seat_detail{
 	margin: 50px 0 0;
 }
@@ -325,9 +330,6 @@ main .container{
 	font-size: 14px; font-weight: 700; display: inline-block;
 	position: relative;
 }
-.search_container .choose_region .icon_dropbox{
-
-}
 .filter_area .search_box{
 	width: 250px; 
 	height: 50px; 
@@ -341,6 +343,7 @@ main .container{
 	font-size: 14px; 
 	font-weight: 700; 
 	outline: 0;
+	box-sizing: border-box;
 	padding: 0 10px 0 0;
 }
 .search_box .search{
@@ -376,6 +379,20 @@ input::-webkit-search-results-decoration{
 	background-size: 25px 25px;
 	background-repeat: no-repeat;
 	background-image: url(../img/serch.png);
+}
+.search_container .btn_next{
+	width: 200px; 
+	height: 55px; 
+	border: none; 
+	border-radius: var(--border_radius_2);
+	background-color: var(--color_blue); 
+	box-shadow: 3px 3px 5px #6262626e;
+	font-size: 17px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.btn_next:hover{
+	background-color: #4f8dd4;
 }
 
 /* 이용권 선택 섹션 */
