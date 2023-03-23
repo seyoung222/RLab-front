@@ -288,12 +288,13 @@ main{
 /* main_container */
 .main_container{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center
 }
 .main_container .main_content{
-	width: 560px;
+	width: 900px;
 	display: flex;
 	flex-flow: column;
+	align-items: flex-start;
 	gap: 55px;
 	border: 2px solid #020a17;
 	border-radius: var(--border_radius_3);
@@ -301,12 +302,22 @@ main{
 	box-sizing: border-box;
 	background-color: var(--color_beige);
 }
+.table_container{
+	display: flex;
+	flex-flow: column;
+	gap: 10px;
+}
+
 /* 타이틀 영역 */
 .title_area{
 	display: flex;
 	justify-content: flex-start;
 	gap: 10px;
 	align-items: center;
+}
+.big_title{
+	width: 100%;
+	justify-content: center;
 }
 .title_area .icon_seat{
 	width: 45px;
@@ -325,108 +336,25 @@ main{
 	cursor: pointer;
 }
 
-/* 좌석 선택 영역 */
-.seat_area{
-	display: flex;
-	flex-flow: column;
-}
-.seat_area .seat_table{
-	width: 100%;
-	border: 1px solid #020a17;
-	border-radius: var(--border_radius_4);
-	background-color: #fff;
-}
-.seat_area table{
-	width: 100%;
-	padding: 5px;
-	display: flex;
-	justify-content: center;
+table{
+	width: 800px;
 	border-collapse: collapse;
-	box-sizing: border-box;
+	border: 2px solid #4c84c4;
+	border-left: none;
+	border-right: none;
 }
-.seat_area .seat_info{
-	display: flex;
-	justify-content: flex-end;
-	gap: 10px;
+th,td{
+	padding: 15px;
 }
-tr{
-	display: flex;
-	justify-content: space-between;
-	gap: 3px;
-	margin-bottom: 3px;
-}
-tr:nth-child(10){
-	margin-bottom: 0;
-}
-.seat{
-	background-color: #66a0e24b;
-	cursor: pointer;
-}
-.seat:hover{
+th{
 	background-color: var(--color_blue);
-}
-.seat:visited{
-	background-color: var(--color_blue);
-}
-.seat_unavailable{
-	background-color: var(--color_light-grey);
-}
-.seat_selected{
-	background-color: var(--color_blue);
-	cursor: pointer;
+
 }
 td{
-	color: #4141419c;
-	width: 42px;
-	height: 42px;
-	border: 1px solid #636363;
-	border-radius: 4px;
-	text-align: center;
-	line-height: 42px;
-}
-/* 선택한 좌석번호 영역 */
-.seat_num_area{
-
-}
-.seat_num_area .seat_num_box{
-	display: flex;
-	align-items: center;
-	gap: 5px;
-}
-.seat_num_box #seat_num{
-	font-size: 30px;
-	font-weight: 600;
-	color: var(--color_blue);
+	width: 80%;
+	background-color: #fff;
 }
 
-.seat_info {
-	display: flex;
-	justify-content: flex-end;
-	margin-top: 10px;
-}
-.seat_info_box{
-	display: flex;
-	align-items: center;
-	gap: 5px;
-}
-.seat_info_box .info{
-	width: 30px;
-	height: 30px;
-	border: 1px solid #636363;
-	border-radius: 4px;
-}
-.seat_info_box p{
-	font-size: 12px;
-}
-.info_unavailable{
-	background-color: var(--color_light-grey);
-}
-.info_available{
-	background-color: #66a0e24b
-}
-.info_selected{
-	background-color: var(--color_blue);
-}
 
 /* 이용권 선택 박스 */
 /* 이용권 고르기 영역*/
