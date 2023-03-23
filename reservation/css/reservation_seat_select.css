@@ -315,13 +315,14 @@ main{
 	background-image: url(../img/office-chair_.png);
 	background-repeat: no-repeat;
 }
-.title_area .icon_info{
+.icon_info{
 	width: 20px;
 	height: 20px;
 	background-size: 20px 20px;
 	background-image: url(../img/info.png);
 	background-repeat: no-repeat;
 	opacity: 60%;
+	cursor: pointer;
 }
 /* 좌석 선택 영역 */
 .seat_area{
