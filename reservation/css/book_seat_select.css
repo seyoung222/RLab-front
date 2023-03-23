@@ -291,7 +291,7 @@ main{
 	justify-content: space-between;
 }
 .main_container .main_content{
-	width: 560px;
+	width: 586px;
 	display: flex;
 	flex-flow: column;
 	gap: 55px;
@@ -338,7 +338,7 @@ main{
 }
 .seat_area table{
 	width: 100%;
-	padding: 5px;
+	padding: 15px 0;
 	display: flex;
 	justify-content: center;
 	border-collapse: collapse;
