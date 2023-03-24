@@ -339,6 +339,10 @@ input[type=number]:focus{
 	box-shadow: 2px 5px 6px #62626275;
 	background-color: var(--color_yellow);
 	border-radius: var(--border_radius_4);
+	cursor: pointer;
+}
+#pay_btn:hover{
+	background-color: #dad545;
 }
 
 /* footer */
