@@ -223,6 +223,10 @@ main .main_container{
 	padding: 10px;
 	box-sizing: border-box;
 	text-align: center;
+	cursor: pointer;
+}
+.ticket_time:hover{
+	background-color: #a7a7a771;
 }
 
 /* 선택한 이용권 박스 */
