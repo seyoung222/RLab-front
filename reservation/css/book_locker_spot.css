@@ -236,7 +236,7 @@ main .container{
 	margin: 0 auto;
 }
 .selected{
-	background-color: var(--color_yellow);
+	background-color: var(--color_blue);
 }
 .detail_procedure{
 	display: flex;
@@ -441,8 +441,8 @@ input::-webkit-search-results-decoration{
 	box-sizing: border-box; overflow: hidden;
 }
 .item_card:hover{
-	border: 3px solid #f0ea58;
-	background-color: var(--color_yellow);
+	border: 3px solid #4f8dd4;
+	background-color: var(--color_blue);
 }
 .spot_card_container .item_card+.item_card{margin-left: 20px;}
 .spot_card_container .img-box{
