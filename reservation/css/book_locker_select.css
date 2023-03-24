@@ -230,7 +230,7 @@ main{
 	margin: 0 auto;
 }
 .selected{
-	background-color: var(--color_yellow);
+	background-color: var(--color_blue);
 }
 .detail_procedure{
 	display: flex;
