@@ -230,7 +230,7 @@ main{
 	margin: 0 auto;
 }
 .selected{
-	background-color: var(--color_blue);
+	background-color: var(--color_yellow);
 }
 .detail_procedure{
 	display: flex;
@@ -308,11 +308,11 @@ main{
 	gap: 10px;
 	align-items: center;
 }
-.title_area .icon_seat{
+.title_area .icon_locker{
 	width: 45px;
 	height: 45px;
 	background-size: 45px 45px;
-	background-image: url(../img/office-chair_.png);
+	background-image: url(../img/locker_.png);
 	background-repeat: no-repeat;
 }
 .icon_info{
