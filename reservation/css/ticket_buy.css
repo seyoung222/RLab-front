@@ -64,6 +64,71 @@
 }
 
 
+/* main */
+main .main_container{
+	display: flex;
+	flex-flow: column;
+	width: 1200px;
+	gap: 30px;
+	margin: 0 auto;
+}
+/* 이용권 구매 단계 안내 */
+.procedure_container{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	gap: 40px;
+	width: 800px;
+	margin: 0 auto;
+}
+.selected{
+	background-color: var(--color_yellow);
+}
+.detail_procedure{
+	display: flex;
+	align-items: center;
+	gap: 60px;
+}
+.procedure_container .procedure_title{
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+.procedure_container .item_procedure{
+	float: left;
+	border: 1px solid #000;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	border-radius: 50%;
+	position: relative;
+}
+.item_procedure .numbering{
+	position: absolute;
+	right: 0; left: 0; top: 23px;
+	text-decoration: underline;
+	font-size: 14px;
+	line-height: normal;
+}
+.item_procedure .item_text{
+	line-height: 120px;
+	text-align: center;
+	white-space: nowrap;
+	font-size: 12px;
+}
+.procedure_container .item_procedure+.item_procedure{
+	margin-left: 20px;
+}
+.icon_next{
+	width: 30px;
+	height: 30px;
+	background-size: 30px 30px;
+	background-image: url(../img/up_btn.png);
+	background-repeat: no-repeat;
+	transform: rotateZ(90deg);
+	opacity: 90%;
+}
+
 .boxes_container{
 	display: flex;
 	justify-content: center;
@@ -315,64 +380,3 @@ footer .corp_container .link_corp:nth-child(1)::before{
 	display: none;
 }
 
-/* main */
-main .main_container{
-	display: flex;
-	flex-flow: column;
-	width: 1200px;
-	gap: 30px;
-	margin: 0 auto;
-}
-
-/* 이용권 구매 단계 안내 */
-.procedure_container{
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	gap: 30px;
-	width: 800px;
-	margin: 0 auto;
-}
-.selected{
-	background-color: var(--color_yellow);
-}
-.detail_procedure{
-	display: flex;
-	gap: 20px;
-}
-.procedure_container .procedure_title{
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-}
-.procedure_container .item_procedure{
-	float: left;
-	border: 1px solid #000;
-	width: 120px;
-	height: 120px;
-	text-align: center;
-	border-radius: 50%;
-	position: relative;
-}
-.item_procedure .numbering{
-	position: absolute;
-	right: 0; left: 0; top: 23px;
-	text-decoration: underline;
-	font-size: 14px;
-	line-height: normal;
-}
-.item_procedure .item_text{
-	line-height: 120px;
-	text-align: center;
-}
-.procedure_container .item_procedure+.item_procedure{
-	margin-left: 20px;
-}
-.procedure_container .item_procedure+.item_procedure::before{
-	content: '';
-	display: inline-block;
-	background-image: url(../img/page_right.png);
-	background-size: 30px 30px;
-	width: 30px;
-	height: 30px;
-}
