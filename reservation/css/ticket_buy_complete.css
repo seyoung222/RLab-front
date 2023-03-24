@@ -157,18 +157,27 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	gap: 10px;
 }
-.return_box .btn_return{
+.return_box .btn_r{
 	width: 120px;
 	height: 50px;
 	border: none;
 	border-radius: var(--border_radius_2);
-	background-color: var(--color_yellow);
 	box-shadow: 2px 5px 6px #62626275;
 	cursor: pointer;
 }
+.btn_return{
+	background-color: var(--color_yellow);
+}
 .btn_return:hover{
 	background-color: #dbd756;
+}
+.btn_book{
+	background-color: var(--color_blue);
+}
+.btn_book:hover{
+	background-color: #4c84c4;
 }
 
 /* 타이틀 영역 */
