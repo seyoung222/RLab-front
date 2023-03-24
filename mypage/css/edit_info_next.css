@@ -247,6 +247,10 @@ a{color: var(--color_black);}
 			font-weight: 700;
 			box-sizing: border-box;
 			box-shadow: var(--box-shadow-light);
+			cursor: pointer;
+		}
+		.submit_btn:hover{
+			background-color: #4e89cc;
 		}
 		 /* footer */
 			footer{
