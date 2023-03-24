@@ -66,11 +66,18 @@
           <div class="mypage_container">
             <div class="join_box">
               <!-- 로그인 -->
-            <a href="#" class="login_modal">로그인</a>
-            <!-- 회원가입 -->
-            <a href="../html/signup.html" class="signup_btn">회원가입</a>
+              <a href="#" class="login_modal">로그인</a>
+              <!-- 회원가입 -->
+              <a href="../html/signup.html" class="signup_btn">회원가입</a>
             </div>
-            <a href="#" class="mypage"><i class="icon_mypage"></i><span class="blind">마이페이지</span></a>
+
+            <!-- <form action="/RLab/logout" method="post">     
+              <div class="logout_box">
+                <a href="#"><i class="icon_mypage"></i><span class="blind">마이페이지</span></a>
+                <a class="logout_btn" href="/RLab/logout">로그아웃</a>
+              </div>     
+            </form>  -->
+
           </div>
         </div>
       </div>
@@ -354,7 +361,6 @@
 
 <script>
   $('.login_modal').click(function(){
-    let index = $(this).index();
     $('.modal_container').show();
   });
   $('.close_btn').click(function(){
