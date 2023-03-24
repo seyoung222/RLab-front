@@ -56,5 +56,6 @@ $('#edit_info').validate({
 			return false;
 		}
 		return true;
-	}
+	},
+	
 })
