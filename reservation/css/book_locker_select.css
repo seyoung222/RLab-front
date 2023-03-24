@@ -385,9 +385,6 @@ td{
 	line-height: 42px;
 }
 /* 선택한 좌석번호 영역 */
-.seat_num_area{
-
-}
 .seat_num_area .seat_num_box{
 	display: flex;
 	align-items: center;
