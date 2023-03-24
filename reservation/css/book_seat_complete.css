@@ -310,6 +310,23 @@ main{
 .table_container:last-child{
 	margin-bottom: 100px;
 }
+.return_box{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.return_box .btn_return{
+	width: 120px;
+	height: 50px;
+	border: none;
+	border-radius: var(--border_radius_2);
+	background-color: var(--color_blue);
+	box-shadow: 2px 5px 6px #62626275;
+	cursor: pointer;
+}
+.btn_return:hover{
+	background-color: #4b83c2;
+}
 
 /* 타이틀 영역 */
 .title_area{
