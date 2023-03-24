@@ -1,3 +1,4 @@
+
 /* background */
 .background_bbls{
 	position: absolute;
@@ -281,8 +282,8 @@ input::-webkit-search-results-decoration{
 	box-sizing: border-box; overflow: hidden;
 }
 .item_card:hover{
-	border: 3px solid #66a0e2;
-	background-color: #66a0e2;
+	border: 3px solid #4f8dd4;
+	background-color: var(--color_blue);
 }
 .spot_card_container .item_card+.item_card{margin-left: 20px;}
 .spot_card_container .img-box{

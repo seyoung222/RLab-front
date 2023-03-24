@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>좌석 예약 - 예약 완료</title>
+	<title>사물함 예약 - 사물함,이용권 선택</title>
 	<link rel="stylesheet" href="../css/common.css">
-	<link rel="stylesheet" href="../css/book_seat_complete.css">
+	<link rel="stylesheet" href="../css/book_locker_select.css">
 </head>
 <body>
 	<!-- background -->
@@ -47,19 +47,19 @@
 			<div class="container">
 				<!-- 주문과정/절차 -->
 				<div class="procedure_container clearfix">
-					<h1 class="procedure_title">바로예약 [좌석]</h1>
+					<h1 class="procedure_title">바로예약 [사물함]</h1>
 					<ul class="detail_procedure">
 						<li class="item_procedure">
 							<div class="numbering">01</div>
 							<span class="item_text">지점 선택</span>
 						</li>
 						<i class="icon_next"></i>
-						<li class="item_procedure">
+						<li class="item_procedure selected">
 							<div class="numbering">02</div>
-							<span class="item_text">좌석,이용권 선택</span>
+							<span class="item_text">사물함,이용권 선택</span>
 						</li>
 						<i class="icon_next"></i>
-						<li class="item_procedure  selected">
+						<li class="item_procedure">
 							<div class="numbering">03</div>
 							<span class="item_text">예약완료</span>
 						</li>
@@ -68,92 +68,145 @@
 
 
 				<div class="main_container">
-					<!-- 좌석 선택 박스 -->
-					<div class="main_content">
+					<!-- 사물함 선택 박스 -->
+					<div class="seat_container main_content">
 						<!-- 타이틀 영역-->
-						<div class="title_area big_title">
-							<h2>예약 상세내역</h2>
+						<div class="title_area">
+							<i class="icon_locker"></i>
+							<h2>사물함 선택</h2>
+							<i class="icon_info info_seat"></i>
 						</div>
+						<!-- 사물함 선택 영역 -->
+						<div class="seat_area">
+							<div class="seat_table">
+								<table>
+									<tr class="row_1">
+										<td class="seat_unavailable">1</td>
+										<td class="seat_unavailable">2</td>
+										<td class="seat_unavailable">3</td>
+										<td class="seat_unavailable">4</td>
+										<td class="seat">5</td>
+										<td class="seat">6</td>
+										<td class="seat">7</td>
+										<td class="seat">8</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>10</td>
+										<td>11</td>
+										<td>12</td>
+										<td>13</td>
+										<td>14</td>
+										<td>15</td>
+										<td>16</td>
 
-						<!-- 예약정보 -->
-						<div class="table_container">
-							<div class="title_area">
-								<h3>예약 정보</h3>
+									</tr>
+									<tr>
+										<td class="seat">17</td>
+										<td>18</td>
+										<td class="seat_unavailable">19</td>
+										<td class="seat_selected">20</td>
+										<td>21</td>
+										<td>22</td>
+										<td class="seat">23</td>
+										<td class="seat">24</td>
+									</tr>
+									<tr>
+										<td class="seat">25</td>
+										<td class="seat_unavailable">26</td>
+										<td class="seat_unavailable">27</td>
+										<td>28</td>
+										<td>29</td>
+										<td class="seat_unavailable">30</td>
+										<td class="seat">31</td>
+										<td>32</td>
+									</tr>
+									<tr>
+										<td>33</td>
+										<td class="seat">34</td>
+										<td class="seat">35</td>
+										<td>36</td>
+										<td>37</td>
+										<td class="seat">38</td>
+										<td class="seat_unavailable">39</td>
+										<td class="seat">40</td>
+									</tr>
+									<tr>
+										<td>41</td>
+										<td class="seat">42</td>
+										<td class="seat">43</td>
+										<td>44</td>
+										<td>45</td>
+										<td class="seat">46</td>
+										<td class="seat">47</td>
+										<td class="seat">48</td>
+									</tr>
+									<tr>
+										<td>49</td>
+										<td class="seat">50</td>
+										<td class="seat">51</td>
+										<td>52</td>
+										<td>53</td>
+										<td class="seat">54</td>
+										<td class="seat">55</td>
+										<td class="seat">56</td>
+									</tr>
+								</table>
 							</div>
-							<table border="1">
-								<tr>
-									<th>예약번호</th>
-									<td>110020</td>
-								</tr>
-								<tr>
-									<th>예약자</th>
-									<td>김돌탕</td>
-								</tr>
-								<tr>
-									<th>예약등록 일자</th>
-									<td>2023-03-23</td>
-								</tr>
-							</table>
-						</div>
-
-						<!-- 좌석정보 -->
-						<div class="table_container">
-							<div class="title_area">
-								<h3>좌석 정보</h3>
+							<div class="seat_info">
+								<div class="seat_info_box">
+									<div class="info_unavailable info"></div><p>예약불가</p>
+								</div>
+								<div class="seat_info_box">
+									<div class="info_available info"></div><p>예약가능</p>
+								</div>
+								<div class="seat_info_box">
+									<div class="info_selected info"></div><p>선택한 사물함</p>
+								</div>
 							</div>
-							<table border="1">
-								<tr>
-									<th>카페 지점</th>
-									<td>[서울] 강남역점</td>
-								</tr>
-								<tr>
-									<th>좌석번호</th>
-									<td>17번</td>
-								</tr>
-							</table>
 						</div>
-
-						<!-- 이용권 정보 -->
-						<div class="table_container">
-							<div class="title_area">
-								<h3>이용권 정보</h3>
+						<!-- 선택한 사물함번호 영역 -->
+						<div class="seat_num_area">
+							<h3>[서울]강남역점</h3>
+							<div class="seat_num_box">
+								<div class="seat_num_title">선택한 사물함번호 :</div> <div id="seat_num">20</div><div class="seat_num_title">번</div>
 							</div>
-							<table border="1">
-								<tr>
-									<th>사용한 이용권</th>
-									<td>시간 패키지(30시간)</td>
-								</tr>
-								<tr>
-									<th>사용한 시간</th>
-									<td>1시간</td>
-								</tr>
-								<tr>
-									<th>남은 시간</th>
-									<td>29시간</td>
-								</tr>
-							</table>
 						</div>
-
-						<!-- 예약 시간 -->
-						<div class="table_container">
+					</div>
+					<!-- 이용권 선택 박스 -->
+					<div class="ticket_container main_content">
+							<!-- 타이틀 영역 -->
 							<div class="title_area">
-								<h3>예약 시간</h3>
-								<i class="icon_info info_seat"></i>
+								<h2>이용권 선택</h2>
+								<i class="icon_info info_ticket"></i>
 							</div>
-							<table border="1">
-								<tr>
-									<th>시작시간</th>
-									<td>2023-03-23 14:25</td>
-								</tr>
-								<tr>
-									<th>만료시간</th>
-									<td>2023-03-23 15:25</td>
-								</tr>
-							</table>
-						</div>
-						<div class="return_box">
-							<a href="./reservation.html"><button class="btn_return">돌아가기</button></a>
-						</div>
+							<!-- 이용권 고르기 영역 -->
+							<div class="ticket_area">
+								<select id="ticket_select">
+									<option value="period_2">사물함 이용권(2주)</option>
+									<option value="period_4">사물함 이용권(4주)</option>
+								</select>
+							
+							</div>
+							<!-- 선택한 이용권, 시간 영역 -->
+							<div class="title_area">
+								<h2>선택한 이용권</h2>
+								<i class="icon_info info_ticket"></i>
+							</div>
+							<div class="selected_area">
+								<div class="selected_ticket display_none">
+									<div class="selected_title">1회 이용권 (2시간)</div>
+								</div>
+								<div class="selected_ticket">
+									<div class="selected_title">사물함 이용권(2주)</div>
+								</div>
+							</div>
+							<!-- 이용권 구매, 예약하기 버튼 영역 -->
+							<div class="btn_area area">
+								<a href="./ticket_buy.html" class="b_btn"  id="buy_btn"><input type="button" value="이용권 구매"></a>
+								<a href="./book_locker_complete.html" class="b_btn" id="book_btn"><input type="submit" value="예약하기" ></a>
+							</div>
+					</div>
 				</div>
 			</div>
 

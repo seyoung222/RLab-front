@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>예약하기 - 이용권 구매</title>
+	<link rel="stylesheet" href="../css/common.css">
 	<link rel="stylesheet" href="../css/ticket_buy.css">
 </head>
 <body>
@@ -28,7 +29,7 @@
         <div class="header_left">
           <a href="#" class="btn_home"><i class="icon_home"></i>LAB</a>
           <nav class="top_menu_container">
-            <a href="#" class="list_item">예약하기</a>
+            <a href="./reservation.html" class="list_item">예약하기</a>
             <a href="#" class="list_item">스터디</a>
             <a href="#" class="list_item">모집 게시판</a>
           </nav>
@@ -47,24 +48,22 @@
 				<!-- 주문과정/절차 -->
 				<div class="procedure_container clearfix">
 					<h1 class="procedure_title">이용권 구매</h1>
-					<!-- <ul class="detail_procedure">
-						<li class="item_procedure selected">
+					<ul class="detail_procedure">
+						<li class="item_procedure  selected">
 							<div class="numbering">01</div>
-							<span class="item_text">이용권 구</span>
+							<span class="item_text">이용권 선택</span>
 						</li>
+						<i class="icon_next"></i>
 						<li class="item_procedure">
-							<div class="numbering">01</div>
-							<span class="item_text">이용권 구</span>
+							<div class="numbering">02</div>
+							<span class="item_text">결제하기</span>
 						</li>
+						<i class="icon_next"></i>
 						<li class="item_procedure">
-							<div class="numbering">01</div>
-							<span class="item_text">이용권 구</span>
+							<div class="numbering">03</div>
+							<span class="item_text">결제완료</span>
 						</li>
-						<li class="item_procedure">
-							<div class="numbering">01</div>
-							<span class="item_text">이용권 구</span>
-						</li>
-					</ul>					 -->
+					</ul>						 
 				</div>
 
 				<div class="boxes_container">
@@ -164,7 +163,7 @@
 						</div>
 						<!-- 결제하기 -->
 						<div class="pay_area area">
-							<input type="submit" value="결제하기" id="pay_btn">
+							<a href="./ticket_buy_complete.html"><input type="submit" value="결제하기" id="pay_btn"></a>
 						</div>
 					</div>
 

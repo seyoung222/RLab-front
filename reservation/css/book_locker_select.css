@@ -62,7 +62,6 @@
 	height: 250px;
 }
 
-
 /* 이용권 구매 단계 안내 */
 .procedure_container{
 	display: flex;
@@ -151,11 +150,11 @@
 	gap: 10px;
 	align-items: center;
 }
-.title_area .icon_seat{
+.title_area .icon_locker{
 	width: 45px;
 	height: 45px;
 	background-size: 45px 45px;
-	background-image: url(../img/office-chair_.png);
+	background-image: url(../img/locker_.png);
 	background-repeat: no-repeat;
 }
 .icon_info{
@@ -181,12 +180,13 @@
 }
 .seat_area table{
 	width: 100%;
-	padding: 15px 0;
+	padding: 35px 0;
 	display: flex;
 	justify-content: center;
 	border-collapse: collapse;
 	box-sizing: border-box;
 }
+
 .seat_area .seat_info{
 	display: flex;
 	justify-content: flex-end;
@@ -195,42 +195,38 @@
 tr{
 	display: flex;
 	justify-content: space-between;
-	gap: 3px;
-	margin-bottom: 3px;
 }
 tr:nth-child(10){
 	margin-bottom: 0;
 }
-.seat{
-	background-color: #66a0e24b;
-	cursor: pointer;
-}
-.seat:hover{
-	background-color: var(--color_blue);
-}
-.seat:visited{
-	background-color: var(--color_blue);
-}
-.seat_unavailable{
+
+.seat_unavailable, .seat_unavailable:hover{
 	background-color: var(--color_light-grey);
+	cursor: default;
 }
+
 .seat_selected{
 	background-color: var(--color_blue);
 	cursor: pointer;
 }
 td{
 	color: #4141419c;
-	width: 42px;
-	height: 42px;
+	width: 50px;
+	height: 50px;
 	border: 1px solid #636363;
 	border-radius: 4px;
 	text-align: center;
 	line-height: 42px;
+	background-color: #66a0e24b;
+	cursor: pointer;
+}
+td:hover{
+	background-color: var(--color_blue);
+}
+td:visited{
+	background-color: var(--color_blue);
 }
 /* 선택한 좌석번호 영역 */
-.seat_num_area{
-
-}
 .seat_num_area .seat_num_box{
 	display: flex;
 	align-items: center;
