@@ -66,7 +66,9 @@ body {
 .clearfix::after{
 	clear: both; display: block; content: '';
 }
-a{color: #000;}
+a {
+	color: #000;
+}
 .btn_home {
 	display: flex;
 	width: 66px;
@@ -149,6 +151,9 @@ header #header_container {
 	background-position: -9px 0;
 	background-image: url(../img/profile_img.png);
 	background-repeat: no-repeat;
+}
+.list_item:hover{
+	color: var(--color_mint);
 }
 /* main 에 margin-top 속성 추가하세요!!*/
 main{
