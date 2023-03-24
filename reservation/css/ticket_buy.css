@@ -230,6 +230,20 @@ main .main_container{
 }
 
 /* 선택한 이용권 박스 */
+input[type=number]{
+	width: 150px;
+	height: 35px;
+	border: 2px solid var(--color_black);
+	border-radius: 4px;
+	outline: none;
+	padding: 5px;
+	box-sizing: border-box;
+}
+input[type=number]:focus{
+	border: 2px solid var(--color_yellow);
+	outline: none;
+}
+
 .selected_area, .point_area{
 	padding-bottom: 30px;
 	box-sizing: border-box;
