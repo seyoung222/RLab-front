@@ -324,6 +324,15 @@ main #main_container{
 .list_item:hover{
 	color: var(--color_blue);
 }
+
+/* 게시판, 페이지네이션 부모 */
+.tab_content{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 40px;
+}
+
 /* 넘기기 버튼 */
 .study_card_container .page_box{
 display: flex; justify-content: center;
