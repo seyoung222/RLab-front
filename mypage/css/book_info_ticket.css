@@ -26,6 +26,7 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+  gap: 40px;
 }
 
 /* 결제내역 표 */
@@ -82,4 +83,3 @@ table {
   height: 1253px;
 }
 
-/* 페이지네이션 */
