@@ -41,7 +41,7 @@
     background-repeat: no-repeat;
     background-image: url('../img/recruit_thumb.png');  
   }
-  
+
   .study_card_container .study_info{
     display: flex;
     flex-flow: column;
