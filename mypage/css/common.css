@@ -290,6 +290,7 @@ main #main_container{
 	padding: 50px;
 	background-color: var(--color_beige);
 	box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* aside(left_menu) */
@@ -330,7 +331,7 @@ main #main_container{
   display: flex;
   flex-flow: column;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 
 /* 넘기기 버튼 */
