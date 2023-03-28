@@ -258,6 +258,7 @@ header .list_item:hover{
 	justify-content: flex-end;
 	align-items: center;
 	margin-bottom: 10px;
+	background-color: orange;
 }
 .checkbox {
 	position: absolute;
