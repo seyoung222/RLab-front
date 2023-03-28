@@ -31,7 +31,9 @@ table { border-collapse: collapse; }
   border-bottom: 1px solid var(--color_yellow);
   height: 50px;
 }
-
+.board_list:hover{
+  background-color: #f0eb583b;
+}
 .post_title{
   font-weight:bold;
   font-size: 15px;
