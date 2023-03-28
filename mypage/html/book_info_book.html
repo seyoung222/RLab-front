@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>예약 관리</title>
+	<title>예약 관리 - 예약내역</title>
 	<link rel="stylesheet" href="../css/common.css" />
-	<link rel="stylesheet" href="../css/book_info.css" />
+	<link rel="stylesheet" href="../css/book_info_book.css" />
 </head>
 <body>
 	<div id="total_container">
@@ -39,9 +39,9 @@
 					<nav class="left_menu">
 						<a href="./mypage.html" class="list_item">마이페이지 홈</a>
 						<a href="./edit_info.html" class="list_item">개인정보 수정</a>
-						<a href="#" class="list_item">예약 관리</a>
-						<a href="./mystudy.html" class="list_item">스터디 관리</a>
-						<a href="./mypost.html" class="list_item">작성글 관리</a>
+						<a href="./book_info_ticket.html" class="list_item">예약 관리</a>
+						<a href="./mystudy_favorite.html" class="list_item">스터디 관리</a>
+						<a href="./mypost_post.html" class="list_item">작성글 관리</a>
 					</nav>
 				</aside>
 
@@ -49,125 +49,146 @@
 				<section>
 					<!-- 탭 -->
 					<div class="tab-container">
-						<div class="tab selected_tab tab1"><a href="./mypost_post.html">결제 내역</a></div>
-						<div class="tab unselected_tab tab2"><a href="./mypost_recruit.html">예약 내역</a></div>
+						<div class="tab selected_tab tab1"><a href="./book_info_ticket.html">결제 내역</a></div>
+						<div class="tab unselected_tab tab2"><a href="./book_info_book.html">예약 내역</a></div>
 					</div>
 						<div class="my_study_container" id="my_container">
 							<div class="study_card_container">
 
 					<!-- table  -->
 								<div class="table_container">
-									<div class="select_box_area">
-										<select name="select_view">
-											<option value="전체보기">전체보기</option>
-											<option value="최신 순">최신 순</option>
-											<option value="작성일 순">작성일 순</option>
-										</select>
-									</div>
 
 									<div class="tab_content">
 										<!-- 나의 게시글 -->
-										<div class="table_area_1" id="tabs_1">
+										<div class="table_area" id="tabs_1">
 										<!-- <div class="tab-content_tabel_area 1"> -->
 											<table class="border_box">
-												<tr class="board_title_list">
-													<td class="title_list_item">번호</td>
-													<td class="title_list_item">스터디명</td>
-													<td class="title_list_item">제목</td>
-													<td class="title_list_item">작성자</td>
-													<td class="title_list_item">작성일</td>
-												</tr>
+												<thead>
+													<tr class="board_title_list">
+														<td class="title_list_item">구매일자</td>
+														<td class="title_list_item">구매번호</td>
+														<td class="title_list_item">상품명</td>
+														<td class="title_list_item">상태</td>
+													</tr>
+												</thead>
 												
-												<tr class="board_list_1">
-													<td>24</td>
-													<td>프론트엔트 공부해요</td>
-													<td class="post_title">리액트 처음부터 함께 배워요</td>
-													<td>프론트 마스터</td>
-													<td>2023.02.28</td>
-												</tr>
-												<tr class="board_list_2">
-													<td>23</td>
-													<td>스프링 박살내기</td>
-													<td class="post_title">스프링을 이용한 게시판 만들기</td>
-													<td>김스프</td>
-													<td>2023.02.28</td>
-												</tr>
-												<tr class="board_list_3">
-													<td>22</td>
-													<td>코딩 테스트</td>
-													<td class="post_title">백엔드 취업을 위한 코딩테스트</td>
-													<td>코딩왕</td>
-													<td>2023.02.28</td>
-												</tr>
-												<tr class="board_list_4">
-													<td>21</td>
-													<td>반응형 페이지 만들기</td>
-													<td class="post_title">html, css, js를 이용한 반응형 웹 만들기</td>
-													<td>김돌탕</td>
-													<td>2023.02.28</td>
-												</tr>
-												<tr class="board_list_5">
-													<td>20</td>
-													<td>java study</td>
-													<td class="post_title">남궁성: 자바의 정석 책으로 함께 자바 공부해요</td>
-													<td>김돌탕</td>
-													<td>2023.02.28</td>
-												</tr>
-												<tr class="board_list_6">
-													<td>19</td>
-													<td>정처기 준비하는 스터디</td>
-													<td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
-													<td>김돌탕</td>
-													<td>2023.02.28</td>
-												</tr>
-												<tr class="board_list_7">
-													<td>18</td>
-													<td>정처기 준비하는 스터디</td>
-													<td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
-													<td>김돌탕</td>
-													<td>2023.02.28</td>
-												</tr>
-												<tr class="board_list_8">
-													<td>17</td>
-													<td>정처기 준비하는 스터디</td>
-													<td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
-													<td>김돌탕</td>
-													<td>2023.02.28</td>
-												</tr>
-												<tr class="board_list_9">
-													<td>16</td>
-													<td>정처기 준비하는 스터디</td>
-													<td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
-													<td>김돌탕</td>
-													<td>2023.02.28</td>
-												</tr>
-												<tr class="board_list_10">
-													<td>15</td>
-													<td>정처기 준비하는 스터디</td>
-													<td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
-													<td>김돌탕</td>
-													<td>2023.02.28</td>
-												</tr>
-												<tr class="board_list_11">
-													<td>14</td>
-													<td>정처기 준비하는 스터디</td>
-													<td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
-													<td>김돌탕</td>
-													<td>2023.02.28</td>
-												</tr>
+												<tbody>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+																<td>2023.03.23</td>
+																<td>230160</td>
+																<td class="post_title">시간패키지(30시간)외 1건</td>
+																<td>구매완료</td>
+													</tr>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+														<td>2023.03.23</td>
+														<td>230160</td>
+														<td class="post_title">시간패키지(30시간)외 1건</td>
+														<td>구매완료</td>
+													</tr>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+														<td>2023.03.23</td>
+														<td>230160</td>
+														<td class="post_title">시간패키지(30시간)외 1건</td>
+														<td>구매완료</td>
+													</tr>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+														<td>2023.03.23</td>
+														<td>230160</td>
+														<td class="post_title">시간패키지(30시간)외 1건</td>
+														<td>구매완료</td>
+													</tr>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+														<td>2023.03.23</td>
+														<td>230160</td>
+														<td class="post_title">시간패키지(30시간)외 1건</td>
+														<td>구매완료</td>
+													</tr>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+														<td>2023.03.23</td>
+														<td>230160</td>
+														<td class="post_title">시간패키지(30시간)외 1건</td>
+														<td>구매완료</td>
+													</tr>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+														<td>2023.03.23</td>
+														<td>230160</td>
+														<td class="post_title">시간패키지(30시간)외 1건</td>
+														<td>구매완료</td>
+													</tr>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+														<td>2023.03.23</td>
+														<td>230160</td>
+														<td class="post_title">시간패키지(30시간)외 1건</td>
+														<td>구매완료</td>
+													</tr>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+														<td>2023.03.23</td>
+														<td>230160</td>
+														<td class="post_title">시간패키지(30시간)외 1건</td>
+														<td>구매완료</td>
+													</tr>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+														<td>2023.03.23</td>
+														<td>230160</td>
+														<td class="post_title">시간패키지(30시간)외 1건</td>
+														<td>구매완료</td>
+													</tr>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+														<td>2023.03.23</td>
+														<td>230160</td>
+														<td class="post_title">시간패키지(30시간)외 1건</td>
+														<td>구매완료</td>
+													</tr>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+														<td>2023.03.23</td>
+														<td>230160</td>
+														<td class="post_title">시간패키지(30시간)외 1건</td>
+														<td>구매완료</td>
+													</tr>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+														<td>2023.03.23</td>
+														<td>230160</td>
+														<td class="post_title">시간패키지(30시간)외 1건</td>
+														<td>구매완료</td>
+													</tr>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+														<td>2023.03.23</td>
+														<td>230160</td>
+														<td class="post_title">시간패키지(30시간)외 1건</td>
+														<td>구매완료</td>
+													</tr>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+														<td>2023.03.23</td>
+														<td>230160</td>
+														<td class="post_title">시간패키지(30시간)외 1건</td>
+														<td>구매완료</td>
+													</tr>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+														<td>2023.03.23</td>
+														<td>230160</td>
+														<td class="post_title">시간패키지(30시간)외 1건</td>
+														<td>구매완료</td>
+													</tr>
+													<tr class="board_list" onclick="location.href='./ticket_buy_complete.html'">
+														<td>2023.03.23</td>
+														<td>230160</td>
+														<td class="post_title">시간패키지(30시간)외 1건</td>
+														<td>구매완료</td>
+													</tr>
+													
+												</tbody>
 											</table>
 										</div>
 
-									<!-- 페이지 이동 -->
-									<div class="page_area">
-										</div>
-											<div class="page_box clearfix">
-												<i class="btn_prev"></i>
-												<span class="page_num selected">1</span>
-												<span class="page_num">2</span>
-												<span class="page_num">3</span>
-												<i class="btn_next"></i>
-										</div>
+										<!-- 페이지 이동 -->
+										<div class="page_area">
+												<div class="page_box clearfix">
+													<i class="btn_prev"></i>
+													<span class="page_num selected">1</span>
+													<span class="page_num">2</span>
+													<span class="page_num">3</span>
+													<i class="btn_next"></i>
+											</div>
 									</div>
 								</div>
 							</div>
