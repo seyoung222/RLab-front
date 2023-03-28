@@ -21,6 +21,7 @@
 table { 
   border-collapse: collapse; 
 }
+
 .board_title_list{
   box-sizing: border-box;
   background-color: var(--color_mint);
@@ -75,4 +76,3 @@ table {
   background-image: url(../img/favorite_tag.png);
   
 }
-.bd_list_item{padding-left: 5px;}

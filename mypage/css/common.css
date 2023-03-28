@@ -280,7 +280,6 @@ main #main_container{
 		justify-content: space-between;
 		gap: 30px;
 }
-
 #my_container {
 	margin-top: -7px; /* 위쪽 마진을 음수값으로 조정하여 보더가 붙어있는 스타일로 변경 */
 	width: 930px;
@@ -292,7 +291,33 @@ main #main_container{
 	box-sizing: border-box;
 	box-sizing: border-box;
 }
-
+table{
+	overflow: hidden;
+	table-layout: fixed;
+}
+td{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break:break-all;
+	padding: 5px;
+	box-sizing: border-box;
+}
+td:nth-child(1){
+	width: 15px;
+}
+td:nth-child(2){
+	width: 50px;
+}
+td:nth-child(3){
+	width: 80px;
+}
+td:nth-child(4){
+	width: 20px;
+}
+td:nth-child(5){
+	width: 20px;
+}
 /* aside(left_menu) */
 #main_container .left_menu_container{
 	display: flex;

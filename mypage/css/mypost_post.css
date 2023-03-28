@@ -22,9 +22,7 @@
 table { 
   border-collapse: collapse; 
 }
-thead td{
-  padding: 3px;
-}
+
 .board_title_list{
   box-sizing: border-box;
   background-color: var(--color_yellow);
