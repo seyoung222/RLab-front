@@ -282,14 +282,12 @@ main #main_container{
 
 #my_container {
 	margin-top: -7px; /* 위쪽 마진을 음수값으로 조정하여 보더가 붙어있는 스타일로 변경 */
-	height:850px;
 	width: 930px;
 	position: relative;
 	border: var(--border_basic); 
 	border-radius: var(--border_radius_4);
 	padding: 30px;
 	background-color: var(--color_beige);
-	overflow: hidden;
 	box-sizing: border-box;
 }
 
