@@ -449,7 +449,7 @@
         font-size: 12px;
         font-weight: 600;
     }
-    .this_pet .pet_reward .icon_reward{
+    .icon_reward{
         display: flex;
         width: 15px;
         height: 15px;
@@ -506,12 +506,88 @@
     }
     .pet_store_popup_container .pet_store_popup_box{
         position: relative;
-        width: 1000px;
-        height: 600px;
+        width: 900px;
+        height: 500px;
+        padding: 25px 30px;
+        box-sizing: border-box;
         background-color: var(--color_beige);
         margin-bottom: 200px;
         border-radius: var(--border_radius_3);
         box-shadow: 5px 5px 20px #18181856;
+    }
+    .pet_store_popup_container .pet_store_content{
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .pet_store_content .pets_container{
+        display: flex;
+        gap: 15px;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 40px;
+    }
+    .pets_container .pet_box{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 32.1%;
+        height: 99%;
+        padding: 20px;
+        border: var(--border_basic);
+        border-radius: var(--border_radius_3);
+        box-shadow: var(--box-shadow);
+        box-sizing: border-box;
+    }
+    .pet_box .pet_img{
+        width: 100%;
+        height: 165px;
+        background-position: 19px -10px;
+        background-size: 187px;
+        background-repeat: no-repeat;
+        background-image: url(../img/rlab_logo.png);
+        margin-bottom: 10px;
+        /* border: 1px solid red; */
+    }
+    .pet_box .pet_title{
+        display: flex;
+        gap: 3px;
+    }
+    .pet_title .pet_level{
+        width: 50px;
+        padding: 5px;
+        background-color: var(--color_mint);
+        border-radius: var(--border_radius_3);
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .pet_box .pet_reward{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .pet_reward p:nth-child(1){
+        font-size: 17px;
+        font-weight: 700;
+        /* background-color: #01f3a3; */
+    }
+    .pet_box .btn_bring{
+        width: 120px;
+        height: 40px;
+        padding: 5px;
+        border: none;
+        border-radius: var(--border_radius_3);
+        background-color: var(--color_yellow);
+        font-size: 14px;
+        font-weight: 600;
+        box-shadow: 2px 2px 4px #6262624f;
+        cursor: pointer;
+    }
+    .pet_box .btn_bring:hover{
+        background-color: #cec937;
     }
     .pet_store_popup_container .btn_remove{
         position: absolute;
@@ -523,6 +599,7 @@
         z-index: 10;
         opacity: 50%;
         margin: 18px;
+        top: 0;
         right: 0;
         cursor: pointer;
     }
