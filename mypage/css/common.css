@@ -211,9 +211,9 @@ header .list_item:hover{
 	display: flex;
 }
 
-.tab-content.show {
+/* .tab-content.show {
 	display: block;
-}
+} */
 
 .tab-container {
 	display: flex;
