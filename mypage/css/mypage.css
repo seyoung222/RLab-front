@@ -604,6 +604,7 @@
         right: 0;
         cursor: pointer;
     }
+
     /* 나의 예약 */
     .article_top .book_container{
         position: relative;
@@ -617,7 +618,7 @@
         box-shadow: none;
         padding: 0;
         overflow: hidden;
-        background-color: none;
+        background-color: #ee101000;
     }
     .book_container .title_container{
        width: 96%;
