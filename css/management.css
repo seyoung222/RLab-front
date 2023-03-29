@@ -1,0 +1,52 @@
+.study_name {
+    display: inline-block;
+    vertical-align: 10px;  
+    margin: 0; 
+    font-weight: bold;
+    padding-top: 16px;
+  }
+  
+  .time_line_title{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 28px;
+  }
+  
+  .time_line_container2 {
+    margin-right:120px;
+    border-radius: var(--border_radius_4);
+    border: var(--border_basic);
+    box-shadow: var(--box-shadow);
+    float: right;
+    width: 400px;
+    overflow: auto;
+    height: 600px;
+    background-color: #fff;
+  }
+  
+  .time_line_container2::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  .time_line_container2::-webkit-scrollbar-thumb {
+    background-color: var(--color_black);
+    border-radius: 10px;
+  }
+  
+  .circle_btn {
+    display: inline-block;
+    background-color: var(--color_blue);
+    color: var(--color_black);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+    bottom: 180px;
+    right: 600px;
+  }
+  
+  
