@@ -153,6 +153,7 @@
 .table_container:last-child{
 	margin-bottom: 100px;
 }
+
 .return_box{
 	width: 100%;
 	display: flex;
@@ -210,12 +211,14 @@ th,td{
 	padding: 15px;
 }
 th{
+	width: 3px;
 	background-color: var(--color_blue);
-
 }
 td{
-	width: 80%;
 	background-color: #fff;
+}
+td:nth-child(2){
+	width: 125px;
 }
 
 
