@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>마이 페이지</title>
+    <script src="../js/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/mypage.css" />
   </head>
   <body>
     <!-- pet_store_popup -->
-    <div class="pet_store_popup_container">
+    <div id="pet_store_popup_container" class="display_none">
       <div class="pet_store_popup_box">
         <i class="btn_remove"></i>
         <div class="pet_store_content">
@@ -155,7 +156,7 @@
                     </div>
                     <div class="pet_level">Lv. 20</div>
                   </div>
-                    <div class="pet_store_container">
+                    <div id="pet_store_container">
                       <i class="icon_store"></i> 펫 스토어
                     </div>
                 </div>
@@ -370,6 +371,7 @@
         </div>
       </footer>
     </div>
+    <script src="../js/mypage.js"></script>
   </body>
 </html>
 
