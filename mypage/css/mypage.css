@@ -472,7 +472,7 @@
     .pet_store_container:hover{
         background-color: #18d898;
     }
-    .pet_store_container .icon_store{
+    .icon_store{
         display: flex;
         margin-right: 8px;
         width: 15px;
@@ -483,6 +483,17 @@
         opacity: 60%;
     }
     /* pet_store_popup */
+    .popup_title{
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .popup_title .icon_store{
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+    }
     .pet_store_popup_container{
         display: flex;
         justify-content: center;
