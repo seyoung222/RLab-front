@@ -494,12 +494,29 @@
         z-index: 900;
     }
     .pet_store_popup_container .pet_store_popup_box{
+        position: relative;
         width: 1000px;
         height: 600px;
         background-color: var(--color_beige);
         margin-bottom: 200px;
         border-radius: var(--border_radius_3);
         box-shadow: 5px 5px 20px #18181856;
+    }
+    .pet_store_popup_container .btn_remove{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../img/delete.png);
+        z-index: 10;
+        opacity: 50%;
+        margin: 18px;
+        right: 0;
+        cursor: pointer;
+    }
+    .btn_remove:hover{
+        opacity: 80%;
     }
     /* 나의 예약 */
     .article_top .book_container{

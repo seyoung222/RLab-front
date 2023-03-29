@@ -143,7 +143,9 @@
     right: 0;
     cursor: pointer;
   }
-
+  .btn_remove:hover{
+    opacity: 80%;
+}
   /* 넘기기 버튼 */
   .study_card_container .page_box{
     margin-top: 20px; display: flex; justify-content: center;
