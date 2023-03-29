@@ -39,27 +39,6 @@
   .gr2 {
     background-color: var(--color_light-grey) !important;
   }
-
-  .gr2::after {
-    content: "x";
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-color: var(--color_grey) !important;
-    color: white;
-    border-radius: var(--border_radius_1);
-    text-align: center;
-    line-height: 14px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-
-
-
  
   .study_card_container .study_content{
     display: flex; justify-content: space-between;
@@ -132,28 +111,24 @@
     height: 170px;
     position: relative;
   }
-
-  .btn_remove{
-    color: white;
-    background-color: rgb(175, 175, 175);
-  }
-
-  /* .ing_study_container::after {
-    content: "x";
-    position: absolute;
-    top: 10px;
-    right: 10px;
+  /* study_card_box호버시 btn_remove가 나타남 */
+  .study_card_box:hover >.btn_remove{
     display: block;
+  }
+  .btn_remove{
+    display: none;
+    position: absolute;
     width: 20px;
     height: 20px;
-    background-color: var(--color_light-grey);
-    color: white;
-    border-radius: var(--border_radius_1);
-    text-align: center;
-    line-height: 14px;
-    font-weight: bold;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/delete.png);
+    z-index: 10;
+    opacity: 50%;
+    margin: 5px;
+    right: 0;
     cursor: pointer;
-  } */
+  }
 
   /* 넘기기 버튼 */
   .study_card_container .page_box{
