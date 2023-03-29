@@ -48,7 +48,7 @@
         </header>
 
         <main>
-            <div class="main_container">
+            <div id="main_container">
                 <!-- 왼쪽 메뉴바 -->
                 <div class="left_menu_container">
                     <nav class="left_menu">
@@ -62,50 +62,162 @@
                         <a href="#" class="leave">탈퇴하기</a>
                     </nav>
                 </div>
-
-                <section>
-                    <div class="home_container">
-                        <div class="time_line_container_top">
-                            <div class="time_line_title"> 인증 게시판</div>
-                            
-                            <div class="time_line_container2">
-                                <div class="today_feed_board">
-                                    <div class="board">
-                                        <div class="feed_img"></div>
-                                        <div class="feed_name">김돌탕</div>
-                                        <div class="feed_date">2023년 01월 21일 오후 9시 12분</div>
-                                        <div class="feed_contents_img"></div>
-                                        <div class="middle_container2">
-                                            <span class="feed_date_min">01/21</span>
-                                            <span class="feed_contents">인증합니다</span>
-                                        </div>
-                                        <div class="middle_container3">
-                                            <div class="feed_like_img"></div>
-                                            <div class="feed_like_count">10</div>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="board">
-                                        <div class="feed_img"></div>
-                                        <div class="feed_name">김돌탕</div>
-                                        <div class="feed_date">2023년 01월 21일 오후 9시 12분</div>
-                                        <div class="feed_contents_img"></div>
-                                        <div class="middle_container2">
-                                            <span class="feed_date_min">01/21</span>
-                                            <span class="feed_contents">인증합니다</span>
-                                        </div>
-                                        <div class="middle_container3">
-                                            <div class="feed_like_img"></div>
-                                            <div class="feed_like_count">10</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="circle_btn">인증하기</div>
-
+                <div class="content_container">
+                    <!-- 탭 -->
+                    <div class="tab_container">
+                        <a href="./mypost_post.html"  class="tab unselected_tab tab1">회원 관리</a>
+                        <a href="./mypost_recruit.html" class="tab unselected_tab tab2">스터디 관리</a>
                     </div>
-                </section>
+
+                    <div class="my_study_container" id="my_container">  
+                        <!-- table  -->
+                        <div class="table_container">
+                        <div class="select_box_area">
+                            <select name="select_view">
+                            <option value="전체보기">전체보기</option>
+                            <option value="최신 순">최신 순</option>
+                            <option value="작성일 순">작성일 순</option>
+                            </select>
+                        </div>
+
+                        <div class="tab_content">
+                        
+                            <!-- 나의 스크랩 -->
+                            <div class="table_area" id="tabs_3">
+                            <table class="border_box">
+                                <thead>
+                                <tr class="board_title_list">
+                                    <td class="title_list_item">번호</td>
+                                    <td class="title_list_item">스터디명</td>
+                                    <td class="title_list_item">제목</td>
+                                    <td class="title_list_item">작성자</td>
+                                    <td class="title_list_item">작성일</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="board_list">
+                                    <td>24</td>
+                                    <td>프론트엔트 공부해요</td>
+                                    <td class="post_title">리액트 처음부터 함께 배워요! 당신도 할수있다! 아자아자 화이팅!</td>
+                                    <td>매미킴</td>
+                                    <td>2023.02.28</td>                             
+                                <tr class="board_list">
+                                    <td>23</td>
+                                    <td>스프링 박살내기</td>
+                                    <td class="post_title">스프링을 이용한 게시판 만들기</td>
+                                    <td>매미킴sdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsd</td>
+                                    <td>2023.02.28</td>
+                                </tr>
+                                <tr class="board_list">
+                                    <td>22</td>
+                                    <td>코딩 테스트</td>
+                                    <td class="post_title">백엔드 취업을 위한 코딩테스트</td>
+                                    <td>보드키</td>
+                                    <td>2023.02.28</td>
+                                </tr>
+                                <tr class="board_list">
+                                    <td>21</td>
+                                    <td>반응형 페이지 만들기</td>
+                                    <td class="post_title">html, css, js를 이용한 반응형 웹 만들기</td>
+                                    <td>스키야키</td>
+                                    <td>2023.02.28</td>
+                                </tr>
+                                <tr class="board_list">
+                                    <td>20</td>
+                                    <td>java study</td>
+                                    <td class="post_title">남궁성: 자바의 정석 책으로 함께 자바 공부해요</td>
+                                    <td>다나카</td>
+                                    <td>2023.02.28</td>
+                                </tr>
+                                <tr class="board_list">
+                                    <td>19</td>
+                                    <td>정처기 준비하는 스터디</td>
+                                    <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                                    <td>김돌탕</td>
+                                    <td>2023.02.28</td>
+                                </tr>
+                                <tr class="board_list">
+                                    <td>18</td>
+                                    <td>정처기 준비하는 스터디</td>
+                                    <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                                    <td>김돌탕</td>
+                                    <td>2023.02.28</td>
+                                </tr>
+                                <tr class="board_list">
+                                    <td>17</td>
+                                    <td>정처기 준비하는 스터디</td>
+                                    <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                                    <td>김돌탕</td>
+                                    <td>2023.02.28</td>
+                                </tr>
+                                <tr class="board_list">
+                                    <td>16</td>
+                                    <td>정처기 준비하는 스터디</td>
+                                    <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                                    <td>김돌탕</td>
+                                    <td>2023.02.28</td>
+                                </tr>
+                                <tr class="board_list">
+                                    <td>15</td>
+                                    <td>정처기 준비하는 스터디</td>
+                                    <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                                    <td>김돌탕</td>
+                                    <td>2023.02.28</td>
+                                </tr>
+                                <tr class="board_list">
+                                    <td>14</td>
+                                    <td>정처기 준비하는 스터디</td>
+                                    <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                                    <td>김돌탕</td>
+                                    <td>2023.02.28</td>
+                                </tr>
+                                <tr class="board_list">
+                                    <td>17</td>
+                                    <td>정처기 준비하는 스터디</td>
+                                    <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                                    <td>김돌탕</td>
+                                    <td>2023.02.28</td>
+                                </tr>
+                                <tr class="board_list">
+                                    <td>16</td>
+                                    <td>정처기 준비하는 스터디</td>
+                                    <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                                    <td>김돌탕</td>
+                                    <td>2023.02.28</td>
+                                </tr>
+                                <tr class="board_list">
+                                    <td>15</td>
+                                    <td>정처기 준비하는 스터디</td>
+                                    <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                                    <td>김돌탕</td>
+                                    <td>2023.02.28</td>
+                                </tr>
+                                <tr class="board_list">
+                                    <td>14</td>
+                                    <td>정처기 준비하는 스터디</td>
+                                    <td class="post_title">정처기 필기 과목별로 정리했습니다!</td>
+                                    <td>김돌탕</td>
+                                    <td>2023.02.28</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                            <!-- 페이지 이동 -->
+                            <div class="page_area">
+                            </div>
+                                <div class="page_box clearfix">
+                                <i class="btn_prev"></i>
+                                <span class="page_num selected">1</span>
+                                <span class="page_num">2</span>
+                                <span class="page_num">3</span>
+                                <i class="btn_next"></i>
+                            </div>
+                            </div>
+                        </div>        
+                    </div>
+                </div>  
+                
+                    
                 <!-- 오른쪽 메뉴 -->
                 <aside>
                     <div class="right-container">
@@ -210,9 +322,9 @@
                         </div>
 
                     </div>
+                    </div>
+                </aside>
             </div>
-            </aside>
-    </div>
 
     </main>
 
