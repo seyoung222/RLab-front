@@ -30,6 +30,18 @@
 table { 
   border-collapse: collapse; 
 }
+td:nth-child(1){
+	width: 30px;
+}
+td:nth-child(2){
+	width: 20px;
+}
+td:nth-child(3){
+	width: 70px;
+}
+td:nth-child(4){
+	width: 30px;
+}
 
 .board_title_list{
   box-sizing: border-box;
