@@ -469,6 +469,9 @@
         font-size: 14px;
         font-weight: 600;
     }
+    .pet_store_container:hover{
+        background-color: #18d898;
+    }
     .pet_store_container .icon_store{
         display: flex;
         margin-right: 8px;
