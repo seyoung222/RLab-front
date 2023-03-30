@@ -7,36 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스터디 모집</title>
     <link rel="stylesheet" href="../css/recruit.css">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/recruit.js"></script>
 </head>
 
 <body>
     <!-- background -->
     <div class="background_bbls">
         <div class="big_bbls">
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
         </div>
         <div class="small_bbls">
-          <div class="bubble"></div>
-          <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
         </div>
-      </div>
+    </div>
     <!-- Header -->
     <!-- background -->
     <div class="background_bbls">
         <div class="big_bbls">
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
-          <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
         </div>
-        <div class="small_bbls">
-          <div class="bubble"></div>
-          <div class="bubble"></div>
+            <div class="small_bbls">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
         </div>
-      </div>
+    </div>
     <div id="total_container">
     <header>
         <div id="header_container">
@@ -84,11 +86,16 @@
                 <div class="flex_box">
                     <div class="menu_nav clearfix">
                         <div class="recruit_state">
-                            <span class="recruit_state_title">모집중</span>
-                            <input type="checkbox" id="recruit_switch">
+                            <div class="recruit_state_title">모집중</div>
+                            <!-- <input type="checkbox" id="recruit_switch"> -->
                             <label for="switch" class="switch_label">
-                                <span class="switch_on">ON</span>
-                                <span class="switch_btn"></span>
+                                <!-- <span class="switch_on">ON</span>
+                                <span class="switch_btn"></span> -->
+                                <li class="switch_check">
+                                    <span class="btn_on">ON</span>
+                                    <span class=""btn_off>OFF</span>
+                                    <div class="switch_btn"></div>
+                                </li>
                             </label>
                         </div>
                         <div class="recruit_tag_box ">
@@ -148,11 +155,11 @@
                                             <span href="#" class="study_tag">#독서토론</span>
                                             <span href="#" class="study_tag">#운동</span>
                                             <span href="#" class="study_tag">#경제학과</span>
-                                            
+    
                                         </div>
                                         <div class="study_recruit_content_box">
                                             <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                           </div>
+                                        </div>
                                         <div class="study_content">
                                             <div class="study_recruiting">
                                                 <span>모집중</span>
@@ -178,7 +185,7 @@
                                             <span href="#" class="study_tag">#경제학과</span>
                                         </div>
                                         <div class="study_recruit_content_box">
-                                         <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 만나서반가워요 </span>
+                                        <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 만나서반가워요 </span>
                                         </div>
                                         <div class="study_content">
                                             <div class="study_recruiting">
@@ -206,7 +213,7 @@
                                         </div>
                                         <div class="study_recruit_content_box">
                                             <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                           </div>
+                                        </div>
                                         <div class="study_content">
                                             <div class="study_recruiting">
                                                 <span>모집중</span>
@@ -220,7 +227,7 @@
                                 </a>
                             </li>
                         </div>
-                         <div class="row_study_card clearfix">
+                        <div class="row_study_card clearfix">
                             <li class="study_card_box add_shadow">
                                 <a href="">
                                     <div class="study_img_box"></div>
@@ -235,7 +242,7 @@
                                         </div>
                                         <div class="study_recruit_content_box">
                                             <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                           </div>
+                                        </div>
                                         <div class="study_content">
                                             <div class="study_recruiting">
                                                 <span>모집중</span>
@@ -262,7 +269,7 @@
                                         </div>
                                         <div class="study_recruit_content_box">
                                             <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                           </div>
+                                        </div>
                                         <div class="study_content">
                                             <div class="study_recruiting">
                                                 <span>모집중</span>
@@ -288,7 +295,7 @@
                                         </div>
                                         <div class="study_recruit_content_box">
                                             <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                           </div>
+                                        </div>
                                         <div class="study_content">
                                             <div class="study_recruiting">
                                                 <span>모집중</span>
@@ -317,7 +324,7 @@
                                         </div>
                                         <div class="study_recruit_content_box">
                                             <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                           </div>
+                                        </div>
                                         <div class="study_content">
                                             <div class="study_recruiting">
                                                 <span>모집중</span>
@@ -344,7 +351,7 @@
                                         </div>
                                         <div class="study_recruit_content_box">
                                             <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                           </div>
+                                        </div>
                                         <div class="study_content">
                                             <div class="study_recruiting">
                                                 <span>모집중</span>
@@ -370,7 +377,7 @@
                                         </div>
                                         <div class="study_recruit_content_box">
                                             <span class="study_recruit_content">[ 서울 ] 정처기 같이 공부해요 </span>
-                                           </div>
+                                        </div>
                                         <div class="study_content">
                                             <div class="study_recruiting">
                                                 <span>모집중</span>
@@ -488,6 +495,6 @@
 		</div>
     </footer>
 </div>
-</body>
 
+</body>
 </html>
