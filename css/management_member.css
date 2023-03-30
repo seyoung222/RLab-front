@@ -87,7 +87,7 @@ main #main_container{
 	position: relative;
 	border: var(--border_basic); 
 	border-radius: var(--border_radius_4);
-	padding: 50px;
+	padding: 60px 50px 50px 50px;
 	background-color: var(--color_beige);
 	box-sizing: border-box;
 	z-index: 10;
@@ -242,31 +242,38 @@ table {
   gap: 20px;
 }
 
-/* 넘기기 버튼 */
-.study_card_container .page_box{
-display: flex; justify-content: center;
-}
-.study_card_container .page_box>*{float: left; }
-.study_card_container .page_num+.page_num{margin-left: 20px;}
-.study_card_container .page_box .selected {
-  color: var(--color_black); font-weight: 500;
-}
 .selected.tab1{
   background-color: var(--color_blue);
 }
 .selected.tab2{
   background-color: var(--color_mint);
 }
-.study_card_container .page_box span{
+
+/* 넘기기 버튼 */
+.page_box{
+display: flex; 
+justify-content: center;
+}
+.page_box>*{float: left; }
+.page_num+.page_num{margin-left: 20px;}
+.page_box .selected {
+  color: var(--color_black); font-weight: 500;
+}
+.page_box span{
   line-height: 30px; font-size: 25px; color: rgb(62, 62, 62)
 }
 
-.study_card_container .page_box .btn_prev{
-  display: inline-block; width: 30px; height: 30px; margin-right: 10px;
+.page_box .btn_prev{
+  display: inline-block; 
+  width: 30px; 
+  height: 30px; 
+  margin-right: 10px;
   background-position: -10px -10px; 
-  background-image: url(../img/page_left.png);  background-size:50px 50px;
+  background-size: cover;
+  background-image: url(../img/page_left.png);  
+  background-size:50px 50px;
 }
-.study_card_container .page_box .btn_next{
+.page_box .btn_next{
   width: 30px; height: 30px; margin-left: 10px;
   background-position: -10px -10px; display: inline-block;
   background-image: url(../img/page_right.png); background-size:50px 50px;
