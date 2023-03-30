@@ -671,7 +671,7 @@
 
     /* article_second (d-day)*/
     .articles .article_second {
-        width: 81.8%;
+        width: 82.8%;
         height: 70px;
         padding: 15px;
         box-sizing: border-box;
@@ -721,7 +721,7 @@
     
     /* article_third (나의 스터디, 나의 스크랩) */
     .articles .article_third{
-        width: 81.8%;
+        width: 82.8%;
         display: flex;
         justify-content: space-between;
         gap: 0.9%;
