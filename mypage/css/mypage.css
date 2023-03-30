@@ -328,7 +328,7 @@
     #used_hours_container #point_container{
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         padding: 10px 0 0 5px;
         box-sizing: border-box;
     }
@@ -337,8 +337,8 @@
         display: flex;
         align-items: flex-end;
         gap: 10px;
-        font-size: 60px;
         margin-bottom: -3px;
+        /* width: 100%; */
     }
     #point_container .my_point .icon_point{
         width: 65px;
@@ -348,13 +348,16 @@
         background-repeat: no-repeat;
         opacity: 80%;
     }
-    .my_point .point_texts .title_point{
+    .my_point .my_point .title_point{
         position: absolute;
-        top: 15px;
-        font-size: 21px;
+        top: 20px;
+        font-size: 20px;
         margin-left: 5px;
         color: var(--color_grey);
+        flex: 7;
     }
+    .point_texts{flex:2;}
+    .icon_point{flex:1}
     .my_point .point_texts .num_point{
         font-size: 45px;
         margin-bottom: -8px;
