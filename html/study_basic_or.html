@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스터디</title>
-    <link rel="stylesheet" href="../css/study.css">
+    <link rel="stylesheet" href="../css/study_or.css">
     <script src="../js/jquery.min.js"></script>
-
+    <script src="../js/study_or.js"></script>
     <link href='../css/calendar_main.css' rel='stylesheet' />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='../js/calendar_main.js'></script>
 </head>
 
 <body>
@@ -92,158 +92,93 @@
                                 <div id='calendar'></div>
                             </div>
                         </div>
-
-
                         <div class="middle_container clearfix">
-                            
-
-                            
                             <!-- TO-DO LIST -->
-                            <div class="todo_container">
+                            <div class="to_do_list_container">
                                 <!-- 제목 -->
-                                <div class="todo_box_title">
-                                    <h3>TODO</h3>
-                                    <a href="#" class="plus1">+더보기</a>
+                                <div class="to_do_list_title">
+                                    <h3>TO-DO LIST</h3><a href="#" class="plus1">+더보기</a>
                                 </div>
                                 <!-- 내용 -->
-                                <div class="todo_content_box">
-                                    <div class="input_container">
-                                        <input type="text"class="input_box" placeholder="할 일을 입력하세요">
-                                        <div class="btn_plus">+</div>
-                                    </div>
-                                    <ul class="todo_list">
-
-                                        <!-- <li>
-                                            <span class="todo_check">
-                                                <i class="material-icons check">check</i>
-                                            </span>
-                                            <span class="todo_content">할일</span>
-                                            <span class="todo_clear">
-                                                <i class="material-icons clear">clear</i>
-                                            </span>
-                                        </li> 
-
-                                        <li>
-                                            <span class="todo_check">
-                                                <i class="material-icons check">check</i>
-                                            </span>
-                                            <span class="todo_content">
-                                                <iinput class="content">할 일</iinput>
-                                            </span>
-                                            <span class="todo_clear">
-                                                <i class="material-icons clear">clear</i>
-                                            </span>
-                                        </li>  -->
-
-                                    </ul>  
-                        
-                                    <!-- 달성률 -->
-                                    <div>
-                                        <progress class="progress" value="20" max="100"></progress>
-                                    </div>
-                                    <div>
-                                        <p class="success_percent">달성률 20%</p>
-                                    </div>
+                                <div class="to_do_list_box1">
+                                    <div class="to_do_list_contents"><label><input type="checkbox"> 정처기 1회독</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 오답노트 정리</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 1시에 회의</label><br></div><br>
+                                        <!-- <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br> -->
+                                        <!-- <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br> -->
+                                        <!-- <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br> -->
+                                        
+                                </div>
+                                <!-- 할 일 추가 -->
+                                <button class="add_todo">+ 할 일 추가</button>
+                                <!-- 달성률 -->
+                                <div>
+                                    <progress value="20" max="100"></progress>
+                                </div>
+                                <div>
+                                    <p class="success_percent">달성률 20%</p>
                                 </div>
                             </div>
-                            <!-- 타임라인 -->
                             <div class="time_line_container">
-                                <div class="timeline_box_title">
-                                    <h3 class="feed_title">오늘의 인증</h3>
-                                </div>
-                                <div class="feed_content_box">
-                                    <div class="today_feed_board">
-                                        <div class="feed_board">
-                                            <ul class="feed_writer_box">
-                                                <i class="feed_writer_img"></i>
-                                                <i class="feed_writer_name">김돌탕</i>
-                                                <i class="feed_date">2023년 01월 21일 오후 9시 12분</i>
-                                            </ul>
-                                            <div class="feed_img"></div>
-                                            <div class="feed_content_item">
-                                                <div class="feed_like">
-                                                    <div class="feed_like_img"></div>
-                                                    <div class="feed_like_count">10</div>
-                                                </div>
-                                                <div class="feed_content">
-                                                    <span>2/22 인증합니다</span>
-                                                </div>
-                                            </div>
+                                <div class="feed_title">오늘의 인증</div>
+                                <div class="today_feed_board">
+                                    <div class="board">
+                                        <div class="feed_img"></div>
+                                        <div class="feed_name">김돌탕</div>
+                                        <div class="feed_date">2023년 01월 21일 오후 9시 12분</div>
+                                        <div class="feed_contents_img"></div>
+                                        <div class="middle_container2">
+                                            <span class="feed_date_min">01/21</span>
+                                            <span class="feed_contents">인증합니다</span>
                                         </div>
-                                        <hr>
-                                        <div class="feed_board">
-                                            <ul class="feed_writer_box">
-                                                <i class="feed_writer_img"></i>
-                                                <i class="feed_writer_name">김돌탕</i>
-                                                <i class="feed_date">2023년 01월 21일 오후 9시 12분</i>
-                                            </ul>
-                                            <div class="feed_img"></div>
-                                            <div class="feed_content_item">
-                                                <div class="feed_like">
-                                                    <div class="feed_like_img"></div>
-                                                    <div class="feed_like_count">10</div>
-                                                </div>
-                                                <div class="feed_content">
-                                                    <span>인증합니다 </span>
-                                                </div>
-                                            </div>
+                                        <div class="middle_container3">
+                                            <div class="feed_like_img"></div>
+                                            <div class="feed_like_count">10</div>
                                         </div>
-
-
+                                    </div>
+                                    <hr>
+                                    <div class="board">
+                                        <div class="feed_img"></div>
+                                        <div class="feed_name">김돌탕</div>
+                                        <div class="feed_date">2023년 01월 21일 오후 9시 12분</div>
+                                        <div class="feed_contents_img"></div>
+                                        <div class="middle_container2">
+                                            <span class="feed_date_min">01/21</span>
+                                            <span class="feed_contents">인증합니다</span>
+                                        </div>
+                                        <div class="middle_container3">
+                                            <div class="feed_like_img"></div>
+                                            <div class="feed_like_count">10</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- 자유게시판 최신글 -->
                             <div class="free_board">
                                 <!-- 제목 -->
-                                <div class="free_box_title">
-                                    <h3 class="contents_title">자유게시판 최신글</h3>
+                                <div class="board_title">
+                                    <H4 class="contents_title">자유게시판 최신글</H4>
                                     <a href="" class="plus2">+더보기</a>
                                 </div>
-                                <div class="board_content_box">
                                 <!-- 내용 1,2,3 -->
-                                    <div class="boardContainer">
-                                        <div class="board_box">
-                                            <a href="#" class="board_item">
-                                                <div class="circle_new">NEW</div>
-                                                <span>정보처리기사 문제집 추천</span>
-                                            </a>
-                                        </div>
-                                        <div class="board_box">
-                                            <a href="#" class="board_item">
-                                                <div class="circle_new">NEW</div>
-                                                <span>바닐자 자바스크립트 vs 제이쿼리</span>
-                                            </a>
-                                        </div>
-                                        <div class="board_box">
-                                            <a href="#" class="board_item">
-                                                <div class="circle_new">NEW</div>
-                                                <span>react 온라인 강의 어떤게 좋나요?</span>
-                                            </a>
-                                        </div>
-                                        <div class="board_box">
-                                            <a href="#" class="board_item">
-                                                <div class="circle_new">NEW</div>
-                                                <span>react 온라인 강의 어떤게 좋나요?</span>
-                                            </a>
-                                        </div>
-                                        <div class="board_box">
-                                            <a href="#" class="board_item">
-                                                <div class="circle_new">NEW</div>
-                                                <span>react 온라인 강의 어떤게 좋나요?</span>
-                                            </a>
-                                        </div>
-                                        <div class="board_box">
-                                            <a href="#" class="board_item">
-                                                <div class="circle_new">NEW</div>
-                                                <span>react 온라인 강의 어떤게 좋나요?</span>
-                                            </a>
-                                        </div>
+                                <div class="boardContainer">
+                                    <div class="board_box">
+                                        <a href="#">
+                                            <div class="circle_new">NEW</div>정처기 문제집 추천
+                                        </a>
+                                    </div>
+                                    <div class="board_box">
+                                        <a href="#">
+                                            <div class="circle_new">NEW</div>정처기 문제집 추천
+                                        </a>
+                                    </div>
+                                    <div class="board_box">
+                                        <a href="#">
+                                            <div class="circle_new">NEW</div>정처기 문제집 추천
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                
-                            <div></div>
                         </div>
 
                     </div>
@@ -445,12 +380,6 @@
         </div>
     </footer>
     </div>
-    <script src="../js/study.js"></script>
-    <script src="../js/study_or.js"></script>
-    <script src='../js/calendar_main.js'></script>
-
-
-    
 </body>
 
 </html>
