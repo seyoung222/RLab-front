@@ -83,38 +83,83 @@ main #main_container{
 }
 #my_container {
 	width: 710px;
+  height: 886px;
   top: -47px;
 	position: relative;
 	border: var(--border_basic); 
 	border-radius: var(--border_radius_4);
-	padding: 60px 50px 50px 50px;
+	padding: 110px;
 	background-color: var(--color_beige);
 	box-sizing: border-box;
 	z-index: 10;
   overflow: hidden;
 }
-table{
-	overflow: hidden;
-	table-layout: fixed;
+
+.option_container{
+  display: flex;
+  flex-flow: column;
+  gap: 50px;
 }
-td{
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	word-break:break-all;
-	padding: 10px 15px;
-	box-sizing: border-box;
-  text-align: center;
+.option_container .study_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-td:nth-child(1){
-	width: 170px;
+.study_box .sb_title{
+  width: 170px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 5px;
+} 
+.sb_title .icon_info{
+  width: 25px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-image: url(../img/info.png);
+  cursor: pointer;
 }
-td:nth-child(2){
-	width: 118px;
+.info_modal{
+  position: absolute;
+  width: 200px;
+  font-size: 10px;
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 3px rgba(92, 92, 92, 0.315);
+  opacity: 95%;
 }
-td:nth-child(3){
-	width: 200px;
-  padding: 10px 50px 10px 30px;
+.info_finish, .info_delete{
+  top: 19px;
+  left: 166px;
+}
+
+.study_box h3{
+  width: 200px;
+}
+.study_box button{
+  width: 200px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px;
+  border: none;
+  border-radius: var(--border_radius_2);
+  box-shadow: 3px 3px 3px rgba(92, 92, 92, 0.315);
+  cursor: pointer;
+}
+.study_box .btn_finish{
+  background-color: var(--color_mint);
+}
+.study_box .btn_delete{
+  background-color: rgb(255, 47, 20);
+  color: white;
+}
+.btn_finish:hover{
+  background-color: rgb(17, 212, 138);
+}
+.btn_delete:hover{
+  background-color: rgb(219, 39, 15);
 }
 
 /* 강퇴, 위임 버튼 */
