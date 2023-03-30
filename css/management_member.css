@@ -91,6 +91,7 @@ main #main_container{
 	background-color: var(--color_beige);
 	box-sizing: border-box;
 	z-index: 10;
+  overflow: hidden;
 }
 table{
 	overflow: hidden;
@@ -106,18 +107,44 @@ td{
   text-align: center;
 }
 td:nth-child(1){
-	width: 45px;
+	width: 170px;
 }
 td:nth-child(2){
-	width: 20px;
+	width: 118px;
 }
 td:nth-child(3){
-	width: 10px;
-}
-td:nth-child(4){
-	width: 10px;
+	width: 200px;
+  padding: 10px 50px 10px 30px;
 }
 
+/* 강퇴, 위임 버튼 */
+.btn_container{
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.btn_member{
+  width: 55px;
+  border: none;
+  border-radius: var(--border_radius_3);
+  padding: 7px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.btn_drop{
+  background-color: rgb(255, 47, 20);
+  color: white;
+}
+.btn_drop:hover{
+  background-color: rgb(219, 39, 15);
+}
+.btn_power{
+  width: 110px;
+  background-color: var(--color_mint);
+}
+.btn_power:hover{
+  background-color: rgb(17, 212, 138);
+}
 /* 게시판 */
 table { 
   border-collapse: collapse; 
