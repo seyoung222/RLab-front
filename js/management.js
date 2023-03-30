@@ -36,4 +36,14 @@ $(".btn_delete").on("click", function() {
   });
 });
 
+$(".btn_drop").on("click", function() {
+  confirmAction("본 회원을 강퇴시키겠습니까?", function() {
+    alert("강퇴처리 되었습니다.");
+  });
+});
 
+$(".btn_power").on("click", function() {
+  confirmAction("본 회원에게 스터디장을 위임하시겠습니까?", function() {
+    alert("위임처리 되었습니다.");
+  });
+});
