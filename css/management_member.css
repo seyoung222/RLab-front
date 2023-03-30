@@ -101,11 +101,12 @@ td{
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	word-break:break-all;
-	padding: 20px 5px;
+	padding: 10px 15px;
 	box-sizing: border-box;
+  text-align: center;
 }
 td:nth-child(1){
-	width: 15px;
+	width: 45px;
 }
 td:nth-child(2){
 	width: 20px;
@@ -124,22 +125,42 @@ table {
 
 .board_title_list{
   box-sizing: border-box;
-  background-color: var(--color_mint);
+  background-color: var(--color_blue);
   font-size: 20px;
   font-weight: bold;
 }
 .board_list {
-  border-bottom: 1px solid var(--color_mint);
+  border-bottom: 1px solid var(--color_blue);
   height: 50px;
 }
-.board_list:hover{
-  background-color: #01f3a225;
-  cursor: pointer;
-}
+
 .post_title{
   font-weight:bold;
   font-size: 15px;
   color:rgb(67, 66, 66)
+}
+.profile_box{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.profile_box .img_box{
+  display: flex;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--color_blue);
+  border-radius: var(--border_radius_1);
+  overflow: hidden;
+}
+.profile_img{
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/profile_img.png);
+
 }
 .table_area{
   width: 100%;
@@ -162,13 +183,7 @@ table {
 .background_bbls{
   height: 1253px;
 }
-.icon_scrab_box{
-  height: 50px;
-  padding: auto;
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
-}
+
 .icon_scrab{
   width: 32px;   
   height: 50px;
