@@ -590,6 +590,12 @@ cursor: pointer;
   line-height: 2.3em;
   margin-right: 0;
 }
+.feed_writer_img{flex: 2;}
+
+.feed_writer_name{flex:3}
+
+/* .feed_date{flex:} */
+
 .feed_writer_name{
   text-align: left;
   font-size: 16px;
