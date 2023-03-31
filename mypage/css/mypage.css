@@ -284,6 +284,10 @@
     .articles .article_top{
         height: 350px;
     }
+    .user_info{
+        font-size: 20px;
+        height: 25px;
+    }
     .article_top #used_hours_container{
         display: flex;
         flex-flow: column;
@@ -329,8 +333,6 @@
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        padding: 10px 0 0 5px;
-        box-sizing: border-box;
     }
     #point_container .my_point{
         position: relative;
@@ -338,29 +340,29 @@
         align-items: flex-end;
         gap: 10px;
         margin-bottom: -3px;
-        /* width: 100%; */
     }
     #point_container .my_point .icon_point{
-        width: 65px;
-        height: 65px;
-        background-size: 65px 65px;
+        width: 75px;
+        height: 75px;
+        background-size: 75px 75px;
         background-image: url(../img/point.png);
-        background-repeat: no-repeat;
-        opacity: 80%;
+        /* background-repeat: no-repeat; */
+        opacity: 40%;
     }
-    .my_point .my_point .title_point{
-        position: absolute;
-        top: 20px;
+    .my_point .title_point{
         font-size: 20px;
-        margin-left: 5px;
-        color: var(--color_grey);
-        flex: 7;
     }
-    .point_texts{flex:2;}
-    .icon_point{flex:1}
     .my_point .point_texts .num_point{
-        font-size: 45px;
+        font-size: 20px;
         margin-bottom: -8px;
+    }
+
+    .num_point .p_num{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .num_point .p_point{
+        font-size: 20px;
     }
     #point_container .point_btns_container{
         height: 80px;
