@@ -490,7 +490,7 @@ input[type="radio"]:checked ~ .tab-content {
 }
 .input_box{
   border: 1px solid rgba(174, 172, 172, 0.005);
-  width: 233px;
+  width: 100%;
   padding: 0px 5px 0px 5px;
   font-size: 12px;
 }

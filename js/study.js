@@ -17,6 +17,7 @@ const generateTodo = (todo) => {
 	li.appendChild(contentSpan);
 	li.appendChild(clearSpan);
 	todoList.appendChild(li);
+	console.log(li);
 }
 
 //체크 생성 메서드
@@ -30,9 +31,8 @@ const generateCheck= () => {
 	icon.addEventListener("click",(e) => {
 		const li = e.target.parentNode.parentNode;
 		li.classList.add('done');
-		// console.log(li);
+		icon.remove();
 	});
-
 	span.appendChild(icon);
 	return span;
 }
@@ -45,7 +45,7 @@ const generateContent = (todo) => {
 	return span;
 }
 
-// li 삭제 메서드
+// x버튼
 const generateClear= () => {
 	const span = document.createElement("span");
 	span.classList.add("todo_clear")
@@ -57,7 +57,6 @@ const generateClear= () => {
 		const li = e.target.parentNode.parentNode;
 		todoList.removeChild(li);
 	});
-	
 	span.appendChild(icon);
 	return span;
 }
