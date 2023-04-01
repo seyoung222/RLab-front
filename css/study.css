@@ -337,7 +337,7 @@ footer .corp_container .link_corp:nth-child(1)::before{
   border: var(--border_basic);
   border-radius: var(--border_radius_4);
   width: 704px;
-  height: 520px;
+  height: 510px;
   margin-right: 30px;
   overflow: hidden;
   box-shadow: var(--box-shadow);
@@ -378,9 +378,10 @@ footer .corp_container .link_corp:nth-child(1)::before{
   position: absolute;
   top: 0;
   z-index: 3;
+  border-radius: 5px;
 }
 .tab:nth-child(2) {
-  left: 100px;
+  left: 109px;
   z-index: 2;
 }
 .tab:nth-child(3) {
