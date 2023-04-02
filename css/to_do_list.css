@@ -39,12 +39,13 @@
   width: 320px;
   background-color: rgb(244, 206, 244);
 }
-.todo_box_title{text-align: center;}
+.todo_box_title{padding: 16px;}
 .input_container{
   margin-top: 5px;
   height: 25px;
   display: flex;
 }
+
 .input_box{
   border: 1px solid rgba(174, 172, 172, 0.005);
   width: 100%;
@@ -112,4 +113,33 @@ cursor: pointer;
 }
 .success_percent{
   font-size: 12px;
+}
+
+
+/* 펫영역 */
+.pet_image {
+  background-image: url(../img/egg.png);
+  background-size: cover;
+  height: 150px;
+  background-position: center;
+  width: 150px;
+  margin-left: 90px;
+  margin-top: 70px;
+}
+
+
+/* 멤버 투두 */
+.todo_box_member_content
+.todo_box_title{
+  padding: 2px;
+}
+.todo_box_member{
+  padding: 7px;
+  display: grid;
+  grid-template-columns: repeat(3,226.3px);
+  grid-gap: auto;
+}
+.todo_box_member_content{
+padding: 7px;
+border: 1px solid balck;
 }
