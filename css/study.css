@@ -443,7 +443,7 @@ input[type="radio"]:checked ~ .tab-content {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
-.todo_content_box,
+.todo_box_content,
 .feed_content_box,
 .board_content_box{
   padding: 0px 14px 16px 14px;
@@ -486,7 +486,7 @@ input[type="radio"]:checked ~ .tab-content {
   padding: 0px 5px 0px 5px;
   font-size: 12px;
 }
-.todo_content_box{
+.todo_box_content{
   height: 273px;
 }
 .btn_plus{

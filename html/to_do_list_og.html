@@ -7,12 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스터디</title>
     <link rel="stylesheet" href="../css/study_og.css">
-    <link rel="stylesheet" href="../css/to_do_list.css">
+    <link rel="stylesheet" href="../css/to_do_list_og.css">
     <script src="../js/jquery.min.js"></script>
     <script src="../js/study_og.js"></script>
     <link href='../css/calendar_main.css' rel='stylesheet' />
     <script src='../js/calendar_main.js'></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -50,19 +49,19 @@
 
         <main>
             <div class="main_container">
-                <!-- 왼쪽 메뉴바 -->
-                <div class="left_menu_container">
-                    <nav class="left_menu">
-                        <a href="study_basic.html" class="list_item">스터디홈</a>
-                        <a href="#" class="list_item">스터디 달력</a>
-                        <a href="to_do_list.html" class="list_item">투두 리스트</a>
-                        <a href="Daily Mission.html" class="list_item">데일리 미션</a>
-                        <a href="certification_board.html" class="list_item">인증 게시판</a>
-                        <a href="#" class="list_item">자유 게시판</a>
-                        <a href="#" class="list_item">스터디 관리</a>
-                        <a href="#" class="leave">탈퇴하기</a>
-                    </nav>
-                </div>
+                      <!-- 왼쪽 메뉴바 -->
+                      <div class="left_menu_container">
+                        <nav class="left_menu">
+                              <a href="study_basic.html" class="list_item">스터디홈</a>
+                            <a href="#" class="list_item">스터디 달력</a>
+                            <a href="to_do_list.html" class="list_item">투두 리스트</a>
+                            <a href="Daily Mission.html" class="list_item">데일리 미션</a>
+                            <a href="certification_board.html" class="list_item">인증 게시판</a>
+                            <a href="#" class="list_item">자유 게시판</a>
+                            <a href="#" class="list_item">스터디 관리</a>
+                            <a href="#" class="leave">탈퇴하기</a>
+                        </nav>
+                    </div>
 
                 <section>
                     <div class="home_container">
@@ -70,231 +69,131 @@
                             <div class="time_line_title"> 투두 리스트</div>
                         </div>
                         <div class="todo_list_container_middle">
-                            <div class="todo_box_my">
-                                
-                                <div class="todo_container">
-                                    <!-- 제목 -->
-                                    <div class="todo_box_title">
-                                        <h3>TODO</h3>
-                                        <!-- <a href="#" class="plus1">+더보기</a> -->
-                                    </div>
-                                    <!-- 내용 -->
-                                    <div class="todo_box_content">
-                                        <div class="input_container">
-                                            <input type="text"class="input_box" placeholder="할 일을 입력하세요">
-                                        </div>
-                                        <ul class="todo_list">
-
-                                            <li>
-                                                <span class="todo_check">
-                                                    <i class="material-icons check">check</i>
-                                                </span>
-                                                <span class="todo_content">할일</span>
-                                                <span class="todo_clear">
-                                                    <i class="material-icons clear">clear</i>
-                                                </span>
-                                            </li> 
-                                            <li>
-                                                <span class="todo_check">
-                                                </span>
-                                                <span class="todo_content">
-                                                    <iinput class="content">할 일</iinput>
-                                                </span>
-                                                <span class="todo_clear">
-                                                    <i class="material-icons clear">clear</i>
-                                                </span>
-                                            </li> 
-    
-                                        </ul>  
-                            
-                                        
-                                        
-
-                                    </div>
+                            <div class="todo_lists_row">
+                              <div class="to_do_list_container2">
+                                <div class="to_do_list_title">
+                                    <h3>나</h3>
                                 </div>
-
-
-
+                                <div class="to_do_list_box1">
+                                    <div class="to_do_list_contents"><label><input type="checkbox"> 정처기 1회독</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 오답노트 정리</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 1시에 회의</label><br></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br>
+                                </div>
+                                
+                               
+                              </div>
+                              <div class="pet_container">
+                                <div class="pet_message_container">
+                                    <div class="pet_message">조금만 더 힘내요!</div>
+                                </div>
+                                <div class="pet_image"></div>
+                                <!-- 달성률 -->
+                                <div class="progress_container">
+                                    <progress value="20" max="100"></progress>
+                                    <div>
+                                      <p class="success_percent">달성률 20%</p>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                        
+                            <div class="todo_lists_row">
+                              <div class="to_do_list_container3">
+                                <div class="to_do_list_title">
+                                    <h3>김순연</h3>
+                                </div>
+                                <div class="to_do_list_box1">
+                                    <div class="to_do_list_contents"><label><input type="checkbox"> 정처기 1회독</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 오답노트 정리</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 1시에 회의</label><br></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br>
+                                </div>
                                 <!-- 달성률 -->
                                 <div>
-                                    <progress class="progress" value="20" max="100"></progress>
+                                    <progress value="20" max="100"></progress>
                                 </div>
                                 <div>
                                     <p class="success_percent">달성률 20%</p>
                                 </div>
-
+                              </div>
+                              <div class="to_do_list_container3">
+                                <div class="to_do_list_title">
+                                    <h3>김세영</h3>
+                                </div>
+                                <div class="to_do_list_box1">
+                                    <div class="to_do_list_contents"><label><input type="checkbox"> 정처기 1회독</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 오답노트 정리</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 1시에 회의</label><br></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br>
+                                </div>
+                                <!-- 달성률 -->
+                                <div>
+                                    <progress value="20" max="100"></progress>
+                                </div>
+                                <div>
+                                    <p class="success_percent">달성률 20%</p>
+                                </div>
+                              </div>
+                              <div class="to_do_list_container3">
+                                <div class="to_do_list_title">
+                                    <h3>김도현</h3>
+                                </div>
+                                <div class="to_do_list_box1">
+                                    <div class="to_do_list_contents"><label><input type="checkbox"> 정처기 1회독</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 오답노트 정리</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 1시에 회의</label><br></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br>
+                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br>
+                                </div>
+                                <!-- 달성률 -->
+                                <div>
+                                    <progress value="20" max="100"></progress>
+                                </div>
+                                <div>
+                                    <p class="success_percent">달성률 20%</p>
+                                </div>
+                              </div>
                             </div>
-
-
-
-
-                            <div class="todo_box_member">2</div>
-
-
-
-
-
-
-
-
-
-
-<!-- 
-                            <div class="todo_lists_row">
-                                <div class="to_do_list_container2">
-                                    <div class="to_do_list_title">
-                                        <h3>나</h3>
-                                    </div>
-                                    <div class="to_do_list_box1">
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 정처기 1회독</label>
-                                        </div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 오답노트 정리</label>
-                                        </div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 1시에
-                                                회의</label><br></div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label>
-                                        </div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label>
-                                        </div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label>
-                                        </div><br>
-                                    </div>
-
-
-                                </div>
-                                <div class="pet_container">
-                                    <div class="pet_message_container">
-                                        <div class="pet_message">조금만 더 힘내요!</div>
-                                    </div>
-                                    <div class="pet_image"></div>-->
-                                    <!-- 달성률 -->
-                                    <!-- <div class="progress_container">
-                                        <progress value="20" max="100"></progress>
-                                        <div>
-                                            <p class="success_percent">달성률 20%</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="todo_lists_row">
-                                    <div class="to_do_list_container3">
-                                        <div class="to_do_list_title">
-                                            <h3>김순연</h3>
-                                        </div>
-                                        <div class="to_do_list_box1">
-                                            <div class="to_do_list_contents"><label><input type="checkbox"> 정처기
-                                                    1회독</label></div><br>
-                                            <div class="to_do_list_contents"><label><input type="checkbox"> 오답노트
-                                                    정리</label></div><br>
-                                            <div class="to_do_list_contents"><label><input type="checkbox"> 1시에
-                                                    회의</label><br></div><br>
-                                            <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회
-                                                    풀기</label></div><br>
-                                            <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회
-                                                    풀기</label></div><br>
-                                            <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회
-                                                    풀기</label></div><br>
-                                        </div>-->
-                                        <!-- 달성률 -->
-                                        <!-- <div>
-                                            <progress value="20" max="100"></progress>
-                                        </div>
-                                        <div>
-                                            <p class="success_percent">달성률 20%</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="to_do_list_container3">
-                                    <div class="to_do_list_title">
-                                        <h3>김세영</h3>
-                                    </div>
-                                    <div class="to_do_list_box1">
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 정처기 1회독</label>
-                                        </div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 오답노트 정리</label>
-                                        </div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 1시에
-                                                회의</label><br></div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label>
-                                        </div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label>
-                                        </div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label>
-                                        </div><br>
-                                    </div>-->
-                                    <!-- 달성률 -->
-                                    <!--  <div>
-                                        <progress value="20" max="100"></progress>
-                                    </div>
-                                    <div>
-                                        <p class="success_percent">달성률 20%</p>
-                                    </div>
-                                </div>
-                                <div class="to_do_list_container3">
-                                    <div class="to_do_list_title">
-                                        <h3>김도현</h3>
-                                    </div>
-                                    <div class="to_do_list_box1">
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 정처기 1회독</label>
-                                        </div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 오답노트 정리</label>
-                                        </div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 1시에
-                                                회의</label><br></div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label>
-                                        </div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label>
-                                        </div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label>
-                                        </div><br>
-                                    </div>-->
-                                    <!-- 달성률 -->
-                                    <!-- <div>
-                                        <progress value="20" max="100"></progress>
-                                    </div>
-                                    <div>
-                                        <p class="success_percent">달성률 20%</p>
-                                    </div>
-                                </div>
-                            </div> -->
-
-
-
-
-
-<!--
                             <div class="todo_lists_row">
                                 <div class="to_do_list_container3">
-                                    <div class="to_do_list_title">
-                                        <h3>이정현</h3>
-                                    </div>
-                                    <div class="to_do_list_box1">
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 정처기 1회독</label>
-                                        </div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 오답노트 정리</label>
-                                        </div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 1시에
-                                                회의</label><br></div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label>
-                                        </div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label>
-                                        </div><br>
-                                        <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label>
-                                        </div><br>
-                                    </div>-->
-                                    <!-- 달성률 -->
-                                <!-- <div>
-                                        <progress value="20" max="100"></progress>
-                                    </div>
-                                    <div>
-                                        <p class="success_percent">달성률 20%</p>
-                                    </div>
+                                  <div class="to_do_list_title">
+                                      <h3>이정현</h3>
+                                  </div>
+                                  <div class="to_do_list_box1">
+                                      <div class="to_do_list_contents"><label><input type="checkbox"> 정처기 1회독</label></div><br>
+                                          <div class="to_do_list_contents"><label><input type="checkbox"> 오답노트 정리</label></div><br>
+                                          <div class="to_do_list_contents"><label><input type="checkbox"> 1시에 회의</label><br></div><br>
+                                          <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br>
+                                          <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br>
+                                          <div class="to_do_list_contents"><label><input type="checkbox"> 기출 2회 풀기</label></div><br>
+                                  </div>
+                                  <!-- 달성률 -->
+                                  <div>
+                                      <progress value="20" max="100"></progress>
+                                  </div>
+                                  <div>
+                                      <p class="success_percent">달성률 20%</p>
+                                  </div>
                                 </div>
-                            </div>
+                                
+                                
+                                </div>
+                                
+                                
+                            
+                     
                         </div>
                     </div>
--->
-
+                        
+                        
                 </section>
                 <!-- 오른쪽 메뉴 -->
                 <aside>
@@ -493,7 +392,6 @@
         </div>
     </footer>
     </div>
-    <script src="../js/study.js"></script>
 </body>
 
 </html>

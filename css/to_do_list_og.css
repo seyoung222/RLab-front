@@ -1,0 +1,98 @@
+.todo_list_container_middle {
+    border: var(--border_basic);
+    height: 1100px;
+    border-radius: var(--border_radius_4);
+  }
+  
+  /* to do list */
+  .to_do_list_container2 {
+    float: left;
+    border: var(--border_basic);
+    border-radius: var(--border_radius_4);
+    width: 272px;
+    box-shadow: var(--box-shadow);
+    padding-left: 16px;
+    padding-top: 19px;
+    overflow: hidden;
+    margin-left: 30px;
+    padding-left: 30px;
+    width: 40%;
+    border: var(--border_basic);
+    border-radius: var(--border_radius_4);
+    margin-right: 20px; /* 수정 */
+  }
+  .to_do_list_box1 {
+    max-height: 190px;
+    overflow-y: auto;
+  }
+  
+  /* 스크롤바 스타일링 */
+  .to_do_list_box1::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  .to_do_list_box1::-webkit-scrollbar-thumb {
+    background-color: var(--color_black);
+    border-radius: 10px;
+  }
+  .to_do_list_box1::-webkit-scrollbar-track {
+    background-color: var(--color_beige);
+    border-radius: 10px;
+  }
+  
+  .todo_list_container_middle {
+    display: flex;
+    flex-direction: column; /* row -> column 으로 변경 */
+  }
+  
+  .todo_lists_row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* 추가 */
+    margin-left: 15px;
+  }
+  
+  
+  .pet_container {
+    width: 60%;
+    border: var(--border_basic);
+    height: 320px;
+    border-radius: var(--border_radius_4);
+    margin-right: 30px;
+  }
+  
+  .to_do_list_container3 {
+    border: var(--border_basic);
+    border-radius: var(--border_radius_4);
+    width: 25%;
+    margin-right: 20px;
+    padding: 20px 20px;
+    
+  }
+  
+  
+  .pet_image {
+   background-image: url(../img/egg.png);
+   background-size: cover;
+   height: 150px;
+   background-position: center;
+   width: 150px;
+   margin-left: 90px;
+   margin-top: 70px;
+  }
+  
+  .pet_message_container {
+    border: var(--border_basic);
+    background-color: #fff;
+    width: 150px;
+    border-radius: var(--border_radius_4);
+    position: relative;
+    left: 90px;
+    top: 70px;
+  }
+  .pet_message {
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
