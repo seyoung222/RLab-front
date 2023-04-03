@@ -1,13 +1,11 @@
 const todoInput = document.querySelector(".input_box");
 const todoList = document.querySelector(".todo_list");
-const todoArr = [];  //contentSpan 담는 배열
-
 
 todoInput.addEventListener("keypress",(e) => {
-		if(e.keyCode === 13){
+		if(e.keyCode === 13 && todoInput.value !== ''){
     generateTodo(todoInput.value);
 		todoInput.value = "";
-	}
+		}
 });
 
 const generateTodo = (todo) => {
@@ -20,10 +18,6 @@ const generateTodo = (todo) => {
 	li.appendChild(clearSpan);
 	todoList.appendChild(li);
 	console.log(li);
-
-	todoArr.push("contentSpan")
-	console.log(todoArr.length); // 투두 개수 알아내기
-	
 	
 }
 
@@ -39,7 +33,6 @@ const generateCheck= () => {
 		const li = e.target.parentNode.parentNode;
 		li.classList.add('done');
 		icon.remove();
-
 	});
 	span.appendChild(icon);
 	return span;
@@ -64,7 +57,6 @@ const generateClear= () => {
 	icon.addEventListener("click",(e) => {
 		const li = e.target.parentNode.parentNode;
 		todoList.removeChild(li);
-		todoArr.pop(); //투두 삭제 시 배열에서 빼기 
 	});
 	span.appendChild(icon);
 	
