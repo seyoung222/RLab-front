@@ -1,22 +1,56 @@
-.todo_list_container_middle {
-    border: var(--border_basic);
-    height: 1100px;
+
+
+
+
+
+
+.home_container{
+  background-color: var(--color_beige);
+  border: var(--border_basic);
+  border-radius: var( --border_radius_4);
+  padding: 0 21px 16px 16px;
+}
+  .todo_container_my{
     border-radius: var(--border_radius_4);
     display: flex;
     flex-direction: column;
-    padding: 10px;
-
     background-color: lemonchiffon;
+    margin: 16px 0 20px;
   }
-  .todo_list_container_middle .todo_box_my{
-    display: flex;
-    flex-direction: row;
-    background-color: yellowgreen;
+  .todo_container_my,
+  .todo_box_member_content{
+    border: 3px solid black;
   }
-  
-  .todo_list_container_middle .todo_box_member{
-    background-color: rgb(90, 194, 239);
+  .todo_container_member{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:15px;
   }
+
+  .todo_box_member_content{
+    width: 200px;
+    padding: 10px;
+    border: 5px solid balck;
+    border-radius: var(--border_radius_4);
+    /* background-color: yellowgreen; */
+  }
+  .todo_box_member_title{
+    padding: 4px 18px;
+    /* background-color: violet; */
+  }
+  .todo_box_member_content .todo_list{
+    height: 170px;
+  }
+  .progress_container progress{
+    width: 100%;
+  }
+
+
+
+
+
+
+
 
 
 
@@ -25,32 +59,24 @@
   /* 스크롤바 */
 
 
-.todo_list::-webkit-scrollbar{
+/* .todo_list::-webkit-scrollbar{
   width: 10px;
 }
 .todo_list::-webkit-scrollbar-thumb{
   background-color: #b8b8b8f0;
   border-radius: 5px;
-}
+} */
 
 /* 투두 */
-.todo_container{
+/* .todo_container{ */
   /* width: 320px; */
-  background-color: rgb(244, 206, 244);
+  /* background-color: rgb(244, 206, 244);
 }
-
-.todo_list{
-  width: 212.297px;
-}
-
-
-.todo_box_title{padding: 16px;}
 .input_container{
   margin-top: 5px;
   height: 25px;
   display: flex;
 }
-
 .input_box{
   border: 1px solid rgba(174, 172, 172, 0.005);
   width: 100%;
@@ -58,9 +84,10 @@
   font-size: 12px;
   height: 30px;
 }
+.todo_list_container
 .todo_box_content{
-  padding: 0px 14px 16px 14px;
-  height: 273px;
+  /* padding: 0px 14px 16px 14px; */
+  /* height: 273px;
   background-color: pink;
 }
 .btn_plus{
@@ -72,7 +99,6 @@
 .todo_list{
   height: 250px;
   overflow: auto;
-  background-color: seagreen;
 }
 .material-icons{
 font-size: 10px;
@@ -84,7 +110,8 @@ cursor: pointer;
   margin: 10px 0 10px;
   display: flex;
   justify-content: space-between;
-}
+} */ 
+/* study.css와 중복
 .todo_list li span .material-icons, .content {
   font-size: 16px;
 }
@@ -104,25 +131,27 @@ cursor: pointer;
   color: rgb(184, 184, 184);
   font: white;
 }
+
+
 .done{
-  color: #878686;
+  color: #161616;
   text-decoration: line-through;
   font-style: italic;
-}
+} */
 
 /* 달성률 */
-.success_percent{text-align: right;}
+/* .success_percent{text-align: right;}
 .progress{
   width: 100%;
   height: 25px;
 }
 .success_percent{
   font-size: 12px;
-}
+} */
 
 
 /* 펫영역 */
-.pet_image {
+/* .pet_image {
   background-image: url(../img/egg.png);
   background-size: cover;
   height: 150px;
@@ -130,21 +159,4 @@ cursor: pointer;
   width: 150px;
   margin-left: 90px;
   margin-top: 70px;
-}
-
-
-/* 멤버 투두 */
-.todo_box_member_content
-.todo_box_title{
-  padding: 2px;
-}
-.todo_box_member{
-  padding: 7px;
-  display: grid;
-  grid-template-columns: repeat(3,226.3px);
-  grid-gap: auto;
-}
-.todo_box_member_content{
-padding: 7px;
-border: 1px solid balck;
-}
+} */
