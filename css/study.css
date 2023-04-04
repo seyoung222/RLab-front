@@ -446,9 +446,9 @@ input[type="radio"]:checked ~ .tab-content {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
-.todo_box_content,
-.feed_content_box,
-.board_content_box{
+.middle_container .todo_box_content,
+.middle_container .feed_content_box,
+.middle_container .board_content_box{
   padding: 0px 14px 16px 14px;
 }
 .feed_content_box{
@@ -467,7 +467,6 @@ input[type="radio"]:checked ~ .tab-content {
 .feed_content_box::-webkit-scrollbar-thumb,
 .todo_list::-webkit-scrollbar-thumb,
 .board_content_box::-webkit-scrollbar-thumb {
-  
   background-color: #b8b8b8f0;
   border-radius: 5px;
 }
@@ -491,7 +490,7 @@ input[type="radio"]:checked ~ .tab-content {
   padding: 0px 5px 0px 5px;
   font-size: 12px;
 }
-.todo_box_content{
+.middle_container .todo_box_content{
   height: 273px;
 }
 .btn_plus{
@@ -513,27 +512,28 @@ input[type="radio"]:checked ~ .tab-content {
   font-size: 12px;
 }
 .material-icons{
-font-size: 10px;
+font-size: 16px;
 cursor: pointer;
 }
 .check{color: var(--color_mint) }
 .clear{color: salmon;}
 .todo_list li {
-  margin: 10px 0 10px;
+  margin: 10px 0 16px;
   display: flex;
   justify-content: space-between;
 }
 .todo_list li span .material-icons, .content {
-  font-size: 16px;
+  font-size: 20px;
 }
 .todo_content{
   font-size: 14px;
   color: rgb(46, 46, 46);
   width: 200px;
   text-align: left;
+  line-height: 1.8em;
+  flex:8;
 }
 .todo_check{flex:1;}
-.todo_content{flex:8;}
 .todo_clear{flex: 1;}
 .checked{
   list-style: none;
@@ -633,16 +633,6 @@ cursor: pointer;
   height: 137px;
   overflow: auto;
 }
-/* .board_content_box::-webkit-scrollbar{
-  width: 10px;
-}
-.board_content_box::-webkit-scrollbar-thumb {
-  background-color: #b8b8b8f0;
-  border-radius: 5px;
-}
-.board_content_box::-webkit-scrollbar-track {
-  background-color: rgba(176, 20, 20, 0);
-} */
 .board_item{
   display: flex;
   flex-direction: row;
