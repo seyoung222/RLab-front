@@ -7,6 +7,7 @@
   padding: 26px 4px 26px 16px;
 }
 .home_container, .home_container .todo_container{
+  box-sizing: border-box;
   background-color: var(--color_blue)
 }
 .todo_container_my{
@@ -101,6 +102,41 @@
     background-color: #b8b8b8f0;
     border-radius: 5px;
   }
+
+
+
+
+
+
+  /* 왼쪽 메뉴바 */
+.left_menu_container{
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 400px;
+  padding: 40px 0;
+  border: 2px solid #020a17;
+  border-radius: var(--border_radius_2);
+  box-sizing: border-box;
+  background-color: var(--color_beige);
+}
+.left_menu_container .left_menu{
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 15px;
+  font-weight: 800;
+}
+.leave {
+  position: relative;
+  bottom: -120px;
+  left: 5px;
+} 
+.left_menu a:visited {
+  font-weight: bold; 
+  /*클릭했을때 굵어지면서 검정색으로 바뀌게 나중에 수정 */
+}
 
 
 
