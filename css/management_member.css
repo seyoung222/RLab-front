@@ -87,7 +87,7 @@ main #main_container{
 	position: relative;
 	border: var(--border_basic); 
 	border-radius: var(--border_radius_4);
-	padding: 60px 50px 50px 50px;
+	padding: 50px 50px 50px 50px;
 	background-color: var(--color_beige);
 	box-sizing: border-box;
 	z-index: 10;
@@ -187,7 +187,6 @@ table {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(../img/profile_img.png);
-
 }
 .table_area{
   width: 100%;
@@ -195,9 +194,20 @@ table {
   text-align: center;
   color: rgb(43, 42, 42);
 }
-
+.table_area .slect_study_box{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.table_area .select_study_title{line-height: 2.2em;}
+.table_area .slect_study_list{
+  width:85%;
+  height: 35px;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 4px;
+} 
 .fa-solid{margin-left: 5px; margin-right: -10px;}
-
 .border_box{
   width: 100%;
 }
@@ -206,17 +216,14 @@ table {
   height: 50px;
   font-size: 17px;
 }
-
 .background_bbls{
   height: 1253px;
 }
-
 .icon_scrab{
   width: 32px;   
   height: 50px;
   background-size: 30px 50px;
   background-image: url(../img/favorite_tag.png);
-  
 }
 /* 게시판, 페이지네이션 부모 */
 .tab_container {

@@ -67,15 +67,22 @@
                         <a href="../html/management_member.html" class="item_tab  selected tab1">회원 관리</a>
                         <a href="../html/management_study.html" class="item_tab unselected tab2">스터디 관리</a>
                     </div>
-        
+                    
                     <div class="my_study_container" id="my_container">
                         <!-- table  -->
                         <div class="table_container">
-        
                             <div class="tab_content">
-        
                                 <!-- 나의 스크랩 -->
-                                <div class="table_area" id="tabs_3">
+                                <div class="table_area" id="tabs_3">                                   
+                                    <div class="slect_study_box">
+                                        <h3 class="select_study_title">스터디 선택</h3>
+                                        <select name="study" class="slect_study_list">
+                                            <option value="">스터디를 선택하세요</option>
+                                            <option value="자바 스터디 모임">자바 스터디 모임</option>
+                                            <option value="javascript">자바스크립트 공부하기</option>
+                                            <option value="리액트 스터디">리액트 스터디</option>
+                                        </select>
+                                    </div>
                                     <table class="border_box">
                                         <thead>
                                             <tr class="board_title_list">
@@ -101,7 +108,6 @@
                                                         <button class="btn_member btn_power">스터디장 위임</button>
                                                     </div>
                                                 </td>
-        
                                             </tr>
                                             <tr class="board_list">
                                                 <td class="post_title">

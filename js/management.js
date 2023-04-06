@@ -13,14 +13,18 @@ $(document).ready(function(){
 	})
 })
 
-
-// 버튼 클릭시 confirm창 나타남
+// 버튼 클릭시 스터디 선택 여부에 따라 confirm창 나타남
 function confirmAction(buttonText, action) {
+  const selectedOptionValue = $("select.slect_study_list option:selected").val();
+  if (selectedOptionValue === "") {
+    alert("스터디를 선택하세요.");
+    return;
+  }
   if (confirm(buttonText)) {
     action();
-	}else{
-		console.log("작업 취소");
-	}
+  } else {
+    console.log("작업 취소");
+  }
 }
 
 $(".btn_finish").on("click", function() {
