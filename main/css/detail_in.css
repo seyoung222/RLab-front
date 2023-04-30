@@ -592,6 +592,11 @@ display: flex; justify-content: center;
 .reply_container .reply_content{
   margin-top: 15px;
   min-height: 100px;
+  font-family: inherit;
+}
+textarea{
+  
+  font-family: inherit;
 }
 
 .notice_container .btn_list{
@@ -599,8 +604,6 @@ display: flex; justify-content: center;
     height: 35px;
     border-radius: 35px;
     background-color: #252525;
-    /*border-radius: var(--border_radius_4);
-    border: 1px solid black;*/
     display: inline-block;
     font-size: 18px;
     padding: 5px;
