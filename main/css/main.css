@@ -113,7 +113,6 @@ a, button{
   margin: auto;
   margin-top: 150px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0);
-
 }
 .login_box{
   margin: auto;
@@ -137,7 +136,6 @@ a, button{
   border-radius: 5px;
   padding-left: 5px;
   border: 0.5px solid rgba(121, 119, 119, 0.529);
-
 }
 .login_box .btn_outline_success{
   width: 100%;
@@ -178,7 +176,6 @@ a, button{
   width: 1200px;
   margin: auto;
 }
-
 .reservation_btn{
   width: 100px;
   height: 100px;
@@ -192,17 +189,37 @@ a, button{
   left: 1670px;
   z-index: 90;
 }
-/* main */
-.main_area{background-color: #00c867;}
-.main_bannr_box{
+.main_banner_box{
+  width: 1500px;
   height: 450px;
-  position: relative;
-  width: 1200px;
   margin: auto;
-  background-image: url(../img/main_banner.png);
   position: relative;
 }
-.main_container .banner_text_box{
+.slide_wrapper{
+  overflow: hidden;
+}
+.main_banner_area{
+  width: 1200px;
+  margin:auto;
+  width: 3750px;
+  position: absolute;
+  transition: transform 0.5s;
+}
+.main_banner_item{
+  float: left;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.banner_size{
+  width: 1200px;
+  height: 450px;
+}
+.main_banner_item{
+  width: 1200px;
+  float: left;
+}
+
+.main_area .banner_text_box{
   width: 350px;
   margin-left: 100px;
   position:absolute;
@@ -210,7 +227,7 @@ a, button{
   border: 1px solid balck;
   /* background-color: gray; */
 }
-.main_container .banner_icon{
+.main_area .banner_icon{
   background-color: rgb(8, 61, 68);
   font-size: 20px;
   padding: 2px 5px;
@@ -221,7 +238,7 @@ a, button{
   font-weight: bold;
   letter-spacing: 2px;
 }
-.main_container .banner_text_main{
+.main_area .banner_text_main{
   /* background: rgb(35, 35, 35); */
   font-size: 35px;
   margin: 10px 0px 12px;
@@ -239,20 +256,18 @@ a, button{
   background-position: -10px -10px; 
   background-size:80px 80px;
   background-image: url(../img/page_left.png);
+  z-index: 90;
 }
 [class$=btn_right]{
   display: inline-block; width: 50px; height: 50px; margin-right: 10px;
   background-position: -10px -10px; 
   background-size:80px 80px;
   background-image: url(../img/page_right.png);
+  z-index: 90;
 }
-.main_btn_left{
-  position: absolute; left: -100px; top: 200px;
-}
-.main_btn_right{
-  position: absolute; right: -100px; top: 200px;
-}
-
+.main_banner_img{width:100%; position:relative;}
+.main_btn_left{position:absolute; top: 200px; left: 50px;}
+.main_btn_right{position:absolute; top: 200px; right: 50px}
 /* info_top_left */
 .info_area_top{
   margin-top: 20px;
@@ -351,6 +366,7 @@ a, button{
 .recruit_banner_tag .mint_btn{
   background-color: var(--color_mint);
 }
+
 .recruit_banner_title{
   font-size: 17px;
   font-weight: bold;
